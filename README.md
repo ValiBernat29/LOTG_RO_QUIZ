@@ -33,6 +33,19 @@ proiectului C# existent rămân fluxuri separate.
 npm test
 ```
 
+## Publicare pe Netlify prin Git
+
+Repository-ul începe în acest director (`quiz-web`). Fișierul `netlify.toml`
+configurează automat construirea cu `node build.mjs` și publicarea folderului
+`dist`. În setările Netlify, Base directory poate rămâne gol; Publish directory
+este `dist`, nu `quiz-web/dist`.
+
+Încarcă în Git atât configurația, cât și întregul folder `dist`, inclusiv
+`questions.json`. La construirea pe Netlify, scriptul folosește banca din `dist`
+dacă fișierul românesc din folderul părinte nu există. Pentru a actualiza
+întrebările, rulează local `npm run build`, apoi include în commit fișierul
+`dist/questions.json` actualizat.
+
 Testele verifică păstrarea răspunsului corect la amestecarea variantelor,
 filtrarea pe legi, eliminarea repetărilor din sesiune, scorul pentru întrebări
 necompletate și restricționarea linkurilor către IFAB.
