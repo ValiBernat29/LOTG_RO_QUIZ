@@ -1,4 +1,4 @@
-import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, safeSource, validSession } from './quiz.js';
+import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, safeSource, validSession, examDurationMs } from './quiz.js';
 const app = document.querySelector('#app');
 const prefix = 'lotg.quiz.v1.';
 let data = [], session = null, selected = new Set(Object.keys(LAW_NAMES).map(Number));
@@ -6,6 +6,7 @@ let mode = 'practice', count = 20, view = 'home', draft = null, reviewWrong = fa
 let timer, toastTimer, modalOpen = false, storageWarning = false;
 const esc = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = time => new Intl.DateTimeFormat('ro-RO', { day:'numeric', month:'long', year:'numeric' }).format(time);
+const examMinutes = questions => new Intl.NumberFormat('ro-RO').format(examDurationMs(questions) / 60000);
 const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(prefix + key)) ?? fallback; } catch { return fallback; } };
 const save = (key, value) => { try { localStorage.setItem(prefix + key, JSON.stringify(value)); } catch { if (!storageWarning) { storageWarning = true; toast('Browserul nu permite salvarea progresului. Poți continua sesiunea.'); } } };
 const remove = key => { try { localStorage.removeItem(prefix + key); } catch {} };
@@ -45,14 +46,14 @@ function renderHome() {
     <section class="stats" aria-label="Progresul tău"><div class="stat"><span class="stat-icon">◎</span><div><div class="stat-value">${sessions.length}</div><div class="stat-caption">Sesiuni finalizate</div></div></div><div class="stat"><span class="stat-icon">✓</span><div><div class="stat-value">${totals.total ? Math.round(totals.correct / totals.total * 100) + '%' : '—'}</div><div class="stat-caption">Răspunsuri corecte</div></div></div><div class="stat"><span class="stat-icon">▤</span><div><div class="stat-value">${totals.total}</div><div class="stat-caption">Întrebări parcurse</div></div></div></section>
     <div class="section-title"><h2>Construiește-ți antrenamentul</h2><span>Tu alegi ritmul.</span></div>
     <div class="setup-grid"><section class="card laws-card"><div class="card-heading"><span class="step">1</span> Alege legile</div><p class="laws-subtitle">Concentrează-te pe o lege sau pregătește un test mixt.</p><div class="laws-toolbar"><span>${selected.size} din 17 legi selectate</span><button class="text-button" data-action="toggle-laws">${selected.size === 17 ? 'Deselectează toate' : 'Selectează toate'}</button></div><div class="law-list">${Object.entries(LAW_NAMES).map(([id,name]) => `<label class="law"><input type="checkbox" data-law="${id}" ${selected.has(+id) ? 'checked' : ''}><span class="law-number">${id.padStart(2,'0')}</span><span class="law-name">${esc(name)}</span><span class="law-count">${data.filter(q => q.lawNumber === +id).length}</span></label>`).join('')}</div></section>
-    <section class="card config-card"><div class="card-heading"><span class="step">2</span> Cum vrei să exersezi?</div><div class="modes"><button class="mode ${mode === 'practice' ? 'selected' : ''}" data-mode="practice" aria-pressed="${mode === 'practice'}"><div class="mode-top"><span>◈</span><i class="radio"></i></div><strong>Antrenament</strong><p>Corectare imediată.<br>Fără presiunea timpului.</p></button><button class="mode ${mode === 'exam' ? 'selected' : ''}" data-mode="exam" aria-pressed="${mode === 'exam'}"><div class="mode-top"><span>◷</span><i class="radio"></i></div><strong>Simulare examen</strong><p>Rezultate la final.<br>Un minut per întrebare.</p></button></div><div class="card-heading"><span class="step">3</span> Numărul de întrebări</div><div class="counts">${[10,20,40,'all'].map(n => `<button class="count-button ${count === n ? 'selected' : ''}" data-count="${n}" aria-pressed="${count === n}">${n === 'all' ? 'Toate' : n}<small>${n === 'all' ? 'disponibile' : 'întrebări'}</small></button>`).join('')}</div><button class="primary wide" data-action="start" ${actual ? '' : 'disabled'}>Începe ${mode === 'exam' ? 'testul' : 'antrenamentul'} <span class="arrow">↗</span></button><p class="setup-help">${actual ? `${actual} întrebări · ${mode === 'exam' ? actual + ' minute' : 'în ritmul tău'}` : 'Selectează cel puțin o lege.'}<br>${available} situații distincte disponibile</p></section>
+    <section class="card config-card"><div class="card-heading"><span class="step">2</span> Cum vrei să exersezi?</div><div class="modes"><button class="mode ${mode === 'practice' ? 'selected' : ''}" data-mode="practice" aria-pressed="${mode === 'practice'}"><div class="mode-top"><span>◈</span><i class="radio"></i></div><strong>Antrenament</strong><p>Corectare imediată.<br>Fără presiunea timpului.</p></button><button class="mode ${mode === 'exam' ? 'selected' : ''}" data-mode="exam" aria-pressed="${mode === 'exam'}"><div class="mode-top"><span>◷</span><i class="radio"></i></div><strong>Simulare examen</strong><p>Rezultate la final.<br>30 de minute / 20 de întrebări.</p></button></div><div class="card-heading"><span class="step">3</span> Numărul de întrebări</div><div class="counts">${[10,20,40,'all'].map(n => `<button class="count-button ${count === n ? 'selected' : ''}" data-count="${n}" aria-pressed="${count === n}">${n === 'all' ? 'Toate' : n}<small>${n === 'all' ? 'disponibile' : 'întrebări'}</small></button>`).join('')}</div><button class="primary wide" data-action="start" ${actual ? '' : 'disabled'}>Începe ${mode === 'exam' ? 'testul' : 'antrenamentul'} <span class="arrow">↗</span></button><p class="setup-help">${actual ? `${actual} întrebări · ${mode === 'exam' ? examMinutes(actual) + ' minute' : 'în ritmul tău'}` : 'Selectează cel puțin o lege.'}<br>${available} situații distincte disponibile</p></section>
     <aside class="card note-card"><h3>Un test diferit, de fiecare dată.</h3><p>Întrebările și variantele sunt amestecate. Situațiile identice din banca de întrebări apar o singură dată într-o sesiune.</p><span>Pregătire constantă. Decizii mai sigure. ↗</span></aside></div>`;
 }
 function start() {
   const available = pool(); if (!available.length) return;
   const questions = prepareQuestions(available, count === 'all' ? available.length : +count);
   const now = Date.now();
-  session = {version:1, mode, questions, answers:{}, flags:[], index:0, startedAt:now, deadline: mode === 'exam' ? now + questions.length * 60000 : null};
+  session = {version:1, timePolicyVersion:2, mode, questions, answers:{}, flags:[], index:0, startedAt:now, deadline: mode === 'exam' ? now + examDurationMs(questions.length) : null};
   persist(); setView('quiz'); focusQuestion();
 }
 function focusQuestion() { requestAnimationFrame(() => { document.querySelector('.question-text')?.focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }); }
@@ -172,7 +173,9 @@ async function boot(){
   try{
     const response=await fetch('./questions.json');if(!response.ok)throw new Error('Questions unavailable');
     const value=await response.json();if(!Array.isArray(value)||!value.length||!value.every(q=>Number.isInteger(q.id)&&LAW_NAMES[q.lawNumber]&&typeof q.questionRo==='string'&&q.options&&LETTERS.every(k=>typeof q.options[k]==='string')&&LETTERS.includes(q.correctOption)))throw new Error('Invalid question bank');
-    data=value;const stored=read('active',null);if(validSession(stored)){session={...stored,flags:Array.isArray(stored.flags)?stored.flags:[]};}
+    data=value;const stored=read('active',null);if(validSession(stored)){session={...stored,flags:Array.isArray(stored.flags)?stored.flags:[]};
+      if(session.mode==='exam'&&(session.timePolicyVersion??1)<2){session.deadline=session.startedAt+examDurationMs(session.questions.length);session.timePolicyVersion=2;persist();}
+    }
     if(session?.mode==='exam'&&Date.now()>=session.deadline){finish(true);return;}
     setView('home');
   }catch{app.innerHTML='<div class="empty-state"><h2>Nu am putut încărca întrebările.</h2><p>Verifică conexiunea și reîncarcă pagina.<br>Pentru folosirea locală, pornește interfața conform instrucțiunilor proiectului.</p><button class="primary" id="reload">Reîncearcă ↻</button></div>';document.querySelector('#reload').onclick=()=>location.reload();}

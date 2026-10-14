@@ -3,6 +3,7 @@
 Interfață web în română, alimentată din `../lotg_ro_questions.json`.
 
 - Antrenament cu corectare imediată sau simulare de examen cu corectare la final.
+- Simulare: 30 de minute pentru 20 de întrebări (15 pentru 10; 60 pentru 40).
 - Alegerea uneia sau mai multor legi; 10, 20, 40 sau toate situațiile disponibile.
 - Ordine aleatorie pentru întrebări și variante; cheia corectă este recalculată.
 - Situațiile identice apar o singură dată în fiecare sesiune.

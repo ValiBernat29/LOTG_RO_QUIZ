@@ -1,4 +1,8 @@
 export const LETTERS = ['A', 'B', 'C', 'D'];
+export function examDurationMs(questionCount) {
+  if (!Number.isInteger(questionCount) || questionCount < 1) throw new RangeError('Număr invalid de întrebări.');
+  return questionCount * 90000; // 20 de întrebări = 30 de minute.
+}
 export const LAW_NAMES = {
   1: 'Terenul de joc', 2: 'Mingea', 3: 'Jucătorii', 4: 'Echipamentul jucătorilor',
   5: 'Arbitrul', 6: 'Alți oficiali de meci', 7: 'Durata meciului', 8: 'Începerea și reluarea jocului',

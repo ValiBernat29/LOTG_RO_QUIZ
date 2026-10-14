@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { prepareQuestions, score, safeSource, validSession, uniqueQuestions } from '../dist/quiz.js';
+import { prepareQuestions, score, safeSource, validSession, uniqueQuestions, examDurationMs } from '../dist/quiz.js';
 const bank=JSON.parse(await readFile(new URL('../dist/questions.json',import.meta.url),'utf8'));
 test('Every shuffled answer key still identifies the original correct decision',()=>{
   const prepared=prepareQuestions(bank,bank.length,()=>.13);
@@ -24,4 +24,15 @@ test('Unanswered questions count towards the total but not as answered or correc
 test('External references allow only official HTTPS IFAB URLs',()=>{
   assert.equal(safeSource('javascript:alert(1)'),null);assert.equal(safeSource('https://www.theifab.com.example.com/'),null);
   assert.equal(safeSource(bank[0].sourceUrl),bank[0].sourceUrl);
+});
+test('Exam timing gives 30 minutes for 20 questions and scales with the real pool size',()=>{
+  assert.equal(examDurationMs(20),30*60000);
+  assert.equal(examDurationMs(10),15*60000);
+  assert.equal(examDurationMs(40),60*60000);
+  assert.equal(examDurationMs(2),3*60000);
+  assert.throws(()=>examDurationMs(0),RangeError);
+});
+test('The complete bank contains no repeated diacritics or known gender errors',()=>{
+  const invalid=/([ăâîșț])\1|comportament (?:violentă|nesportivă)|înlocuitorul este avertizată/u;
+  for(const q of bank)for(const text of [q.questionRo,...Object.values(q.options)])assert.equal(invalid.test(text),false,`ID ${q.id}: ${text}`);
 });
