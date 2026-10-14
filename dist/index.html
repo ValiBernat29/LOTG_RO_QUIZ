@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174f3d">
+  <meta name="description" content="Antrenează-ți deciziile de arbitru cu întrebări în română din Legile Jocului IFAB.">
+  <title>LOTG · Academia arbitrului</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Sari la conținut</a>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="LOTG, pagina principală"><img src="mark.svg" alt="" width="42" height="42"><span>LOTG<small>ACADEMIA ARBITRULUI</small></span></a>
+      <div class="nav-label">PREGĂTIREA TA</div>
+      <nav aria-label="Navigare principală">
+        <button class="nav-item active" id="nav-home"><span class="nav-icon">◈</span> Antrenament <span class="nav-arrow">↗</span></button>
+        <button class="nav-item" id="nav-history"><span class="nav-icon">◷</span> Istoric sesiuni <span id="history-count" class="count-badge">0</span></button>
+      </nav>
+      <div class="sidebar-note"><span class="small-pitch">＋</span><strong>Deciziile se antrenează.</strong><p>Câte o situație, câte o lege.<br>Pregătește-te pentru următorul meci.</p></div>
+      <div class="sidebar-footer"><span class="avatar">AR</span><div><strong>Profilul tău local</strong><small>Progres salvat în acest browser</small></div><span class="online-dot"></span></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><span class="breadcrumb">Pregătire <span>/</span> <strong id="page-label">Antrenament</strong></span><span class="topbar-tag"><span class="online-dot"></span> Legile Jocului · IFAB</span></header>
+      <main id="content" tabindex="-1">
+        <div id="app"><div class="loading">Pregătim terenul…</div></div>
+      </main>
+      <footer class="footer"><span>LOTG · Pregătire pentru arbitri</span><span>Întrebări bazate pe FAQ-urile IFAB. Proiect independent.</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
