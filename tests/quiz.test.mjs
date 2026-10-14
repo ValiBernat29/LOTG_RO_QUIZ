@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { prepareQuestions, score, safeSource, validSession, uniqueQuestions, examDurationMs } from '../dist/quiz.js';
+import { prepareQuestions, score, safeSource, validSession, uniqueQuestions, examDurationMs, repairSavedSession } from '../dist/quiz.js';
 const bank=JSON.parse(await readFile(new URL('../dist/questions.json',import.meta.url),'utf8'));
 test('Every shuffled answer key still identifies the original correct decision',()=>{
   const prepared=prepareQuestions(bank,bank.length,()=>.13);
@@ -35,4 +35,14 @@ test('Exam timing gives 30 minutes for 20 questions and scales with the real poo
 test('The complete bank contains no repeated diacritics or known gender errors',()=>{
   const invalid=/([ăâîșț])\1|comportament (?:violentă|nesportivă)|înlocuitorul este avertizată/u;
   for(const q of bank)for(const text of [q.questionRo,...Object.values(q.options)])assert.equal(invalid.test(text),false,`ID ${q.id}: ${text}`);
+});
+test('Previously saved shuffled sessions receive spelling fixes without losing answers',()=>{
+  const q={...bank[0],questionRo:'Comportament nesportiv.',options:{A:'Lovitură de poartă acordatăă echipei B.',B:'Comportament violentă.',C:'CG.',D:'CR.'},correctOption:'A'};
+  const saved={mode:'practice',questions:[q],answers:{[q.id]:'A'},index:0,startedAt:Date.now()};
+  const repaired=repairSavedSession(saved);
+  assert.equal(repaired.questions[0].options.A,'Lovitură de poartă acordată echipei B.');
+  assert.equal(repaired.questions[0].options.B,'Comportament violent.');
+  assert.deepEqual(repaired.answers,saved.answers);
+  assert.equal(repaired.questions[0].correctOption,'A');
+  assert.equal(saved.questions[0].options.A,'Lovitură de poartă acordatăă echipei B.');
 });

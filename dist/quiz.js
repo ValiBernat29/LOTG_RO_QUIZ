@@ -55,3 +55,14 @@ export function validSession(value) {
     value.answers && typeof value.answers === 'object' && Number.isFinite(value.startedAt) &&
     (value.mode !== 'exam' || Number.isFinite(value.deadline));
 }
+export function repairSavedSession(value) {
+  if (!validSession(value)) return value;
+  const repair = text => text.replace(/acordatăă/giu, word => word.slice(0, -1))
+    .replace(/(comportament) violentă/giu, '$1 violent')
+    .replace(/(comportament) nesportivă/giu, '$1 nesportiv')
+    .replace(/(înlocuitorul este) avertizată/giu, '$1 avertizat');
+  return { ...value, questions: value.questions.map(q => ({ ...q,
+    questionRo: repair(q.questionRo),
+    options: Object.fromEntries(LETTERS.map(letter => [letter, repair(q.options[letter])]))
+  })) };
+}

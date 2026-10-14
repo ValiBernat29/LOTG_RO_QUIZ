@@ -1,4 +1,4 @@
-import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, safeSource, validSession, examDurationMs } from './quiz.js';
+import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, safeSource, validSession, examDurationMs, repairSavedSession } from './quiz.js';
 const app = document.querySelector('#app');
 const prefix = 'lotg.quiz.v1.';
 let data = [], session = null, selected = new Set(Object.keys(LAW_NAMES).map(Number));
@@ -7,7 +7,7 @@ let timer, toastTimer, modalOpen = false, storageWarning = false;
 const esc = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = time => new Intl.DateTimeFormat('ro-RO', { day:'numeric', month:'long', year:'numeric' }).format(time);
 const examMinutes = questions => new Intl.NumberFormat('ro-RO').format(examDurationMs(questions) / 60000);
-const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(prefix + key)) ?? fallback; } catch { return fallback; } };
+const read = (key, fallback) => { try { return repairSavedSession(JSON.parse(localStorage.getItem(prefix + key)) ?? fallback); } catch { return fallback; } };
 const save = (key, value) => { try { localStorage.setItem(prefix + key, JSON.stringify(value)); } catch { if (!storageWarning) { storageWarning = true; toast('Browserul nu permite salvarea progresului. Poți continua sesiunea.'); } } };
 const remove = key => { try { localStorage.removeItem(prefix + key); } catch {} };
 const history = () => { const value = read('history', []); return Array.isArray(value) ? value.filter(v => v && Number.isFinite(v.total) && Number.isFinite(v.correct) && Number.isFinite(v.finishedAt) && ['practice','exam'].includes(v.mode)) : []; };
