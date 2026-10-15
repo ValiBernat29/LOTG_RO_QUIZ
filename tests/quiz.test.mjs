@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { prepareQuestions, score, safeSource, validSession, uniqueQuestions, examDurationMs, repairSavedSession, cleanRomanianText } from '../dist/quiz.js';
-import { showConfirmation } from '../dist/modal.js';
+import { showConfirmation, showInformation } from '../dist/modal.js';
 const bank=JSON.parse(await readFile(new URL('../dist/questions.json',import.meta.url),'utf8'));
 test('Every shuffled answer key still identifies the original correct decision',()=>{
   const prepared=prepareQuestions(bank,bank.length,()=>.13);
@@ -68,7 +68,7 @@ test('Saved wording is repaired independently of shuffled letters, including the
 
 // A small dialog host tests our event wiring; native focus/inert/layout behavior
 // still requires browser QA and is not simulated here.
-function modalHost() {
+function modalHost(information=false) {
   const elements=new Map(), handlers=new Map();
   const before={isConnected:true,focus(){this.focused=true;}};
   const dialog={
@@ -83,7 +83,8 @@ function modalHost() {
   };
   const doc={activeElement:before,createElement(){return dialog;},body:{append(){}}};
   let confirmed=0,closed=0;
-  showConfirmation({title:'Sesiune nouă?',text:'Se înlocuiește sesiunea.',confirmLabel:'Începe',onConfirm(){confirmed++;},onClose(){closed++;}},doc);
+  if(information)showInformation({title:'Explicația din Legile Jocului',html:'<p>Pasaj în română.</p>',onClose(){closed++;}},doc);
+  else showConfirmation({title:'Sesiune nouă?',text:'Se înlocuiește sesiunea.',confirmLabel:'Începe',onConfirm(){confirmed++;},onClose(){closed++;}},doc);
   return {dialog,before,handlers,counts:()=>({confirmed,closed})};
 }
 test('Dialog cancellation via button, close icon and Escape never confirms replacement',()=>{
@@ -108,4 +109,12 @@ test('Only an outside gesture dismisses the dialog; confirmation fires once',()=
 });
 test('Programmatic dismissal does not replace the running session',()=>{
   const host=modalHost();host.dialog.close();assert.deepEqual(host.counts(),{confirmed:0,closed:1});
+});
+test('The information modal reuses dismissal and focus restoration without a confirmation action',()=>{
+  const host=modalHost(true);
+  assert.equal(host.dialog.className,'modal law-modal');
+  assert.equal(host.dialog.querySelector('#modal-title').textContent,'Explicația din Legile Jocului');
+  assert.equal(host.dialog.querySelector('.modal-body').innerHTML,'<p>Pasaj în română.</p>');
+  host.dialog.querySelector('.modal-close').onclick();
+  assert.deepEqual(host.counts(),{confirmed:0,closed:1});assert.equal(host.before.focused,true);
 });

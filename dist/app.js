@@ -1,10 +1,12 @@
-import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, safeSource, validSession, examDurationMs, repairSavedSession } from './quiz.js';
-import { showConfirmation } from './modal.js';
+import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, validSession, examDurationMs, repairSavedSession } from './quiz.js';
+import { showConfirmation, showInformation } from './modal.js';
+import { createLawLoader, renderLawExplanation, explainableQuestion } from './laws-ro.js';
 const app = document.querySelector('#app');
 const prefix = 'lotg.quiz.v1.';
 let data = [], session = null, selected = new Set(Object.keys(LAW_NAMES).map(Number));
 let mode = 'practice', count = 20, view = 'home', draft = null, reviewWrong = false, result = null;
 let timer, toastTimer, modalOpen = false, storageWarning = false, activeModal = null;
+const loadLawLibrary = createLawLoader();
 const esc = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = time => new Intl.DateTimeFormat('ro-RO', { day:'numeric', month:'long', year:'numeric' }).format(time);
 const examMinutes = questions => new Intl.NumberFormat('ro-RO').format(examDurationMs(questions) / 60000);
@@ -62,11 +64,11 @@ function renderQuiz() {
   const q = session.questions[session.index], summary = score(session), answer = session.answers[q.id];
   const checked = session.mode === 'practice' && !!answer;
   const picked = session.mode === 'exam' ? answer : (draft ?? answer);
-  const correct = answer === q.correctOption, marked = session.flags.includes(q.id), source = safeSource(q.sourceUrl);
+  const correct = answer === q.correctOption, marked = session.flags.includes(q.id);
   app.innerHTML = `<div class="quiz-heading"><div><div class="eyebrow">${session.mode === 'exam' ? 'SIMULARE EXAMEN' : 'ANTRENAMENT ÎN DESFĂȘURARE'}</div><h1>Care este decizia ta?</h1><p>${session.questions.length} situații de joc · ${session.mode === 'exam' ? 'Corectare la final' : 'Corectare după fiecare răspuns'}</p></div><span class="time-chip" id="timer" aria-label="${session.mode === 'exam' ? 'Timp rămas' : 'Timp parcurs'}">00:00</span></div>
     <div class="quiz-grid"><section class="card question-card"><div class="question-meta"><button class="bookmark ${marked ? 'marked' : ''}" data-action="flag" aria-pressed="${marked}">${marked ? '★ Marcată' : '☆ Marchează'}</button></div><div class="question-number">ÎNTREBAREA ${session.index + 1} DIN ${session.questions.length}</div><h2 class="question-text" tabindex="-1">${esc(q.questionRo)}</h2>
     <div class="options" role="group" aria-label="Variante de răspuns">${LETTERS.map(letter => `<button class="option ${picked === letter ? 'selected' : ''} ${checked && letter === q.correctOption ? 'correct' : ''} ${checked && letter === answer && !correct ? 'incorrect' : ''}" data-answer="${letter}" aria-pressed="${picked === letter}" ${checked ? 'disabled' : ''}><span class="option-letter">${letter}</span><span>${esc(q.options[letter])}</span></button>`).join('')}</div>
-    ${checked ? `<div class="feedback ${correct ? '' : 'error'}" role="status"><strong>${correct ? '✓ Ai luat decizia corectă.' : 'Mai exersăm această situație.'}</strong>${correct ? 'Răspunsul tău corespunde deciziei corecte.' : `Răspunsul corect este ${q.correctOption}: ${esc(q.options[q.correctOption])}`}${source ? `<br><a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Consultă legea pe site-ul IFAB ↗</a>` : ''}</div>` : ''}
+    ${checked ? `<div class="feedback ${correct ? '' : 'error'}" role="status"><strong>${correct ? '✓ Ai luat decizia corectă.' : 'Mai exersăm această situație.'}</strong>${correct ? 'Răspunsul tău corespunde deciziei corecte.' : `Răspunsul corect este ${q.correctOption}: ${esc(q.options[q.correctOption])}`}<br><button class="law-help-button" type="button" data-explanation="${q.id}">Vezi explicația din Legile Jocului</button></div>` : ''}
     <div class="question-actions"><button class="secondary" data-action="previous" ${session.index ? '' : 'disabled'}>← Înapoi</button>${session.mode === 'practice' && !checked ? `<button class="primary" data-action="verify" ${draft ? '' : 'disabled'}>Verifică răspunsul <span>✓</span></button>` : `<button class="primary" data-action="next">${session.index === session.questions.length - 1 ? 'Vezi rezultatul' : 'Următoarea întrebare'} <span>→</span></button>`}</div><div class="keyboard-note"><span class="key">1</span>–<span class="key">4</span> pentru răspuns · <span class="key">Enter</span> pentru a continua</div></section>
     <aside><section class="card progress-card"><h3>Progresul sesiunii</h3><div class="progress-label"><span>${summary.answered} răspunsuri</span><span>${Math.round(summary.answered/summary.total*100)}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${summary.answered/summary.total*100}%"></div></div><div class="question-grid" aria-label="Navigare între întrebări">${session.questions.map((item,i) => {const a=session.answers[item.id];return `<button class="question-dot ${i === session.index ? 'current' : ''} ${a ? 'answered' : ''} ${session.mode === 'practice' && a ? a === item.correctOption ? 'right' : 'wrong' : ''} ${session.flags.includes(item.id) ? 'flagged' : ''}" data-index="${i}" ${i === session.index ? 'aria-current="step"' : ''} aria-label="Întrebarea ${i+1}${a ? ', răspuns înregistrat' : ', fără răspuns'}${session.flags.includes(item.id) ? ', marcată' : ''}">${i+1}</button>`;}).join('')}</div><div class="legend"><span><i></i>Răspuns</span><span><i class="empty"></i>De parcurs</span><span><i class="flagged"></i>Marcată</span></div><button class="secondary wide" data-action="finish">Încheie sesiunea</button><button class="text-button" style="margin-top:16px;width:100%" data-action="home">Revino la antrenament</button></section></aside></div>`;
   updateTimer();
@@ -114,12 +116,35 @@ function confirmAction(title,text,label,action) {
   });
 }
 function closeModal() { activeModal?.close(); }
+function openLawExplanation(id) {
+  const q = explainableQuestion(view, session, result, id);
+  if (modalOpen || !q) return;
+  modalOpen = true;
+  const dialog = showInformation({
+    title: 'Explicația din Legile Jocului', html: '<p>Se încarcă pasajul din regulament…</p>',
+    onClose: () => { modalOpen = false; activeModal = null; }
+  });
+  activeModal = dialog;
+  const load = async () => {
+    const body = dialog.querySelector('.modal-body');
+    body.innerHTML = '<p>Se încarcă pasajul din regulament…</p>';
+    try {
+      const library = await loadLawLibrary();
+      if (dialog.open) body.innerHTML = renderLawExplanation(library, q);
+    } catch {
+      if (!dialog.open) return;
+      body.innerHTML = '<p>Nu am putut încărca regulamentul. Sesiunea și răspunsurile tale sunt păstrate.</p><button class="secondary law-retry" type="button">Reîncearcă</button>';
+      body.querySelector('.law-retry').onclick = load;
+    }
+  };
+  load();
+}
 function renderResult() {
   if (!result) { setView('home'); return; }
   const summary=score(result), missing=summary.total-summary.answered;
   const mistakes=result.questions.filter(q=>result.answers[q.id]!==q.correctOption);
   const list=reviewWrong ? mistakes : result.questions;
-  app.innerHTML=`<div class="headline"><div><div class="eyebrow">SESIUNE FINALIZATĂ</div><h1>Încă un pas înainte.</h1><p class="intro">${result.mode === 'exam' ? 'Simulare examen' : 'Antrenament'} · ${esc(date(result.finishedAt))}${result.expired ? ' · Timp expirat' : ''}</p></div></div><section class="result-hero"><div class="score-ring"><strong>${summary.percent}%</strong><small>RĂSPUNSURI CORECTE</small></div><div><h2>${summary.percent >= 80 ? 'Bine pregătit pentru teren.' : 'Fiecare greșeală e o lecție.'}</h2><p>${summary.correct} răspunsuri corecte din ${summary.total}.<br>${summary.answered-summary.correct} greșite${missing ? ` · ${missing} fără răspuns` : ''}.</p><button class="primary" data-action="home">Un nou antrenament ↗</button></div></section><div class="result-actions"><button class="secondary" data-action="retry" ${mistakes.length ? '' : 'disabled'}>↻ Exersează situațiile greșite</button><button class="secondary" data-action="history">Vezi istoricul →</button></div><div class="section-title"><h2>Revizuiește deciziile</h2><label class="review-filter"><input type="checkbox" id="review-wrong" ${reviewWrong ? 'checked' : ''}> Doar greșite / necompletate</label></div>${list.length ? list.map(q=>{const a=result.answers[q.id],right=a===q.correctOption,source=safeSource(q.sourceUrl);return `<details class="review-item"><summary><span class="review-status ${right?'':a?'wrong':'empty'}">${right?'Corect':a?'Greșit':'Fără răspuns'}</span><span>${esc(q.questionRo)}</span></summary><div class="review-answer">${a?`<p class="${right?'right-answer':'wrong-answer'}"><strong>Răspunsul tău:</strong> ${a}. ${esc(q.options[a])}</p>`:'<p>Nu ai selectat un răspuns.</p>'}<p class="right-answer"><strong>Decizia corectă:</strong> ${q.correctOption}. ${esc(q.options[q.correctOption])}</p>${source?`<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Legea ${q.lawNumber} pe site-ul IFAB ↗</a>`:''}</div></details>`;}).join(''):'<div class="empty-state"><h2>Toate deciziile sunt corecte.</h2><p>Poți începe un nou antrenament.</p></div>'}`;
+  app.innerHTML=`<div class="headline"><div><div class="eyebrow">SESIUNE FINALIZATĂ</div><h1>Încă un pas înainte.</h1><p class="intro">${result.mode === 'exam' ? 'Simulare examen' : 'Antrenament'} · ${esc(date(result.finishedAt))}${result.expired ? ' · Timp expirat' : ''}</p></div></div><section class="result-hero"><div class="score-ring"><strong>${summary.percent}%</strong><small>RĂSPUNSURI CORECTE</small></div><div><h2>${summary.percent >= 80 ? 'Bine pregătit pentru teren.' : 'Fiecare greșeală e o lecție.'}</h2><p>${summary.correct} răspunsuri corecte din ${summary.total}.<br>${summary.answered-summary.correct} greșite${missing ? ` · ${missing} fără răspuns` : ''}.</p><button class="primary" data-action="home">Un nou antrenament ↗</button></div></section><div class="result-actions"><button class="secondary" data-action="retry" ${mistakes.length ? '' : 'disabled'}>↻ Exersează situațiile greșite</button><button class="secondary" data-action="history">Vezi istoricul →</button></div><div class="section-title"><h2>Revizuiește deciziile</h2><label class="review-filter"><input type="checkbox" id="review-wrong" ${reviewWrong ? 'checked' : ''}> Doar greșite / necompletate</label></div>${list.length ? list.map(q=>{const a=result.answers[q.id],right=a===q.correctOption;return `<details class="review-item"><summary><span class="review-status ${right?'':a?'wrong':'empty'}">${right?'Corect':a?'Greșit':'Fără răspuns'}</span><span>${esc(q.questionRo)}</span></summary><div class="review-answer">${a?`<p class="${right?'right-answer':'wrong-answer'}"><strong>Răspunsul tău:</strong> ${a}. ${esc(q.options[a])}</p>`:'<p>Nu ai selectat un răspuns.</p>'}<p class="right-answer"><strong>Decizia corectă:</strong> ${q.correctOption}. ${esc(q.options[q.correctOption])}</p><button class="law-help-button" type="button" data-explanation="${q.id}">Vezi explicația din Legile Jocului</button></div></details>`;}).join(''):'<div class="empty-state"><h2>Toate deciziile sunt corecte.</h2><p>Poți începe un nou antrenament.</p></div>'}`;
 }
 function retry() {
   const wrong=result.questions.filter(q=>result.answers[q.id]!==q.correctOption);
@@ -139,6 +164,7 @@ app.addEventListener('change',e=>{
 });
 app.addEventListener('click',e=>{
   const button=e.target.closest('button');if(!button||button.disabled)return;
+  if(button.dataset.explanation){openLawExplanation(+button.dataset.explanation);return;}
   if(button.dataset.mode){mode=button.dataset.mode;renderHome();return;}
   if(button.dataset.count){count=button.dataset.count==='all'?'all':+button.dataset.count;renderHome();return;}
   if(button.dataset.answer){pick(button.dataset.answer);return;}

@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "edition": "2025/26",
+  "sourceTitle": "Legile Jocului 2025/26 · ediția în limba română",
+  "sourceFile": "Laws of the Game 2025_26_Romanian.pdf",
+  "sourceSha256": "17f5d5d0fe1f6da2f84d406c64fa535c970b27cba8bd53126a890b53120dc314",
+  "excerpts": [
+    {
+      "id": "ball-damaged",
+      "law": 2,
+      "article": "2.2",
+      "title": "Înlocuirea unei mingi deteriorate",
+      "page": 52,
+      "text": "2. Înlocuirea unei mingi deteriorate Dacă mingea se deteriorează: • jocul este oprit și • reluat printr-o minge de arbitru. În cazul în care mingea se deteriorează la o lovitură de începere, lovitură de poartă, lovitură de colţ, lovitură liberă, lovitură de pedeapsă sau aruncare de la margine, jocul va fi reluat în mod corespunzător. În cazul în care mingea se deteriorează la o lovitură de pedeapsă sau la un penalty de departajare în timp ce se mişcă înspre înainte, anterior contactului cu un jucător, bara transversală sau stâlpii porţii, lovitura va fi repetată. Mingea nu poate fi schimbată în timpul meciului fără permisiunea arbitrului.",
+      "highlight": "Dacă mingea se deteriorează: • jocul este oprit și • reluat printr-o minge de arbitru."
+    },
+    {
+      "id": "advantage",
+      "law": 5,
+      "article": "5.3",
+      "title": "Avantaj",
+      "page": 72,
+      "text": "Avantaj • lasă jocul să continue dacă se produce o abatere, iar echipa împotriva căreia s-a comis abaterea poate beneficia de avantaj, respectiv sancționează abaterea în cazul în care consideră că avantajul anticipat nu apare imediat sau în câteva secunde.",
+      "highlight": "sancționează abaterea în cazul în care consideră că avantajul anticipat nu apare imediat sau în câteva secunde."
+    },
+    {
+      "id": "direct-free-kick",
+      "law": 12,
+      "article": "12.1",
+      "title": "Lovitura liberă directă · neglijență, imprudență și forță excesivă",
+      "page": 113,
+      "text": "1. Lovitura liberă directă Se acordă o lovitură liberă directă când arbitrul consideră că un jucător a comis una din următoarele abateri împotriva unui adversar din neglijență, imprudență sau utilizând forță excesivă: • atacă adversarul. • sare asupra unui adversar. • lovește sau încearcă să lovească adversarul cu piciorul. • împinge adversarul. • lovește sau încearcă să lovească adversarul (inclusiv cu capul). • atacă prin alunecare sau un mod de disputare a mingii. • pune piedică sau încearcă să pună piedică adversarului. În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă. • „neglijență” se referă la faptul că jucătorul manifestă lipsă de atenție sau de grijă în timpul disputării mingii sau acționează fără precauție. Nu este necesară aplicarea unei sancțiuni disciplinare. • „imprudență” se referă la faptul că jucătorul nu ține cont de pericolul pe care îl reprezintă acțiunea sa pentru adversar sau de consecințele acesteia asupra adversarului. Se sancționează cu avertisment. • „utilizarea forței excesive” se referă la faptul că jucătorul depășește limita necesară a folosirii forței și/sau pune în pericol integritatea corporală a adversarului. Se sancționează cu eliminare.",
+      "highlight": "În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă."
+    },
+    {
+      "id": "player-dissent",
+      "law": 12,
+      "article": "12.4",
+      "title": "Abateri sancționate cu avertisment",
+      "page": 119,
+      "text": "Abateri sancţionate cu avertisment Un jucător este avertizat dacă se face vinovat de una din următoarele abateri: • întârzie reluarea jocului. • protestează verbal sau prin gesturi. • intră, reintră sau iese în mod deliberat de pe terenul de joc, fără permisiunea arbitrului. • nu respectă distanța regulamentară la reluarea jocului printr-o minge de arbitru, lovitură de colț, lovitură liberă sau aruncare de la margine. • comite în mod repetat abateri („în mod repetat” nu implică o limită cu privire la numărul sau tipul abaterilor). • dă dovadă de comportament nesportiv. • intră în zona de analiză video pentru arbitru. • face uz excesiv de semnalul de solicitare a analizei video (ecran TV).",
+      "highlight": "• protestează verbal sau prin gesturi."
+    },
+    {
+      "id": "restart-unchanged",
+      "law": 12,
+      "article": "12.5",
+      "title": "Reluarea jocului după faulturi și comportament nesportiv",
+      "page": 126,
+      "text": "5. Reluarea jocului după faulturi şi comportament nesportiv Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară.",
+      "highlight": "Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+    },
+    {
+      "id": "unknown-official",
+      "law": 12,
+      "article": "12.4",
+      "title": "Oficialii echipelor · autor neidentificat",
+      "page": 124,
+      "text": "Oficialii echipelor În cazul în care se comite o abatere de către cineva din zona tehnică (înlocuitor, jucător înlocuit, jucător eliminat sau oficial al echipei), iar persoana vinovată de abatere nu poate fi identificată, va primi sancţiunea antrenorul principal prezent în suprafaţa tehnică.",
+      "highlight": "În cazul în care se comite o abatere de către cineva din zona tehnică (înlocuitor, jucător înlocuit, jucător eliminat sau oficial al echipei), iar persoana vinovată de abatere nu poate fi identificată, va primi sancţiunea antrenorul principal prezent în suprafaţa tehnică."
+    },
+    {
+      "id": "official-sending-off",
+      "law": 12,
+      "article": "12.4",
+      "title": "Oficialii echipelor · eliminare",
+      "page": 125,
+      "text": "Eliminare Abaterile sancționate cu eliminare includ (fără ca enumerarea să fie exhaustivă): • întârzierea reluării jocului de echipa adversă, de exemplu, ținerea mingii, degajarea mingii, obstrucționarea unui jucător. • părăsirea deliberată a suprafeței tehnice pentru: • a-și manifesta dezacordul sau a obiecta față de un oficial de meci. • a acționa de o manieră provocatoare sau instigatoare. • intrarea în suprafața tehnică a echipei adverse într-un mod agresiv sau conflictual. • aruncarea/lovirea cu piciorul în mod deliberat a unui obiect pe terenul de joc. • intrarea pe terenul de joc pentru: • a înfrunta un oficial de meci (inclusiv în pauza dintre reprize sau la sfârșitul meciului). • a interveni în joc, asupra unui jucător din echipa adversă sau asupra unui oficial de meci.",
+      "highlight": "• aruncarea/lovirea cu piciorul în mod deliberat a unui obiect pe terenul de joc."
+    },
+    {
+      "id": "no-offside-direct",
+      "law": 11,
+      "article": "11.3",
+      "title": "Situații neconsiderate abateri",
+      "page": 109,
+      "text": "3. Situaţii neconsiderate abateri Poziția de ofsaid nu este considerată abatere dacă jucătorul primește mingea direct: • dintr-o lovitură de poartă. • dintr-o aruncare de la margine. • dintr-o lovitură de colț.",
+      "highlight": "• dintr-o lovitură de poartă."
+    },
+    {
+      "id": "spa-caution",
+      "law": 12,
+      "article": "12.4",
+      "title": "Avertisment pentru comportament nesportiv · SPA",
+      "page": 120,
+      "text": "• comite orice altă abatere pentru a interveni într-un atac promițător sau a-l opri, în afară de cazul în care arbitrul acordă o lovitură de pedeapsă pentru o abatere comisă ca urmare a unei încercări de jucare a mingii sau un atac pentru a intra în posesia mingii.",
+      "highlight": "• comite orice altă abatere pentru a interveni într-un atac promițător sau a-l opri, în afară de cazul în care arbitrul acordă o lovitură de pedeapsă pentru o abatere comisă ca urmare a unei încercări de jucare a mingii sau un atac pentru a intra în posesia mingii."
+    },
+    {
+      "id": "dropped-ball",
+      "law": 8,
+      "article": "8.2",
+      "title": "Mingea de arbitru",
+      "page": 94,
+      "text": "2. Mingea de arbitru Procedura • dacă, în momentul opririi jocului: • mingea se afla în suprafața de pedeapsă, arbitrul acorda mingea de arbitru portarului echipei în apărare în suprafața sa de pedeapsă. • dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului. • toți ceilalți jucători (din ambele echipe) trebuie să rămână la minimum 4 m (4,5 yds) de minge până când aceasta este în joc. Mingea este în joc în momentul în care atinge solul. Abateri şi sancţiuni Mingea de arbitru se repetă dacă: • atinge un jucător înainte de a atinge solul. • iese de pe terenul de joc după ce atinge solul, fără să fi fost atinsă de un jucător. În cazul în care o minge de arbitru intră în poartă fără să fi atins cel puţin doi jucători, jocul este reluat prin: • lovitură de poartă dacă intră în poarta echipei adverse. • lovitură de colț dacă intră în poarta echipei proprii.",
+      "highlight": "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+    },
+    {
+      "id": "ball-out",
+      "law": 9,
+      "article": "9.1",
+      "title": "Mingea afară din joc",
+      "page": 97,
+      "text": "1. Mingea afară din joc Mingea este afară din joc când: • a depășit în întregime linia de poartă sau linia de margine, pe sol sau în aer. • jocul a fost oprit de arbitru. • atinge un oficial de meci, rămâne în terenul de joc și: • o echipă lansează un atac promițător sau • mingea intră direct în poartă sau • se schimbă echipa aflată în posesia mingii. În toate aceste situaţii, jocul este reluat cu o minge de arbitru.",
+      "highlight": "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+    },
+    {
+      "id": "ball-in",
+      "law": 9,
+      "article": "9.2",
+      "title": "Mingea în joc",
+      "page": 97,
+      "text": "2. Mingea în joc Mingea este în joc în orice alte cazuri când atinge un oficial de meci și când ricoșează după ce a atins un stâlp al porții, bara transversală sau un steag de la colțul terenului și rămâne pe terenul de joc.",
+      "highlight": "Mingea este în joc în orice alte cazuri când atinge un oficial de meci"
+    },
+    {
+      "id": "ball-clearly-leaving",
+      "law": 9,
+      "article": "9.2",
+      "title": "Atingerea mingii care urmează să părăsească terenul",
+      "page": 97,
+      "text": "Dacă, fără intenția de a interveni în mod incorect în joc, un oficial al echipei, un înlocuitor, un jucător înlocuit sau eliminat sau un jucător care se află temporar în afara terenului de joc (accidentare, aranjarea echipamentului etc.) atinge mingea în timp ce aceasta este încă în joc, dar când urmează să părăsească în mod clar terenul de joc, acest lucru se sancționează cu o lovitură liberă indirectă; nu există nicio sancțiune disciplinară.",
+      "highlight": "acest lucru se sancționează cu o lovitură liberă indirectă; nu există nicio sancțiune disciplinară."
+    }
+  ],
+  "references": [
+    {
+      "seedId": 9,
+      "questionRo": "Mingea se sparge în teren în timp ce ajunge la coechipierul căruia îi fusese pasată. Care este decizia arbitrului?",
+      "correctText": "Oprește jocul și înlocuiește mingea; îl reia cu minge de arbitru pentru echipa care ar fi păstrat posesia, din locul unde mingea s-a deteriorat.",
+      "excerpts": [
+        "ball-damaged",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 10,
+      "questionRo": "Un șut trece de portar, dar mingea se sparge în suprafața de poartă și rămâne în teren fără să intre în poartă. Care este decizia arbitrului?",
+      "correctText": "Mingea se schimbă; minge de arbitru pentru portar.",
+      "excerpts": [
+        "ball-damaged",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 96,
+      "questionRo": "Un jucător este atacat neglijent la mijlocul terenului. Arbitrul așteaptă un posibil avantaj, dar echipa jucătorului faultat pierde imediat mingea, iar un adversar o trimite în afara terenului. Care este decizia arbitrului?",
+      "correctText": "LLD de la locul atacului; avantajul nu s-a mai concretizat.",
+      "excerpts": [
+        "advantage",
+        "direct-free-kick"
+      ]
+    },
+    {
+      "seedId": 146,
+      "questionRo": "Un oficial al echipei aruncă deliberat o sticlă pe teren, dar autorul nu poate fi identificat. Care este decizia disciplinară?",
+      "correctText": "CR antrenorului principal prezent atunci în suprafața tehnică.",
+      "excerpts": [
+        "unknown-official",
+        "official-sending-off"
+      ]
+    },
+    {
+      "seedId": 201,
+      "questionRo": "Arbitrul a oprit jocul, a acordat echipei A o lovitură liberă directă și l-a avertizat pe adversar. Un jucător al echipei A cere gestual eliminarea adversarului. Care este decizia arbitrului?",
+      "correctText": "Avertisment (CG) pentru protest; se execută LLD acordată inițial echipei A.",
+      "excerpts": [
+        "player-dissent",
+        "restart-unchanged"
+      ]
+    },
+    {
+      "seedId": 272,
+      "questionRo": "Portarul execută o lovitură de poartă spre un coechipier aflat în poziție de ofsaid. Acesta controlează mingea și este apoi faultat neglijent de un apărător în afara suprafeței de pedeapsă, fiind oprit un atac promițător (SPA). Care este decizia arbitrului?",
+      "correctText": "LLD pentru echipa în atac și CG apărătorului pentru oprirea unui atac promițător (SPA).",
+      "excerpts": [
+        "no-offside-direct",
+        "direct-free-kick",
+        "spa-caution"
+      ]
+    },
+    {
+      "seedId": 210,
+      "questionRo": "Mingea atinge un oficial de meci în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa aflată în posesie se schimbă. Care este decizia arbitrului?",
+      "correctText": "Oprește jocul; minge de arbitru din locul contactului, pentru echipa care ar fi păstrat sau câștigat posesia; dacă nu se poate stabili, pentru echipa ultimei atingeri.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 212,
+      "questionRo": "Un jucător al echipei A joacă mingea, care atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa A începe astfel un atac promițător (SPA). Care este decizia arbitrului?",
+      "correctText": "Minge de arbitru din locul contactului, pentru echipa care ar fi păstrat sau câștigat posesia fără atingerea arbitrului.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 213,
+      "questionRo": "O pasă a echipei A spre un adversar ricoșează din arbitru la alt jucător al echipei A, care inițiază imediat un atac promițător. Arbitrul apreciază că echipa B ar fi câștigat posesia. Care este decizia arbitrului?",
+      "correctText": "Joc oprit; minge de arbitru pentru un jucător din B.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 214,
+      "questionRo": "După o lovitură de poartă a echipei A, mingea atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa B câștigă posesia. Unde se execută mingea de arbitru?",
+      "correctText": "Exact în locul unde mingea l-a atins pe arbitru.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 215,
+      "questionRo": "Mingea jucată de echipa A atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren și îi oferă echipei A un atac promițător (SPA). Cum se reia jocul?",
+      "correctText": "Minge de arbitru din locul contactului, pentru echipa care ar fi păstrat sau câștigat posesia fără atingerea arbitrului.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 216,
+      "questionRo": "O pasă a echipei A atinge arbitrul asistent aflat pe linia de margine. Fără acest contact, mingea ar fi ieșit pentru o aruncare de la margine în favoarea echipei B. Mingea rămâne pe teren și ajunge la un alt jucător al echipei A, care începe un atac promițător. Care este decizia arbitrului?",
+      "correctText": "Minge de arbitru pentru un jucător al echipei B, din locul unde mingea a atins arbitrul asistent.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    },
+    {
+      "seedId": 217,
+      "questionRo": "Mingea șutată de un atacant al echipei A iese clar spre lovitură de poartă. Înainte să iasă, un jucător înlocuitor al echipei B o oprește cu piciorul pe linia porții, fără intenția de a interveni neloial. Care este decizia arbitrului?",
+      "correctText": "Lovitură liberă indirectă pentru A, fără sancțiune disciplinară.",
+      "excerpts": [
+        "ball-clearly-leaving"
+      ]
+    },
+    {
+      "seedId": 218,
+      "questionRo": "Mingea se îndreaptă clar spre o aruncare de la margine pentru echipa A. Înainte să iasă, un oficial al echipei A o oprește lângă linie pentru a grăbi reluarea, fără intenția unei intervenții neloiale. Care este decizia, dacă nu a părăsit repetat suprafața tehnică?",
+      "correctText": "Lovitură liberă indirectă pentru B, fără sancțiune disciplinară.",
+      "excerpts": [
+        "ball-clearly-leaving"
+      ]
+    },
+    {
+      "seedId": 221,
+      "questionRo": "Un apărător trimite mingea în afara terenului pentru o lovitură de colț. Imediat după ieșirea mingii, un atacant îl atacă imprudent prin alunecare, lângă linia porții. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț și CG atacantului.",
+      "excerpts": [
+        "ball-out",
+        "direct-free-kick",
+        "restart-unchanged"
+      ]
+    },
+    {
+      "seedId": 223,
+      "questionRo": "După ce mingea, atinsă ultima dată de un atacant, a depășit linia de margine, un apărător îl atacă imprudent. Care este decizia arbitrului?",
+      "correctText": "Aruncare de la margine pentru echipa în apărare; CG apărătorului pentru atacul imprudent.",
+      "excerpts": [
+        "ball-out",
+        "direct-free-kick",
+        "restart-unchanged"
+      ]
+    },
+    {
+      "seedId": 224,
+      "questionRo": "După ce mingea depășește complet linia porții în afara cadrului, fără atingerea unui apărător, acesta atacă prin alunecare un adversar și îi pune în pericol integritatea fizică. Care este decizia arbitrului?",
+      "correctText": "Eliminare pentru apărător; reluare prin lovitură de poartă.",
+      "excerpts": [
+        "ball-out",
+        "direct-free-kick",
+        "restart-unchanged"
+      ]
+    },
+    {
+      "seedId": 225,
+      "questionRo": "Mingea atinge un arbitru asistent și rămâne pe teren. În ce situație poate arbitrul să permită continuarea jocului?",
+      "correctText": "Când contactul nu conduce direct la un gol, nu schimbă echipa aflată în posesie și nu inițiază un atac promițător.",
+      "excerpts": [
+        "ball-out",
+        "ball-in"
+      ]
+    },
+    {
+      "seedId": 227,
+      "questionRo": "În suprafața de pedeapsă, mingea atinge arbitrul, rămâne pe teren și intră direct în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; minge de arbitru pentru portarul echipei în apărare.",
+      "excerpts": [
+        "ball-out",
+        "dropped-ball"
+      ]
+    }
+  ]
+}

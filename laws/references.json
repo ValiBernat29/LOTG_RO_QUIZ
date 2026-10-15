@@ -1,0 +1,40 @@
+{
+  "edition": "2025/26",
+  "sourceTitle": "Legile Jocului 2025/26 · ediția în limba română",
+  "excerpts": [
+    {"id":"ball-damaged","law":2,"article":"2.2","title":"Înlocuirea unei mingi deteriorate","page":52,"start":"2. Înlocuirea unei mingi deteriorate","end":"3. Mingi suplimentare","highlight":"Dacă mingea se deteriorează: • jocul este oprit și • reluat printr-o minge de arbitru."},
+    {"id":"advantage","law":5,"article":"5.3","title":"Avantaj","page":72,"start":"Avantaj","end":"Sancţiuni disciplinare","highlight":"sancționează abaterea în cazul în care consideră că avantajul anticipat nu apare imediat sau în câteva secunde."},
+    {"id":"direct-free-kick","law":12,"article":"12.1","title":"Lovitura liberă directă · neglijență, imprudență și forță excesivă","page":113,"start":"1. Lovitura liberă directă","end":"Legile Jocului 2025/26","highlight":"În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă."},
+    {"id":"player-dissent","law":12,"article":"12.4","title":"Abateri sancționate cu avertisment","page":119,"start":"Abateri sancţionate cu avertisment","end":"Legile Jocului 2025/26","highlight":"• protestează verbal sau prin gesturi."},
+    {"id":"restart-unchanged","law":12,"article":"12.5","title":"Reluarea jocului după faulturi și comportament nesportiv","page":126,"start":"5. Reluarea jocului după faulturi şi comportament nesportiv","end":"Dacă mingea este în joc și un jucător","highlight":"Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."},
+    {"id":"unknown-official","law":12,"article":"12.4","title":"Oficialii echipelor · autor neidentificat","page":124,"start":"Oficialii echipelor","end":"Atenţionare","highlight":"În cazul în care se comite o abatere de către cineva din zona tehnică (înlocuitor, jucător înlocuit, jucător eliminat sau oficial al echipei), iar persoana vinovată de abatere nu poate fi identificată, va primi sancţiunea antrenorul principal prezent în suprafaţa tehnică."},
+    {"id":"official-sending-off","law":12,"article":"12.4","title":"Oficialii echipelor · eliminare","page":125,"start":"Eliminare","end":"Legile Jocului 2025/26","highlight":"• aruncarea/lovirea cu piciorul în mod deliberat a unui obiect pe terenul de joc."},
+    {"id":"no-offside-direct","law":11,"article":"11.3","title":"Situații neconsiderate abateri","page":109,"start":"3. Situaţii neconsiderate abateri","end":"4. Abateri şi sancţiuni","highlight":"• dintr-o lovitură de poartă."},
+    {"id":"spa-caution","law":12,"article":"12.4","title":"Avertisment pentru comportament nesportiv · SPA","page":120,"start":"• comite orice altă abatere pentru a interveni într-un atac promițător","end":"• împiedică o ocazie clară de înscriere a unui gol de către adversar, comiţând","highlight":"• comite orice altă abatere pentru a interveni într-un atac promițător sau a-l opri, în afară de cazul în care arbitrul acordă o lovitură de pedeapsă pentru o abatere comisă ca urmare a unei încercări de jucare a mingii sau un atac pentru a intra în posesia mingii."},
+    {"id":"dropped-ball","law":8,"article":"8.2","title":"Mingea de arbitru","page":94,"start":"2. Mingea de arbitru","highlight":"Mingea de arbitru se execută în locul în care se afla la oprirea jocului."},
+    {"id":"ball-out","law":9,"article":"9.1","title":"Mingea afară din joc","page":97,"start":"1. Mingea afară din joc","end":"2. Mingea în joc","highlight":"În toate aceste situaţii, jocul este reluat cu o minge de arbitru."},
+    {"id":"ball-in","law":9,"article":"9.2","title":"Mingea în joc","page":97,"start":"2. Mingea în joc","end":"Dacă, fără intenția de a interveni","highlight":"Mingea este în joc în orice alte cazuri când atinge un oficial de meci"},
+    {"id":"ball-clearly-leaving","law":9,"article":"9.2","title":"Atingerea mingii care urmează să părăsească terenul","page":97,"start":"Dacă, fără intenția de a interveni","highlight":"acest lucru se sancționează cu o lovitură liberă indirectă; nu există nicio sancțiune disciplinară."}
+  ],
+  "reviewedQuestions": [
+    {"id":9,"excerpts":["ball-damaged","dropped-ball"]},
+    {"id":10,"excerpts":["ball-damaged","dropped-ball"]},
+    {"id":96,"excerpts":["advantage","direct-free-kick"]},
+    {"id":146,"excerpts":["unknown-official","official-sending-off"]},
+    {"id":201,"excerpts":["player-dissent","restart-unchanged"]},
+    {"id":272,"excerpts":["no-offside-direct","direct-free-kick","spa-caution"]},
+    {"id":210,"excerpts":["ball-out","dropped-ball"]},
+    {"id":212,"excerpts":["ball-out","dropped-ball"]},
+    {"id":213,"excerpts":["ball-out","dropped-ball"]},
+    {"id":214,"excerpts":["ball-out","dropped-ball"]},
+    {"id":215,"excerpts":["ball-out","dropped-ball"]},
+    {"id":216,"excerpts":["ball-out","dropped-ball"]},
+    {"id":217,"excerpts":["ball-clearly-leaving"]},
+    {"id":218,"excerpts":["ball-clearly-leaving"]},
+    {"id":221,"excerpts":["ball-out","direct-free-kick","restart-unchanged"]},
+    {"id":223,"excerpts":["ball-out","direct-free-kick","restart-unchanged"]},
+    {"id":224,"excerpts":["ball-out","direct-free-kick","restart-unchanged"]},
+    {"id":225,"excerpts":["ball-out","ball-in"]},
+    {"id":227,"excerpts":["ball-out","dropped-ball"]}
+  ]
+}
