@@ -1,9 +1,10 @@
 import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, safeSource, validSession, examDurationMs, repairSavedSession } from './quiz.js';
+import { showConfirmation } from './modal.js';
 const app = document.querySelector('#app');
 const prefix = 'lotg.quiz.v1.';
 let data = [], session = null, selected = new Set(Object.keys(LAW_NAMES).map(Number));
 let mode = 'practice', count = 20, view = 'home', draft = null, reviewWrong = false, result = null;
-let timer, toastTimer, modalOpen = false, storageWarning = false;
+let timer, toastTimer, modalOpen = false, storageWarning = false, activeModal = null;
 const esc = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = time => new Intl.DateTimeFormat('ro-RO', { day:'numeric', month:'long', year:'numeric' }).format(time);
 const examMinutes = questions => new Intl.NumberFormat('ro-RO').format(examDurationMs(questions) / 60000);
@@ -63,11 +64,11 @@ function renderQuiz() {
   const picked = session.mode === 'exam' ? answer : (draft ?? answer);
   const correct = answer === q.correctOption, marked = session.flags.includes(q.id), source = safeSource(q.sourceUrl);
   app.innerHTML = `<div class="quiz-heading"><div><div class="eyebrow">${session.mode === 'exam' ? 'SIMULARE EXAMEN' : 'ANTRENAMENT ÎN DESFĂȘURARE'}</div><h1>Care este decizia ta?</h1><p>${session.questions.length} situații de joc · ${session.mode === 'exam' ? 'Corectare la final' : 'Corectare după fiecare răspuns'}</p></div><span class="time-chip" id="timer" aria-label="${session.mode === 'exam' ? 'Timp rămas' : 'Timp parcurs'}">00:00</span></div>
-    <div class="quiz-grid"><section class="card question-card"><div class="question-meta"><span class="law-tag">Legea ${q.lawNumber} · ${esc(LAW_NAMES[q.lawNumber])}</span><button class="bookmark ${marked ? 'marked' : ''}" data-action="flag" aria-pressed="${marked}">${marked ? '★ Marcată' : '☆ Marchează'}</button></div><div class="question-number">ÎNTREBAREA ${session.index + 1} DIN ${session.questions.length}</div><h2 class="question-text" tabindex="-1">${esc(q.questionRo)}</h2>
+    <div class="quiz-grid"><section class="card question-card"><div class="question-meta"><button class="bookmark ${marked ? 'marked' : ''}" data-action="flag" aria-pressed="${marked}">${marked ? '★ Marcată' : '☆ Marchează'}</button></div><div class="question-number">ÎNTREBAREA ${session.index + 1} DIN ${session.questions.length}</div><h2 class="question-text" tabindex="-1">${esc(q.questionRo)}</h2>
     <div class="options" role="group" aria-label="Variante de răspuns">${LETTERS.map(letter => `<button class="option ${picked === letter ? 'selected' : ''} ${checked && letter === q.correctOption ? 'correct' : ''} ${checked && letter === answer && !correct ? 'incorrect' : ''}" data-answer="${letter}" aria-pressed="${picked === letter}" ${checked ? 'disabled' : ''}><span class="option-letter">${letter}</span><span>${esc(q.options[letter])}</span></button>`).join('')}</div>
     ${checked ? `<div class="feedback ${correct ? '' : 'error'}" role="status"><strong>${correct ? '✓ Ai luat decizia corectă.' : 'Mai exersăm această situație.'}</strong>${correct ? 'Răspunsul tău corespunde deciziei corecte.' : `Răspunsul corect este ${q.correctOption}: ${esc(q.options[q.correctOption])}`}${source ? `<br><a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Consultă legea pe site-ul IFAB ↗</a>` : ''}</div>` : ''}
     <div class="question-actions"><button class="secondary" data-action="previous" ${session.index ? '' : 'disabled'}>← Înapoi</button>${session.mode === 'practice' && !checked ? `<button class="primary" data-action="verify" ${draft ? '' : 'disabled'}>Verifică răspunsul <span>✓</span></button>` : `<button class="primary" data-action="next">${session.index === session.questions.length - 1 ? 'Vezi rezultatul' : 'Următoarea întrebare'} <span>→</span></button>`}</div><div class="keyboard-note"><span class="key">1</span>–<span class="key">4</span> pentru răspuns · <span class="key">Enter</span> pentru a continua</div></section>
-    <aside><section class="card progress-card"><h3>Progresul sesiunii</h3><div class="progress-label"><span>${summary.answered} răspunsuri</span><span>${Math.round(summary.answered/summary.total*100)}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${summary.answered/summary.total*100}%"></div></div><div class="question-grid" aria-label="Navigare între întrebări">${session.questions.map((item,i) => {const a=session.answers[item.id];return `<button class="question-dot ${i === session.index ? 'current' : ''} ${a ? 'answered' : ''} ${session.mode === 'practice' && a ? a === item.correctOption ? 'right' : 'wrong' : ''} ${session.flags.includes(item.id) ? 'flagged' : ''}" data-index="${i}" ${i === session.index ? 'aria-current="step"' : ''} aria-label="Întrebarea ${i+1}${a ? ', răspuns înregistrat' : ', fără răspuns'}${session.flags.includes(item.id) ? ', marcată' : ''}">${i+1}</button>`;}).join('')}</div><div class="legend"><span><i></i>Răspuns</span><span><i class="empty"></i>De parcurs</span><span><i class="flagged"></i>Marcată</span></div><button class="secondary wide" data-action="finish">Încheie sesiunea</button><button class="text-button" style="margin-top:16px;width:100%" data-action="home">Revino la antrenament</button></section><section class="card glossary"><div class="card-heading">REPERE PENTRU ARBITRI</div><dl><dt>SPA</dt><dd>Oprirea unui atac promițător.</dd><dt>DOGSO</dt><dd>Împiedicarea unui gol sau a unei ocazii clare de gol.</dd></dl></section></aside></div>`;
+    <aside><section class="card progress-card"><h3>Progresul sesiunii</h3><div class="progress-label"><span>${summary.answered} răspunsuri</span><span>${Math.round(summary.answered/summary.total*100)}%</span></div><div class="progress-bar"><div class="progress-fill" style="width:${summary.answered/summary.total*100}%"></div></div><div class="question-grid" aria-label="Navigare între întrebări">${session.questions.map((item,i) => {const a=session.answers[item.id];return `<button class="question-dot ${i === session.index ? 'current' : ''} ${a ? 'answered' : ''} ${session.mode === 'practice' && a ? a === item.correctOption ? 'right' : 'wrong' : ''} ${session.flags.includes(item.id) ? 'flagged' : ''}" data-index="${i}" ${i === session.index ? 'aria-current="step"' : ''} aria-label="Întrebarea ${i+1}${a ? ', răspuns înregistrat' : ', fără răspuns'}${session.flags.includes(item.id) ? ', marcată' : ''}">${i+1}</button>`;}).join('')}</div><div class="legend"><span><i></i>Răspuns</span><span><i class="empty"></i>De parcurs</span><span><i class="flagged"></i>Marcată</span></div><button class="secondary wide" data-action="finish">Încheie sesiunea</button><button class="text-button" style="margin-top:16px;width:100%" data-action="home">Revino la antrenament</button></section></aside></div>`;
   updateTimer();
 }
 function pick(letter) {
@@ -105,17 +106,14 @@ function requestFinish() {
   confirmAction('Închei sesiunea?', `Ai ${unanswered} ${unanswered === 1 ? 'întrebare fără răspuns' : 'întrebări fără răspuns'}. Acestea vor fi incluse în rezultat ca necompletate.`, 'Vezi rezultatul', () => finish());
 }
 function confirmAction(title,text,label,action) {
-  if (modalOpen) return; modalOpen=true;
-  const before=document.activeElement;
-  const backdrop=document.createElement('div'); backdrop.className='modal-backdrop';
-  backdrop.innerHTML=`<section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description"><h2 id="modal-title">${esc(title)}</h2><p id="modal-description">${esc(text)}</p><div class="modal-actions"><button class="secondary" data-modal="cancel">Continuă sesiunea</button><button class="primary" data-modal="accept">${esc(label)}</button></div></section>`;
-  document.body.append(backdrop);
-  backdrop.querySelector('[data-modal="cancel"]').onclick=()=>{closeModal();before?.focus();};
-  backdrop.querySelector('[data-modal="accept"]').onclick=()=>{closeModal();action();};
-  backdrop.querySelector('button').focus();
-  backdrop.onkeydown=e=>{if(e.key==='Escape'){closeModal();before?.focus();}if(e.key==='Tab'){e.preventDefault();const buttons=[...backdrop.querySelectorAll('button')];buttons[(buttons.indexOf(document.activeElement)+(e.shiftKey?-1:1)+buttons.length)%buttons.length].focus();}};
+  if (modalOpen) return;
+  modalOpen = true;
+  activeModal = showConfirmation({
+    title, text, confirmLabel: label, onConfirm: action,
+    onClose: () => { modalOpen = false; activeModal = null; }
+  });
 }
-function closeModal() { document.querySelector('.modal-backdrop')?.remove(); modalOpen=false; }
+function closeModal() { activeModal?.close(); }
 function renderResult() {
   if (!result) { setView('home'); return; }
   const summary=score(result), missing=summary.total-summary.answered;

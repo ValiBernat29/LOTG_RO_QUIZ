@@ -55,14 +55,22 @@ export function validSession(value) {
     value.answers && typeof value.answers === 'object' && Number.isFinite(value.startedAt) &&
     (value.mode !== 'exam' || Number.isFinite(value.deadline));
 }
-export function repairSavedSession(value) {
-  if (!validSession(value)) return value;
-  const repair = text => text.replace(/acordatăă/giu, word => word.slice(0, -1))
+export function cleanRomanianText(text) {
+  return text.replace(/acordatăă/giu, word => word.slice(0, -1))
     .replace(/(comportament) violentă/giu, '$1 violent')
     .replace(/(comportament) nesportivă/giu, '$1 nesportiv')
-    .replace(/(înlocuitorul este) avertizată/giu, '$1 avertizat');
+    .replace(/(înlocuitorul este) avertizată/giu, '$1 avertizat')
+    .replace(/Nicio sancțiune suplimentară/gu, 'Nicio sancțiune disciplinară')
+    .replace(/fără sancțiune disciplinară suplimentară/gu, 'fără sancțiune disciplinară')
+    .replace(/(avantajul(?: așteptat)? nu s-a mai concretizat) deloc/gu, '$1')
+    .replace(/Nicio sancțiune individuală; incidentul se menționează doar în raport/gu,
+      'Nicio sancțiune disciplinară; incidentul se menționează în raport');
+}
+export function repairSavedSession(value) {
+  if (!validSession(value)) return value;
   return { ...value, questions: value.questions.map(q => ({ ...q,
-    questionRo: repair(q.questionRo),
-    options: Object.fromEntries(LETTERS.map(letter => [letter, repair(q.options[letter])]))
+    questionRo: cleanRomanianText(q.questionRo),
+    options: Object.fromEntries(LETTERS.map(letter => [letter, cleanRomanianText(q.options[letter])])),
+    ...(typeof q.correctText === 'string' ? {correctText: cleanRomanianText(q.correctText)} : {})
   })) };
 }
