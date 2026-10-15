@@ -65,6 +65,18 @@ test('Saved wording is repaired independently of shuffled letters, including the
   assert.equal(repaired.questions[0].correctOption,'D');assert.equal(repaired.startedAt,123);
   assert.deepEqual(repairSavedSession(repaired),repaired);
 });
+test('Referee decisions use the active voice in the bank and in saved shuffled sessions',()=>{
+  for(const q of bank)for(const text of Object.values(q.options))assert.equal(/^Joc oprit\b/u.test(text),false);
+  assert.equal(cleanRomanianText('Joc oprit; minge de arbitru pentru B.'),'Oprește jocul; minge de arbitru pentru B.');
+  assert.equal(cleanRomanianText('Joc oprit imediat, apoi CG.'),'Oprește jocul imediat, apoi CG.');
+  assert.equal(cleanRomanianText('Dacă jocul este oprit, se menține decizia.'),'Dacă jocul este oprit, se menține decizia.');
+  const question={...bank[0],options:{A:'Joc oprit; minge de arbitru pentru B.',B:'Joc oprit; minge de arbitru pentru A.',C:'LLI.',D:'Jocul continuă.'},correctOption:'A',correctText:'Joc oprit; minge de arbitru pentru B.'};
+  const saved={mode:'practice',questions:[question],answers:{[question.id]:'B'},index:0,startedAt:123};
+  const repaired=repairSavedSession(saved);
+  assert.equal(repaired.questions[0].options.A,'Oprește jocul; minge de arbitru pentru B.');
+  assert.equal(repaired.questions[0].correctText,repaired.questions[0].options.A);
+  assert.deepEqual(repaired.answers,saved.answers);assert.equal(repaired.questions[0].correctOption,'A');
+});
 
 // A small dialog host tests our event wiring; native focus/inert/layout behavior
 // still requires browser QA and is not simulated here.

@@ -52,6 +52,7 @@ for association in definitions["reviewedQuestions"]:
                        "passages": passages})
 
 output = {"schemaVersion": 2, "edition": definitions["edition"],
+          "revisionLabel": definitions["revisionLabel"],
           "sourceTitle": definitions["sourceTitle"], "sourceFile": source.name,
           "sourceSha256": hashlib.sha256(source.read_bytes()).hexdigest(),
           "excerpts": excerpts, "references": references}

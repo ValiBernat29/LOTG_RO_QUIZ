@@ -197,8 +197,7 @@
           "id": "dropped-ball",
           "justifies": "Echipa beneficiară și locul reluării",
           "highlights": [
-            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
-            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
           ]
         }
       ]
@@ -327,9 +326,7 @@
           "id": "dropped-ball",
           "justifies": "Echipa beneficiară, alternativa ultimei atingeri și locul reluării",
           "highlights": [
-            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
-            "în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată.",
-            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
           ]
         }
       ]
@@ -349,8 +346,7 @@
           "id": "dropped-ball",
           "justifies": "Echipa beneficiară și locul reluării",
           "highlights": [
-            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
-            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
           ]
         }
       ]
@@ -370,7 +366,7 @@
           "id": "dropped-ball",
           "justifies": "Minge de arbitru pentru B, echipa care ar fi intrat în posesie",
           "highlights": [
-            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;"
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
           ]
         }
       ]
@@ -402,8 +398,7 @@
           "id": "dropped-ball",
           "justifies": "Echipa beneficiară și locul reluării",
           "highlights": [
-            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
-            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
           ]
         }
       ]
@@ -423,8 +418,7 @@
           "id": "dropped-ball",
           "justifies": "Minge de arbitru pentru B, din locul contactului",
           "highlights": [
-            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
-            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
           ]
         }
       ]
@@ -579,5 +573,6 @@
         }
       ]
     }
-  ]
+  ],
+  "revisionLabel": "Revizuirea 3 · justificări pe răspuns"
 }

@@ -61,6 +61,16 @@ test('A shared source passage has different highlights for recipient, location, 
   assert.ok(!drop(213).highlights.some(text=>text.includes('portarului')));
   assert.ok(drop(227).highlights.some(text=>text.includes('portarului echipei în apărare')));
 });
+test('The possession decision highlights the complete outside-penalty-area point',()=>{
+  const passage=findLawReference(library,q(213)).find(item=>item.id==='dropped-ball');
+  assert.equal(passage.highlights.length,1);
+  const quote=passage.highlights[0];
+  assert.ok(quote.startsWith('• dacă mingea era în afara'));
+  assert.ok(quote.includes('care a intrat sau ar fi intrat în posesie'));
+  assert.ok(quote.includes('în caz contrar'));
+  assert.ok(quote.endsWith('la oprirea jocului.'));
+  assert.ok(renderLawExplanation(library,q(213)).includes(library.revisionLabel));
+});
 test('Literal highlights stay tied to the correct decision after option shuffling', () => {
   const question=q(221), shuffled=prepareQuestions([question],1,()=>.3)[0];
   const before=renderLawExplanation(library,question),after=renderLawExplanation(library,shuffled);

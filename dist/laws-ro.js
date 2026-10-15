@@ -30,7 +30,8 @@ export function preparePilotQuestions(library, questions, random = Math.random) 
 
 export function validateLawLibrary(library) {
   if (!library || library.schemaVersion !== 2 || library.edition !== '2025/26' ||
-      typeof library.sourceTitle !== 'string' || !/^[a-f0-9]{64}$/u.test(library.sourceSha256) ||
+      typeof library.sourceTitle !== 'string' || typeof library.revisionLabel !== 'string' ||
+      !library.revisionLabel.trim() || !/^[a-f0-9]{64}$/u.test(library.sourceSha256) ||
       !Array.isArray(library.excerpts) || !Array.isArray(library.references)) throw new Error('Invalid law library');
   const ids = new Set(), keys = new Set();
   for (const item of library.excerpts) {
@@ -61,7 +62,7 @@ export function createLawLoader(fetcher = (...args) => fetch(...args)) {
   let pending;
   return () => {
     if (!pending) pending = (async () => {
-      const response = await fetcher('./laws-ro.json');
+      const response = await fetcher('./laws-ro.json', {cache:'no-cache'});
       if (!response.ok) throw new Error('Law library unavailable');
       return validateLawLibrary(await response.json());
     })().catch(error => { pending = null; throw error; });
@@ -95,9 +96,10 @@ function sourceText(item) {
 
 export function renderLawExplanation(library, question) {
   const excerpts = findLawReference(library, question);
-  if (!excerpts) return `<p class="law-source">${escape(library.sourceTitle)}</p>
+  const source = `<p class="law-source">${escape(library.sourceTitle)}<br>${escape(library.revisionLabel)}</p>`;
+  if (!excerpts) return `${source}
     <div class="law-pending"><strong>Pasaj încă neasociat</strong><p>Pentru această întrebare nu există încă o asociere verificată cu un articol din ediția română. Nu afișăm un pasaj ales automat.</p></div>`;
-  return `<p class="law-source">${escape(library.sourceTitle)}</p>
+  return `${source}
     <div class="law-decision"><strong>Decizia justificată</strong><p>${escape(question.options[question.correctOption])}</p></div>
     <p class="law-intro">Fiecare pasaj justifică o componentă a răspunsului corect. Evidențierile sunt alese pentru această situație.</p>
     ${excerpts.map(item => `<section class="law-excerpt"><p class="law-justifies">Justifică: ${escape(item.justifies)}</p><div class="law-citation">Legea ${item.law} · ${item.article === 'Introducere' ? 'Prevederea introductivă' : 'Art. ' + escape(item.article)} · Pagina ${item.page}</div>

@@ -60,6 +60,7 @@ export function cleanRomanianText(text) {
     .replace(/(comportament) violentă/giu, '$1 violent')
     .replace(/(comportament) nesportivă/giu, '$1 nesportiv')
     .replace(/(înlocuitorul este) avertizată/giu, '$1 avertizat')
+    .replace(/^Joc oprit(?=[\s;,.:])/u, 'Oprește jocul')
     .replace(/Nicio sancțiune suplimentară/gu, 'Nicio sancțiune disciplinară')
     .replace(/fără sancțiune disciplinară suplimentară/gu, 'fără sancțiune disciplinară')
     .replace(/(avantajul(?: așteptat)? nu s-a mai concretizat) deloc/gu, '$1')

@@ -60,3 +60,11 @@ Contextul suplimentar apare numai dacă este necesar pentru a explica de ce
 decizia se aplică (de exemplu, lipsa ofsaidului după primirea directă dintr-o
 lovitură de poartă). Citatele sunt literale; etichetele „Justifică” sunt explicații
 editoriale distincte de textul oficial. Schema datelor este versiunea 2.
+
+În modal apare și eticheta revizuirii; versiunea curentă este „Revizuirea 3 ·
+justificări pe răspuns”. Dacă vedeți încă paragrafele vechi, reîncărcați complet
+pagina (Ctrl+F5). Sesiunile salvate se păstrează, iar formularea „Joc oprit” este
+actualizată automat la „Oprește jocul” în variante și în copia deciziei corecte.
+Pentru întrebările despre beneficiarul mingii de arbitru în afara suprafeței de
+pedeapsă se evidențiază punctul complet (beneficiar, alternativa ultimei atingeri
+și locul reluării); întrebarea care cere numai locul păstrează citatul punctual.
