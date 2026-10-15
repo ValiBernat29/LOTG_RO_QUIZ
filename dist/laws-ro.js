@@ -1,4 +1,4 @@
-import { cleanRomanianText } from './quiz.js';
+import { cleanRomanianText, prepareQuestions } from './quiz.js';
 
 const compact = text => cleanRomanianText(text).replace(/\s+/gu, ' ').trim();
 const key = (question, correct) => JSON.stringify([compact(question), compact(correct)]);
@@ -18,6 +18,11 @@ export function findLawReference(library, question) {
   const reference = library.references.find(item => key(item.questionRo, item.correctText) === wanted);
   if (!reference) return null;
   return reference.excerpts.map(id => library.excerpts.find(item => item.id === id));
+}
+
+export function preparePilotQuestions(library, questions, random = Math.random) {
+  const reviewed = questions.filter(question => findLawReference(library, question));
+  return prepareQuestions(reviewed, reviewed.length, random);
 }
 
 export function validateLawLibrary(library) {

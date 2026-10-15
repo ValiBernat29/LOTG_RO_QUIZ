@@ -1,12 +1,24 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {createLawLoader, explainableQuestion, findLawReference, renderLawExplanation, validateLawLibrary} from '../dist/laws-ro.js';
+import {createLawLoader, explainableQuestion, findLawReference, renderLawExplanation, validateLawLibrary, preparePilotQuestions} from '../dist/laws-ro.js';
 import {prepareQuestions} from '../dist/quiz.js';
 
 const bank = JSON.parse(await readFile(new URL('../dist/questions.json', import.meta.url), 'utf8'));
 const library = JSON.parse(await readFile(new URL('../dist/laws-ro.json', import.meta.url), 'utf8'));
 const q = id => bank.find(item => item.id === id);
+
+test('The pilot includes every reviewed scenario once and every shuffled answer still has its reference', () => {
+  const questions=preparePilotQuestions(library,bank,()=>.2);
+  assert.equal(questions.length,19);
+  const identities=items=>new Set(items.map(item=>JSON.stringify([item.questionRo,item.options[item.correctOption]])));
+  assert.deepEqual(identities(questions),identities(bank.filter(item=>findLawReference(library,item))));
+  assert.equal(identities(questions).size,questions.length);
+  for(const question of questions)assert.ok(findLawReference(library,question));
+  for(const id of [96,146,201])assert.ok(questions.some(item=>item.questionRo===q(id).questionRo));
+  assert.deepEqual(preparePilotQuestions(library,[]),[]);
+  assert.deepEqual(preparePilotQuestions({...library,references:[]},bank),[]);
+});
 
 test('Every reviewed source association resolves to a real question and literal source highlight', () => {
   assert.equal(validateLawLibrary(library), library);

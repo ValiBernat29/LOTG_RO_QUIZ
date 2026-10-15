@@ -1,12 +1,13 @@
 import { LETTERS, LAW_NAMES, uniqueQuestions, prepareQuestions, score, validSession, examDurationMs, repairSavedSession } from './quiz.js';
 import { showConfirmation, showInformation } from './modal.js';
-import { createLawLoader, renderLawExplanation, explainableQuestion } from './laws-ro.js';
+import { createLawLoader, renderLawExplanation, explainableQuestion, preparePilotQuestions } from './laws-ro.js';
 const app = document.querySelector('#app');
 const prefix = 'lotg.quiz.v1.';
 let data = [], session = null, selected = new Set(Object.keys(LAW_NAMES).map(Number));
 let mode = 'practice', count = 20, view = 'home', draft = null, reviewWrong = false, result = null;
 let timer, toastTimer, modalOpen = false, storageWarning = false, activeModal = null;
 const loadLawLibrary = createLawLoader();
+let pilotLoading = false;
 const esc = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = time => new Intl.DateTimeFormat('ro-RO', { day:'numeric', month:'long', year:'numeric' }).format(time);
 const examMinutes = questions => new Intl.NumberFormat('ro-RO').format(examDurationMs(questions) / 60000);
@@ -45,6 +46,7 @@ function renderHome() {
   const available = pool().length, actual = Math.min(count === 'all' ? available : count, available);
   app.innerHTML = `<div class="headline"><div><div class="eyebrow"><span class="online-dot"></span> ANTRENEAZĂ-ȚI DECIZIILE</div><h1>Fiecare fază.<br>O decizie mai bună.</h1><p class="intro">Pregătirea începe înainte de primul fluier.<br>Exersează Legile Jocului, în ritmul tău.</p></div><div class="date-pill">${esc(date(Date.now()))}</div></div>
     ${session ? `<div class="resume"><span aria-hidden="true">◷</span><div><strong>Ai o sesiune în desfășurare</strong><p>${score(session).answered} din ${session.questions.length} răspunsuri · ${session.mode === 'exam' ? 'Simulare examen; timpul continuă să curgă' : 'Antrenament'}</p></div><button class="primary" data-action="resume">Continuă ↗</button></div>` : ''}
+    <section class="pilot-card" aria-labelledby="pilot-title"><div><h2 id="pilot-title">Testează explicațiile în română</h2><p>Doar situațiile cu pasaje verificate din regulament, fără duplicate.<br>Antrenament cu explicații după fiecare răspuns, indiferent de legile selectate mai jos.</p></div><button class="primary" data-action="pilot" ${pilotLoading ? 'disabled aria-busy="true"' : ''}>${pilotLoading ? 'Se încarcă…' : 'Testează întrebările pilot'}</button></section>
     <section class="hero"><div class="hero-copy"><div class="eyebrow">DIN TEREN, ÎN ANTRENAMENT</div><h2>Cunoaște legea.<br>Ia decizia cu încredere.</h2><p>Situații de joc și patru variante de răspuns.<br>Alege decizia corectă și află unde mai ai de exersat.</p><div class="hero-tags"><span>${data.length} întrebări în bancă</span><span>17 legi</span><span>În limba română</span></div></div>${pitch()}</section>
     <section class="stats" aria-label="Progresul tău"><div class="stat"><span class="stat-icon">◎</span><div><div class="stat-value">${sessions.length}</div><div class="stat-caption">Sesiuni finalizate</div></div></div><div class="stat"><span class="stat-icon">✓</span><div><div class="stat-value">${totals.total ? Math.round(totals.correct / totals.total * 100) + '%' : '—'}</div><div class="stat-caption">Răspunsuri corecte</div></div></div><div class="stat"><span class="stat-icon">▤</span><div><div class="stat-value">${totals.total}</div><div class="stat-caption">Întrebări parcurse</div></div></div></section>
     <div class="section-title"><h2>Construiește-ți antrenamentul</h2><span>Tu alegi ritmul.</span></div>
@@ -55,9 +57,32 @@ function renderHome() {
 function start() {
   const available = pool(); if (!available.length) return;
   const questions = prepareQuestions(available, count === 'all' ? available.length : +count);
+  beginSession(questions, mode);
+}
+function beginSession(questions, sessionMode) {
   const now = Date.now();
-  session = {version:1, timePolicyVersion:2, mode, questions, answers:{}, flags:[], index:0, startedAt:now, deadline: mode === 'exam' ? now + examDurationMs(questions.length) : null};
+  session = {version:1, timePolicyVersion:2, mode:sessionMode, questions, answers:{}, flags:[], index:0, startedAt:now, deadline: sessionMode === 'exam' ? now + examDurationMs(questions.length) : null};
   persist(); setView('quiz'); focusQuestion();
+}
+async function startPilot() {
+  if (pilotLoading) return;
+  pilotLoading = true;
+  const previousSession = session;
+  renderHome();
+  try {
+    const library = await loadLawLibrary();
+    // Do not replace another session started while the library was loading.
+    if (view !== 'home' || session !== previousSession) return;
+    const questions = preparePilotQuestions(library, data);
+    if (!questions.length) throw new Error('No reviewed questions');
+    beginSession(questions, 'practice');
+    toast(`Test pilot: ${questions.length} situații distincte, toate cu pasaje în română.`);
+  } catch {
+    toast('Nu am putut încărca testul pilot. Încearcă din nou; progresul existent este păstrat.');
+  } finally {
+    pilotLoading = false;
+    if (view === 'home') renderHome();
+  }
 }
 function focusQuestion() { requestAnimationFrame(() => { document.querySelector('.question-text')?.focus({preventScroll:true}); window.scrollTo({top:0,behavior:'instant'}); }); }
 function renderQuiz() {
@@ -170,6 +195,7 @@ app.addEventListener('click',e=>{
   if(button.dataset.answer){pick(button.dataset.answer);return;}
   if(button.dataset.index!==undefined){goto(+button.dataset.index);return;}
   switch(button.dataset.action){
+    case 'pilot':if(session)confirmAction('Începi testul pilot?','Sesiunea în desfășurare va fi înlocuită cu întrebările care au pasaje verificate în română.','Începe testul pilot',startPilot);else startPilot();break;
     case 'toggle-laws':selected=selected.size===17?new Set():new Set(Object.keys(LAW_NAMES).map(Number));renderHome();break;
     case 'start':if(session)confirmAction('Începi o sesiune nouă?','Sesiunea în desfășurare va fi înlocuită. Rezultatele sesiunilor finalizate rămân în istoric.','Începe sesiunea',start);else start();break;
     case 'resume':setView('quiz');break;

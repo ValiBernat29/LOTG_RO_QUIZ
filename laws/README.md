@@ -15,9 +15,13 @@ de verificarea vizuală și revizuirea asocierilor.
 - În antrenament apare numai după verificare; în examen numai la rezultate.
 - Nu modifică banca de întrebări sau sesiunile salvate.
 
-Pentru probă: începeți un antrenament selectând doar Legea 2 (ambele întrebări
-au pasaje). Legea 9 are mai multe exemple acoperite. Sunt acoperite și cele trei
-situații raportate recent: avantaj neconcretizat, protest gestual, oficial neidentificat.
+Pentru probă: pe pagina principală apăsați „Testează întrebările pilot”. Pornește
+un antrenament cu toate cele 19 situații distincte acoperite (38 de înregistrări
+în bancă, înainte de eliminarea duplicatelor), indiferent de legile și numărul
+de întrebări selectate în configurarea obișnuită. O sesiune existentă este
+înlocuită numai după confirmare. După fiecare răspuns verificat puteți deschide
+pasajul în română. Sunt incluse și cele trei situații raportate recent:
+avantaj neconcretizat, protest gestual, oficial neidentificat.
 
 ## Adăugarea unor asocieri
 
