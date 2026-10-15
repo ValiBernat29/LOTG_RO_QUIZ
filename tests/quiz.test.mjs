@@ -65,6 +65,21 @@ test('Saved wording is repaired independently of shuffled letters, including the
   assert.equal(repaired.questions[0].correctOption,'D');assert.equal(repaired.startedAt,123);
   assert.deepEqual(repairSavedSession(repaired),repaired);
 });
+test('Intervention wording is natural in the bank and saved sessions without changing official quotations',()=>{
+  for(const q of bank)assert.equal(/fără intenția (?:unei intervenții neloiale|de a interveni neloial)/u.test(q.questionRo),false);
+  const old='Mingea este oprită fără intenția unei intervenții neloiale.';
+  const expected='Mingea este oprită fără a intenționa să intervină în joc.';
+  assert.equal(cleanRomanianText(old),expected);
+  assert.equal(cleanRomanianText('Fază fără intenția de a interveni neloial.'),'Fază fără a intenționa să intervină în joc.');
+  const quote='Dacă, fără intenția de a interveni în mod incorect în joc, un oficial al echipei';
+  assert.equal(cleanRomanianText(quote),quote);
+  const q={...bank[0],questionRo:old};
+  const saved={mode:'practice',questions:[q],answers:{[q.id]:'B'},flags:[q.id],index:0,startedAt:123};
+  const repaired=repairSavedSession(saved);
+  assert.equal(repaired.questions[0].questionRo,expected);
+  assert.deepEqual(repaired.questions[0].options,q.options);
+  assert.deepEqual(repaired.answers,saved.answers);assert.deepEqual(repaired.flags,saved.flags);
+});
 test('Referee decisions use the active voice in the bank and in saved shuffled sessions',()=>{
   for(const q of bank)for(const text of Object.values(q.options))assert.equal(/^Joc oprit\b/u.test(text),false);
   assert.equal(cleanRomanianText('Joc oprit; minge de arbitru pentru B.'),'Oprește jocul; minge de arbitru pentru B.');

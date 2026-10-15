@@ -433,7 +433,7 @@
     },
     {
       "seedId": 217,
-      "questionRo": "Mingea șutată de un atacant al echipei A iese clar spre lovitură de poartă. Înainte să iasă, un jucător înlocuitor al echipei B o oprește cu piciorul pe linia porții, fără intenția de a interveni neloial. Care este decizia arbitrului?",
+      "questionRo": "Mingea șutată de un atacant al echipei A iese clar spre lovitură de poartă. Înainte să iasă, un jucător înlocuitor al echipei B o oprește cu piciorul pe linia porții, fără a intenționa să intervină în joc. Care este decizia arbitrului?",
       "correctText": "Lovitură liberă indirectă pentru A, fără sancțiune disciplinară.",
       "passages": [
         {
@@ -447,7 +447,7 @@
     },
     {
       "seedId": 218,
-      "questionRo": "Mingea se îndreaptă clar spre o aruncare de la margine pentru echipa A. Înainte să iasă, un oficial al echipei A o oprește lângă linie pentru a grăbi reluarea, fără intenția unei intervenții neloiale. Care este decizia, dacă nu a părăsit repetat suprafața tehnică?",
+      "questionRo": "Mingea se îndreaptă clar spre o aruncare de la margine pentru echipa A. Înainte să iasă, un oficial al echipei A o oprește lângă linie pentru a grăbi reluarea, fără a intenționa să intervină în joc. Care este decizia, dacă nu a părăsit repetat suprafața tehnică?",
       "correctText": "Lovitură liberă indirectă pentru B, fără sancțiune disciplinară.",
       "passages": [
         {
