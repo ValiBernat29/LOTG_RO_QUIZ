@@ -17,7 +17,10 @@ export function findLawReference(library, question) {
   const wanted = key(question.questionRo, question.options[question.correctOption]);
   const reference = library.references.find(item => key(item.questionRo, item.correctText) === wanted);
   if (!reference) return null;
-  return reference.excerpts.map(id => library.excerpts.find(item => item.id === id));
+  return reference.passages.map(passage => ({
+    ...library.excerpts.find(item => item.id === passage.id),
+    highlights: passage.highlights, justifies: passage.justifies
+  }));
 }
 
 export function preparePilotQuestions(library, questions, random = Math.random) {
@@ -26,22 +29,27 @@ export function preparePilotQuestions(library, questions, random = Math.random) 
 }
 
 export function validateLawLibrary(library) {
-  if (!library || library.schemaVersion !== 1 || library.edition !== '2025/26' ||
+  if (!library || library.schemaVersion !== 2 || library.edition !== '2025/26' ||
       typeof library.sourceTitle !== 'string' || !/^[a-f0-9]{64}$/u.test(library.sourceSha256) ||
       !Array.isArray(library.excerpts) || !Array.isArray(library.references)) throw new Error('Invalid law library');
   const ids = new Set(), keys = new Set();
   for (const item of library.excerpts) {
     if (!item.id || ids.has(item.id) || !Number.isInteger(item.law) || item.law < 1 || item.law > 17 ||
         !Number.isInteger(item.page) || item.page < 1 || typeof item.article !== 'string' ||
-        !item.article.startsWith(item.law + '.') || typeof item.title !== 'string' ||
-        typeof item.text !== 'string' || !item.text.trim() || typeof item.highlight !== 'string' ||
-        !item.highlight || !item.text.includes(item.highlight)) throw new Error('Invalid source excerpt');
+        !(item.article === 'Introducere' || item.article.startsWith(item.law + '.')) || typeof item.title !== 'string' ||
+        typeof item.text !== 'string' || !item.text.trim()) throw new Error('Invalid source excerpt');
     ids.add(item.id);
   }
   for (const reference of library.references) {
     if (!Number.isInteger(reference.seedId) || typeof reference.questionRo !== 'string' ||
-        typeof reference.correctText !== 'string' || !Array.isArray(reference.excerpts) ||
-        !reference.excerpts.length || reference.excerpts.some(id => !ids.has(id))) throw new Error('Invalid reference');
+        typeof reference.correctText !== 'string' || !Array.isArray(reference.passages) ||
+        !reference.passages.length) throw new Error('Invalid reference');
+    for (const passage of reference.passages) {
+      if (!passage || !ids.has(passage.id) || typeof passage.justifies !== 'string' ||
+          !passage.justifies.trim()) throw new Error('Missing answer justification');
+      const source = library.excerpts.find(item => item.id === passage.id);
+      highlightRanges(source.text, passage.highlights);
+    }
     const identity = key(reference.questionRo, reference.correctText);
     if (keys.has(identity)) throw new Error('Duplicate reference');
     keys.add(identity);
@@ -61,13 +69,28 @@ export function createLawLoader(fetcher = (...args) => fetch(...args)) {
   };
 }
 
+function highlightRanges(text, highlights) {
+  if (!Array.isArray(highlights) || !highlights.length) throw new Error('Missing question-specific highlights');
+  const ranges = highlights.map(quote => {
+    if (typeof quote !== 'string' || !quote.trim()) throw new Error('Invalid highlight');
+    const start = text.indexOf(quote);
+    if (start < 0 || text.indexOf(quote, start + 1) >= 0) throw new Error('Highlight must match one literal source passage');
+    return {start, end: start + quote.length};
+  }).sort((a,b) => a.start - b.start);
+  if (ranges.some((range,index) => index > 0 && range.start < ranges[index-1].end)) throw new Error('Overlapping highlights');
+  return ranges;
+}
+
 function sourceText(item) {
-  const index = item.text.indexOf(item.highlight);
-  const before = item.text.slice(0, index), after = item.text.slice(index + item.highlight.length);
   // PDF soft line wraps were folded during extraction. Restore readable bullet
   // boundaries without changing any words from the source.
   const format = text => escape(text).replace(/ • /gu, '<br>• ');
-  return `${format(before)}<mark>${format(item.highlight)}</mark>${format(after)}`;
+  let cursor = 0, html = '';
+  for (const range of highlightRanges(item.text, item.highlights)) {
+    html += format(item.text.slice(cursor, range.start)) + '<mark>' + format(item.text.slice(range.start, range.end)) + '</mark>';
+    cursor = range.end;
+  }
+  return html + format(item.text.slice(cursor));
 }
 
 export function renderLawExplanation(library, question) {
@@ -75,7 +98,8 @@ export function renderLawExplanation(library, question) {
   if (!excerpts) return `<p class="law-source">${escape(library.sourceTitle)}</p>
     <div class="law-pending"><strong>Pasaj încă neasociat</strong><p>Pentru această întrebare nu există încă o asociere verificată cu un articol din ediția română. Nu afișăm un pasaj ales automat.</p></div>`;
   return `<p class="law-source">${escape(library.sourceTitle)}</p>
-    <p class="law-intro">Prevederi relevante pentru decizia corectă. Textul evidențiat este extras din regulament.</p>
-    ${excerpts.map(item => `<section class="law-excerpt"><div class="law-citation">Legea ${item.law} · Art. ${escape(item.article)} · Pagina ${item.page}</div>
+    <div class="law-decision"><strong>Decizia justificată</strong><p>${escape(question.options[question.correctOption])}</p></div>
+    <p class="law-intro">Fiecare pasaj justifică o componentă a răspunsului corect. Evidențierile sunt alese pentru această situație.</p>
+    ${excerpts.map(item => `<section class="law-excerpt"><p class="law-justifies">Justifică: ${escape(item.justifies)}</p><div class="law-citation">Legea ${item.law} · ${item.article === 'Introducere' ? 'Prevederea introductivă' : 'Art. ' + escape(item.article)} · Pagina ${item.page}</div>
       <h3>${escape(item.title)}</h3><blockquote>${sourceText(item)}</blockquote></section>`).join('')}`;
 }

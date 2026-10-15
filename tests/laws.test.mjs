@@ -27,9 +27,46 @@ test('Every reviewed source association resolves to a real question and literal 
     assert.equal(reference.questionRo, original.questionRo);
     assert.equal(reference.correctText, original.options[original.correctOption]);
     const passages = findLawReference(library, original);
-    assert.equal(passages.length, reference.excerpts.length);
-    for(const item of passages)assert.ok(item.text.includes(item.highlight));
+    assert.equal(passages.length, reference.passages.length);
+    for(const item of passages)for(const quote of item.highlights)assert.ok(item.text.includes(quote));
   }
+});
+test('Corner plus caution is justified by the unchanged restart and reckless caution, never a dropped ball or DFK', () => {
+  const passages=findLawReference(library,q(221));
+  assert.ok(passages.some(item=>item.article==='12.5'&&item.highlights.some(text=>text.includes('decizia anterioară'))));
+  const discipline=passages.find(item=>item.article==='12.4');
+  assert.ok(discipline.highlights.some(text=>text.includes('comite cu imprudență')));
+  assert.ok(passages.some(item=>item.law===17));
+  assert.ok(!passages.some(item=>item.law===9||item.article==='12.1'));
+  const html=renderLawExplanation(library,q(221));
+  assert.ok(!html.includes('minge de arbitru'));assert.ok(!html.includes('În caz de contact fizic'));
+  assert.ok(html.includes('Lovitură de colț și CG atacantului.'));
+});
+test('Other misconduct after the ball leaves play uses the correct disciplinary provision and restart', () => {
+  const throwIn=findLawReference(library,q(223));
+  assert.ok(throwIn.some(item=>item.law===15));
+  assert.ok(throwIn.some(item=>item.article==='12.4'&&item.highlights.some(text=>text.includes('imprudență'))));
+  const dismissal=findLawReference(library,q(224));
+  assert.ok(dismissal.some(item=>item.law===16));
+  assert.ok(dismissal.some(item=>item.highlights.includes('• comite un fault grosolan.')));
+  for(const passages of [throwIn,dismissal])assert.ok(!passages.some(item=>item.id==='ball-out'||item.id==='direct-free-kick'));
+});
+test('A shared source passage has different highlights for recipient, location, and possession answers', () => {
+  const drop=id=>findLawReference(library,q(id)).find(item=>item.id==='dropped-ball');
+  assert.equal(drop(10).text,drop(214).text);
+  assert.ok(drop(10).highlights.some(text=>text.includes('portarului echipei în apărare')));
+  assert.ok(!drop(10).highlights.some(text=>text.includes('se execută în locul')));
+  assert.deepEqual(drop(214).highlights,['Mingea de arbitru se execută în locul în care se afla la oprirea jocului.']);
+  assert.ok(drop(213).highlights.some(text=>text.includes('care a intrat sau ar fi intrat în posesie')));
+  assert.ok(!drop(213).highlights.some(text=>text.includes('portarului')));
+  assert.ok(drop(227).highlights.some(text=>text.includes('portarului echipei în apărare')));
+});
+test('Literal highlights stay tied to the correct decision after option shuffling', () => {
+  const question=q(221), shuffled=prepareQuestions([question],1,()=>.3)[0];
+  const before=renderLawExplanation(library,question),after=renderLawExplanation(library,shuffled);
+  assert.equal(before,after);
+  assert.ok(before.includes('Justifică:'));
+  for(const item of library.excerpts)assert.equal('highlight' in item,false);
 });
 test('References survive option shuffling and duplicate questions under different laws', () => {
   for(const id of [96,146,201,272]) {
@@ -82,8 +119,11 @@ test('The source library is cached after success and can retry failed loads', as
 test('Broken article ids, highlights, editions and duplicate references fail validation', () => {
   for(const mutate of [
     value=>value.edition='2026/27',
-    value=>value.references[0].excerpts=['missing'],
-    value=>value.excerpts[0].highlight='not in the PDF',
+    value=>value.references[0].passages[0].id='missing',
+    value=>value.references[0].passages[0].highlights=['not in the PDF'],
+    value=>value.references[0].passages[0].highlights=[],
+    value=>value.references[0].passages[0].highlights.push(value.references[0].passages[0].highlights[0]),
+    value=>value.references[0].passages[0].justifies='',
     value=>value.references.push(value.references[0])
   ]) {const value=structuredClone(library);mutate(value);assert.throws(()=>validateLawLibrary(value));}
 });

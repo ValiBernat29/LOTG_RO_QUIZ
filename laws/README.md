@@ -8,7 +8,7 @@ de verificarea vizuală și revizuirea asocierilor.
 - Înlocuiește linkurile IFAB din feedback și din revizuirea rezultatelor cu un modal.
 - Folosește text extras literal din PDF-ul românesc 2025/26, cu articol și pagina
   numerotată din document. Ruperile de rând sunt reunite pentru lizibilitate.
-- Include 19 scenarii asociate manual cu 13 pasaje; aceeași asociere se aplică
+- Include 19 scenarii asociate manual cu 20 de pasaje; aceeași asociere se aplică
   automat duplicatelor cu aceeași întrebare și aceeași decizie corectă.
 - Nu folosește asemănarea cuvintelor-cheie ca dovadă. Pentru întrebări neacoperite,
   modalul afișează explicit „Pasaj încă neasociat”. Acoperirea nu este completă.
@@ -26,8 +26,11 @@ avantaj neconcretizat, protest gestual, oficial neidentificat.
 ## Adăugarea unor asocieri
 
 1. Verificați întrebarea, decizia corectă și paginile integrale ale PDF-ului.
-2. Adăugați în `references.json` pasajul (pagina, ancore de început/sfârșit,
-   citat de evidențiat) și ID-ul întrebării verificate.
+2. Adăugați în `references.json` pasajul (pagina, ancore de început/sfârșit)
+   și ID-ul întrebării verificate. Pentru fiecare asociere, câmpul `passages`
+   conține `id`, `justifies` și `highlights`: componenta deciziei justificată
+   și citatele exacte de evidențiat pentru acea întrebare. Nu există evidențieri
+   implicite comune tuturor utilizărilor aceluiași pasaj.
 3. Din directorul proiectului web, rulați local:
 
    ```text
@@ -43,3 +46,17 @@ avantaj neconcretizat, protest gestual, oficial neidentificat.
 Build-ul respinge asocierile rămase neactualizate după schimbarea întrebării
 sau a răspunsului corect. O nouă ediție a regulamentului necesită revizuire,
 nu simpla schimbare a etichetei anului.
+
+## Regula de relevanță
+
+Selecția pornește prioritar de la componentele răspunsului corect, nu de la
+cuvinte din întrebare. De exemplu, „lovitură de colț și CG” cere justificarea
+reluării și a avertismentului: 12.5 păstrează reluarea deja stabilită, 12.4
+justifică avertismentul pentru imprudență, iar prevederea introductivă a Legii 17
+explică lovitura de colț. Paragraful despre mingea de arbitru sau acordarea unei
+LLD pentru contact nu justifică această decizie și nu se include.
+
+Contextul suplimentar apare numai dacă este necesar pentru a explica de ce
+decizia se aplică (de exemplu, lipsa ofsaidului după primirea directă dintr-o
+lovitură de poartă). Citatele sunt literale; etichetele „Justifică” sunt explicații
+editoriale distincte de textul oficial. Schema datelor este versiunea 2.

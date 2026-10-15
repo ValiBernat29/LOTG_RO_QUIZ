@@ -30,21 +30,28 @@ for definition in definitions["excerpts"]:
     start = text.index(compact(definition["start"]))
     end = text.index(compact(definition["end"]), start + 1) if definition.get("end") else len(text)
     passage = text[start:end].strip()
-    highlight = compact(definition["highlight"])
-    if not passage or highlight not in passage:
-        raise ValueError(f"Invalid source passage/highlight: {definition['id']}")
+    if not passage:
+        raise ValueError(f"Empty source passage: {definition['id']}")
     excerpts.append({key: definition[key] for key in ("id", "law", "article", "title", "page")} |
-                    {"text": passage, "highlight": highlight})
+                    {"text": passage})
 
 by_id = {q["id"]: q for q in questions}
 references = []
+by_excerpt = {item["id"]: item for item in excerpts}
 for association in definitions["reviewedQuestions"]:
     q = by_id[association["id"]]
+    passages = []
+    for item in association["passages"]:
+        text = by_excerpt[item["id"]]["text"]
+        highlights = [compact(quote) for quote in item["highlights"]]
+        if not highlights or any(not quote or text.count(quote) != 1 for quote in highlights):
+            raise ValueError(f"Invalid question-specific highlight: {q['id']}, {item['id']}")
+        passages.append({"id": item["id"], "justifies": item["justifies"], "highlights": highlights})
     references.append({"seedId": q["id"], "questionRo": q["questionRo"],
                        "correctText": q["options"][q["correctOption"]],
-                       "excerpts": association["excerpts"]})
+                       "passages": passages})
 
-output = {"schemaVersion": 1, "edition": definitions["edition"],
+output = {"schemaVersion": 2, "edition": definitions["edition"],
           "sourceTitle": definitions["sourceTitle"], "sourceFile": source.name,
           "sourceSha256": hashlib.sha256(source.read_bytes()).hexdigest(),
           "excerpts": excerpts, "references": references}

@@ -2,39 +2,582 @@
   "edition": "2025/26",
   "sourceTitle": "Legile Jocului 2025/26 · ediția în limba română",
   "excerpts": [
-    {"id":"ball-damaged","law":2,"article":"2.2","title":"Înlocuirea unei mingi deteriorate","page":52,"start":"2. Înlocuirea unei mingi deteriorate","end":"3. Mingi suplimentare","highlight":"Dacă mingea se deteriorează: • jocul este oprit și • reluat printr-o minge de arbitru."},
-    {"id":"advantage","law":5,"article":"5.3","title":"Avantaj","page":72,"start":"Avantaj","end":"Sancţiuni disciplinare","highlight":"sancționează abaterea în cazul în care consideră că avantajul anticipat nu apare imediat sau în câteva secunde."},
-    {"id":"direct-free-kick","law":12,"article":"12.1","title":"Lovitura liberă directă · neglijență, imprudență și forță excesivă","page":113,"start":"1. Lovitura liberă directă","end":"Legile Jocului 2025/26","highlight":"În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă."},
-    {"id":"player-dissent","law":12,"article":"12.4","title":"Abateri sancționate cu avertisment","page":119,"start":"Abateri sancţionate cu avertisment","end":"Legile Jocului 2025/26","highlight":"• protestează verbal sau prin gesturi."},
-    {"id":"restart-unchanged","law":12,"article":"12.5","title":"Reluarea jocului după faulturi și comportament nesportiv","page":126,"start":"5. Reluarea jocului după faulturi şi comportament nesportiv","end":"Dacă mingea este în joc și un jucător","highlight":"Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."},
-    {"id":"unknown-official","law":12,"article":"12.4","title":"Oficialii echipelor · autor neidentificat","page":124,"start":"Oficialii echipelor","end":"Atenţionare","highlight":"În cazul în care se comite o abatere de către cineva din zona tehnică (înlocuitor, jucător înlocuit, jucător eliminat sau oficial al echipei), iar persoana vinovată de abatere nu poate fi identificată, va primi sancţiunea antrenorul principal prezent în suprafaţa tehnică."},
-    {"id":"official-sending-off","law":12,"article":"12.4","title":"Oficialii echipelor · eliminare","page":125,"start":"Eliminare","end":"Legile Jocului 2025/26","highlight":"• aruncarea/lovirea cu piciorul în mod deliberat a unui obiect pe terenul de joc."},
-    {"id":"no-offside-direct","law":11,"article":"11.3","title":"Situații neconsiderate abateri","page":109,"start":"3. Situaţii neconsiderate abateri","end":"4. Abateri şi sancţiuni","highlight":"• dintr-o lovitură de poartă."},
-    {"id":"spa-caution","law":12,"article":"12.4","title":"Avertisment pentru comportament nesportiv · SPA","page":120,"start":"• comite orice altă abatere pentru a interveni într-un atac promițător","end":"• împiedică o ocazie clară de înscriere a unui gol de către adversar, comiţând","highlight":"• comite orice altă abatere pentru a interveni într-un atac promițător sau a-l opri, în afară de cazul în care arbitrul acordă o lovitură de pedeapsă pentru o abatere comisă ca urmare a unei încercări de jucare a mingii sau un atac pentru a intra în posesia mingii."},
-    {"id":"dropped-ball","law":8,"article":"8.2","title":"Mingea de arbitru","page":94,"start":"2. Mingea de arbitru","highlight":"Mingea de arbitru se execută în locul în care se afla la oprirea jocului."},
-    {"id":"ball-out","law":9,"article":"9.1","title":"Mingea afară din joc","page":97,"start":"1. Mingea afară din joc","end":"2. Mingea în joc","highlight":"În toate aceste situaţii, jocul este reluat cu o minge de arbitru."},
-    {"id":"ball-in","law":9,"article":"9.2","title":"Mingea în joc","page":97,"start":"2. Mingea în joc","end":"Dacă, fără intenția de a interveni","highlight":"Mingea este în joc în orice alte cazuri când atinge un oficial de meci"},
-    {"id":"ball-clearly-leaving","law":9,"article":"9.2","title":"Atingerea mingii care urmează să părăsească terenul","page":97,"start":"Dacă, fără intenția de a interveni","highlight":"acest lucru se sancționează cu o lovitură liberă indirectă; nu există nicio sancțiune disciplinară."}
+    {
+      "id": "ball-damaged",
+      "law": 2,
+      "article": "2.2",
+      "title": "Înlocuirea unei mingi deteriorate",
+      "page": 52,
+      "start": "2. Înlocuirea unei mingi deteriorate",
+      "end": "În cazul în care mingea se deteriorează la o lovitură de începere"
+    },
+    {
+      "id": "advantage",
+      "law": 5,
+      "article": "5.3",
+      "title": "Avantaj",
+      "page": 72,
+      "start": "Avantaj",
+      "end": "Sancţiuni disciplinare"
+    },
+    {
+      "id": "direct-free-kick",
+      "law": 12,
+      "article": "12.1",
+      "title": "Acordarea unei lovituri libere directe",
+      "page": 113,
+      "start": "1. Lovitura liberă directă",
+      "end": "• „neglijență”"
+    },
+    {
+      "id": "player-dissent",
+      "law": 12,
+      "article": "12.4",
+      "title": "Abateri sancționate cu avertisment",
+      "page": 119,
+      "start": "• protestează verbal sau prin gesturi.",
+      "end": "• intră, reintră sau iese"
+    },
+    {
+      "id": "restart-unchanged",
+      "law": 12,
+      "article": "12.5",
+      "title": "Reluarea jocului după faulturi și comportament nesportiv",
+      "page": 126,
+      "start": "5. Reluarea jocului după faulturi şi comportament nesportiv",
+      "end": "Dacă mingea este în joc și un jucător"
+    },
+    {
+      "id": "unknown-official",
+      "law": 12,
+      "article": "12.4",
+      "title": "Oficialii echipelor · autor neidentificat",
+      "page": 124,
+      "start": "Oficialii echipelor",
+      "end": "Atenţionare"
+    },
+    {
+      "id": "official-sending-off",
+      "law": 12,
+      "article": "12.4",
+      "title": "Oficialii echipelor · eliminare",
+      "page": 125,
+      "start": "• aruncarea/lovirea cu piciorul în mod deliberat",
+      "end": "• intrarea pe terenul de joc pentru:"
+    },
+    {
+      "id": "no-offside-direct",
+      "law": 11,
+      "article": "11.3",
+      "title": "Situații neconsiderate abateri",
+      "page": 109,
+      "start": "3. Situaţii neconsiderate abateri",
+      "end": "• dintr-o aruncare de la margine."
+    },
+    {
+      "id": "spa-caution",
+      "law": 12,
+      "article": "12.4",
+      "title": "Avertisment pentru comportament nesportiv · SPA",
+      "page": 120,
+      "start": "• comite orice altă abatere pentru a interveni într-un atac promițător",
+      "end": "• împiedică o ocazie clară de înscriere a unui gol de către adversar, comiţând"
+    },
+    {
+      "id": "dropped-ball",
+      "law": 8,
+      "article": "8.2",
+      "title": "Mingea de arbitru · beneficiarul și locul reluării",
+      "page": 94,
+      "start": "2. Mingea de arbitru",
+      "end": "• toți ceilalți jucători"
+    },
+    {
+      "id": "ball-out",
+      "law": 9,
+      "article": "9.1",
+      "title": "Atingerea unui oficial de meci · situații în care jocul se oprește",
+      "page": 97,
+      "start": "• atinge un oficial de meci",
+      "end": "2. Mingea în joc"
+    },
+    {
+      "id": "ball-in",
+      "law": 9,
+      "article": "9.2",
+      "title": "Mingea în joc",
+      "page": 97,
+      "start": "2. Mingea în joc",
+      "end": "Dacă, fără intenția de a interveni"
+    },
+    {
+      "id": "ball-clearly-leaving",
+      "law": 9,
+      "article": "9.2",
+      "title": "Atingerea mingii care urmează să părăsească terenul",
+      "page": 97,
+      "start": "Dacă, fără intenția de a interveni"
+    },
+    {
+      "id": "reckless-caution",
+      "law": 12,
+      "article": "12.4",
+      "title": "Avertisment pentru comportament nesportiv · atac imprudent",
+      "page": 120,
+      "start": "• comite cu imprudență o abatere",
+      "end": "• joacă mingea cu mâna cu scopul"
+    },
+    {
+      "id": "serious-foul",
+      "law": 12,
+      "article": "12.4",
+      "title": "Fault grosolan",
+      "page": 123,
+      "start": "Fault grosolan",
+      "end": "Legile Jocului 2025/26"
+    },
+    {
+      "id": "serious-sending-off",
+      "law": 12,
+      "article": "12.4",
+      "title": "Abateri sancționate cu eliminare · fault grosolan",
+      "page": 122,
+      "start": "• comite un fault grosolan.",
+      "end": "• mușcă sau scuipă"
+    },
+    {
+      "id": "corner-restart",
+      "law": 17,
+      "article": "Introducere",
+      "title": "Acordarea loviturii de colț",
+      "page": 149,
+      "start": "Lovitura de la colț (corner) se acordă",
+      "end": "Dintr-o lovitură de colț"
+    },
+    {
+      "id": "throw-in-restart",
+      "law": 15,
+      "article": "Introducere",
+      "title": "Acordarea aruncării de la margine",
+      "page": 141,
+      "start": "Aruncarea de la margine se acordă",
+      "end": "Nu se poate înscrie gol direct"
+    },
+    {
+      "id": "goal-kick-restart",
+      "law": 16,
+      "article": "Introducere",
+      "title": "Acordarea loviturii de poartă",
+      "page": 145,
+      "start": "Lovitura de poartă se acordă când",
+      "end": "Dintr-o lovitură de poartă"
+    },
+    {
+      "id": "free-kick-position",
+      "law": 13,
+      "article": "13.2",
+      "title": "Locul executării loviturii libere",
+      "page": 131,
+      "start": "2. Procedura",
+      "end": "• loviturile libere indirecte acordate"
+    }
   ],
   "reviewedQuestions": [
-    {"id":9,"excerpts":["ball-damaged","dropped-ball"]},
-    {"id":10,"excerpts":["ball-damaged","dropped-ball"]},
-    {"id":96,"excerpts":["advantage","direct-free-kick"]},
-    {"id":146,"excerpts":["unknown-official","official-sending-off"]},
-    {"id":201,"excerpts":["player-dissent","restart-unchanged"]},
-    {"id":272,"excerpts":["no-offside-direct","direct-free-kick","spa-caution"]},
-    {"id":210,"excerpts":["ball-out","dropped-ball"]},
-    {"id":212,"excerpts":["ball-out","dropped-ball"]},
-    {"id":213,"excerpts":["ball-out","dropped-ball"]},
-    {"id":214,"excerpts":["ball-out","dropped-ball"]},
-    {"id":215,"excerpts":["ball-out","dropped-ball"]},
-    {"id":216,"excerpts":["ball-out","dropped-ball"]},
-    {"id":217,"excerpts":["ball-clearly-leaving"]},
-    {"id":218,"excerpts":["ball-clearly-leaving"]},
-    {"id":221,"excerpts":["ball-out","direct-free-kick","restart-unchanged"]},
-    {"id":223,"excerpts":["ball-out","direct-free-kick","restart-unchanged"]},
-    {"id":224,"excerpts":["ball-out","direct-free-kick","restart-unchanged"]},
-    {"id":225,"excerpts":["ball-out","ball-in"]},
-    {"id":227,"excerpts":["ball-out","dropped-ball"]}
+    {
+      "id": 9,
+      "passages": [
+        {
+          "id": "ball-damaged",
+          "justifies": "Oprirea jocului și reluarea cu minge de arbitru",
+          "highlights": [
+            "Dacă mingea se deteriorează: • jocul este oprit și • reluat printr-o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară și locul reluării",
+          "highlights": [
+            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "passages": [
+        {
+          "id": "ball-damaged",
+          "justifies": "Înlocuirea mingii deteriorate și reluarea cu minge de arbitru",
+          "highlights": [
+            "Dacă mingea se deteriorează: • jocul este oprit și • reluat printr-o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru portar",
+          "highlights": [
+            "mingea se afla în suprafața de pedeapsă, arbitrul acorda mingea de arbitru portarului echipei în apărare în suprafața sa de pedeapsă."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "passages": [
+        {
+          "id": "advantage",
+          "justifies": "Revenirea la abatere: avantajul nu s-a concretizat",
+          "highlights": [
+            "sancționează abaterea în cazul în care consideră că avantajul anticipat nu apare imediat sau în câteva secunde."
+          ]
+        },
+        {
+          "id": "direct-free-kick",
+          "justifies": "Reluarea cu lovitură liberă directă",
+          "highlights": [
+            "În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă."
+          ]
+        },
+        {
+          "id": "free-kick-position",
+          "justifies": "Lovitură liberă din locul atacului",
+          "highlights": [
+            "Toate loviturile libere sunt executate din locul unde s-a produs abaterea, cu următoarele excepții:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "passages": [
+        {
+          "id": "unknown-official",
+          "justifies": "Sancțiunea se aplică antrenorului principal",
+          "highlights": [
+            "va primi sancţiunea antrenorul principal prezent în suprafaţa tehnică."
+          ]
+        },
+        {
+          "id": "official-sending-off",
+          "justifies": "CR pentru aruncarea deliberată a obiectului pe teren",
+          "highlights": [
+            "• aruncarea/lovirea cu piciorul în mod deliberat a unui obiect pe terenul de joc."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 201,
+      "passages": [
+        {
+          "id": "player-dissent",
+          "justifies": "CG pentru protestul gestual",
+          "highlights": [
+            "• protestează verbal sau prin gesturi."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se execută LLD acordată inițial",
+          "highlights": [
+            "Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "passages": [
+        {
+          "id": "direct-free-kick",
+          "justifies": "LLD pentru faultul asupra atacantului",
+          "highlights": [
+            "În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă."
+          ]
+        },
+        {
+          "id": "spa-caution",
+          "justifies": "CG pentru oprirea atacului promițător",
+          "highlights": [
+            "• comite orice altă abatere pentru a interveni într-un atac promițător sau a-l opri, în afară de cazul în care arbitrul acordă o lovitură de pedeapsă pentru o abatere comisă ca urmare a unei încercări de jucare a mingii sau un atac pentru a intra în posesia mingii."
+          ]
+        },
+        {
+          "id": "no-offside-direct",
+          "justifies": "Nu se sancționează ofsaidul la primirea directă din lovitură de poartă",
+          "highlights": [
+            "• dintr-o lovitură de poartă."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• se schimbă echipa aflată în posesia mingii.",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară, alternativa ultimei atingeri și locul reluării",
+          "highlights": [
+            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
+            "în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată.",
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară și locul reluării",
+          "highlights": [
+            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru B, echipa care ar fi intrat în posesie",
+          "highlights": [
+            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "passages": [
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru din locul unde mingea a atins arbitrul",
+          "highlights": [
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară și locul reluării",
+          "highlights": [
+            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru B, din locul contactului",
+          "highlights": [
+            "dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru;",
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "passages": [
+        {
+          "id": "ball-clearly-leaving",
+          "justifies": "LLI, fără sancțiune disciplinară",
+          "highlights": [
+            "acest lucru se sancționează cu o lovitură liberă indirectă; nu există nicio sancțiune disciplinară."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "passages": [
+        {
+          "id": "ball-clearly-leaving",
+          "justifies": "LLI, fără sancțiune disciplinară",
+          "highlights": [
+            "acest lucru se sancționează cu o lovitură liberă indirectă; nu există nicio sancțiune disciplinară."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "passages": [
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se păstrează lovitura de colț: abaterea a fost comisă după ieșirea mingii",
+          "highlights": [
+            "Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        },
+        {
+          "id": "reckless-caution",
+          "justifies": "CG pentru atacul imprudent",
+          "highlights": [
+            "• comite cu imprudență o abatere sancționabilă cu lovitură liberă directă."
+          ]
+        },
+        {
+          "id": "corner-restart",
+          "justifies": "Reluarea prin lovitură de colț",
+          "highlights": [
+            "Lovitura de la colț (corner) se acordă când mingea depășește în întregime linia de poartă, pe sol sau în aer, după ce a atins ultima dată un jucător al echipei în apărare, iar un gol nu este marcat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "passages": [
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se păstrează aruncarea de la margine",
+          "highlights": [
+            "Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        },
+        {
+          "id": "reckless-caution",
+          "justifies": "CG pentru atacul imprudent",
+          "highlights": [
+            "• comite cu imprudență o abatere sancționabilă cu lovitură liberă directă."
+          ]
+        },
+        {
+          "id": "throw-in-restart",
+          "justifies": "Aruncare de la margine pentru echipa în apărare",
+          "highlights": [
+            "Aruncarea de la margine se acordă echipei adverse jucătorului care a atins ultimul mingea, când mingea depășește în întregime linia de margine, pe sol sau în aer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "passages": [
+        {
+          "id": "serious-foul",
+          "justifies": "Atacul care pune în pericol integritatea adversarului este fault grosolan",
+          "highlights": [
+            "Un atac prin alunecare sau un mod de disputare a mingii care pune în pericol integritatea corporală a unui adversar, care utilizează forță excesivă sau brutalitate trebuie sancționat ca fault grosolan."
+          ]
+        },
+        {
+          "id": "serious-sending-off",
+          "justifies": "CR pentru fault grosolan",
+          "highlights": [
+            "• comite un fault grosolan."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se păstrează reluarea stabilită înaintea abaterii",
+          "highlights": [
+            "Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        },
+        {
+          "id": "goal-kick-restart",
+          "justifies": "Reluarea prin lovitură de poartă",
+          "highlights": [
+            "Lovitura de poartă se acordă când mingea depășește în întregime linia de poartă, pe sol sau în aer, fără să se marcheze gol, iar ultimul jucător care o atinge este un jucător al echipei în atac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "passages": [
+        {
+          "id": "ball-in",
+          "justifies": "Jocul continuă dacă nu apare niciuna dintre excepții",
+          "highlights": [
+            "Mingea este în joc în orice alte cazuri când atinge un oficial de meci"
+          ]
+        },
+        {
+          "id": "ball-out",
+          "justifies": "Excepțiile care trebuie să lipsească pentru continuarea jocului",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "• mingea intră direct în poartă sau",
+            "• se schimbă echipa aflată în posesia mingii."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• mingea intră direct în poartă sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru portarul echipei în apărare",
+          "highlights": [
+            "mingea se afla în suprafața de pedeapsă, arbitrul acorda mingea de arbitru portarului echipei în apărare în suprafața sa de pedeapsă."
+          ]
+        }
+      ]
+    }
   ]
 }
