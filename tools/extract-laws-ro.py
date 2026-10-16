@@ -16,6 +16,9 @@ source = Path(sys.argv[1])
 definitions = json.loads((root / "laws/references.json").read_text(encoding="utf-8"))
 questions = json.loads((root / "dist/questions.json").read_text(encoding="utf-8-sig"))
 reader = PdfReader(source)
+source_hash = hashlib.sha256(source.read_bytes()).hexdigest()
+if source_hash != definitions["expectedSourceSha256"]:
+    raise ValueError("PDF edition/content changed: review the source before extraction")
 
 
 def compact(text):
@@ -40,6 +43,9 @@ references = []
 by_excerpt = {item["id"]: item for item in excerpts}
 for association in definitions["reviewedQuestions"]:
     q = by_id[association["id"]]
+    if (q["questionRo"] != association["questionRo"] or
+            q["options"][q["correctOption"]] != association["correctText"]):
+        raise ValueError(f"Question/answer changed since source review: {q['id']}")
     passages = []
     for item in association["passages"]:
         text = by_excerpt[item["id"]]["text"]
@@ -54,7 +60,7 @@ for association in definitions["reviewedQuestions"]:
 output = {"schemaVersion": 2, "edition": definitions["edition"],
           "revisionLabel": definitions["revisionLabel"],
           "sourceTitle": definitions["sourceTitle"], "sourceFile": source.name,
-          "sourceSha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+          "sourceSha256": source_hash,
           "excerpts": excerpts, "references": references}
 (root / "dist/laws-ro.json").write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(f"Extracted {len(excerpts)} passages; {len(references)} reviewed scenarios.")

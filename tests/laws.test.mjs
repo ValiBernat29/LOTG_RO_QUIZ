@@ -3,14 +3,16 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createLawLoader, explainableQuestion, findLawReference, renderLawExplanation, validateLawLibrary, preparePilotQuestions} from '../dist/laws-ro.js';
 import {prepareQuestions} from '../dist/quiz.js';
+import {auditLawCoverage} from '../tools/law-audit.mjs';
 
 const bank = JSON.parse(await readFile(new URL('../dist/questions.json', import.meta.url), 'utf8'));
 const library = JSON.parse(await readFile(new URL('../dist/laws-ro.json', import.meta.url), 'utf8'));
 const q = id => bank.find(item => item.id === id);
+const definitions=JSON.parse(await readFile(new URL('../laws/references.json',import.meta.url),'utf8'));
 
 test('The pilot includes every reviewed scenario once and every shuffled answer still has its reference', () => {
   const questions=preparePilotQuestions(library,bank,()=>.2);
-  assert.equal(questions.length,19);
+  assert.equal(questions.length,library.references.length);
   const identities=items=>new Set(items.map(item=>JSON.stringify([item.questionRo,item.options[item.correctOption]])));
   assert.deepEqual(identities(questions),identities(bank.filter(item=>findLawReference(library,item))));
   assert.equal(identities(questions).size,questions.length);
@@ -18,6 +20,25 @@ test('The pilot includes every reviewed scenario once and every shuffled answer 
   for(const id of [96,146,201])assert.ok(questions.some(item=>item.questionRo===q(id).questionRo));
   assert.deepEqual(preparePilotQuestions(library,[]),[]);
   assert.deepEqual(preparePilotQuestions({...library,references:[]},bank),[]);
+});
+test('Coverage accounts for every record and distinct scenario without treating pending cases as verified',()=>{
+  const {summary,queue}=auditLawCoverage(bank,library,definitions);
+  assert.equal(summary.totalRecords,788);assert.equal(summary.perLaw.length,17);
+  assert.equal(summary.verifiedRecords+queue.reduce((n,group)=>n+group.ids.length,0),bank.length);
+  assert.equal(summary.verifiedScenarios+summary.needsReviewScenarios+summary.unmappedScenarios,summary.distinctScenarios);
+  assert.equal(summary.complete,false);
+  for(const id of [3,12,13,60,61]){
+    assert.equal(findLawReference(library,q(id)),null);
+    assert.ok(queue.some(group=>group.status==='needs-review'&&group.ids.includes(id)));
+  }
+  const changed=structuredClone(definitions);changed.reviewIssues[0].correctText='Changed decision';
+  assert.throws(()=>auditLawCoverage(bank,library,changed));
+});
+test('New references justify misconduct, goalkeeper swaps, lost footwear and re-entry with the corresponding source rule',()=>{
+  const cases=[[2,'reckless-caution'],[4,'vor-red'],[5,'rra-yellow'],[7,'crossbar-broken'],[23,'unnotified-swap'],[35,'second-caution-red'],[63,'equipment-correction'],[68,'lost-shoe']];
+  for(const [id,sourceId] of cases)assert.ok(findLawReference(library,q(id)).some(p=>p.id===sourceId));
+  const swap=findLawReference(library,q(23));assert.ok(!swap.some(p=>p.id==='ball-out'||p.id==='dropped-ball'));
+  for(const record of definitions.reviewedQuestions){const original=q(record.id);assert.equal(record.questionRo,original.questionRo);assert.equal(record.correctText,original.options[original.correctOption]);}
 });
 
 test('Every reviewed source association resolves to a real question and literal source highlight', () => {

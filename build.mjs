@@ -1,5 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { findLawReference, validateLawLibrary } from './dist/laws-ro.js';
+import {writeLawAudit} from './tools/law-audit.mjs';
 const input = new URL('../lotg_ro_questions.json', import.meta.url);
 const output = new URL('dist/questions.json', import.meta.url);
 // Locally use the scraper's Romanian bank. On Netlify the repository starts
@@ -27,5 +28,6 @@ for (const reference of library.references) {
   }
 }
 await writeFile(output, JSON.stringify(questions), 'utf8');
+await writeLawAudit(questions,library,JSON.parse(await readFile(new URL('laws/references.json',import.meta.url),'utf8')));
 console.log(`Pregătite ${questions.length} întrebări pentru quiz.`);
 console.log(`Pasaje în română: ${questions.filter(q => findLawReference(library, q)).length}/${questions.length} întrebări cu asociere verificată.`);
