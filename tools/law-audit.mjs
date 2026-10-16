@@ -45,9 +45,9 @@ export async function writeLawAudit(questions,library,definitions) {
   const report=auditLawCoverage(questions,library,definitions);
   const rows=report.summary.perLaw.map(law=>`| ${law.lawNumber} · ${law.title} | ${law.verified}/${law.total} | ${law.legacy} | ${law.needsReview} | ${law.unmapped} |`).join('\n');
   const issues=report.queue.filter(group=>group.status==='needs-review').map(group=>
-    `- ID ${group.ids.join(', ')}: ${group.issue.reason} (PDF: ${group.issue.evidence.map(item=>'p. '+item.page).join(', ')})`).join('\n');
+    `- ID ${group.ids.join(', ')}: ${group.issue.reason} (Surse: ${group.issue.evidence.map(item=>Number.isInteger(item.page)?'p. '+item.page+(item.edition?' · '+item.edition:''):item.url ?? 'de verificat').join(', ')})`).join('\n');
   const markdown=`# Acoperirea explicațiilor în română\n\nRaport generat prin \`npm run laws:audit\`. Nu reprezintă o declarație de finalizare.\n\n`+
-    `Ediția de referință: ${library.targetEdition}. PDF românesc disponibil: ${library.edition}. ${library.revisionLabel}.\n\n`+
+    `Ediția de referință: ${library.targetEdition}. PDF românesc integral: ${library.edition}. ${library.supplementalSources?.length?'Supliment: scanare românească 2026/27 cu protocoale și rezumatul modificărilor. ':''}${library.revisionLabel}.\n\n`+
     `- Înregistrări cu explicații: **${report.summary.associatedRecords}/${questions.length}** (${report.summary.associatedScenarios} situații distincte).\n`+
     `- Verificate pentru ${library.targetEdition}: **${report.summary.verifiedRecords} înregistrări / ${report.summary.verifiedScenarios} situații**.\n`+
     `- Verificate pe ${library.edition}, în curs de reverificare pentru ${library.targetEdition}: **${report.summary.legacyRecords} înregistrări / ${report.summary.legacyScenarios} situații**.\n`+

@@ -1,0 +1,223 @@
+{
+  "revision": "rev17",
+  "checkedAt": "2026-10-16",
+  "rows": [
+    {
+      "id": 14,
+      "questionRo": "Un jucător schimbă locul și tricoul cu portarul fără informarea arbitrului, iar arbitrul oprește jocul când observă schimbarea. Care este soluția?",
+      "correctText": "Oprire greșită, minge de arbitru și CG pentru ambii jucători.",
+      "passages": [
+        {
+          "id": "unnotified-swap",
+          "justifies": "Jocul continuă și ambii jucători sunt avertizați",
+          "highlights": [
+            "În cazul în care un jucător înlocuieşte portarul fără permisiunea arbitrului, acesta: • lasă jocul să continue. • avertizează ambii jucători la următoarea ieșire a mingii din joc, dar nu și în cazul în care înlocuirea se produce în pauza dintre reprize (inclusiv în pauza din prelungiri) sau în intervalul cuprins între sfârșitul meciului și începerea prelungirilor și/sau penalty-urilor de departajare."
+          ]
+        },
+        {
+          "id": "drop-other-stoppages",
+          "justifies": "Minge de arbitru după oprirea necerută de Lege",
+          "highlights": [
+            "Mingea de arbitru se utilizează pentru reluarea jocului atunci când arbitrul oprește jocul, iar Legile jocului nu prevăd reluarea acestuia în unul din modurile enumerate mai sus."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "questionRo": "Un jucător înlocuit părăsește terenul pe la punctul cel mai apropiat. Văzând mingea urmărită de un adversar, reintră și o lovește pentru a opri un atac promițător. Care este decizia arbitrului?",
+      "correctText": "LLD și două CG urmate de CR pentru eliminare.",
+      "passages": [
+        {
+          "id": "extra-persons",
+          "justifies": "LLD sau LP pentru intervenția înlocuitorului/oficialului",
+          "highlights": [
+            "Dacă jocul este oprit, iar cel care a intervenit în joc este: • un oficial al echipei, un jucător înlocuitor, un jucător înlocuit sau un jucător eliminat, jocul este reluat prin lovitură liberă directă sau lovitură de pedeapsă."
+          ]
+        },
+        {
+          "id": "substitute-cautions",
+          "justifies": "CG pentru intrarea fără permisiune",
+          "highlights": [
+            "• intră sau reintră pe terenul de joc fără permisiunea arbitrului."
+          ]
+        },
+        {
+          "id": "two-cautions",
+          "justifies": "Două CG pentru cele două abateri distincte",
+          "highlights": [
+            "În cazul în care se comit două abateri distincte sancţionabile cu avertisment (chiar dacă la foarte scurt timp una după alta), se vor da două avertismente; de exemplu, dacă un jucător intră pe teren fără permisiune şi comite un atac imprudent prin alunecare sau opreşte un atac promiţător prin fault/jucarea mingii cu mâna etc."
+          ]
+        },
+        {
+          "id": "second-caution-red",
+          "justifies": "CR pentru două avertismente în același meci",
+          "highlights": [
+            "• primește un al doilea avertisment în același meci."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "questionRo": "Un înlocuitor al echipei A intră pe teren și distrage un apărător în timpul contraatacului din care echipa A înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat, CG pentru înlocuitor și LLD pentru adversari.",
+      "passages": [
+        {
+          "id": "extra-person-goal",
+          "justifies": "Anularea golului după intervenția înlocuitorului echipei marcatoare",
+          "highlights": [
+            "9. Gol marcat cu o persoană în plus pe teren Dacă, după marcarea unui gol, dar înainte de reluarea jocului, arbitrul își dă seama că pe terenul de joc se afla o persoană în plus în momentul marcării golului și acea persoană a intervenit în joc: • arbitrul trebuie să anuleze golul, dacă persoana în plus este: • un jucător, un jucător înlocuitor, un jucător înlocuit, un jucător eliminat sau un oficial al echipei care a marcat golul; jocul este reluat cu lovitură liberă directă din locul unde se afla persoana respectivă. • o persoană străină/factor extern care a intervenit în joc, în afară de cazul în care golul a fost înscris în modul prezentat la secțiunea „Persoane în plus pe terenul de joc”; jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "substitute-cautions",
+          "justifies": "CG pentru intrarea fără permisiune",
+          "highlights": [
+            "• intră sau reintră pe terenul de joc fără permisiunea arbitrului."
+          ]
+        },
+        {
+          "id": "extra-persons",
+          "justifies": "LLD sau LP pentru intervenția înlocuitorului/oficialului",
+          "highlights": [
+            "Dacă jocul este oprit, iar cel care a intervenit în joc este: • un oficial al echipei, un jucător înlocuitor, un jucător înlocuit sau un jucător eliminat, jocul este reluat prin lovitură liberă directă sau lovitură de pedeapsă."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "questionRo": "Portarul iese din propria suprafață de pedeapsă și atacă imprudent un adversar aflat într-o situație unu la unu, împiedicând o ocazie clară de gol (DOGSO). Ceilalți apărători sunt prea departe pentru a interveni. Care este decizia arbitrului?",
+      "correctText": "LLD și CR portarului pentru DOGSO; echipa desemnează alt portar.",
+      "passages": [
+        {
+          "id": "direct-free-kick",
+          "justifies": "LLD pentru contactul din afara suprafeței de pedeapsă",
+          "highlights": [
+            "În caz de contact fizic, abaterea este sancţionată cu lovitură liberă directă."
+          ]
+        },
+        {
+          "id": "red-dogso-free-kick",
+          "justifies": "CR pentru DOGSO din afara suprafeței de pedeapsă",
+          "highlights": [
+            "• împiedică un adversar să înscrie un gol sau împiedică o ocazie clară de înscriere a unui gol de către un adversar a cărui direcţie generală de deplasare este către poarta jucătorului vinovat, prin comiterea unei abateri care se sancţionează cu lovitură liberă (în afară de cazul în care se aplică prevederile secţiunii următoare)."
+          ]
+        },
+        {
+          "id": "swap-goalkeeper",
+          "justifies": "Un jucător poate prelua rolul portarului",
+          "highlights": [
+            "4. Înlocuirea portarului Oricare din ceilalți jucători poate înlocui portarul dacă: • arbitrul este informat înainte de efectuarea înlocuirii. • înlocuirea are loc în timpul unei opriri a jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "questionRo": "Un apărător al echipei A a părăsit terenul pentru îngrijiri după o accidentare ușoară și se află încă în spatele liniei propriei porți. Un atacant al echipei B șutează pe lângă portarul echipei A, iar mingea se îndreaptă spre poarta acesteia. Apărătorul reintră fără permisiunea arbitrului și degajează mingea din propria suprafață de pedeapsă, împiedicând-o să intre în poartă. Care este decizia arbitrului?",
+      "correctText": "LP și CR pentru reintrare neautorizată și intervenție.",
+      "passages": [
+        {
+          "id": "unauthorized-dogso",
+          "justifies": "CR pentru reintrarea care împiedică golul",
+          "highlights": [
+            "Un jucător, jucător eliminat, jucător înlocuitor sau jucător înlocuit care intră pe terenul de joc fără permisiunea necesară din partea arbitrului și intervine în joc sau asupra unui adversar, împiedicând echipa adversă să înscrie un gol sau împiedicând o ocazie clară de înscriere a unui gol de către echipa adversă comite o abatere care se sancționează cu eliminare."
+          ]
+        },
+        {
+          "id": "return-restart",
+          "justifies": "Reluare pentru intervenție",
+          "highlights": [
+            "Dacă arbitrul oprește jocul, acesta trebuie reluat: • prin lovitură liberă directă din locul unde s-a produs intervenția. • prin lovitură liberă indirectă din locul unde se afla mingea la oprirea jocului, în cazul în care nu s-a produs nicio intervenție."
+          ]
+        },
+        {
+          "id": "penalty-award",
+          "justifies": "LP pentru abaterea din propria suprafață",
+          "highlights": [
+            "Lovitura de pedeapsă (penalty) se acordă dacă un jucător comite o abatere sancționabilă cu lovitură liberă directă în propria suprafață de pedeapsă sau în afara terenului de joc, în cadrul jocului, conform prevederilor Legilor 12 și 13."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "questionRo": "Un apărător tratat în afara terenului reintră fără permisiune, în timp ce adversarii pornesc un atac promițător (SPA); acesta nu interferează cu jocul sau adversarii. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; la prima oprire, apărătorul primește CG.",
+      "passages": [
+        {
+          "id": "return-no-permission",
+          "justifies": "Reintrarea fără permisiune și oprirea jocului",
+          "highlights": [
+            "8. Jucător ieşit în afara terenului de joc Dacă un jucător care necesită permisiunea arbitrului pentru a reintra pe terenul de joc, reintră pe teren fără permisiunea acestuia, arbitrul trebuie: • să oprească jocul (nu imediat, dacă jucătorul nu intervine în joc sau asupra unui oficial de meci sau dacă poate fi aplicată regula avantajului)."
+          ]
+        },
+        {
+          "id": "return-restart",
+          "justifies": "CG și reluare după existența intervenției",
+          "highlights": [
+            "• să avertizeze jucătorul pentru intrarea pe teren fără permisiune. Dacă arbitrul oprește jocul, acesta trebuie reluat: • prin lovitură liberă directă din locul unde s-a produs intervenția. • prin lovitură liberă indirectă din locul unde se afla mingea la oprirea jocului, în cazul în care nu s-a produs nicio intervenție."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "questionRo": "Un jucător reintră fără permisiune, lovește mingea și oprește un atac promițător, iar mingea iese peste linia de margine. Care este decizia arbitrului?",
+      "correctText": "LLD, două CG pentru reintrare și SPA, apoi CR pentru jucător.",
+      "passages": [
+        {
+          "id": "return-no-permission",
+          "justifies": "Reintrarea fără permisiune și oprirea jocului",
+          "highlights": [
+            "8. Jucător ieşit în afara terenului de joc Dacă un jucător care necesită permisiunea arbitrului pentru a reintra pe terenul de joc, reintră pe teren fără permisiunea acestuia, arbitrul trebuie: • să oprească jocul (nu imediat, dacă jucătorul nu intervine în joc sau asupra unui oficial de meci sau dacă poate fi aplicată regula avantajului)."
+          ]
+        },
+        {
+          "id": "return-restart",
+          "justifies": "CG și reluare după existența intervenției",
+          "highlights": [
+            "• să avertizeze jucătorul pentru intrarea pe teren fără permisiune. Dacă arbitrul oprește jocul, acesta trebuie reluat: • prin lovitură liberă directă din locul unde s-a produs intervenția. • prin lovitură liberă indirectă din locul unde se afla mingea la oprirea jocului, în cazul în care nu s-a produs nicio intervenție."
+          ]
+        },
+        {
+          "id": "two-cautions",
+          "justifies": "Două CG pentru reintrare și SPA",
+          "highlights": [
+            "În cazul în care se comit două abateri distincte sancţionabile cu avertisment (chiar dacă la foarte scurt timp una după alta), se vor da două avertismente; de exemplu, dacă un jucător intră pe teren fără permisiune şi comite un atac imprudent prin alunecare sau opreşte un atac promiţător prin fault/jucarea mingii cu mâna etc."
+          ]
+        },
+        {
+          "id": "second-caution-red",
+          "justifies": "CR pentru două avertismente în același meci",
+          "highlights": [
+            "• primește un al doilea avertisment în același meci."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "questionRo": "Arbitrul oprește jocul și acordă CG unui jucător reintrat fără permisiune. Cum se reia jocul?",
+      "correctText": "Cu intervenție: LLD din locul ei; fără intervenție: LLI din locul mingii.",
+      "passages": [
+        {
+          "id": "return-no-permission",
+          "justifies": "Reintrarea fără permisiune și oprirea jocului",
+          "highlights": [
+            "8. Jucător ieşit în afara terenului de joc Dacă un jucător care necesită permisiunea arbitrului pentru a reintra pe terenul de joc, reintră pe teren fără permisiunea acestuia, arbitrul trebuie: • să oprească jocul (nu imediat, dacă jucătorul nu intervine în joc sau asupra unui oficial de meci sau dacă poate fi aplicată regula avantajului)."
+          ]
+        },
+        {
+          "id": "return-restart",
+          "justifies": "CG și reluare după existența intervenției",
+          "highlights": [
+            "• să avertizeze jucătorul pentru intrarea pe teren fără permisiune. Dacă arbitrul oprește jocul, acesta trebuie reluat: • prin lovitură liberă directă din locul unde s-a produs intervenția. • prin lovitură liberă indirectă din locul unde se afla mingea la oprirea jocului, în cazul în care nu s-a produs nicio intervenție."
+          ]
+        }
+      ]
+    }
+  ]
+}

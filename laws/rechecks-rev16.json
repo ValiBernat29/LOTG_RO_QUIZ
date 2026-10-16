@@ -1,0 +1,97 @@
+{
+  "revision": "rev16",
+  "checkedAt": "2026-10-16",
+  "rows": [
+    {
+      "id": 16,
+      "questionRo": "Portarul este grav accidentat și nu poate continua, iar echipa a epuizat înlocuirile sau oportunitățile de înlocuire. Care este procedura?",
+      "correctText": "Un jucător rămas devine portar cu tricou distinct.",
+      "passages": [
+        {
+          "id": "swap-goalkeeper",
+          "justifies": "Un jucător rămas poate prelua rolul portarului",
+          "highlights": [
+            "4. Înlocuirea portarului Oricare din ceilalți jucători poate înlocui portarul dacă: • arbitrul este informat înainte de efectuarea înlocuirii. • înlocuirea are loc în timpul unei opriri a jocului."
+          ]
+        },
+        {
+          "id": "shirt-colors",
+          "justifies": "Culori distincte pentru portar",
+          "highlights": [
+            "• fiecare portar trebuie să poarte culori distincte de ceilalți jucători și de oficialii de meci."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "questionRo": "Un jucător înlocuitor înscris începe meciul în locul unui titular înscris, fără ca arbitrul să fie informat. Care este procedura?",
+      "correctText": "Înlocuitorul continuă; fără sancțiune disciplinară.",
+      "passages": [
+        {
+          "id": "unnotified-starter",
+          "justifies": "Înlocuitorul continuă fără sancțiune disciplinară",
+          "highlights": [
+            "În cazul în care un jucător care a fost desemnat ca înlocuitor intră pe teren la începutul meciului în locul unui jucător titular, iar arbitrul nu este informat cu privire la această modificare: • arbitrul permite jucătorului desemnat ca înlocuitor să continue jocul. • nu se poate dispune nicio sancțiune disciplinară împotriva jucătorului desemnat ca înlocuitor. • jucătorul desemnat ca jucător titular poate deveni jucător desemnat ca înlocuitor. • nu se reduce numărul de înlocuiri. • arbitrul aduce incidentul la cunoștința autorităților competente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "questionRo": "O echipă are mai puțin de șapte jucători deoarece unul a părăsit deliberat terenul. Poate continua meciul?",
+      "correctText": "Poate acorda avantaj, dar nu reia jocul dacă echipa rămâne sub șapte jucători.",
+      "passages": [
+        {
+          "id": "minimum-players",
+          "justifies": "Avantaj permis, dar fără reluare sub șapte jucători",
+          "highlights": [
+            "În cazul în care o echipă are mai puţin de 7 jucători din cauză că unul sau mai mulţi jucători au părăsit în mod deliberat terenul de joc, arbitrul nu este obligat să oprească jocul, putând acorda avantaj, dar jocul nu trebuie reluat după ieşirea mingii din joc în cazul în care o echipă nu are un număr de minimum 7 jucători."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "questionRo": "La o oprire, antrenorul dorește să înlocuiască un jucător, dar acesta refuză să părăsească terenul. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă fără efectuarea înlocuirii.",
+      "passages": [
+        {
+          "id": "refuse-substitution",
+          "justifies": "Jocul continuă fără înlocuirea refuzată",
+          "highlights": [
+            "• dacă un jucător care urmează să fie înlocuit refuză să părăsească terenul, jocul va continua."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "questionRo": "În ce categorii de competiții este permisă reintroducerea pe teren a unui jucător înlocuit, cu aprobarea forului competent?",
+      "correctText": "Tineret, veterani, persoane cu dizabilități și fotbal de bază.",
+      "passages": [
+        {
+          "id": "return-substitutes",
+          "justifies": "Categoriile permise, cu aprobarea forului competent",
+          "highlights": [
+            "Reintroducerea pe teren a jucătorilor înlocuiţi Reintroducerea pe teren a jucătorilor înlocuiți este permisă numai la competițiile de tineret, veterani, pentru persoanele cu dizabilități și fotbalul de bază, sub rezerva acordului asociației naționale, confederației sau FIFA."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "questionRo": "Poate un jucător schimba locul cu portarul după acordarea unei LP împotriva echipei sale?",
+      "correctText": "Da, cu informarea arbitrului înaintea executării.",
+      "passages": [
+        {
+          "id": "swap-goalkeeper",
+          "justifies": "Schimbare cu portarul la oprire, cu informarea arbitrului",
+          "highlights": [
+            "4. Înlocuirea portarului Oricare din ceilalți jucători poate înlocui portarul dacă: • arbitrul este informat înainte de efectuarea înlocuirii. • înlocuirea are loc în timpul unei opriri a jocului."
+          ]
+        }
+      ]
+    }
+  ]
+}

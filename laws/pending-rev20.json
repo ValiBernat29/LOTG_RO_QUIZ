@@ -1,0 +1,1125 @@
+{
+  "revision": "rev20",
+  "reviewedAt": "2026-10-16",
+  "targetEdition": "2026/27",
+  "complete": false,
+  "note": "Listă editorială a cazurilor rămase, nu o certificare și nici o listă de răspunsuri declarate greșite. Unele necesită doar asocierea mai precisă a surselor, altele clarificări de enunț sau text românesc actual. Întrebările nu sunt eliminate automat din quiz. Nicio cheie nu este schimbată prin acest fișier.",
+  "summary": {
+    "targeted-source-review": 22,
+    "interpretation-review": 17,
+    "wording-review": 6,
+    "context-review": 12,
+    "official-ro-2026-needed": 11,
+    "edition-review": 2
+  },
+  "cases": [
+    {
+      "questionRo": "Înlocuitori ai ambelor echipe se află câțiva metri în teren la marcarea unui gol, fără să influențeze jocul. Care este decizia arbitrului?",
+      "correctText": "Gol valabil, lovitură de începere și fără sancțiuni disciplinare.",
+      "ids": [
+        26
+      ],
+      "laws": [
+        3
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Trebuie justificată explicit lipsa CG pentru prezența pasivă a înlocuitorilor, nu doar validitatea golului din Legea 3.9."
+    },
+    {
+      "questionRo": "Un înlocuitor al echipei marcatoare se află câțiva metri pe teren, fără să intervină în joc. Arbitrul îl observă înainte de reluarea jocului. Care este decizia arbitrului?",
+      "correctText": "Gol valabil, fără sancțiune și apoi lovitură de începere.",
+      "ids": [
+        28
+      ],
+      "laws": [
+        3
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Validitatea golului și lipsa sancțiunii pentru înlocuitor trebuie acoperite separat; nu se deduce automat lipsa CG din absența intervenției."
+    },
+    {
+      "questionRo": "Jocul este oprit pentru un accidentat, iar echipa adversă efectuează o înlocuire. Înainte de reluare, arbitrul află că jucătorul înlocuit comisese anterior o abatere de CR care a produs accidentarea. Care este decizia arbitrului?",
+      "correctText": "Titularul primește CR, înlocuirea se anulează, iar reluarea este LLD sau LP.",
+      "ids": [
+        33,
+        114,
+        481
+      ],
+      "laws": [
+        3,
+        5,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Anularea unei înlocuiri deja finalizate după descoperirea unei eliminări anterioare cere verificarea excepției, inclusiv față de protocolul 2026/27."
+    },
+    {
+      "questionRo": "După eliminarea portarului pentru DOGSO, echipa introduce un portar înlocuitor. Înainte de reluarea jocului, în urma analizei VAR, arbitrul înlocuiește CR cu CG pentru SPA. Poate echipa să anuleze înlocuirea?",
+      "correctText": "Da, schimbarea deciziei și anularea înlocuirii sunt permise.",
+      "ids": [
+        34,
+        117
+      ],
+      "laws": [
+        3,
+        5
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Trebuie verificată excepția anulării înlocuirii după schimbarea deciziei VAR; nu este suficientă regula generală 3.3."
+    },
+    {
+      "questionRo": "O echipă începe meciul cu zece jucători, deoarece unul dintre titularii înscriși în foaia de joc întârzie. Poate acesta să participe ulterior la meci?",
+      "correctText": "Da, intră la o oprire cu permisiune, fără a consuma o înlocuire.",
+      "ids": [
+        39
+      ],
+      "laws": [
+        3
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Se caută justificarea completă pentru titularul întârziat: eligibilitate, intrare la oprire și faptul că nu se consumă o înlocuire."
+    },
+    {
+      "questionRo": "După depunerea listelor, un înlocuitor nominalizat face gesturi ofensatoare la încălzirea dinaintea loviturii de începere. Care este procedura?",
+      "correctText": "CR acordat, participare interzisă și fără înlocuire permisă pe lista echipei.",
+      "ids": [
+        45,
+        503
+      ],
+      "laws": [
+        3,
+        12
+      ],
+      "status": "edition-review",
+      "reviewedEdition": "2025/26",
+      "issue": null,
+      "category": "wording-review",
+      "reason": "«CR acordat» înaintea loviturii de începere trebuie separat de arătarea efectivă a cartonașului; se verifică limitele autorității disciplinare de la încălzire."
+    },
+    {
+      "questionRo": "Poate arbitrul elimina un jucător înaintea loviturii de începere, de exemplu la încălzire sau în tunel?",
+      "correctText": "Da; poate fi înlocuit de un înlocuitor.",
+      "ids": [
+        49
+      ],
+      "laws": [
+        3
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Lipsește precizarea momentului față de depunerea listei: posibilitatea înlocuirii diferă înainte și după depunerea acesteia."
+    },
+    {
+      "questionRo": "O persoană care nu este jucător al echipei în apărare atinge mingea care se îndreaptă spre poartă. Mingea intră totuși în poartă, iar intervenția nu împiedică un apărător să o joace. Care este decizia arbitrului?",
+      "correctText": "Validează golul numai în poarta spre care se îndrepta mingea.",
+      "ids": [
+        50
+      ],
+      "laws": [
+        3
+      ],
+      "status": "edition-review",
+      "reviewedEdition": "2025/26",
+      "issue": null,
+      "category": "context-review",
+      "reason": "Identitatea și echipa persoanei care intervine sunt insuficient precizate. Intervenția echipei în atac este o excepție la validarea golului."
+    },
+    {
+      "questionRo": "Ce desemnează termenul «persoană străină/factor extern» în Legile Jocului?",
+      "correctText": "Persoană neînscrisă în foaie, alta decât un oficial de meci; animal, obiect sau structură.",
+      "ids": [
+        54
+      ],
+      "laws": [
+        3
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Definiția trebuie să acopere și oficialii de meci, animalele, obiectele și structurile; paragraful 3.7 despre lista echipei nu acoperă singur întregul răspuns."
+    },
+    {
+      "questionRo": "La o aruncare de la margine, jucătorul ține mingea deasupra capului, apoi o lasă să cadă în teren fără să o arunce. Care este decizia arbitrului?",
+      "correctText": "Aruncare pentru adversari sau avantaj.",
+      "ids": [
+        72,
+        735
+      ],
+      "laws": [
+        5,
+        15
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Este necesar pasajul românesc actual despre avantaj la reluări executate incorect; nu se folosește singură regula generală 2025/26."
+    },
+    {
+      "questionRo": "Un jucător ridică un picior de la sol în timp ce execută aruncarea de la margine, iar mingea intră în teren. Care este decizia arbitrului?",
+      "correctText": "Aruncare pentru adversari sau avantaj.",
+      "ids": [
+        73,
+        736
+      ],
+      "laws": [
+        5,
+        15
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Avantaj la aruncare executată incorect: lipsește citatul românesc actual specific aplicării avantajului la reluări."
+    },
+    {
+      "questionRo": "Care este decizia când o aruncare de la margine este executată incorect, iar mingea intră în teren?",
+      "correctText": "Aruncare pentru adversari sau avantaj.",
+      "ids": [
+        74,
+        737
+      ],
+      "laws": [
+        5,
+        15
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Avantaj la aruncare executată incorect: nu se certifică prin extrapolarea textului general vechi."
+    },
+    {
+      "questionRo": "Arbitrul atribuie greșit unui apărător o abatere de jucare a mingii cu mâna comisă de un atacant, îi arată CG și acordă LLD atacanților. Poate VAR informa arbitrul despre eroare?",
+      "correctText": "Da; CG se anulează și se acordă LLD echipei apărătorului.",
+      "ids": [
+        75,
+        148,
+        331
+      ],
+      "laws": [
+        5,
+        6,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Trebuie acoperită sfera actuală VAR pentru identitate greșită și schimbarea reluării, prin textul oficial românesc corespunzător."
+    },
+    {
+      "questionRo": "Un apărător simulează un fault fără contact. Arbitrul acordă greșit LLD, îi arată atacantului al doilea CG și apoi CR. Poate VAR interveni?",
+      "correctText": "Da; anulează al doilea CG și CR, dă CG apărătorului și LLI atacanților.",
+      "ids": [
+        76,
+        149
+      ],
+      "laws": [
+        5,
+        6
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Noua posibilitate VAR de corectare a celui de-al doilea CG clar greșit trebuie citată din protocolul românesc actual."
+    },
+    {
+      "questionRo": "Un jucător deja avertizat comite o intrare imprudentă pentru al doilea CG, dar arbitrul nu vede abaterea. Poate VAR recomanda analiza incidentului grav omis?",
+      "correctText": "Nu; VAR intervine la un al doilea CG clar greșit, nu la unul omis.",
+      "ids": [
+        77,
+        150
+      ],
+      "laws": [
+        5,
+        6
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Trebuie distins al doilea CG omis de cel clar greșit; este necesară formularea românească actuală a protocolului VAR."
+    },
+    {
+      "questionRo": "Arbitrul oprește jocul pentru un jucător presupus grav accidentat, iar acesta solicită îngrijiri medicale pe teren. Care este procedura?",
+      "correctText": "Părăsește terenul; revine cu permisiune după reluare și un minut.",
+      "ids": [
+        84
+      ],
+      "laws": [
+        5
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "«Presupus grav accidentat» trebuie diferențiat de accidentarea gravă efectivă, care poate intra în excepțiile protocolului medical."
+    },
+    {
+      "questionRo": "Un atacant cade fără să fi fost faultat și pare grav accidentat. Un coechipier are mingea lângă suprafața de pedeapsă adversă, fără o ocazie clară de gol. Cum procedează arbitrul?",
+      "correctText": "Oprește jocul; îngrijiri, ieșire minimum un minut după reluare și minge de arbitru.",
+      "ids": [
+        85,
+        170
+      ],
+      "laws": [
+        5,
+        8
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Trebuie precizată concluzia evaluării medicale înainte de a impune necondiționat regula unui minut."
+    },
+    {
+      "questionRo": "Arbitrul acordă LP după ce un apărător atacă imprudent un adversar. Atacantul poate continua, dar apărătorul este accidentat și necesită îngrijiri. Care este procedura corectă?",
+      "correctText": "CG; apărătorul iese și nu participă la LP.",
+      "ids": [
+        86,
+        348
+      ],
+      "laws": [
+        5,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "«Nu participă la LP» este prea categoric fără precizarea duratei până la executare și a condițiilor revenirii după îngrijiri."
+    },
+    {
+      "questionRo": "Un jucător execută o lovitură liberă cu mingea în mișcare, pasează slab, iar adversarii interceptează și obțin posesia. Care este decizia arbitrului?",
+      "correctText": "Se poate aplica avantajul dacă este mai favorabil adversarilor.",
+      "ids": [
+        91,
+        626
+      ],
+      "laws": [
+        5,
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Avantaj la lovitură liberă executată cu mingea în mișcare: este necesară clauza românească nouă pentru reluări."
+    },
+    {
+      "questionRo": "O aruncare de la margine este executată din locul greșit, dar mingea intră în teren și ajunge la adversari. Care este decizia avantajoasă pentru aceștia?",
+      "correctText": "Aplică avantajul, dacă e mai favorabil decât aruncarea.",
+      "ids": [
+        92,
+        740
+      ],
+      "laws": [
+        5,
+        15
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Avantaj după aruncare din loc greșit: citatul general vechi nu justifică singur noua aplicare."
+    },
+    {
+      "questionRo": "La aruncarea de la margine, un picior este complet în teren fără să atingă linia, iar adversarul interceptează mingea. Care este decizia arbitrului?",
+      "correctText": "Aplică avantajul, dacă e mai favorabil decât aruncarea.",
+      "ids": [
+        93,
+        741
+      ],
+      "laws": [
+        5,
+        15
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Avantaj după poziționarea neregulamentară a piciorului la aruncare: necesită textul actual despre reluări."
+    },
+    {
+      "questionRo": "După încheierea primei reprize, arbitrul vede un jucător lovind un adversar în tunel, în drum spre vestiare. Care este procedura corectă?",
+      "correctText": "CR pentru comportament violent și informarea echipelor.",
+      "ids": [
+        98,
+        393
+      ],
+      "laws": [
+        5,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "CR pentru violență este acoperit; rămâne de justificat specific informarea echipelor pentru incidentul din tunel."
+    },
+    {
+      "questionRo": "După prima repriză, un jucător protestează verbal față de o decizie anterioară în timp ce el și arbitrul se află în afara terenului, spre tunel. Care este procedura?",
+      "correctText": "CG pentru protest și informarea ambelor echipe.",
+      "ids": [
+        103,
+        414
+      ],
+      "laws": [
+        5,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "CG pentru protest este acoperit; informarea ambelor echipe trebuie sprijinită de pasajul procedural corespunzător."
+    },
+    {
+      "questionRo": "Un jucător primește al doilea CG și CR, apoi folosește un limbaj ofensator față de arbitru. Care este procedura?",
+      "correctText": "Nu primește alt CR, părăsește împrejurimile și abaterea se raportează.",
+      "ids": [
+        106,
+        431
+      ],
+      "laws": [
+        5,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Raportarea și părăsirea împrejurimilor nu demonstrează singure de ce nu se arată un al doilea CR."
+    },
+    {
+      "questionRo": "La finalul reprizei a doua, un jucător se află încă în perioada unei eliminări temporare. Meciul este urmat de lovituri de departajare. Poate jucătorul să participe la acestea?",
+      "correctText": "Da, poate participa chiar dacă perioada nu s-a împlinit integral.",
+      "ids": [
+        107
+      ],
+      "laws": [
+        5
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Pasaj identificat în îndrumările pentru eliminări temporare, pagina 30; trebuie integrat cu încadrare corectă a capitolului și reverificat pe îndrumările actuale."
+    },
+    {
+      "questionRo": "Un apărător și un atacant se lovesc reciproc în suprafața de pedeapsă a apărătorului, cu mingea în joc. Care este decizia arbitrului?",
+      "correctText": "CR pentru ambii; reluare după prima abatere, iar la simultaneitate LP.",
+      "ids": [
+        124,
+        561
+      ],
+      "laws": [
+        5,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Loviturile reciproce nu precizează intensitatea/natura care impune CR ambilor; simultaneitatea și prima abatere cer analiză distinctă."
+    },
+    {
+      "questionRo": "După ce primește CR, un jucător comite încă o abatere sancționabilă cu eliminare înainte de a părăsi terenul. Cum procedează arbitrul?",
+      "correctText": "Nu arată alt CR, raportează ambele abateri, iar comisia decide.",
+      "ids": [
+        140
+      ],
+      "laws": [
+        5
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Se verifică procedura fără al doilea CR și rolul comisiei; pasajul generic despre raport nu acoperă toate componentele."
+    },
+    {
+      "questionRo": "Un jucător care a părăsit terenul pentru îngrijiri anunță că este pregătit să revină și dorește să execute o aruncare de la margine. În ce condiții poate executa aruncarea?",
+      "correctText": "Da, cu permisiune, după reluarea jocului și atingerea liniei cu piciorul înainte de aruncare.",
+      "ids": [
+        144
+      ],
+      "laws": [
+        5
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "edition-review",
+      "reason": "Răspunsul despre revenirea după îngrijiri trebuie confruntat cu protocolul medical 2026/27 și excepțiile perioadei de un minut."
+    },
+    {
+      "questionRo": "Arbitrul stabilește trei minute de timp adițional la finalul reprizei a doua. Cu câteva secunde înainte de expirarea timpului regulamentar, jocul este oprit cinci minute pentru o accidentare. Cât timp adițional se arată și se joacă după reluare?",
+      "correctText": "Trei minute, cât fusese stabilit înainte de oprire.",
+      "ids": [
+        158
+      ],
+      "laws": [
+        7
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Enunțul cere timpul după o oprire de cinci minute, dar răspunsul păstrează trei minute; trebuie confruntate cronologia și sursa engleză înaintea unei corectări."
+    },
+    {
+      "questionRo": "După executarea unei lovituri de poartă, mingea atinge arbitrul în afara suprafeței de pedeapsă și revine spre poartă. Portarul o prinde pentru a împiedica golul, iar arbitrul oprește jocul. Care este reluarea?",
+      "correctText": "Minge de arbitru pentru echipa portarului, din locul contactului cu arbitrul.",
+      "ids": [
+        161,
+        211
+      ],
+      "laws": [
+        8,
+        9
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "FAQ-ul actual confirmă mingea de arbitru la locul contactului cu arbitrul; trebuie citatul românesc actual pentru această localizare, nu cel vechi despre locul opririi."
+    },
+    {
+      "questionRo": "Cu mingea în joc, un înlocuitor lovește violent un alt înlocuitor al propriei echipe în afara terenului. Arbitrul oprește jocul. Care este decizia arbitrului?",
+      "correctText": "CR pentru agresor și reluare cu minge de arbitru.",
+      "ids": [
+        202,
+        599
+      ],
+      "laws": [
+        8,
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "CR pentru violență este clar; reluarea cu minge de arbitru trebuie justificată pentru un înlocuitor împotriva altui înlocuitor propriu, nu prin regula aplicabilă jucătorului."
+    },
+    {
+      "questionRo": "La loviturile de departajare, portarul se accidentează și nu mai poate continua. Echipa mai are înlocuiri disponibile, dar și-a epuizat oportunitățile de înlocuire din timpul meciului. Poate portarul să fie înlocuit cu un înlocuitor înscris în foaia de joc?",
+      "correctText": "Da, portarul poate fi înlocuit cu înlocuitorul nefolosit disponibilă.",
+      "ids": [
+        241
+      ],
+      "laws": [
+        10
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "wording-review",
+      "reason": "Corecție de acord necesară: «înlocuitorul nefolosit disponibilă»; asocierea va include distinct înlocuirile disponibile și oportunitățile din timpul meciului."
+    },
+    {
+      "questionRo": "Ce sancțiuni disciplinare se aplică pentru abaterile prin jucarea mingii cu mâna care opresc un atac promițător (SPA) sau împiedică un gol ori o ocazie clară de gol (DOGSO)?",
+      "correctText": "CG pentru SPA, exceptând jucarea nedeliberată a mingii cu mâna sancționată cu LP; pentru DOGSO, CG la jucarea nedeliberată sancționată cu LP și CR în celelalte cazuri.",
+      "ids": [
+        337
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Răspunsul sintetizează mai multe situații de henț SPA/DOGSO; trebuie evidențiate toate ramurile, inclusiv jucarea nedeliberată și locul abaterii, nu un singur paragraf."
+    },
+    {
+      "questionRo": "Portarul păstrează mingea în mâini, în propria suprafață de pedeapsă, mai mult de opt secunde. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț; fără sancțiune la prima abatere.",
+      "ids": [
+        353
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Lovitura de colț este acoperită; trebuie selectată și justificarea exactă a lipsei sancțiunii la prima depășire a celor opt secunde."
+    },
+    {
+      "questionRo": "Un atacant împiedică portarul să elibereze mingea, iar acesta depășește opt secunde. Cum se sancționează atacantul, dacă nu se aplică avantajul?",
+      "correctText": "LLD la contact, LLI fără contact; CG când se impune.",
+      "ids": [
+        354
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Trebuie separate contactul, obstrucționarea fără contact și temeiul eventualului CG; imprudența din paragraful despre LLD nu se transferă automat la orice LLI."
+    },
+    {
+      "questionRo": "Portarul prinde mingea în propria suprafață de pedeapsă. Un atacant advers se apropie foarte mult și, în timp ce portarul eliberează mingea pentru a o pasa cu mâna, sare în fața lui ca să blocheze pasa, fără contact cu portarul. Imediat după aruncare, mingea ricoșează din capul atacantului și intră în poarta portarului. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI, cu CG numai dacă situația o impune.",
+      "ids": [
+        356
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Se justifică separat anularea golului, LLI pentru împiedicarea eliberării mingii și condițiile eventualului CG."
+    },
+    {
+      "questionRo": "Un atacant se așază deliberat în calea portarului care ține mingea, fără contact, și întârzie un contraatac potențial. Decizia, dacă nu se aplică avantajul?",
+      "correctText": "LLI; CG dacă abaterea este repetată, imprudentă sau oprește atacul.",
+      "ids": [
+        365
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Trebuie verificată formularea «imprudentă» la obstrucționarea fără contact și motivul concret al CG, fără aplicarea mecanică a clauzei LLD."
+    },
+    {
+      "questionRo": "Un apărător trage ostentativ tricoul unui atacant, îl dezechilibrează și îi ia mingea; avantajul nu se concretizează. Care este decizia arbitrului?",
+      "correctText": "LLD sau LP; CG dacă tragerea e ostentativă ori oprește atacul.",
+      "ids": [
+        383
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Oprirea SPA și tragerea ostentativă sunt motive distincte; citatul despre SPA nu justifică singur orice tragere ostentativă."
+    },
+    {
+      "questionRo": "La executarea unei lovituri de pedeapsă, un apărător strigă puternic exact când executantul urmează să lovească mingea. Executantul este distras și ratează. Care este decizia corectă?",
+      "correctText": "Repetarea LP și CG pentru apărătorul care a strigat.",
+      "ids": [
+        394,
+        673
+      ],
+      "laws": [
+        12,
+        14
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "CG pentru distragere verbală este acoperit; repetarea LP necesită paragraful despre abaterea coechipierului portarului și ratare, continuat pe pagina următoare."
+    },
+    {
+      "questionRo": "Mingea părăsește terenul peste linia de margine și se rostogolește spre un antrenor aflat în suprafața tehnică. Antrenorul nu încearcă să o oprească, iar echipa sa conduce. Este sancționat disciplinar?",
+      "correctText": "Nicio sancțiune pentru simpla neoprire a mingii.",
+      "ids": [
+        395
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Lipsa obligației antrenorului de a opri mingea este o interpretare FAQ; nu se inventează o obligație sau o excepție din lista generică a sancțiunilor."
+    },
+    {
+      "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+      "correctText": "Avantaj și posibil CG ori avertisment la oprirea jocului.",
+      "ids": [
+        411,
+        635
+      ],
+      "laws": [
+        12,
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "wording-review",
+      "reason": "«CG ori avertisment» confundă avertismentul cu atenționarea verbală. După clarificarea termenului se asociază Legea 13.3, distanța și avantajul."
+    },
+    {
+      "questionRo": "Un jucător calcă deliberat și cu forță piciorul unui adversar, fără ca gestul să facă parte dintr-o dispută pentru minge. Mingea se află în joc în partea opusă a terenului. Care este decizia arbitrului?",
+      "correctText": "LLD sau LP; CR la forță excesivă, altminteri CG.",
+      "ids": [
+        412,
+        689
+      ],
+      "laws": [
+        12,
+        14
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Se separă lovitura liberă/LP de evaluarea CG versus CR; paragraful despre obiecte aruncate nu justifică o călcare deliberată."
+    },
+    {
+      "questionRo": "Într-o confruntare colectivă, un jucător lovește un adversar, dar autorul nu poate fi identificat. Poate fi sancționat antrenorul principal?",
+      "correctText": "Nu; incidentul jucătorului neidentificat se raportează autorităților.",
+      "ids": [
+        445
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Trebuie evidențiată limita regulii oficialului neidentificat din suprafața tehnică, pentru a nu o extinde la jucătorul neidentificat de pe teren."
+    },
+    {
+      "questionRo": "Un antrenor solicită furios oprirea jocului și o lovitură liberă, fără limbaj ofensator, insultător sau abuziv. Care este decizia dacă adversarii nu sunt dezavantajați?",
+      "correctText": "Oprirea jocului, CG antrenorului și LLI de pe linia de margine cea mai apropiată.",
+      "ids": [
+        457
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Necesită justificări distincte pentru CG antrenorului, LLI pentru abaterea verbală și locul reluării pe linia de margine."
+    },
+    {
+      "questionRo": "După un fault neglijent al echipei A, un jucător al echipei B face gestul de acordare a unui cartonaș. Cum procedează arbitrul?",
+      "correctText": "CG jucătorului B și LLD pentru B din locul faultului comis.",
+      "ids": [
+        459
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "CG pentru solicitarea unui cartonaș trebuie legat de motivul disciplinar adecvat, nu presupus automat din orice gest."
+    },
+    {
+      "questionRo": "Mingea lovește brațul depărtat al unui atacant, care își mărește în mod nenatural suprafața corpului, apoi un coechipier înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și LLD pentru echipa în apărare din locul abaterea prin jucarea mingii cu mânaui atacantului.",
+      "ids": [
+        463
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "wording-review",
+      "reason": "Răspuns corupt: «din locul abaterea prin jucarea mingii cu mânaui atacantului». Se repară cu păstrarea migrării variantelor salvate înaintea asocierii."
+    },
+    {
+      "questionRo": "Echipa A primește o LLD în apropierea suprafeței de pedeapsă adverse. Arbitrul le cere clar atacanților să aștepte fluierul și se apropie de jucătorii echipei B pentru a asigura respectarea distanței regulamentare. În acel moment, un jucător al echipei A execută lovitura înaintea semnalului. Care este decizia arbitrului?",
+      "correctText": "Repetarea loviturii și CG executantului pentru comportament nesportiv.",
+      "ids": [
+        474,
+        640
+      ],
+      "laws": [
+        12,
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Trebuie justificată repetarea și CG după cererea expresă de a aștepta fluierul; regula mingii statice nu este suficientă."
+    },
+    {
+      "questionRo": "Un apărător ridică imprudent piciorul la nivelul capului adversarului, lovește mingea, dar nu produce contact. Care este decizia arbitrului?",
+      "correctText": "LLI și CG pentru jocul periculos imprudent fără contact.",
+      "ids": [
+        480
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "LLI pentru joc periculos fără contact și CG necesită temeiuri separate; clauza de imprudență pentru LLD nu este singură suficientă."
+    },
+    {
+      "questionRo": "Un jucător înlocuit protestează clar și repetat din suprafața tehnică după o dispută regulamentară. Care este procedura?",
+      "correctText": "Jocul continuă și CG jucătorului la următoarea oprire.",
+      "ids": [
+        507
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "CG înlocuitului pentru protest este clar; trebuie justificată și amânarea sancțiunii până la următoarea oprire."
+    },
+    {
+      "questionRo": "Un apărător împinge un atacant în afara suprafeței de pedeapsă, apoi îl împiedică deliberat în interiorul acesteia. Care este decizia arbitrului?",
+      "correctText": "LP pentru împiedicare și sancțiunea disciplinară corespunzătoare.",
+      "ids": [
+        518,
+        720
+      ],
+      "laws": [
+        12,
+        14
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Lipsește precizarea că jocul nu a fost oprit pentru împingerea inițială și cum se succed cele două abateri; altfel LP nu rezultă necondiționat."
+    },
+    {
+      "questionRo": "La executarea unei lovituri de colț, un apărător se află la mai puțin de 9,15 m de arcul de cerc și împiedică executantul. Cum procedează arbitrul?",
+      "correctText": "CG apărătorului; repetă lovitura de colț sau aplică avantajul.",
+      "ids": [
+        519,
+        787
+      ],
+      "laws": [
+        12,
+        17
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Se justifică distinct CG pentru distanță, repetarea loviturii de colț și posibilitatea avantajului; nu se citează doar regula distanței."
+    },
+    {
+      "questionRo": "Un jucător al echipei A pregătește lent o aruncare de la margine. Un antrenor al echipei B părăsește suprafața tehnică și ignoră cererea celui de-al patrulea oficial de a reveni, fără să comită alte abateri. Cum procedează arbitrul?",
+      "correctText": "Aruncare pentru A; CG jucătorului dacă întârzie; atenționare antrenorului la prima abatere, sancțiuni dacă persistă.",
+      "ids": [
+        523
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "edition-review",
+      "reason": "Întârzierea aruncării trebuie reverificată față de noul protocol de numărare inversă; nu se păstrează automat vechea soluție CG și aruncare pentru aceeași echipă."
+    },
+    {
+      "questionRo": "Înainte de executarea unei lovituri libere, un jucător atinge un adversar într-un mod ofensator, când mingea nu este în joc. Care este decizia arbitrului?",
+      "correctText": "CR și reluare conform deciziei luate anterior.",
+      "ids": [
+        531
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "«Atinge într-un mod ofensator» nu precizează suficient gestul care impune CR; trebuie restabilit sensul complet al situației sursă."
+    },
+    {
+      "questionRo": "Un apărător șutează mingea, care îi atinge apoi accidental brațul în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică sancțiune disciplinară.",
+      "ids": [
+        535
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Contactul accidental cu brațul nu exclude singur hențul; lipsește poziția brațului și dacă aceasta mărește nenatural corpul."
+    },
+    {
+      "questionRo": "Un atacant joacă deliberat mingea cu mâna pentru a păstra posesia și a continua un atac promițător. Care este decizia arbitrului?",
+      "correctText": "LLD și CG posibil pentru comportament nesportiv.",
+      "ids": [
+        547
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "LLD pentru henț este clar; eventualul CG al atacantului pentru comportament nesportiv nu trebuie justificat prin oprirea SPA advers."
+    },
+    {
+      "questionRo": "Mingea șutată de un apărător lovește neașteptat brațul unui coechipier apropiat, aflat în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică sancțiune disciplinară.",
+      "ids": [
+        551
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Apropierea și caracterul neașteptat nu exclud singure hențul; trebuie precizată poziția brațului și justificarea ei în mișcare."
+    },
+    {
+      "questionRo": "Mingea se îndreaptă direct spre poartă dintr-o aruncare de la margine. Un apărător, altul decât portarul, o oprește deliberat cu mâna în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și CG acordat pentru comportament nesportiv.",
+      "ids": [
+        555,
+        755
+      ],
+      "laws": [
+        12,
+        15
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Nu poate fi înscris direct gol din aruncare; LP pentru henț și CG pentru comportament nesportiv necesită verificare distinctă, nu DOGSO automat."
+    },
+    {
+      "questionRo": "Un atacant al echipei A pătrunde cu mingea în suprafața de pedeapsă a echipei B. Un apărător al echipei B îl deposedează fără abatere. Apoi, în timp ce protejează mingea aflată la distanță de joc, își întinde brațele și îl lovește cu cotul în față pe atacant. Care este decizia arbitrului?",
+      "correctText": "LP pentru atacanți; CG dacă este imprudent sau CR dacă este violent.",
+      "ids": [
+        563
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "context-review",
+      "reason": "Trebuie precizată natura lovirii cu cotul și eventuala dispută pentru minge; nu orice contact la față este automat încadrat la același nivel."
+    },
+    {
+      "questionRo": "Înaintea unei lovituri de la colț, un apărător ține un adversar în propria suprafață de pedeapsă și îi împiedică deplasarea. Care este decizia arbitrului?",
+      "correctText": "Avertisment; CG la continuarea ținerii; aceeași lovitură de colț.",
+      "ids": [
+        585
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "wording-review",
+      "reason": "Prima măsură este atenționare, nu avertisment/CG. Pasajul relevant este «Ținerea unui adversar» din instrucțiunile practice, pagina 216."
+    },
+    {
+      "questionRo": "Cu mingea în joc, un antrenor părăsește clar și în mod repetat limitele propriei suprafețe de pedeapsă tehnice, fără altă abatere. Ce sancțiune primește?",
+      "correctText": "CG pentru nerespectarea repetată a propriei suprafețe de pedeapsă tehnice.",
+      "ids": [
+        592
+      ],
+      "laws": [
+        12
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "wording-review",
+      "reason": "«Suprafață de pedeapsă tehnică» este termen corupt; trebuie «suprafață tehnică» în enunț și răspuns, cu migrarea identității întrebării."
+    },
+    {
+      "questionRo": "La mijlocul terenului, arbitrul acordă echipei A o lovitură liberă pentru ținerea unui jucător. Nu este necesară o sancțiune disciplinară și nici acordarea de îngrijiri medicale. Imediat după oprire, un jucător A execută rapid lovitura, deși mingea este încă în mișcare. Care este decizia arbitrului?",
+      "correctText": "Repetare pentru A sau avantaj dacă B beneficiază.",
+      "ids": [
+        627
+      ],
+      "laws": [
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "official-ro-2026-needed",
+      "reason": "Avantaj după executarea rapidă cu mingea în mișcare necesită clauza românească actuală pentru reluări."
+    },
+    {
+      "questionRo": "Arbitrul nu semnalizează că o lovitură liberă este indirectă. Executantul șutează, iar portarul atinge mingea înainte ca aceasta să intre în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și repetarea LLI de către aceeași echipă.",
+      "ids": [
+        631
+      ],
+      "laws": [
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Rămâne de justificat soluția FAQ când portarul atinge mingea: nu se aplică automat clauza despre mingea intrată direct în poartă."
+    },
+    {
+      "questionRo": "Doi apărători formează un zid, iar un al treilea stă culcat imediat în spatele lor. Cum este considerată gruparea?",
+      "correctText": "Zid din trei apărători, jucătorul culcat fiind inclus.",
+      "ids": [
+        632
+      ],
+      "laws": [
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Numărarea jucătorului culcat în zid necesită interpretarea specifică, nu doar citatul despre distanța față de un zid deja definit."
+    },
+    {
+      "questionRo": "La o lovitură liberă, un apărător stă culcat sau în genunchi în spatele zidului propriei echipe. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică nicio sancțiune.",
+      "ids": [
+        649
+      ],
+      "laws": [
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Legalitatea poziției culcat/în genunchi și lipsa sancțiunii nu rezultă direct din paragraful generic despre procedura loviturii."
+    },
+    {
+      "questionRo": "Un adversar rămâne deliberat în suprafața de pedeapsă, interceptează o lovitură liberă rapidă a apărării și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și repetarea loviturii libere pentru apărare.",
+      "ids": [
+        654
+      ],
+      "laws": [
+        13
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Rămânerea deliberată în suprafață trebuie diferențiată de lipsa timpului de a ieși; citatul despre această din urmă excepție nu justifică răspunsul."
+    },
+    {
+      "questionRo": "La executarea unei LP, jucătorul lovește accidental mingea simultan cu ambele picioare. Portarul are ambele picioare înaintea liniei porții și apără lovitura. Care este decizia arbitrului?",
+      "correctText": "Repetarea LP fără sancțiune disciplinară obligatorie.",
+      "ids": [
+        662
+      ],
+      "laws": [
+        14
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Se verifică împreună dubla atingere accidentală și abaterea portarului; fotografia despre dubla atingere nu justifică singură prioritatea și repetarea."
+    },
+    {
+      "questionRo": "Înaintea executării unei LP, mingea este așezată astfel încât o parte a ei se află deasupra centrului punctului de pedeapsă, fără să îl atingă. Care este decizia arbitrului?",
+      "correctText": "Poziția mingii este regulamentară; permite executarea LP.",
+      "ids": [
+        684
+      ],
+      "laws": [
+        14
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Citatul românesc identificat despre centrul punctului nu explică explicit proiecția verticală fără contact; este necesară formularea/ilustrația corespunzătoare."
+    },
+    {
+      "questionRo": "La o lovitură de poartă, un atacant rămâne deliberat în suprafața de pedeapsă și încearcă să câștige mingea după ce aceasta este în joc. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă se repetă fără sancțiune la prima abatere.",
+      "ids": [
+        769
+      ],
+      "laws": [
+        16
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Se verifică rămânerea deliberată în suprafață și lipsa CG automat; nu se folosește excepția pentru lipsa timpului de a ieși."
+    },
+    {
+      "questionRo": "Un adversar rămâne deliberat în suprafața de pedeapsă la executarea rapidă a unei lovituri de poartă și încearcă să intercepteze mingea după ce aceasta intră în joc. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă se repetă fără sancțiune disciplinară automată.",
+      "ids": [
+        775
+      ],
+      "laws": [
+        16
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "interpretation-review",
+      "reason": "Intercepția după rămânerea deliberată în suprafață necesită justificarea specifică pentru repetare, diferită de executarea rapidă înainte ca adversarul să poată ieși."
+    },
+    {
+      "questionRo": "Înaintea executării unei lovituri de colț, arbitrul asistent observă că o parte a mingii se află deasupra arcului de cerc, fără să atingă linia sau solul din interiorul suprafeței de colț. Este poziția mingii regulamentară?",
+      "correctText": "Da; este suficient ca o parte a mingii să se afle deasupra arcului de cerc.",
+      "ids": [
+        784
+      ],
+      "laws": [
+        17
+      ],
+      "status": "unmapped",
+      "reviewedEdition": null,
+      "issue": null,
+      "category": "targeted-source-review",
+      "reason": "Este necesară justificarea proiecției verticale a mingii deasupra arcului de colț; formularea generală despre suprafața de colț nu este suficient de precisă."
+    }
+  ]
+}

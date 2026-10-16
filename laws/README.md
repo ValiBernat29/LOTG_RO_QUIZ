@@ -1,5 +1,110 @@
 # Pasaje din Legile Jocului în română — extindere în curs
 
+Actualizare rev22: încă 13 situații distincte / 16 înregistrări au explicații
+verificate, inclusiv eliminarea temporară, hențul SPA/DOGSO, distragerea
+executantului LP, gesturile ofensatoare și ținerea înaintea loviturii de colț.
+Au fost reparate formulările ID 411/635 și 585, fără schimbarea cheilor.
+Sunt acum 541 de situații / 708 înregistrări verificate pentru 2026/27;
+mai rămân 54 de situații / 80 de înregistrări de verificat (inclusiv trei
+înregistrări asociate încă pe 2025/26). Vezi `rechecks-rev22.json` și
+`REMAINING_DECISIONS_REVIEW.md`. Nu s-a făcut publicare.
+
+Actualizare rev21: ID 241, 463 și 592 au formulările reparate, cu migrarea
+sesiunilor salvate și justificări specifice. Sunt 528 de situații / 692 de
+înregistrări verificate pentru 2026/27. Mai rămân 67 de situații / 96 de
+înregistrări de verificat (inclusiv cele trei înregistrări cu asociere veche).
+`rechecks-rev21.json` păstrează enunțurile și variantele înainte/după;
+`review-queue.json` reprezintă lista curentă, iar `pending-rev20.json` este
+fotografia editorială anterioară acestei corecturi. Cheile sunt neschimbate.
+
+Actualizare rev20: 295 de asocieri noi și trei asocieri vechi reverificate
+(44, 217, 218). Sunt acum 525 de situații / 689 de înregistrări verificate
+pentru 2026/27; alte două situații / trei înregistrări păstrează asocierea
+2025/26. Mai sunt 68 de situații fără asociere. Toate cele 70 de situații
+încă nereverificate sunt documentate individual în `pending-rev20.json`.
+Vezi `AUTONOMOUS_EXPANSION_REVIEW.md` și `expansion-rev20.json`.
+Nu au fost schimbate cheile și nu s-a făcut publicare.
+
+Actualizările de mai jos sunt istorice; cifrele lor descriu fiecare lot
+la momentul respectiv, nu acoperirea curentă.
+
+Actualizare rev19: ID 17, 18, 22 și 24 sunt reverificate individual pentru
+2026/27, inclusiv în raport cu protocolul de înlocuire limitată în timp.
+Evidențierile ID 18/22 sunt restrânse la condițiile intrării. Întrebările,
+răspunsurile și citatele românești rămân neschimbate. Sunt 227 de situații
+reverificate și cinci asocieri încă pe 2025/26; 363 de situații rămân
+neasociate. Vezi `SUBSTITUTION_RECHECK.md` și `rechecks-rev19.json`.
+Fără publicare în acest lot.
+
+Actualizare rev18: șapte asocieri existente reverificate pentru 2026/27:
+ID 11, 42, 43, 47, 55, 58 și 59. La ID 58 sunt păstrate justificările despre
+oficiali; este eliminată referința la abaterea unui jucător din Legea 14.
+Sunt 223 de situații reverificate și nouă asocieri încă pe 2025/26;
+363 de situații rămân neasociate. Vezi `OUTSIDE_AGENTS_RECHECK.md` și
+`rechecks-rev18.json`. Modificările rămân locale, fără publicare.
+
+Actualizare rev17: opt asocieri existente despre reintrare, intervenție, SPA și
+DOGSO sunt reverificate pentru 2026/27. Evidențierile pentru ID 27, 30, 31 și 38
+sunt restrânse la răspunsul justificat; întrebările, răspunsurile și citatele
+nu sunt modificate. Sunt 216 situații reverificate și 16 asocieri încă pe
+2025/26; 363 de situații rămân neasociate. Vezi `REENTRY_RECHECK.md` și
+`rechecks-rev17.json`. Modificările rămân locale, fără publicare.
+
+Actualizare rev16: încă șase asocieri din Legile 3 și 4 sunt reverificate
+individual pentru 2026/27, fără schimbarea întrebărilor, răspunsurilor, citatelor
+sau evidențierilor. Vezi `PLAYERS_GOALKEEPERS_RECHECK.md` și `rechecks-rev16.json`.
+Sunt 208 situații reverificate pentru 2026/27 și 24 rămase numai pe 2025/26.
+Butonul separat pentru noutăți este eliminat; antrenamentul cu toate
+explicațiile disponibile rămâne. Modificările sunt locale, fără publicare.
+
+Actualizare rev15: 26 de asocieri existente (42 de înregistrări cu duplicate)
+sunt reverificate pentru 2026/27. Vezi `DROPPED_EQUIPMENT_RECHECK.md` și
+`rechecks-rev15.json`. Au rămas 30 de asocieri verificate numai pe 2025/26.
+
+Actualizare rev14: 16 asocieri vechi sunt reverificate pentru 2026/27 și este
+adăugată explicația ID 766, fără modificarea citatelor sau a cheilor.
+Vezi `LEGACY_RECHECK_REVIEW.md`. Publicarea a fost anulată; pilotul rămâne local.
+
+Actualizare rev13: 28 de situații noi despre aruncări de la margine, lovituri de
+poartă și rejucare la colț, propagate la 36 de înregistrări. Vezi
+`BOUNDARY_RESTARTS_REVIEW.md` și `boundary-restarts-pending.json`.
+
+Actualizare rev12: 12 situații noi despre oficiali, durata meciului și decizii
+compuse la lovituri libere, propagate la 21 de înregistrări. Vezi
+`COMPOUND_DECISIONS_REVIEW.md`. Șase cazuri din lista de lucru a Legii 13 sunt
+rezolvate; celelalte opt rămân explicit în așteptare.
+
+Actualizare rev11: 22 de situații noi despre lovituri libere, propagate la 30 de
+înregistrări. Vezi `FREE_KICKS_REVIEW.md` și `free-kicks-pending.json` pentru
+asocierile finalizate și cazurile care mai necesită o justificare specifică.
+
+Interfața modalului afișează numai ediția verificată a asocierii, legea/articolul,
+titlul și explicația evidențiată. Nu afișează pagini, proveniență, revizii,
+linkuri de verificare sau detalii de scanare/transcriere. Metadatele complete
+rămân în bibliotecă și sunt validate intern. Asocierile încă nereverificate
+pentru 2026/27 păstrează în antet ediția 2025/26.
+Notele istorice de mai jos descriu și interfața anterioară.
+
+Actualizare rev10: fotografiile cărții românești 2026/27, paginile 110 și 142,
+completează explicațiile ID 229, 230, 663 și 665. Vezi `PHOTO_DOUBLE_TOUCH.md`.
+Proveniența fotografiei este distinctă de PDF, fără traduceri proprii.
+
+Actualizare rev9: vezi `PENALTY_REVIEW.md` pentru cele 23 de situații noi despre
+LP/departajare și cazurile de dublă atingere confirmate în FAQ care așteaptă textul
+oficial românesc complet pentru explicație.
+
+Actualizare rev8: ID 298 este corectat (A, gol fără sancțiune disciplinară).
+Vezi `../editorial/RULE_CORRECTIONS.md` pentru migrarea sesiunilor și
+`RULE_CHANGES.md` pentru coada de reverificare a regulilor schimbate.
+
+Actualizare rev7: vezi `OFFSIDE_REVIEW.md` pentru cele 57 de situații noi despre
+ofsaid și neconcordanța ID 298. `editionChecks` documentează reverificarea IFAB
+2026/27 separat de proveniența citatului oficial românesc 2025/26.
+
+Actualizare rev6: scanarea românească 2026/27 este integrată parțial. Vezi
+`SCAN_REVIEW.md` pentru pagini, asocieri și limite. Modalul distinge protocolul,
+rezumatul oficial și cele două fragmente care încă folosesc traduceri proprii.
+
 Lucrul este separat pe branch-ul `development`. Nu publicați pe `main` înainte
 de verificarea vizuală și revizuirea asocierilor.
 

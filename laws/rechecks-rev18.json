@@ -1,0 +1,146 @@
+{
+  "revision": "rev18",
+  "checkedAt": "2026-10-16",
+  "rows": [
+    {
+      "id": 11,
+      "questionRo": "După o pasă nereușită a echipei A, mingea se îndreaptă spre margine. Cât timp este încă pe teren, un copil de mingi o prinde pentru a grăbi reluarea. Care este decizia arbitrului?",
+      "correctText": "Minge de arbitru pentru echipa B, la locul contactului.",
+      "passages": [
+        {
+          "id": "extra-persons",
+          "justifies": "Minge de arbitru pentru intervenția unui factor extern",
+          "highlights": [
+            "• o persoană străină/factor extern, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară și locul reluării",
+          "highlights": [
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "questionRo": "Înainte de înscrierea jucătorilor pe raport, un jucător scuipă un adversar la încălzirea dinaintea meciului, pe teren. Oficialii observă incidentul. Care este decizia arbitrului?",
+      "correctText": "Jucătorul nu poate fi înscris, efectivul nu se reduce și se raportează incidentul.",
+      "passages": [
+        {
+          "id": "spit-red",
+          "justifies": "Scuiparea este sancționabilă cu eliminare",
+          "highlights": [
+            "• mușcă sau scuipă pe cineva."
+          ]
+        },
+        {
+          "id": "sent-off-before-list",
+          "justifies": "Jucătorul eliminat înaintea foii nu poate fi înscris",
+          "highlights": [
+            "6. Eliminarea jucătorilor titulari şi jucătorilor înlocuitori Un jucător eliminat: • anterior înaintării foii de joc, nu mai poate fi înscris pe aceasta în nicio calitate."
+          ]
+        },
+        {
+          "id": "authority-before-match",
+          "justifies": "Autoritate disciplinară înainte de meci",
+          "highlights": [
+            "• este abilitat să ia măsuri disciplinare de la intrarea pe terenul de joc pentru inspecția de dinaintea meciului și până la părăsirea acestuia după sfârșitul meciului (inclusiv penalty-uri de departajare). Dacă, înainte de intrarea pe terenul de joc la începutul meciului, un jucător comite o abatere care se sancționează cu eliminare, arbitrul este abilitat să interzică jucătorului să ia parte la meci (a se vedea Legea 3.6); arbitrul va raporta orice altă abatere."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "questionRo": "O înlocuire are loc între finalul reprizei a doua și începutul prelungirilor, fără informarea arbitrului. Acesta observă după reluare. Care este procedura?",
+      "correctText": "Înlocuitorul continuă; cazul este raportat.",
+      "passages": [
+        {
+          "id": "unnotified-break",
+          "justifies": "Înlocuitorul continuă și incidentul se raportează",
+          "highlights": [
+            "În cazul în care se efectuează o înlocuire în timpul pauzei dintre reprize sau înainte de prelungiri, procedura de înlocuire trebuie să se încheie înainte de reînceperea meciului. În cazul în care arbitrul nu este informat, jucătorul desemnat ca înlocuitor poate continua să joace, neluându-se nicio sancţiune disciplinară împotriva sa, iar incidentul este adus la cunoştinţa autorităţilor competente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "questionRo": "Un spectator intră pe teren și atinge mingea care se îndreaptă spre poartă, încercând să împiedice înscrierea unui gol. Mingea intră totuși în poartă, fără ca intervenția să împiedice un apărător să o joace. Poate fi validat golul?",
+      "correctText": "Da, numai dacă mingea intră în poarta spre care se îndrepta.",
+      "passages": [
+        {
+          "id": "extra-persons",
+          "justifies": "Golul se acordă dacă mingea intră și intervenția nu împiedică un apărător",
+          "highlights": [
+            "Dacă mingea se îndreaptă spre poartă și intervenția nu împiedică un jucător din apărare să joace mingea, se acordă gol dacă mingea intră în poartă (chiar și în cazul contactului cu mingea), în afară de situația în care intervenția a fost produsă de echipa în atac."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "questionRo": "O înlocuire se efectuează la pauză fără informarea arbitrului, care constată situația după începerea reprizei a doua. Care este procedura?",
+      "correctText": "Înlocuitorul continuă; incidentul este raportat.",
+      "passages": [
+        {
+          "id": "unnotified-break",
+          "justifies": "Înlocuitorul continuă; incidentul este raportat",
+          "highlights": [
+            "În cazul în care se efectuează o înlocuire în timpul pauzei dintre reprize sau înainte de prelungiri, procedura de înlocuire trebuie să se încheie înainte de reînceperea meciului. În cazul în care arbitrul nu este informat, jucătorul desemnat ca înlocuitor poate continua să joace, neluându-se nicio sancţiune disciplinară împotriva sa, iar incidentul este adus la cunoştinţa autorităţilor competente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "questionRo": "Cu mingea în joc, un antrenor intră în propria suprafață de pedeapsă și interferează cu un adversar. Care este decizia arbitrului?",
+      "correctText": "CR antrenorului și LP acordată imediat echipei adverse.",
+      "passages": [
+        {
+          "id": "official-interference-red",
+          "justifies": "CR pentru intrarea oficialului ca să intervină",
+          "highlights": [
+            "• intrarea pe terenul de joc pentru: • a înfrunta un oficial de meci (inclusiv în pauza dintre reprize sau la sfârșitul meciului). • a interveni în joc, asupra unui jucător din echipa adversă sau asupra unui oficial de meci."
+          ]
+        },
+        {
+          "id": "extra-persons",
+          "justifies": "LLD sau LP pentru intervenția înlocuitorului/oficialului",
+          "highlights": [
+            "Dacă jocul este oprit, iar cel care a intervenit în joc este: • un oficial al echipei, un jucător înlocuitor, un jucător înlocuit sau un jucător eliminat, jocul este reluat prin lovitură liberă directă sau lovitură de pedeapsă."
+          ]
+        },
+        {
+          "id": "penalty-award",
+          "justifies": "LP pentru intervenția din propria suprafață",
+          "highlights": [
+            "Lovitura de pedeapsă (penalty) se acordă dacă un jucător comite o abatere sancționabilă cu lovitură liberă directă în propria suprafață de pedeapsă sau în afara terenului de joc, în cadrul jocului, conform prevederilor Legilor 12 și 13."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "questionRo": "Un câine intră pe teren și oprește mingea pe linia porții, împiedicând un gol, fără a împiedica vreun apărător să joace mingea. Care este decizia arbitrului?",
+      "correctText": "Minge de arbitru pentru portarul echipei în apărare.",
+      "passages": [
+        {
+          "id": "extra-persons",
+          "justifies": "Minge de arbitru dacă factorul extern intervine și nu se înscrie",
+          "highlights": [
+            "• o persoană străină/factor extern, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru portarul echipei în apărare",
+          "highlights": [
+            "• mingea se afla în suprafața de pedeapsă, arbitrul acorda mingea de arbitru portarului echipei în apărare în suprafața sa de pedeapsă."
+          ]
+        }
+      ]
+    }
+  ]
+}

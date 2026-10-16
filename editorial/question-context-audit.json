@@ -1,0 +1,2355 @@
+{
+  "note": "Priority signals only; compression and omitted labels are not proof of an incomplete question. This audit does not certify the other stems or decide rules.",
+  "records": 788,
+  "options": 3152,
+  "distinctScenarios": 595,
+  "manuallyRevisedScenarios": 32,
+  "revisedRecords": 42,
+  "priorityScenarios": 187,
+  "queue": [
+    {
+      "ids": [
+        10,
+        177
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un șut trece de portar, dar mingea se sparge în suprafața de poartă și rămâne în teren fără să intre în poartă. Care este decizia arbitrului?",
+      "correctText": "Mingea se schimbă; minge de arbitru pentru portar.",
+      "sourceQuestion": "While the ball is in play, an attacking player takes a shot at goal. The ball passes the defending goalkeeper and suddenly bursts within the goal area. As a result, it remains on the field of play but does not enter the goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        18
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "După acordarea unei LP, echipa în apărare dorește să înlocuiască portarul cu un portar înlocuitor. Este permisă înlocuirea înaintea executării loviturii?",
+      "correctText": "Da, dacă mai are înlocuiri și îl informează pe arbitru.",
+      "sourceQuestion": "After the referee has awarded a penalty kick to Team A, the coach of Team B wants to replace the goalkeeper with a substitute who is considered better at saving penalty kicks. Is this allowed if Team B has not used its maximum number of substitutes and/or substitution opportunities?"
+    },
+    {
+      "ids": [
+        19,
+        399
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător înlocuit părăsește terenul pe la punctul cel mai apropiat. Văzând mingea urmărită de un adversar, reintră și o lovește pentru a opri un atac promițător. Care este decizia arbitrului?",
+      "correctText": "LLD și două CG urmate de CR pentru eliminare.",
+      "sourceQuestion": "A player is substituted and leaves the field of play at the nearest point. While walking along the touchline towards their technical area, the substituted player notices the ball coming towards them, with an opponent chasing it. The substituted player re-enters the field and kicks the ball to stop a promising attack. What is the correct decision?"
+    },
+    {
+      "ids": [
+        22
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător care a comis un fault neglijent sancționat cu LP se accidentează și nu mai poate continua. Poate fi schimbat înainte de executare?",
+      "correctText": "Da; dacă mai are înlocuiri și oportunități disponibile.",
+      "sourceQuestion": "A defender commits a careless foul inside their penalty area and goes down with an injury. After the referee stops play for a penalty kick, the defender leaves the field of play and is not able to continue. Their team wants to replace the injured player with a substitute before the penalty kick is taken. Is this allowed?"
+    },
+    {
+      "ids": [
+        24
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Atacantul faultat la faza unei LP este înlocuit din cauza accidentării. Poate înlocuitorul care intră să execute LP?",
+      "correctText": "Da, după intrare înlocuitorul devine jucător și poate executa LP.",
+      "sourceQuestion": "The referee awards a penalty kick for a careless foul against an attacking player inside the penalty area. The attacking player is seriously injured and leaves the field of play, so their team replaces them with a substitute during a stoppage in play. Is the substitute allowed to take the penalty kick?"
+    },
+    {
+      "ids": [
+        27
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un înlocuitor al echipei A intră pe teren și distrage un apărător în timpul contraatacului din care echipa A înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat, CG pentru înlocuitor și LLD pentru adversari.",
+      "sourceQuestion": "A player (Team A) gains possession of the ball and starts a quick counter-attack. After that, a substitute of their team enters the field of play and distracts an opposing defender’s attention from play. Team A then scores a goal when the substitute is still on the field of play. What is the correct decision?"
+    },
+    {
+      "ids": [
+        29,
+        449
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul iese din propria suprafață de pedeapsă și atacă imprudent un adversar aflat într-o situație unu la unu, împiedicând o ocazie clară de gol (DOGSO). Ceilalți apărători sunt prea departe pentru a interveni. Care este decizia arbitrului?",
+      "correctText": "LLD și CR portarului pentru DOGSO; echipa desemnează alt portar.",
+      "sourceQuestion": "An attacker runs with the ball towards the opponents’ goal (one-on-one situation). The goalkeeper runs out of their penalty area and then fouls the attacker when they are 20 m in front of the goal (reckless challenge for the ball). At the time of the foul, the attacker controlled the ball and was chased by two defenders who were more than 10 m away from the attacker/ball. What is the correct decision?"
+    },
+    {
+      "ids": [
+        31,
+        110,
+        464
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător tratat în afara terenului reintră fără permisiune, în timp ce adversarii pornesc un atac promițător (SPA); acesta nu interferează cu jocul sau adversarii. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; la prima oprire, apărătorul primește CG.",
+      "sourceQuestion": "A defender of Team A, who was treated outside the field of play, is ready to continue and re-enters the field without the required permission. What is the correct decision if Team B starts a promising attack and the player does not interfere with play/opponents?"
+    },
+    {
+      "ids": [
+        33,
+        114,
+        481
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Jocul este oprit pentru un accidentat, iar echipa adversă efectuează o înlocuire. Înainte de reluare, arbitrul află că jucătorul înlocuit comisese anterior o abatere de CR care a produs accidentarea. Care este decizia arbitrului?",
+      "correctText": "Titularul primește CR, înlocuirea se anulează, iar reluarea este LLD sau LP.",
+      "sourceQuestion": "The referee stops play because a player (Team A) lies on the ground and is seriously injured. While the player is being assessed by a doctor, Team B is allowed to make a substitution. After it is completed and before play has restarted, the referee is informed by a match official that the injury is a result of a red card offence committed by the substituted player of Team B. What is the correct decision?"
+    },
+    {
+      "ids": [
+        34,
+        117
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "După eliminarea portarului pentru DOGSO, echipa introduce un portar înlocuitor. Înainte de reluarea jocului, în urma analizei VAR, arbitrul înlocuiește CR cu CG pentru SPA. Poate echipa să anuleze înlocuirea?",
+      "correctText": "Da, schimbarea deciziei și anularea înlocuirii sunt permise.",
+      "sourceQuestion": "The goalkeeper is sent off for denying the opponent an obvious goal-scoring opportunity. Before play restarts, the team replaces a player with a substitute goalkeeper; the referee, after a VAR review, changes the red card to a yellow card for stopping a promising attack. May the team cancel the substitution in this case?"
+    },
+    {
+      "ids": [
+        35,
+        496
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un înlocuitor avertizat în prima repriză intră ulterior ca jucător și joacă deliberat mingea cu mâna pentru a opri un atac promițător (SPA). Care este sancțiunea disciplinară?",
+      "correctText": "Al doilea CG, apoi CR pentru două avertismente în același joc.",
+      "sourceQuestion": "A substitute was cautioned (yellow card) in the first half for delaying the restart of play by the opposing team. In the second half, the substitute replaces a team-mate and enters the field of play after receiving a signal from the referee. Ten minutes later, this (new) player handles the ball to stop a promising attack. What action does the referee take?"
+    },
+    {
+      "ids": [
+        36,
+        497
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător avertizat în prima repriză este înlocuit, apoi protestează la arbitrul asistent în calitate de jucător înlocuit. Care este sancțiunea?",
+      "correctText": "Al doilea CG, apoi CR pentru două avertismente în același joc.",
+      "sourceQuestion": "A player was cautioned (yellow card) for a reckless challenge in the first half and substituted during the half-time interval. In the second half, the same (substituted) player leaves the technical area, approaches the assistant referee and shows dissent from the offside decision. What action does the referee take?"
+    },
+    {
+      "ids": [
+        37,
+        498
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Înainte ca mingea să fie în joc la o lovitură de colț, un spectator intră și lovește mingea, apoi executantul îl lovește în față. Care este decizia arbitrului?",
+      "correctText": "Spectator îndepărtat, CR executantului, apoi lovitura de colț.",
+      "sourceQuestion": "A player prepares to take a corner kick at the end of the second half. Suddenly, before the ball is in play, a spectator enters the field and kicks the ball. After that, the player loses their self-control and strikes the spectator in the face. What is the correct decision?"
+    },
+    {
+      "ids": [
+        41,
+        501
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător înlocuitor deja avertizat îndepărtează mingea după ce aceasta a ieșit, întârziind aruncarea de la margine adversă. Care este decizia arbitrului?",
+      "correctText": "Al doilea CG și CR; aruncare pentru adversari.",
+      "sourceQuestion": "After the ball has left the field of play, a substitute (Team A) kicks the ball away to delay the throw-in by the opponents (Team B). The substitute has already been cautioned for another offence. What is the correct decision?"
+    },
+    {
+      "ids": [
+        63
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După schimbarea încălțămintei și verificarea ei de al patrulea oficial, un jucător reintră fără semnal și atinge mingea în jumătatea adversă. Care este decizia arbitrului?",
+      "correctText": "Oprire; LLD de la locul interferenței și CG.",
+      "sourceQuestion": "The referee instructs a player to leave the field of play and replace their footwear. After the equipment has been changed and checked by the fourth official, the player does not wait for a signal from the referee, re-enters the field, and becomes involved in play by touching the ball in the opponents’ half. What is the correct decision?"
+    },
+    {
+      "ids": [
+        75,
+        148,
+        331
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Arbitrul atribuie greșit unui apărător o abatere de jucare a mingii cu mâna comisă de un atacant, îi arată CG și acordă LLD atacanților. Poate VAR informa arbitrul despre eroare?",
+      "correctText": "Da; CG se anulează și se acordă LLD echipei apărătorului.",
+      "sourceQuestion": "An attacking player (Team A) kicks the ball which then accidentally touches a hand/arm of their team-mate (Team A). The referee stops play, but wrongly decides that the handball offence was committed by a defending player (Team B), who is punished with a yellow card (YC) and a direct free kick to Team A. May the video assistant referee (VAR) inform the referee that the player from the non-offending team was cautioned?"
+    },
+    {
+      "ids": [
+        76,
+        149
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător simulează un fault fără contact. Arbitrul acordă greșit LLD, îi arată atacantului al doilea CG și apoi CR. Poate VAR interveni?",
+      "correctText": "Da; anulează al doilea CG și CR, dă CG apărătorului și LLI atacanților.",
+      "sourceQuestion": "An attacker challenges a defender, who falls to the ground in the middle of the field and pretends to have been fouled, despite there being no contact. The referee stops play, awards a free kick for the defender’s team and shows a yellow card (YC) to the attacker, which is their second YC in the match and results in a red card (RC). May the video assistant referee (VAR) inform the referee about a ‘clear and obvious error’ so that the incident is reviewed?"
+    },
+    {
+      "ids": [
+        77,
+        150
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător deja avertizat comite o intrare imprudentă pentru al doilea CG, dar arbitrul nu vede abaterea. Poate VAR recomanda analiza incidentului grav omis?",
+      "correctText": "Nu; VAR intervine la un al doilea CG clar greșit, nu la unul omis.",
+      "sourceQuestion": "A player who has already received a yellow card commits a reckless tackle, which would be their second caution in the match; however, the offence is not seen by the referee on the field. May the video assistant referee (VAR) inform the referee about a serious missed incident and recommend a ‘review’?"
+    },
+    {
+      "ids": [
+        79,
+        339,
+        765
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La o lovitură de poartă, portarul atinge mingea a doua oară înainte ca aceasta să fie atinsă de alt jucător și împiedică astfel o ocazie clară de gol (DOGSO), dar mingea ricoșează din adversar în poartă. Care este decizia corectă?",
+      "correctText": "Se acordă gol, fără sancțiune disciplinară pentru portar.",
+      "sourceQuestion": "While taking a goal kick, the goalkeeper kicks the ball only a few metres. As an opponent then enters the penalty area and runs towards the ball, the goalkeeper kicks the ball again (before it has touched any other player). This second touch prevents the opponent from gaining control of the ball, denying them an obvious goal-scoring opportunity (DOGSO); however, the ball rebounds off the opponent’s leg and goes into the goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        80,
+        341
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător atacă neglijent un adversar în afara propriei suprafețe de pedeapsă și împiedică o ocazie clară de gol (DOGSO). Arbitrul aplică avantajul, iar un alt atacant înscrie. Care este decizia arbitrului?",
+      "correctText": "Se acordă gol, fără sancțiune disciplinară pentru apărător.",
+      "sourceQuestion": "A defender competes with an attacker for the ball and commits a careless tackle outside the penalty area which denies the opponent an obvious goal-scoring opportunity (DOGSO). The referee allows play to continue as the ball goes to another attacking player who gains possession of the ball, takes a shot and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        81,
+        343
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător împiedică o ocazie clară de gol (DOGSO) prin tragerea de tricou a unui adversar, în afara propriei suprafețe de pedeapsă. Arbitrul aplică avantajul, dar un alt atacant șutează peste poartă. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă și CG pentru apărător.",
+      "sourceQuestion": "A defending player (Team A) denies an obvious goal-scoring opportunity (DOGSO) by pulling an opponent’s shirt (Team B) outside the penalty area. The referee allows play to continue as the ball goes to another Team B player who gains the possession, takes a shot on goal and misses the opportunity (the ball goes over the crossbar). What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        83
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător accidentat părăsește voluntar terenul în timpul opririi, după acordarea unei lovituri libere, pentru a nu întârzia reluarea. Când poate reveni?",
+      "correctText": "După executare, cu permisiune, fără obligația unui minut.",
+      "sourceQuestion": "The referee stops play and awards a free kick for a careless tackle. As the offence was committed very close to the touchline, the fouled player, who is injured, voluntarily leaves the field of play during a stoppage to avoid delaying the restart of play by their team. What is the correct procedure?"
+    },
+    {
+      "ids": [
+        84
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Arbitrul oprește jocul pentru un jucător presupus grav accidentat, iar acesta solicită îngrijiri medicale pe teren. Care este procedura?",
+      "correctText": "Părăsește terenul; revine cu permisiune după reluare și un minut.",
+      "sourceQuestion": "When the ball is in play in the middle of the field, the referee notices a player laying on the ground and stops play, assuming that the player is seriously injured. The referee asks the player if they require on-field medical attention and the player requests it. What is the correct procedure in this case?"
+    },
+    {
+      "ids": [
+        86,
+        348
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Arbitrul acordă LP după ce un apărător atacă imprudent un adversar. Atacantul poate continua, dar apărătorul este accidentat și necesită îngrijiri. Care este procedura corectă?",
+      "correctText": "CG; apărătorul iese și nu participă la LP.",
+      "sourceQuestion": "The referee stops play and awards a penalty kick because a defender recklessly tackles an attacker inside the defender’s penalty area. The attacker is able to continue playing and remains on the field; however, the defender is injured and requires medical attention. What is the correct procedure?"
+    },
+    {
+      "ids": [
+        88
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător execută un atac brutal asupra unui adversar în lupta pentru minge, iar ambii necesită îngrijiri. Care este decizia arbitrului?",
+      "correctText": "LLD sau LP și CR; vinovatul iese, adversarul poate rămâne.",
+      "sourceQuestion": "A player (Team A) commits a brutal tackle while challenging an opponent (Team B) for the ball. As a result, both players are injured and need medical attention. What is the correct decision?"
+    },
+    {
+      "ids": [
+        89
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător comite un atac imprudent, iar atât acesta, cât și adversarul faultat necesită îngrijiri. Care este decizia arbitrului?",
+      "correctText": "LLD și CG; vinovatul iese un minut, adversarul poate rămâne.",
+      "sourceQuestion": "A player (Team A) committed a foul challenge against an opponent (Team B) in a manner considered by the referee to be reckless. As a result, both players are injured and need attention. What is the correct decision?"
+    },
+    {
+      "ids": [
+        93,
+        741
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La aruncarea de la margine, un picior este complet în teren fără să atingă linia, iar adversarul interceptează mingea. Care este decizia arbitrului?",
+      "correctText": "Aplică avantajul, dacă e mai favorabil decât aruncarea.",
+      "sourceQuestion": "At the moment of delivering the ball at a throw-in, a player has one foot outside the field of play and the other foot fully inside the field (not touching the touchline). The ball then enters the field and is intercepted by an opponent. What is the correct decision?"
+    },
+    {
+      "ids": [
+        94,
+        362
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător atacă imprudent un adversar în disputa pentru minge, în propria suprafață de pedeapsă, și comite DOGSO. Arbitrul acordă LP. Care este sancțiunea disciplinară?",
+      "correctText": "CG pentru atacul imprudent comis în suprafața proprie.",
+      "sourceQuestion": "A defender recklessly challenges an attacker for the ball inside the defender’s penalty area and this foul denies the opponent an obvious goal-scoring opportunity (DOGSO). What is the sanction if the referee awards a penalty kick?"
+    },
+    {
+      "ids": [
+        96,
+        380
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător este atacat neglijent la mijlocul terenului. Arbitrul așteaptă un posibil avantaj, dar echipa jucătorului faultat pierde imediat mingea, iar un adversar o trimite în afara terenului. Care este decizia arbitrului?",
+      "correctText": "LLD de la locul atacului; avantajul nu s-a mai concretizat.",
+      "sourceQuestion": "A player from Team A is carelessly tackled by an opponent from Team B in the middle of the field. The referee allows play to continue because the fouled player quickly gets up and regains possession of the ball; however, another Team B player intervenes and immediately kicks the ball out of play for a throw-in on Team A’s half. What is the decision?"
+    },
+    {
+      "ids": [
+        101,
+        173
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător și un atacant se ciocnesc în aer în timp ce își dispută regulamentar mingea, fără să o atingă. Ambii par grav accidentați, iar mingea se află în afara suprafeței de pedeapsă. Arbitrul oprește jocul. Cum îl reia?",
+      "correctText": "Cu minge de arbitru, conform procedurii prevăzute de Legea 8.",
+      "sourceQuestion": "A defender and an attacker jump for a header in the middle of the field and collide in the air while competing legally for the ball (neither of them touches it). After that, both players fall to the ground and appear to be seriously injured so the referee stops play to allow the players to be assessed/treated accordingly. How will play be restarted if the ball was outside the penalty area when play was stopped?"
+    },
+    {
+      "ids": [
+        103,
+        414
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După prima repriză, un jucător protestează verbal față de o decizie anterioară în timp ce el și arbitrul se află în afara terenului, spre tunel. Care este procedura?",
+      "correctText": "CG pentru protest și informarea ambelor echipe.",
+      "sourceQuestion": "After the first half has ended, a player argues with the referee, verbally protesting against a referee’s decision made earlier in the match. This occurs while both the player and referee are outside the field of play, heading towards the tunnel. What is the correct procedure in this situation?"
+    },
+    {
+      "ids": [
+        105,
+        418
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător atacă imprudent un adversar lângă linia de margine și oprește simultan un atac promițător (SPA); avantajul nu este posibil. Care sunt reluarea și sancțiunea?",
+      "correctText": "LLD și un CG pentru atacul imprudent, abaterea mai gravă.",
+      "sourceQuestion": "A defender from Team A recklessly tackles an opponent near the touchline and thus stops a promising attack by Team B. The referee stops play because there is no advantage for Team B. What is the correct restart of play and disciplinary sanction?"
+    },
+    {
+      "ids": [
+        106,
+        431
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător primește al doilea CG și CR, apoi folosește un limbaj ofensator față de arbitru. Care este procedura?",
+      "correctText": "Nu primește alt CR, părăsește împrejurimile și abaterea se raportează.",
+      "sourceQuestion": "A player commits a second cautionable offence in the same match, so the referee shows a second yellow card and a red card to the offender. The player does not agree with the decision and uses offensive language towards the referee. What is the correct procedure?"
+    },
+    {
+      "ids": [
+        115,
+        485,
+        715
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător comite DOGSO printr-un atac în disputa pentru minge, în propria suprafață de pedeapsă, și pune în pericol siguranța adversarului. Care este decizia arbitrului?",
+      "correctText": "LP și CR pentru joc brutal comis asupra adversarului.",
+      "sourceQuestion": "A defender commits a foul challenge within their own penalty area which denies an attacker an obvious goal-scoring opportunity (DOGSO) and endangers the safety of the opponent. What is the correct decision?"
+    },
+    {
+      "ids": [
+        123,
+        192
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător A degajează sub presiune fără să privească poziția adversarilor. Mingea lovește accidental în față un atacant B aflat la trei metri, în suprafața de pedeapsă a apărătorului. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; la îngrijiri, minge de arbitru portarului.",
+      "sourceQuestion": "A defender (Team A) makes a clearance under pressure from an attacker (Team B) and tries to kick the ball away without looking where other opponents are standing. Unfortunately, the ball hits another attacker (Team B) in the face who is three metres away, inside the defender’s penalty area. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        124,
+        561
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător și un atacant se lovesc reciproc în suprafața de pedeapsă a apărătorului, cu mingea în joc. Care este decizia arbitrului?",
+      "correctText": "CR pentru ambii; reluare după prima abatere, iar la simultaneitate LP.",
+      "sourceQuestion": "While the ball is in play, a defender (Team A) and an attacker (Team B) fight with each other in Team A’s penalty area. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        145
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un oficial semnalizează o abatere de CG/CR comisă cu mingea în joc, dar arbitrul află numai după reluarea jocului. Mai poate aplica sancțiunea disciplinară?",
+      "correctText": "Da, dacă oficialul identificase și încercase să comunice abaterea înainte.",
+      "sourceQuestion": "A player has committed a cautionable (yellow card, YC)/sending-off (red card, RC) offence when the ball is in play. An assistant referee indicates/communicates the offence but the referee does not see the indication/hear the communication until after play has restarted. May the referee still show a YC/RC?"
+    },
+    {
+      "ids": [
+        151,
+        745
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "AA indică aruncare de la margine pentru echipa A, dar un jucător B execută rapid înainte ca arbitrul să intervină. Care este decizia arbitrului?",
+      "correctText": "Aruncare pentru A, din același loc, fără sancțiune.",
+      "sourceQuestion": "The ball goes out of play while two players are challenging for it near the touchline. The assistant referee indicates that the throw-in is awarded to Team A but a Team B player quickly picks up the ball and throws it onto the field before the referee intervenes. What is the correct decision?"
+    },
+    {
+      "ids": [
+        152
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "O intrare neregulamentară lângă linia de margine nu este văzută clar de arbitru. Poate arbitrul asistent de înlocuitor, mai bine plasat, să ofere informații?",
+      "correctText": "Da, poate ajuta arbitrul la fel ca ceilalți oficiali de pe teren.",
+      "sourceQuestion": "A player illegally challenged an opponent close to the touchline and the reserve assistant referee’s position. The incident occurred out of the vision of the referee who is unsure if there was an offence. May the reserve assistant referee be asked for advice if they had a clearer view than the referee?"
+    },
+    {
+      "ids": [
+        153,
+        557
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După semnalizarea unei aruncări de la margine pentru echipa B, un jucător al echipei A protestează public la arbitrul asistent. Care este decizia arbitrului?",
+      "correctText": "CG pentru proteste și aruncare de la margine pentru echipa B.",
+      "sourceQuestion": "Team A player moves with the ball close to the touchline and the ball briefly goes out of play. The assistant referee indicates that the whole of the ball has left the field and that Team B is entitled to take a throw-in. Team A player approaches the assistant referee and shows dissent from this decision. What does the referee do?"
+    },
+    {
+      "ids": [
+        166,
+        214
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După o lovitură de poartă a echipei A, mingea atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa B câștigă posesia. Unde se execută mingea de arbitru?",
+      "correctText": "Exact în locul unde mingea l-a atins pe arbitru.",
+      "sourceQuestion": "After a goal kick has been taken by Team A, the ball touches the referee outside the penalty area, remains on the field of play and the opponents (Team B) gain possession of the ball. The referee stops play (as the team in possession changes) and restarts play with a dropped ball for the team that would have retained or gained possession had play not been stopped. Where should the referee drop the ball?"
+    },
+    {
+      "ids": [
+        172,
+        387,
+        672
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După o minge de arbitru, jucătorul căruia i-a fost acordată atinge mingea de mai multe ori, pătrunde în suprafața de pedeapsă adversă și este atacat imprudent. Care este decizia arbitrului?",
+      "correctText": "LP și CG apărătorului pentru atacul imprudent.",
+      "sourceQuestion": "Play is restarted with a dropped ball for Team A. After the ball touches the ground, a Team A player touches it several times with their feet, runs into the opponents’ penalty area, and is recklessly tackled by a Team B defender. What is the correct decision?"
+    },
+    {
+      "ids": [
+        182
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "La o minge de arbitru pentru un apărător A în afara propriei suprafețe de pedeapsă, un atacant B aflat la peste 4 m până când mingea intră în joc o joacă primul și o trimite direct în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și lovitură de poartă pentru echipa A.",
+      "sourceQuestion": "Play is restarted with a dropped ball for a defender (Team A) outside their penalty area. After the ball has touched the ground, an opposing attacker (Team B) who was more than 4 m away, runs towards the defender, plays the ball first and kicks it directly into the goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        222,
+        470,
+        706
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Arbitrul oprește jocul pentru jucarea mingii cu mâna în suprafața de pedeapsă, iar un atacant înscrie imediat după fluier. Care este decizia arbitrului?",
+      "correctText": "Nu validează golul; LP și sancțiunea disciplinară corespunzătoare.",
+      "sourceQuestion": "After a throw-in has been taken, the ball enters the penalty area, bounces off the ground, and a defender deliberately touches it with the arm. The referee notices a handball offence and immediately blows the whistle, even though the ball has gone to an attacker who takes a shot just after the whistle was blown. What is the decision if the ball enters the goal?"
+    },
+    {
+      "ids": [
+        232,
+        381
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "După fluierul final al prelungirilor, un jucător protestează și primește avertisment înaintea loviturilor de departajare; fusese avertizat și în timpul meciului. Care este decizia arbitrului?",
+      "correctText": "Jucătorul nu este eliminat și poate participa la lovituri.",
+      "sourceQuestion": "The referee blows the whistle at the end of the second half of extra time after the ball has gone out of play for a throw-in near Team A’s penalty area. A Team B player angrily approaches the referee and shows clear dissent, complaining that the referee did not allow the throw-in to be taken. What is the decision if the same player has already been shown a yellow card (YC) and the match will be decided by penalties (penalty shoot-out)?"
+    },
+    {
+      "ids": [
+        243
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La o lovitură de departajare, executantul simulează lovirea mingii după încheierea elanului, apoi înscrie. Fusese avertizat în timpul prelungirilor. Care este decizia arbitrului?",
+      "correctText": "Lovitura este ratată, executantul primește CG, fără eliminare.",
+      "sourceQuestion": "Penalties (penalty shoot-out) are taken after the end of extra time. A player has completed their run-up, deliberately stops to gain an advantage over a goalkeeper and then kicks the ball into the goal. The same player was cautioned (yellow card) for another offence during extra time. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        244
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul se accidentează la loviturile de departajare, echipa și-a folosit toate înlocuirile și el nu poate fi înlocuit. Poate schimba locul cu un coechipier eligibil?",
+      "correctText": "Da, poate schimba locul cu un coechipier eligibil de pe teren.",
+      "sourceQuestion": "A goalkeeper is injured during penalties (penalty shoot-out). Their team has already used its maximum number of substitutes and the goalkeeper cannot be replaced. May the goalkeeper change places with a team-mate who is on the field of play and eligible to take part in the kicks?"
+    },
+    {
+      "ids": [
+        247
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La finalul prelungirilor, un jucător este accidentat și nu poate continua, iar echipa și-a folosit toate înlocuirile. Ambele echipe aveau același număr de jucători. Care este procedura?",
+      "correctText": "Accidentatul este exclus, iar adversarii exclud și ei un jucător.",
+      "sourceQuestion": "A player (Team A) is injured at the end of extra time and unable to continue. Team A has already used its maximum number of substitutes. May Team A exclude the injured player from taking part in the penalties (penalty shoot-out)? What is the correct procedure assuming that both teams have the same number of players on the field?"
+    },
+    {
+      "ids": [
+        258,
+        357,
+        666
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător joacă mingea, care deviază dintr-un coechipier și ajunge la un atacant advers aflat anterior într-o poziție de ofsaid. Acesta este apoi faultat neglijent în suprafața de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și CG numai dacă faultul comis a constituit DOGSO.",
+      "sourceQuestion": "A defender (Team A) attempts to kick the ball out of the penalty area. The ball deflects off another defender (Team A) and goes to an attacker (Team B), who has been in an offside position since the first defender kicked the ball. The attacker controls the ball and is unfairly challenged (careless tackle) by an opponent inside Team A’s penalty area. What is the correct decision?"
+    },
+    {
+      "ids": [
+        259
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid urmărește o pasă, dar un apărător interceptează, controlează mingea, avansează câțiva metri și o atinge repetat. Atacantul îl deposedează regulamentar. Care este decizia arbitrului?",
+      "correctText": "Permite continuarea jocului; apărătorul a controlat și a jucat deliberat mingea.",
+      "sourceQuestion": "An attacker is in an offside position when their team-mate makes a long pass towards them. However, the ball does not reach the attacker, as it is intercepted by a defender. The defender controls the ball with their feet, moves a few metres and touches the ball several times. After that, the attacker, who was in an offside position, runs to the ball, tackles the defender and gains possession without committing a foul. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        262
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător pasează înapoi către portar, mingea deviază dintr-un advers și ajunge la alt atacant advers, rămas în poziție de ofsaid de la atingerea coechipierului său. Atacantul înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și LLI pentru ofsaid, după devierea din coechipier.",
+      "sourceQuestion": "A defender from Team A kicks the ball backwards to their goalkeeper. The pass is unsuccessful as the ball deflects off an opponent from Team B and then goes to a Team B attacker who has remained in an offside position since the defender kicked the ball. The attacker controls the ball and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        264
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid sare în fața portarului pentru a juca mingea cu capul. Nu o atinge, dar acțiunea îl influențează clar pe portar, care doar o respinge. Care este decizia arbitrului?",
+      "correctText": "Se sancționează ofsaidul și se acordă LLI echipei portarului.",
+      "sourceQuestion": "An attacker is in an offside position at the moment their team-mate takes a free kick. While the ball is in the air, the attacker moves towards the opposing goalkeeper and jumps in front of them, attempting to head the ball. Although the attacker does not touch the ball, their action clearly impacts on the goalkeeper, who can only parry the ball with one hand and is unable to catch it. What is the correct decision?"
+    },
+    {
+      "ids": [
+        267
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător blochează deliberat cu piciorul un șut care se îndreaptă spre poartă. Mingea ajunge la un atacant aflat în poziție de ofsaid, iar acesta înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI pentru ofsaid, după respingerea deliberată a apărătorului.",
+      "sourceQuestion": "A goalkeeper (Team A) leaves the penalty area and attempts to kick the ball away. The clearance is unsuccessful and the ball goes to an opponent (Team B), who takes a shot with an attacker (also Team B) in an offside position between the goalkeeper and the last defender (Team A). The defender deliberately blocks the shot with their leg and stops the ball from going into the goal. The ball goes to the (offside) attacker who scores. What is the correct decision?"
+    },
+    {
+      "ids": [
+        268
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător anticipează o pasă lungă aeriană și degajează deliberat mingea cu capul, fără să fie presat. Mingea ajunge la atacantul aflat inițial în poziție de ofsaid, care înscrie. Care este decizia arbitrului?",
+      "correctText": "Validează golul; atacantul primește mingea după ce apărătorul a jucat-o deliberat.",
+      "sourceQuestion": "An attacker is in an offside position when their team-mate makes a long pass towards them. The ball does not reach the attacker because a defender anticipates its movement in the air and clears the ball by deliberately heading it (without being challenged by any opponent). After that, the attacker becomes involved in play, gains possession of the ball and kicks it into the opponents’ goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        270
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Degajarea unui apărător este blocată de un adversar, iar mingea deviază din piciorul acestuia la un coechipier aflat în poziție de ofsaid, care înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și LLI; ultima atingere a fost a coechipierului.",
+      "sourceQuestion": "A defender (Team A) attempts to clear the ball out of the penalty area. The clearance is blocked by an opposing player (Team B), and the ball deflects off their foot to a Team B attacker in an offside position, who then scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        271
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Înaintea unei lovituri libere, un apărător părăsește deliberat terenul peste linia porții, fără permisiune, pentru a pune un atacant în ofsaid. Atacantul primește mingea și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol valabil, iar apărătorul primește CG pentru ieșirea nepermisă.",
+      "sourceQuestion": "Before a free kick is taken by Team A, a defender (Team B) deliberately leaves the field of play over the goal line without the referee’s permission to put an attacker (Team A) in an offside position. The attacker then receives the ball directly from the free kick and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        273
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător aleargă după o pasă lungă aeriană către un atacant aflat în poziție de ofsaid și atinge primul mingea, fără control și fără posibilitatea de a o degaja. Atacantul primește, pasează, iar un coechipier înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și LLI; atingerea apărătorului nu este joc deliberat.",
+      "sourceQuestion": "A player (Team A) makes a long pass towards a forward (Team A) who is in an offside position, close to the opponents’ penalty area. A defender (Team B) also chases after the ball and kicks it first while running (limited contact with the ball in the air). After that, the forward receives the ball and passes it to a team-mate who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        274
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "O extremă trimite puternic spre un atacant aflat în poziție de ofsaid. Un apărător apropiat întinde instinctiv piciorul, mingea ricoșează la atacant, care înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI acordată echipei apărătoare.",
+      "sourceQuestion": "A winger (Team A) attempts to make a strong pass towards a forward (Team A) who is in an offside position, in the opponents’ penalty area. A defender (Team B) who is a few metres from the winger instinctively stretches out their leg to block/intercept the pass. The ball deflects off the defender’s leg and goes to the forward who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        275
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător anticipează o pasă lungă la sol către un atacant aflat în poziție de ofsaid, are timp să-și coordoneze mișcarea, dar joacă defectuos mingea, care ajunge la atacant și acesta înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol acordat; apărătorul a jucat mingea deliberat.",
+      "sourceQuestion": "A player (Team A) makes a long pass towards a forward (Team A) who is in an offside position. The ball moves on the ground and is played by a defender (Team B) who anticipated the direction of the ball and had time to coordinate their body but fails to control the ball. As a result of this contact, the ball goes to the forward who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        276
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător controlează cu pieptul o pasă lungă și încearcă să trimită mingea portarului, dar pasa greșită este interceptată de un atacant aflat anterior în poziție de ofsaid. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; apărătorul a jucat deliberat.",
+      "sourceQuestion": "A player (Team A) makes a long pass towards a forward (Team A) who is in an offside position. The pass does not reach the forward because a defender (Team B) controls the ball in the air by using their chest to play the ball towards the goalkeeper (Team B). The pass is inaccurate and the forward intercepts the ball. What is the correct decision?"
+    },
+    {
+      "ids": [
+        278
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid se îndepărtează de minge, dar afectează clar deplasarea unui apărător spre aceasta. Mingea ajunge la alt atacant, aflat regulamentar la pasă. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare; primul atacant influențează adversarul.",
+      "sourceQuestion": "An attacker from Team A is in an offside position when the ball is passed by a team-mate. Instead of running towards the ball, this attacker moves in the opposite direction and interferes with the movement of a defender from Team B. Neither touches the ball, which goes to another attacker from Team A, who was in an onside position at the time of the pass. What is the correct decision?"
+    },
+    {
+      "ids": [
+        282
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "La o aruncare de la margine, mingea intră pe teren, deviază dintr-un apărător și ajunge la un atacant aflat în poziție de ofsaid când s-a executat aruncarea. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; nu există nicio abatere de ofsaid.",
+      "sourceQuestion": "Team A player takes a throw-in. The ball enters the field of play, deflects off a defender (Team B) and goes to an attacker (Team A) who was in an offside position at the moment the throw-in was taken. What is the correct decision?"
+    },
+    {
+      "ids": [
+        283
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător protejează fără s-o atingă o pasă destinată unui atacant aflat în poziție de ofsaid, așteptând ca mingea să iasă. Mingea încetinește, iar atacantul revine și îl atacă pentru minge. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare; atacantul influențează adversarul.",
+      "sourceQuestion": "A midfielder (Team A) makes a long pass to a forward (Team A) who is aware of their offside position and initially does not move towards the ball. After that, a defender (Team B) shields the ball to let it go out for a goal kick (without touching it) but the ball slows down and does not leave the field of play. The forward notices this, catches up with the defender and challenges for the ball. What is the correct decision?"
+    },
+    {
+      "ids": [
+        285
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul execută o lovitură liberă din propria suprafață de pedeapsă către un coechipier aflat în poziție de ofsaid, care primește mingea și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI acordată echipei adverse.",
+      "sourceQuestion": "A goalkeeper takes a free kick inside their penalty area and makes a long pass to a team-mate who is standing in the opponents’ half and who is nearer to the opponents’ goal line than both the ball and the second-last opponent. The team-mate receives the ball, runs into the opponents’ penalty area and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        287
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător pasează deliberat către portar, dar un atacant aflat anterior în poziție de ofsaid interceptează mingea și este faultat de portar în suprafața de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP pentru echipa în atac și sancțiunea disciplinară adecvată.",
+      "sourceQuestion": "An attacker (Team A) is in an offside position when a defender (Team B) passes the ball to a goalkeeper (Team B). The attacker intercepts the ball, runs into the penalty area and is fouled by the goalkeeper. What is the correct decision?"
+    },
+    {
+      "ids": [
+        289,
+        753
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "La o aruncare de la margine spre poarta adversă, un atacant aflat în poziție de ofsaid încearcă să șuteze, nu atinge mingea, dar derutează portarul; mingea intră direct în poartă. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă; golul direct este nepermis.",
+      "sourceQuestion": "Team A player takes a throw-in and throws the ball towards the opponents’ penalty area. An attacker (Team A) attempts to take a shot but fails to kick the ball. The attacker’s movement confuses the goalkeeper (Team B) and the ball enters the goal (without touching any player except the thrower). What is the correct decision if the attacker was in an offside position at the moment the ball was thrown?"
+    },
+    {
+      "ids": [
+        290
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La momentul pasei, un atacant are corpul în propria jumătate, dar un braț întins dincolo de linia mediană; este mai aproape de poarta adversă decât mingea și penultimul adversar. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; brațele nu se iau în calcul.",
+      "sourceQuestion": "A player starts a counter-attack and passes the ball to a team-mate who is nearer to the opponents’ goal line than both the ball and the second-last opponent. At the time of the pass, the team-mate is in their own half of the field except one extended arm that is beyond the halfway line. The team-mate receives the ball and starts running towards the opponents’ goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        291
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid se apropie foarte mult de un apărător, influențându-i clar acțiunea, iar acesta trimite accidental mingea în propria poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI acordată echipei apărătoare.",
+      "sourceQuestion": "A player (Team A) makes a pass to an attacker (Team A) who is in an offside position in the opponents’ penalty area. The attacker moves very close to a defender (Team B) who accidentally kicks the ball into Team B’s goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        292
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător încearcă să degajeze mingea. Aceasta lovește un coechipier și ajunge la un atacant advers aflat într-o poziție de ofsaid în momentul degajării. Atacantul înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol valabil; mingea vine de la adversar, nu de la un coechipier.",
+      "sourceQuestion": "A defender (Team A) tries to kick the ball out of the penalty area. The ball hits another defender (Team A) and goes to an attacker (Team B) who has been in an offside position since the first defender kicked the ball. The attacker scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        293
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "La șutul unui atacant, un coechipier se află în poziție de ofsaid pe linia porții, dar nu joacă mingea și nu influențează niciun adversar. Mingea intră direct în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol acordat; jucătorul nu comite nicio abatere.",
+      "sourceQuestion": "While a forward (Team A) takes a shot on the goal, a midfielder (Team A) is standing in an offside position on the goal line. The midfielder does not attempt to play the ball and does not challenge the goalkeeper and other Team B players (no impact on the opponents). The ball goes directly into the goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        295,
+        550
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid își dispută mingea cu un adversar. Ulterior, un apărător îl împinge imprudent în afara suprafeței de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare și CG acordat apărătorului.",
+      "sourceQuestion": "A midfielder (Team A) passes the ball towards an attacker (Team A) who is in an offside position and challenges for the ball. After that, a defender (Team B) pushes the attacker in a reckless manner outside the penalty area. What is the correct decision?"
+    },
+    {
+      "ids": [
+        296
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "La momentul pasei, un atacant este mai aproape de linia porții adverse decât mingea și portarul, având doar un alt apărător între el și linia porții. Atacantul înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI acordată echipei apărătoare.",
+      "sourceQuestion": "A player (Team A) passes the ball to an attacker (Team A) who is nearer to the opponents’ goal line than the ball and the goalkeeper (Team B). At the time of the pass, there is one defender (Team B) nearer to the goal line than the attacker. The attacker scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        297
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid își dispută mingea cu un adversar. Ulterior, un apărător îl trage de tricou în afara suprafeței de pedeapsă, aparent oprind un atac promițător. Arbitrul asistent semnalizează ofsaid. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare, fără CG pentru oprirea unui atac promițător (SPA).",
+      "sourceQuestion": "A midfielder (Team A) passes the ball towards an attacker (Team A) who is in an offside position and challenges for the ball. After that, a defender (Team B) pulls the attacker’s shirt outside the penalty area and, in the opinion of the referee, stops a promising attack (SPA). The referee stops play and notices that the assistant referee has indicated an offside offence. What is the correct decision?"
+    },
+    {
+      "ids": [
+        298
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După un șut, un apărător joacă deliberat mingea cu mâna pe linia porții, iar aceasta ajunge la un atacant aflat în poziție de ofsaid la șut, care înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol valabil; fără sancțiune disciplinară pentru apărător.",
+      "sourceQuestion": "A forward (Team A) is in an offside position at the moment when a team-mate takes a shot on the goal. After that, the defender (Team B) deliberately handles the ball on the goal line. The ball goes to the forward who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        304
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid și un apărător sar și dispută mingea cu capul, fără s-o atingă. Mingea ajunge la alt atacant, aflat regulamentar, care înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI pentru echipa apărătoare.",
+      "sourceQuestion": "An attacker (Team A) in an offside position and a defender (Team B) jump for a header and compete for the ball. Neither of them touches the ball which goes to another Team A player who is in an onside position and scores. What is the correct decision?"
+    },
+    {
+      "ids": [
+        305
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător dispută mingea cu un atacant și o joacă deliberat, fără fault. Mingea ajunge direct la alt atacant aflat anterior în poziție de ofsaid. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; apărătorul a jucat deliberat.",
+      "sourceQuestion": "A defending player (Team A) challenges an attacking player (Team B) and deliberately kicks the ball (no foul is committed). After that, the ball goes directly to another Team B player who is in an offside position. What is the correct decision?"
+    },
+    {
+      "ids": [
+        306
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant se află în poziție de ofsaid când coechipierul șutează. Portarul respinge șutul, iar mingea ajunge la atacant, care înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI pentru echipa apărătoare.",
+      "sourceQuestion": "A forward (Team A) is in an offside position at the moment when a midfielder (Team A) takes a shot on the goal. The goalkeeper (Team B) saves the shot and the ball goes to the forward who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        310
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un mijlocaș pasează înapoi unui apărător, care controlează mingea. Înainte ca apărătorul s-o joace, un adversar venit dintr-o poziție de ofsaid îl atacă și interceptează. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; mingea vine de la un adversar.",
+      "sourceQuestion": "A midfielder (Team A) passes the ball back to a defender (Team A). The defender gains control of the ball but, before he/she plays the ball, an opposing player (Team B) came from an offside position, made a challenge and intercepted the ball. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        311
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător încearcă să paseze portarului, dar trimite mingea unui atacant aflat anterior în poziție de ofsaid. Atacantul încearcă s-o joace și influențează portarul. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; apărătorul a jucat clar deliberat.",
+      "sourceQuestion": "A defending player (Team A) tries to pass the ball to his/her goalkeeper (Team A) but instead plays the ball to an attacking player (Team B) who is in an offside position. After that, the attacker attempts to play the ball and this action impacts on the goalkeeper. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        312
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător se deplasează spre minge și încearcă să intercepteze o pasă care ar putea crea o ocazie clară de gol. Mingea ajunge la un atacant aflat anterior în poziție de ofsaid. Acțiunea apărătorului reprezintă o «respingere deliberată» în sensul Legii 11?",
+      "correctText": "Nu: mingea nu mergea spre poartă sau foarte aproape de ea; după jucarea deliberată, jocul continuă.",
+      "sourceQuestion": "An attacking player (Team A) in an offside position receives the ball from a defending player (Team B) who made a clear movement towards the ball and tried to intercept a pass that could lead to a clear goal-scoring opportunity. Is the defender’s action considered a ‘deliberate save’ for offside?"
+    },
+    {
+      "ids": [
+        327
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant aflat în poziție de ofsaid aleargă spre minge, dar nu o joacă și nu împiedică niciun adversar să o joace sau să o dispute. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; atacantul nu comite abatere.",
+      "sourceQuestion": "An attacking player in an offside position (Team A) runs towards the ball but does not play the ball or prevent the opponent (Team B) from playing or being able to play the ball. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        328
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător oprește o minge care se îndrepta în poartă. Mingea ajunge apoi la un atacant aflat în poziție de ofsaid când a fost jucată ultima dată de un coechipier, iar acesta o joacă. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare; atacantul obține un avantaj.",
+      "sourceQuestion": "A defending player (Team A) stops a ball which is going into the goal. After that, the ball is played by an attacking player (Team B) who was in an offside position when the ball was last touched or played by a team-mate. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        336
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul iese din suprafața de pedeapsă și comite un atac din neglijență prin care îi refuză adversarului o ocazie clară de gol. Arbitrul aplică avantajul, iar atacantul recuperează mingea și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol acordat, fără CG sau CR pentru portar.",
+      "sourceQuestion": "An attacker runs with the ball towards the opponents’ goal in a one-on-one situation. The goalkeeper runs out of their penalty area and commits a careless tackle, causing the attacker to fall and denying them an obvious goal-scoring opportunity (DOGSO). The referee allows play to continue because the attacker quickly gets up, wins the ball back, and then kicks the ball into the goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        352
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul eliberează mingea din mâini în cel mult opt secunde, lăsând-o pe sol, deși pare că trage de timp. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; mingea a fost eliberată în limita permisă.",
+      "sourceQuestion": "The goalkeeper holds the ball with their hands inside their penalty area for no longer than eight seconds and then drops the ball to the ground instead of throwing or kicking it to a team-mate. What is the correct decision if the goalkeeper is clearly wasting time?"
+    },
+    {
+      "ids": [
+        358
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul primește direct aruncarea de la margine a unui coechipier, controlează mingea cu piciorul în afara suprafeței de pedeapsă și apoi o prinde în interior. Care este decizia arbitrului?",
+      "correctText": "LLI pentru adversari; fără sancțiune disciplinară pentru portar.",
+      "sourceQuestion": "A defender takes a throw-in and throws the ball to their goalkeeper (a team-mate). The goalkeeper controls the ball with their foot outside their penalty area and notices that an opposing attacker is running quickly towards the ball, so the goalkeeper dribbles into the penalty area and then picks the ball up with their hands. What is the correct decision?"
+    },
+    {
+      "ids": [
+        361
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător joacă deliberat mingea cu mâna și o împiedică să iasă la margine pentru adversari, fără vreun atacant în apropiere. Care este decizia arbitrului?",
+      "correctText": "LLD pentru adversari; fără nicio sancțiune disciplinară.",
+      "sourceQuestion": "A defending team player who is on the field of play, close to the touchline, deliberately handles the ball as it is going past them (with no opponents nearby), preventing it from leaving the field of play. Otherwise, the ball would have gone out for a throw-in to the opposing team. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        363
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După un duel regulamentar, atacantul se ridică și calcă deliberat adversarul pe spate, cu mingea încă în joc. Care este decizia arbitrului?",
+      "correctText": "LLD pentru apărători și CR pentru comportament violent.",
+      "sourceQuestion": "A defender fairly challenges an attacker for the ball, and the referee allows play to continue because no foul has been committed even though the attacker fell to the ground. The attacker then gets up and deliberately stamps on the opponent’s back in the middle of the field. What is the correct decision if the ball is still in play?"
+    },
+    {
+      "ids": [
+        365
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un atacant se așază deliberat în calea portarului care ține mingea, fără contact, și întârzie un contraatac potențial. Decizia, dacă nu se aplică avantajul?",
+      "correctText": "LLI; CG dacă abaterea este repetată, imprudentă sau oprește atacul.",
+      "sourceQuestion": "After the goalkeeper has caught the ball inside their penalty area, an opposing attacker quickly moves into the goalkeeper’s path and deliberately slows down the start of a potential counter-attack. What is the correct decision if the attacker does not touch the goalkeeper or the ball?"
+    },
+    {
+      "ids": [
+        368
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător oprește un atac promițător trăgând tricoul. După fluier, un coechipier ține mingea pentru a împiedica executarea rapidă. Care este decizia arbitrului?",
+      "correctText": "CG pentru ambii jucători; LLD de la locul tragerii.",
+      "sourceQuestion": "A defender from Team A stops a promising attack (SPA) by pulling an opponent’s shirt. After the referee whistles to stop play for a free kick to Team B, but before the disciplinary sanction procedure has started, another player from Team A picks up the ball and holds it to prevent the free kick from being taken quickly. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        370
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Echipa execută rapid o lovitură liberă după ce arbitrul a început procedura de acordare a CG și a distras adversarii. Mingea ajunge într-un atac promițător. Care este decizia arbitrului?",
+      "correctText": "Lovitura liberă se repetă; procedura disciplinară începuse deja.",
+      "sourceQuestion": "Team A is awarded a free kick for a reckless foul in the middle of the field of play. While the referee is approaching the offending Team B player and taking the yellow card out of their pocket, a Team A player takes the free kick and passes the ball to a team-mate who is in a promising attack situation. What is the correct decision?"
+    },
+    {
+      "ids": [
+        372,
+        629
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător ridică deliberat mingea cu piciorul și o trimite cu capul portarului, care nu o atinge cu mâinile. Care este decizia arbitrului?",
+      "correctText": "LLI și CG pentru apărător, de la locul inițierii tertipului.",
+      "sourceQuestion": "A defender receives the ball from a team-mate, ‘flicks’ it up with their foot and heads it to their goalkeeper, who bends down to pick it up inside their penalty area. However, as no opponent approaches, the goalkeeper dribbles the ball with their feet and then kicks it upfield. What is the correct decision?"
+    },
+    {
+      "ids": [
+        373,
+        766
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După ce mingea a depășit complet linia porții, un apărător împinge imprudent un atacant în propria suprafață de pedeapsă. Mingea fusese atinsă ultima dată de atacanți. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă pentru apărători și CG acordat apărătorului.",
+      "sourceQuestion": "An attacker (Team A) and a defender (Team B) are chasing the ball, which was last touched by the attacking team and is about to leave the field of play over the goal line. After the ball has wholly passed over the goal line, the defender recklessly pushes the attacker inside Team B’s penalty area. What is the correct decision?"
+    },
+    {
+      "ids": [
+        378,
+        669,
+        780
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După executarea unei lovituri de poartă, un adversar intră în suprafața de pedeapsă numai după ce mingea este în joc. Un apărător îl faultează neglijent în încercarea de a juca mingea. Care este decizia arbitrului?",
+      "correctText": "LP și CG pentru apărător numai dacă faultul constituie DOGSO.",
+      "sourceQuestion": "A goalkeeper takes a goal kick and plays the ball towards a defender who is inside their penalty area, facing the goalkeeper and unaware of an opposing attacker waiting outside the penalty area. After the ball is kicked and clearly moves, the attacker quickly runs into the penalty area and is about to intercept the ball. The defender then makes a late challenge and carelessly fouls the attacker. What is the correct decision?"
+    },
+    {
+      "ids": [
+        379
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător încearcă deliberat să paseze portarului, dar alunecă și pasa rămâne scurtă; portarul o prinde în propria suprafață de pedeapsă înaintea atacantului. Este permis?",
+      "correctText": "Nu; LLI pentru adversari, fără sancțiune disciplinară.",
+      "sourceQuestion": "A defender controls the ball outside their penalty area under pressure from an opposing attacker. The defender looks at their goalkeeper and deliberately kicks the ball towards them. While kicking the ball, the defender slips on the grass, causing the pass to fall short. The loose ball is then chased by both the attacker and the goalkeeper, and the goalkeeper touches the ball first with their hands inside the penalty area. Is this allowed?"
+    },
+    {
+      "ids": [
+        382,
+        670
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător oprește un atac promițător (SPA) printr-o dispută neglijentă pentru minge în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și fără CG pentru oprirea atacului promițător.",
+      "sourceQuestion": "An attacker is carelessly tackled by a defender inside the penalty area. The defender’s action stops a promising attack (SPA) because the attacker loses possession of the ball which is then kicked outside the penalty area by another defender. What is the correct decision?"
+    },
+    {
+      "ids": [
+        383
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător trage ostentativ tricoul unui atacant, îl dezechilibrează și îi ia mingea; avantajul nu se concretizează. Care este decizia arbitrului?",
+      "correctText": "LLD sau LP; CG dacă tragerea e ostentativă ori oprește atacul.",
+      "sourceQuestion": "While an attacker is running with the ball, a defender grabs the opponent’s shirt and pulls them in a blatant, very unfair manner, causing the attacker to lose balance and the ball. What is the correct decision if allowing play to continue does not benefit the attacking team?"
+    },
+    {
+      "ids": [
+        384
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarului îi scapă accidental mingea imediat după prindere și o prinde din nou înaintea unui atacant. Este aceasta o a doua atingere sancționabilă?",
+      "correctText": "Nu; jocul continuă și nu se aplică sancțiune disciplinară.",
+      "sourceQuestion": "A goalkeeper jumps for the ball inside their penalty area and catches it without being challenged by any opponent; however, the ball accidentally slips out of the goalkeeper’s hands and falls to the ground at their feet. An attacker runs towards the ball, but the goalkeeper picks it up inside the penalty area before the attacker can reach it. What is the correct decision?"
+    },
+    {
+      "ids": [
+        386,
+        671
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "După o dispută regulamentară, mingea ajunge în suprafața de pedeapsă, unde un apărător o prinde deliberat, presupunând greșit că jocul fusese oprit. Care este decizia arbitrului?",
+      "correctText": "LP pentru echipa în atac, fără sancțiune disciplinară.",
+      "sourceQuestion": "An attacker (Team A) is legally tackled from behind by a midfielder (Team B) and falls to the ground near Team B’s penalty area. The ball then rolls into the penalty area, where it is caught by a Team B defender who assumes a free kick has been awarded, even though the referee has not whistled or signalled to stop play. What is the correct decision?"
+    },
+    {
+      "ids": [
+        400
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător deja avertizat oprește un atac promițător (SPA) prin tragerea tricoului, iar arbitrul acordă LLD. Înaintea procedurii disciplinare, atacanții execută rapid și înscriu. Care este decizia arbitrului?",
+      "correctText": "Gol valabil fără al doilea CG pentru oprirea unui atac promițător (SPA).",
+      "sourceQuestion": "A defending player, who has already been cautioned (yellow card) earlier in the match, stops a promising attack (SPA) by pulling an opponent’s shirt and is penalised with a direct free kick. Before the referee starts the disciplinary sanction procedure, an attacking player quickly takes the free kick and passes the ball to a team-mate who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        406,
+        687
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un jucător comite în propria suprafață de pedeapsă o abatere prin jucarea mingii cu mâna care constituie DOGSO. Arbitrul acordă LP. Care este sancțiunea disciplinară?",
+      "correctText": "CG la jucarea nedeliberată a mingii cu mâna și CR la jucarea deliberată a mingii cu mâna.",
+      "sourceQuestion": "A player commits a handball offence within their penalty area which denies an opponent an obvious goal-scoring opportunity (DOGSO) and the referee awards a penalty kick. What is the correct sanction?"
+    },
+    {
+      "ids": [
+        407
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un jucător comite în propria suprafață de pedeapsă o abatere care constituie DOGSO. Arbitrul acordă LP. Cum stabilește sancțiunea disciplinară?",
+      "correctText": "CG la încercarea de a juca/disputa mingea ori jucarea nedeliberată a mingii cu mâna; CR în celelalte cazuri.",
+      "sourceQuestion": "A player commits an offence within their penalty area which denies an opponent an obvious goal-scoring opportunity and the referee awards a penalty kick. What is the correct sanction?"
+    },
+    {
+      "ids": [
+        411,
+        635
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+      "correctText": "Avantaj și posibil CG ori avertisment la oprirea jocului.",
+      "sourceQuestion": "While a player from Team A is preparing to take a free kick, an opponent from Team B moves forward and is less than 9.15 m from the ball when the kick is taken. The pass from the kicker is not intercepted by the opponent, and the ball reaches another Team A player who gains control of it without being under pressure from any Team B players. What is the correct decision?"
+    },
+    {
+      "ids": [
+        413
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant deja avertizat se lasă să cadă în suprafața de pedeapsă adversă și simulează că a fost faultat, fără să existe contact. Arbitrul oprește jocul. Care este decizia arbitrului?",
+      "correctText": "Al doilea CG urmat de CR și LLI pentru apărători.",
+      "sourceQuestion": "An attacking player (Team A) and a defending player (Team B) run towards the ball inside the penalty area. The attacker suddenly falls to the ground and pretends to have been fouled, despite there being no contact. What is the correct decision if the attacker has already received a caution (yellow card) earlier in the match?"
+    },
+    {
+      "ids": [
+        416,
+        690
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător joacă deliberat mingea cu mâna în propria suprafață de pedeapsă, în timp ce o dispută cu un atacant. Abaterea nu constituie DOGSO și nu oprește un atac promițător (SPA). Care este decizia arbitrului?",
+      "correctText": "LP fără sancțiune disciplinară pentru apărător.",
+      "sourceQuestion": "A defender deliberately handles the ball inside their penalty area while competing with an attacker for possession. At this moment, several players from both teams are inside the penalty area, meaning the handball does not deny the attacking team an obvious goal-scoring opportunity or stop a promising attack. What is the correct decision?"
+    },
+    {
+      "ids": [
+        417,
+        781
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător încearcă să blocheze un șut și își retrage brațul spre corp. Mingea atinge brațul lipit de piept, apoi iese peste linia porții, în afara cadrului, fără să fie atinsă de alt jucător. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț, fără sancțiune disciplinară.",
+      "sourceQuestion": "A defender approaches an attacker to block their shot on goal. While attempting to do so, the defender moves their left hand/arm towards their body to avoid handling the ball. Despite this, the ball touches the hand/arm, which is placed on the defender’s chest, and then goes out over the goal line without touching any other player (no goal is scored). What is the correct decision?"
+    },
+    {
+      "ids": [
+        420
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După o dispută regulamentară, atacantul obține controlul mingii. Apărătorul îl lovește deliberat în picior cu forță excesivă, când mingea nu mai este la distanță de joc, în afara suprafeței de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LLD și CR pentru comportament violent asupra adversarului.",
+      "sourceQuestion": "A defender (Team A) and an attacker (Team B) challenge for the ball without committing a foul. After the attacker gains possession/control of the ball, the defender deliberately kicks the opponent’s leg with excessive force when the ball is no longer within playing distance. What is the correct decision if the offence occurs outside the penalty area?"
+    },
+    {
+      "ids": [
+        423
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător atacă neglijent un adversar în afara suprafeței de pedeapsă, iar faultul constituie DOGSO. Care este decizia corectă?",
+      "correctText": "LLD și CR pentru DOGSO în afara suprafeței de pedeapsă.",
+      "sourceQuestion": "A defender carelessly tackles an attacker outside the penalty area. What is the correct decision if this foul denies an opponent an obvious goal-scoring opportunity (DOGSO)?"
+    },
+    {
+      "ids": [
+        426
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător pune în pericol integritatea unui atacant într-o dispută pentru minge la centrul terenului. Un coechipier al atacantului păstrează posesia lângă margine, fără ocazie clară de gol. Care este decizia arbitrului?",
+      "correctText": "LLD și CR pentru joc brutal al apărătorului.",
+      "sourceQuestion": "A defender from Team A endangers the safety of an attacker from Team B while challenging for the ball in the middle of the field. The attacker falls, but their team-mate retains possession of the ball near the touchline, with no clear opportunity to score. What is the correct decision?"
+    },
+    {
+      "ids": [
+        430,
+        637
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După acordarea unei LLD pentru echipa B, executantul mută mingea mai aproape de poarta adversă, iar un adversar o șutează. Care este decizia arbitrului?",
+      "correctText": "LLD pentru B din locul corect și CG jucătorului echipei A.",
+      "sourceQuestion": "After the referee has awarded a direct free kick against Team A, a Team B player moves the ball a few metres away from where the foul occurred to be closer to the opponents’ goal. Before the player takes the free kick, an opponent (Team A) runs towards the ball and kicks it away. What is the correct decision?"
+    },
+    {
+      "ids": [
+        434
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "În afara suprafeței de pedeapsă, mingea atinge accidental brațul portarului, ținut lângă corp fără a mări în mod nenatural suprafața corpului. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică nicio sancțiune disciplinară.",
+      "sourceQuestion": "A goalkeeper leaves the penalty area and approaches an attacker who is running towards the goal. The attacker tries to kick the ball past the goalkeeper, but it rebounds off the goalkeeper’s left arm, which is close to their body. What is the correct decision if the referee judges that the arm did not make the goalkeeper’s body unnaturally bigger and the contact with the ball was accidental?"
+    },
+    {
+      "ids": [
+        436
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După o paradă, mingea se află pe sol lângă portar, în suprafața de poartă, fără ca acesta să o atingă cu mâinile. Poate fi disputată?",
+      "correctText": "Jocul continuă dacă atacul nu este neregulamentar sau imprudent.",
+      "sourceQuestion": "After a goalkeeper has made a save, an attacker challenges the goalkeeper for the ball when it is on the ground, near the goalkeeper, and inside the goal area. What is the correct decision if the goalkeeper is not touching the ball with their hand(s)?"
+    },
+    {
+      "ids": [
+        438,
+        696
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător trage de tricoul atacantului în propria suprafață de pedeapsă și oprește un atac promițător (SPA), fără să constituie DOGSO. Care este decizia arbitrului?",
+      "correctText": "LP și CG apărătorului pentru oprirea unui SPA.",
+      "sourceQuestion": "A defender pulls the shirt of an attacker inside the penalty area when the ball is in play. It was not an obvious goal-scoring opportunity but it stopped a promising attack (SPA) because the attacker lost possession of the ball. What is the correct decision?"
+    },
+    {
+      "ids": [
+        441,
+        748
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "La executarea unei aruncări de la margine, un adversar aflat la mai puțin de 2 m împiedică executantul. Acesta aruncă deliberat mingea în adversar. Cum procedează arbitrul, în funcție de intensitatea aruncării?",
+      "correctText": "CG adversarului; CG/CR executantului, după intensitate; LLI pentru echipa executantului.",
+      "sourceQuestion": "While a player of Team A is taking a throw-in, an opponent (Team B) remains closer than two metres from the touchline, stands in front of the thrower and interferes with the restart of play. The thrower gets irritated and deliberately throws the ball at the opponent. What is the correct decision?"
+    },
+    {
+      "ids": [
+        445
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Într-o confruntare colectivă, un jucător lovește un adversar, dar autorul nu poate fi identificat. Poate fi sancționat antrenorul principal?",
+      "correctText": "Nu; incidentul jucătorului neidentificat se raportează autorităților.",
+      "sourceQuestion": "After the referee has stopped play for a serious foul challenge, there is a mass confrontation on the field between both teams. One player is punched by an opposing player but the referee cannot identify the offender. May the senior team coach receive the sanction for this offence?"
+    },
+    {
+      "ids": [
+        446,
+        700
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător încearcă să joace mingea, dar atacă neglijent un adversar în propria suprafață de pedeapsă și comite DOGSO. Care este decizia arbitrului?",
+      "correctText": "LP și CG jucătorului pentru DOGSO.",
+      "sourceQuestion": "A player challenges for the ball in a careless manner and commits a foul within their own penalty area which denies an opponent an obvious goal-scoring opportunity (DOGSO). What is the correct decision?"
+    },
+    {
+      "ids": [
+        448
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Portarul iese din suprafață, joacă cu piciorul pasa lungă a unui adversar, revine cu mingea în suprafața de pedeapsă și o prinde. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică nicio sancțiune disciplinară.",
+      "sourceQuestion": "Team A makes a long pass into the opponents’ half. Team B goalkeeper runs out of their penalty area, touches the ball with their feet, dribbles into the penalty area and then picks the ball up. What is the correct decision?"
+    },
+    {
+      "ids": [
+        454
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Cu mingea în joc, antrenorul principal contestă timpul adițional fără să părăsească suprafața tehnică și fără altă abatere. Care este decizia arbitrului?",
+      "correctText": "Joc continuat, avertisment la oprire sau CG pentru protest clar/continuu.",
+      "sourceQuestion": "The fourth official indicates that five additional minutes will be played at the end of the second half and is then approached by the head coach, who expresses disagreement with the amount of time decided by the referee. What is the correct decision if the ball is in play and the coach does not leave their technical area/commit any other offence?"
+    },
+    {
+      "ids": [
+        457
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un antrenor solicită furios oprirea jocului și o lovitură liberă, fără limbaj ofensator, insultător sau abuziv. Care este decizia dacă adversarii nu sunt dezavantajați?",
+      "correctText": "Oprirea jocului, CG antrenorului și LLI de pe linia de margine cea mai apropiată.",
+      "sourceQuestion": "A defender (Team A) competes with an attacker (Team B) for the ball near the touchline. The referee decides to allow play to continue. The head coach of Team B then angrily yells at the referee to stop play and award a free kick to Team B, although no offensive, insulting or abusive language is used. What is the correct decision?"
+    },
+    {
+      "ids": [
+        459
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După un fault neglijent al echipei A, un jucător al echipei B face gestul de acordare a unui cartonaș. Cum procedează arbitrul?",
+      "correctText": "CG jucătorului B și LLD pentru B din locul faultului comis.",
+      "sourceQuestion": "Team A defender fouls an opponent, committing their third careless tackle during the match. The referee awards a free kick to Team B, warns the defender but does not caution them. Team B player gestures for a yellow card. What action does the referee take?"
+    },
+    {
+      "ids": [
+        460
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător joacă mingea cu capul, aceasta îi atinge mâna sau brațul și intră direct în propria poartă. Care este decizia arbitrului?",
+      "correctText": "Gol valabil și reluare cu lovitură de începere.",
+      "sourceQuestion": "Team A kicks the ball into the opponents’ penalty area. A defender of Team B heads the ball which hits their hand/arm and then goes directly into their team’s goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        461
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un antrenor avertizat anterior reține deliberat mingea pentru a întârzia o aruncare de la margine a propriei echipe. Care este decizia arbitrului?",
+      "correctText": "Al doilea CG și CR antrenorului; aruncare de la margine pentru propria echipă.",
+      "sourceQuestion": "The head coach of Team A leaves their technical area several times (without entering the field of play) and receives a caution (yellow card). During additional time, with Team A leading by a single goal, the coach intentionally holds onto the ball to delay a throw-in by Team A. What should the referee do?"
+    },
+    {
+      "ids": [
+        462
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După înscriere, se constată ofsaid și un gest nepotrivit al marcatorului către suporterii adverși. Care este decizia arbitrului?",
+      "correctText": "Gol anulat, LLI din locul ofsaidului și CG sau CR marcatorului după natura gestului.",
+      "sourceQuestion": "A player scores a goal at the end of the match and celebrates in front of fans of the opposing team without leaving the field of play. After that, the referee talks with other match officials who indicate an offside offence and inform the referee that the scorer made an inappropriate gesture towards the fans. What is the correct decision?"
+    },
+    {
+      "ids": [
+        463
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Mingea lovește brațul depărtat al unui atacant, care își mărește în mod nenatural suprafața corpului, apoi un coechipier înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și LLD pentru echipa în apărare din locul abaterea prin jucarea mingii cu mânaui atacantului.",
+      "sourceQuestion": "The ball is in play in the penalty area. The goalkeeper (Team A) attempts to kick the ball away under pressure from an attacker (Team B) who is very close and tries to block this clearance. The ball hits the attacker’s arm that is away from the body and makes it unnaturally bigger. After that, the ball goes to another Team B player who scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        466
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "În timp ce arbitrul arată CG pentru un atac imprudent, echipa beneficiară execută rapid lovitura liberă și creează o ocazie de gol. Care este decizia arbitrului?",
+      "correctText": "Lovitura liberă se repetă după încheierea procedurii disciplinare.",
+      "sourceQuestion": "Team A is awarded a free kick for a reckless tackle outside the penalty area. The referee calls over the Team B player and as they are being shown the yellow card, a Team A player takes the free kick and passes the ball to a team-mate who has a goal-scoring opportunity. What is the correct decision?"
+    },
+    {
+      "ids": [
+        472,
+        708
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător împinge un atacant în propria suprafață de pedeapsă și comite DOGSO. Atacantul atinge accidental mingea cu mâna și înscrie imediat. Care este decizia arbitrului?",
+      "correctText": "Gol anulat, LP și CR apărătorului pentru DOGSO.",
+      "sourceQuestion": "A defender pushes an attacker who is in the penalty area and in front of the empty goal. The attacker loses balance, falls down and accidentally touches the ball with the hand. Immediately after that, the attacker manages to kick the ball and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        475,
+        709
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător împinge un atacant în propria suprafață de pedeapsă, fără să aibă posibilitatea de a juca mingea, și comite DOGSO. Care este decizia arbitrului?",
+      "correctText": "LP și CR pentru DOGSO fără jocul mingii.",
+      "sourceQuestion": "An attacker runs with the ball into the opponents’ penalty area (one-on-one situation). A defender catches up with the attacker but has no possibility to play the ball so the defender pushes the opponent to deny an obvious goal-scoring opportunity (DOGSO). What is the correct decision?"
+    },
+    {
+      "ids": [
+        476
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Doi adversari dispută mingea aflată la distanță de joc, umăr la umăr, fără neglijență, imprudență sau forță excesivă. Care este decizia arbitrului?",
+      "correctText": "Continuarea jocului, fără nicio sancțiune disciplinară aplicată.",
+      "sourceQuestion": "A defender and an attacker challenge physically for the ball, using shoulders and upper arms which are kept close to the body (side-to-side contact, not in a careless or reckless manner or using excessive force). The ball is close to both players (they are able to touch it by stretching out their legs). What is the correct decision?"
+    },
+    {
+      "ids": [
+        477,
+        710
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător ține un adversar pentru a opri un atac promițător (SPA), dar arbitrul aplică avantajul. Același apărător comite apoi un atac imprudent în propria suprafață de pedeapsă, fără ca abaterea să constituie DOGSO. Care este decizia arbitrului?",
+      "correctText": "LP și un CG pentru atacul imprudent.",
+      "sourceQuestion": "A defender pulls an attacker’s shirt to stop a promising attack (SPA). The referee applies the advantage as the attacker gets free of the opponent and runs with the ball into the penalty area. After that, the same defender catches up with the attacker, challenges for the ball in a reckless manner and fouls the attacker (no DOGSO offence). What is the correct decision?"
+    },
+    {
+      "ids": [
+        478
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul joacă în afara suprafeței de pedeapsă pasa din LLD a unui coechipier, conduce mingea în suprafața de pedeapsă și o prinde cu mâinile. Care este decizia arbitrului?",
+      "correctText": "LLI din locul prinderii, fără nicio sancțiune pentru portar.",
+      "sourceQuestion": "A defender takes a free kick and passes the ball to the goalkeeper. The goalkeeper touches the ball with the foot outside their penalty area and notices that an attacker is running quickly towards the ball, so the goalkeeper dribbles into the penalty area and then picks the ball up. What is the correct decision?"
+    },
+    {
+      "ids": [
+        488
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted",
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător ține un adversar de tricou și oprește un atac promițător (SPA), dar arbitrul aplică avantajul. Un alt apărător atacă apoi neglijent un adversar în propria suprafață de pedeapsă, în încercarea de a juca mingea, și comite DOGSO. Care este decizia arbitrului?",
+      "correctText": "LP și CG acordat celui de-al doilea apărător pentru DOGSO.",
+      "sourceQuestion": "A defender (Team A) pulls an attacker’s shirt (Team B) outside the penalty area which interferes with a promising attack. The attacker retains possession of the ball and the referee plays the advantage. Immediately after that, another defender (Team A) commits a careless tackle, makes contact with the attacker inside the penalty area and denies Team B an obvious goal-scoring opportunity (DOGSO). What is the correct decision?"
+    },
+    {
+      "ids": [
+        492,
+        641
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "O pasă deliberată spre portar ar intra în poartă, iar portarul o oprește cu mâna în propria suprafață de poartă. Care este decizia arbitrului?",
+      "correctText": "LLI acordată de pe linia suprafeței de poartă, fără sancțiune.",
+      "sourceQuestion": "Under pressure from an attacking team player, a defender deliberately kicks the ball to the goalkeeper. However, because the ball will go into the goal, the goalkeeper handles the ball inside the goal area to prevent a goal. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        506,
+        719
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul încearcă să boxeze mingea, o ratează și doboară imprudent atacantul în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și CG portarului pentru atacul imprudent comis.",
+      "sourceQuestion": "A player kicks a free kick into the opponents’ penalty area. While the ball is in the air, the defending team goalkeeper jumps and attempts to punch the ball but does not touch it. As a result, the goalkeeper bumps into the attacker and knocks them down. What is the correct decision?"
+    },
+    {
+      "ids": [
+        507
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător înlocuit protestează clar și repetat din suprafața tehnică după o dispută regulamentară. Care este procedura?",
+      "correctText": "Jocul continuă și CG jucătorului la următoarea oprire.",
+      "sourceQuestion": "An attacker is legally challenged by a defender close to the penalty area and the referee allows play to continue. A substituted player present in the technical area protests against this decision without entering the field and interfering with play. What action does the referee take?"
+    },
+    {
+      "ids": [
+        511
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul iese din suprafața de pedeapsă și atinge deliberat mingea cu mâna pentru a opri un atacant care urmărea pasa unui apărător. Care este decizia arbitrului?",
+      "correctText": "LLD; CG pentru SPA sau CR pentru DOGSO, după caz.",
+      "sourceQuestion": "A defender kicks the ball to a goalkeeper (a team-mate). After the ball has been kicked, an attacker of the opposing team also chases after the ball so the goalkeeper runs out of the penalty area and deliberately touches the ball with their hand. What is the correct decision?"
+    },
+    {
+      "ids": [
+        512
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După acordarea unei LP, un antrenor advers intră pe teren și se apropie agresiv de arbitru. Care este decizia arbitrului?",
+      "correctText": "CR și părăsirea terenului și a zonei sale imediate.",
+      "sourceQuestion": "The referee has awarded a penalty kick to Team A. A coach of Team B does not agree with this decision, enters the field of play and approaches the referee in an aggressive manner. What is the correct decision?"
+    },
+    {
+      "ids": [
+        513
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător calcă din neglijență piciorul unui atacant în afara suprafeței de pedeapsă. Atacantul simulează apoi o accidentare gravă la genunchi. Care este decizia arbitrului?",
+      "correctText": "LLD pentru atacanți și CG pentru atacant pentru simulare.",
+      "sourceQuestion": "A defender (Team A) challenges an attacker (Team B) for the ball outside the penalty area and steps on the opponent’s foot in a careless manner. After that, the attacker falls to the ground, grabs their knee and pretends to have been seriously injured. What is the correct decision?"
+    },
+    {
+      "ids": [
+        516,
+        786
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Înaintea executării unei lovituri de colț, un atacant își dispută poziția cu un apărător. Apărătorul îl împinge înainte ca mingea să fie lovită. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț; atenționare, CG sau CR, după gravitate.",
+      "sourceQuestion": "A player of Team A prepares to take a corner kick. At the same time, one of their team-mates challenges for position with a defender (Team B) and is pushed by the opponent before the ball has been touched by the kicker. What is the correct decision?"
+    },
+    {
+      "ids": [
+        518,
+        720
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un apărător împinge un atacant în afara suprafeței de pedeapsă, apoi îl împiedică deliberat în interiorul acesteia. Care este decizia arbitrului?",
+      "correctText": "LP pentru împiedicare și sancțiunea disciplinară corespunzătoare.",
+      "sourceQuestion": "An attacking player runs with the ball towards the opponents’ goal. A defending player first pushes the attacker (outside the penalty area) and then deliberately trips the opponent and this (second) contact is inside the penalty area. What is the correct decision?"
+    },
+    {
+      "ids": [
+        525
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un mijlocaș blochează fără contact deplasarea unui atacant, când mingea nu este la distanță de joc. Atacantul îl împinge apoi imprudent. Care este decizia arbitrului?",
+      "correctText": "LLI împotriva mijlocașului și CG pentru atacantul imprudent.",
+      "sourceQuestion": "A defensive midfielder moves into the attacker’s path to block their way when the ball is not within playing distance of either player (no contact is made). After that, the attacker tries to win a position and pushes the midfielder in a reckless manner. What is the correct decision?"
+    },
+    {
+      "ids": [
+        531
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Înainte de executarea unei lovituri libere, un jucător atinge un adversar într-un mod ofensator, când mingea nu este în joc. Care este decizia arbitrului?",
+      "correctText": "CR și reluare conform deciziei luate anterior.",
+      "sourceQuestion": "A player (Team A) touches an opposing player (Team B) in an offensive way before a free kick is taken (ball out of play). What is the correct decision?"
+    },
+    {
+      "ids": [
+        538
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător alunecă pentru a bloca o pasă, iar mingea îi atinge brațul întins clar lateral, care nu susține corpul. Care este decizia arbitrului?",
+      "correctText": "LLD sau LP pentru atacanți, după locul abaterii.",
+      "sourceQuestion": "An attacker (Team A) attempts to pass the ball. A defender (Team B) makes a slide tackle to block the pass. The ball touches the right arm which is clearly extended away from the body and is not supporting the body. What is the correct decision?"
+    },
+    {
+      "ids": [
+        539,
+        725
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După ce prinde mingea în propria suprafață de pedeapsă, portarul împinge deliberat cu mâna capul unui adversar înainte să elibereze mingea. Care este decizia arbitrului?",
+      "correctText": "LP pentru atacanți și CR pentru comportament violent.",
+      "sourceQuestion": "Team A takes a corner kick and Team B goalkeeper catches the ball within their penalty area. After that, before releasing the ball, the goalkeeper deliberately touches Team A player’s head with their hand and pushes the opponent. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        540
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După acordarea unei LLD și a unui CG împotriva echipei sale, un antrenor aplaudă sarcastic deciziile arbitrului. Care este sancțiunea?",
+      "correctText": "CG pentru lipsă de respect față de oficialul de joc.",
+      "sourceQuestion": "The referee awards a direct free kick for Team A and shows a yellow card to a player of Team B. A coach of Team B does not agree with these decisions and claps in a sarcastic way. What disciplinary action does the referee take?"
+    },
+    {
+      "ids": [
+        541
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Arbitrul oprește jocul pentru un atac imprudent și începe procedura de acordare a CG. Înainte de arătarea cartonașului, adversarii execută rapid lovitura și obțin o ocazie clară. Care este decizia arbitrului?",
+      "correctText": "Oprirea jocului, acordarea CG și repetarea loviturii inițiale.",
+      "sourceQuestion": "A defender (Team A) commits a reckless tackle against an attacker (Team B) outside the penalty area. The referee stops play, awards a free kick and calls the defender for a caution. Before the yellow card is shown, an attacker takes a quick free kick and Team B has a clear goal-scoring opportunity. What is the correct decision?"
+    },
+    {
+      "ids": [
+        542
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted",
+        "dogso-without-described-goal-context"
+      ],
+      "questionRo": "Un apărător oprește prin ținere un atac promițător (SPA) în afara suprafeței de pedeapsă, dar se aplică avantajul. Alt apărător încearcă să joace mingea, comite fault în suprafața de pedeapsă și constituie DOGSO. Care este decizia arbitrului?",
+      "correctText": "LP și CG numai pentru al doilea apărător pentru DOGSO.",
+      "sourceQuestion": "A defender (Team A) pulls an attacker’s shirt (Team B) outside the penalty area which stops a promising attack. The attacker retains possession of the ball and the referee plays the advantage. Immediately after that, another defender (Team A) commits a careless tackle, makes contact with the attacker inside the penalty area and denies Team B an obvious goal-scoring opportunity (DOGSO). What is the correct decision?"
+    },
+    {
+      "ids": [
+        543
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Arbitrul acordă LP după căderea unui atacant. Analiza video la marginea terenului arată clar că apărătorul nu l-a atins, iar atacantul a simulat faultul. Care este decizia arbitrului?",
+      "correctText": "Anularea LP, LLI pentru echipa în apărare și CG pentru simulare.",
+      "sourceQuestion": "The referee stops play and awards a penalty kick because an attacker falls down in the opponents’ penalty area and the referee thinks the attacker was fouled by a defender. The referee undertakes an on-field review and the replay footage clearly shows that the attacker pretends to have been fouled – the defender did not touch the attacker . What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        552
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un înlocuitor aruncă o sticlă spre un adversar aflat pe teren, iar acesta evită obiectul. Care este decizia arbitrului?",
+      "correctText": "LLD sau LP la locul impactului; CG sau CR după intensitate.",
+      "sourceQuestion": "While the ball is in play, a substitute (Team A) throws a water bottle at an opposing player (Team B) who is on the field of play. The opponent reacts and avoids the object. What is the correct decision?"
+    },
+    {
+      "ids": [
+        554
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un jucător deja avertizat comite o intrare imprudentă, apoi protestează după oprirea jocului. Ce sancțiune disciplinară se aplică?",
+      "correctText": "CG pentru intrarea imprudentă, apoi CR; protestele sunt raportate.",
+      "sourceQuestion": "A player was cautioned (yellow card) for unsporting behaviour in the first half. During the second half, the same player commits a reckless challenge. The referee stops play, awards a direct free kick and the offending player shows dissent. What disciplinary action does the referee take?"
+    },
+    {
+      "ids": [
+        555,
+        755
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Mingea se îndreaptă direct spre poartă dintr-o aruncare de la margine. Un apărător, altul decât portarul, o oprește deliberat cu mâna în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și CG acordat pentru comportament nesportiv.",
+      "sourceQuestion": "Team A player takes a throw-in and throws the ball towards the opponents’ penalty area. The ball is going directly into the goal and Team B player (not a goalkeeper) handles the ball and prevents it from entering the goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        558
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Portarul prinde intenționat mingea cu mâna în afara suprafeței de pedeapsă și împiedică înscrierea unui gol sau o ocazie clară de gol. Care este decizia arbitrului?",
+      "correctText": "LLD pentru adversari și CR portarului pentru DOGSO.",
+      "sourceQuestion": "A goalkeeper (Team A) leaves the penalty area and approaches an attacker (Team B) who is running one-on-one towards the goal. The attacker tries to lob the ball over the opponent so the goalkeeper catches the ball outside their penalty area to prevent a goal from being scored. What is the correct decision?"
+    },
+    {
+      "ids": [
+        562
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător pasează cu piciorul unui coechipier, care nu atinge mingea. Aceasta ajunge la propriul portar, care o prinde în suprafața de pedeapsă, sub presiunea unui atacant. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică sancțiune disciplinară.",
+      "sourceQuestion": "A player (Team A) passes the ball back to a team-mate who does not touch it. As a result, the ball goes to Team A's goalkeeper who picks up the ball in their own penalty area, being under pressure from an attacker (Team B). What is the correct decision?"
+    },
+    {
+      "ids": [
+        565
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Portarul interceptează deliberat cu mâna, în afara suprafeței de pedeapsă, o pasă spre un atacant regulamentar și împiedică o ocazie clară de gol. Care este decizia arbitrului?",
+      "correctText": "LLD pentru adversari și CR portarului pentru DOGSO.",
+      "sourceQuestion": "The goalkeeper (Team A) leaves their penalty area because two attacking players (Team B) are running towards the goalkeeper’s goal. One attacking player tries to pass the ball to a team-mate who is not in an offside position. The goalkeeper deliberately touches the ball with their hand/arm and intercepts the pass. What is the correct decision?"
+    },
+    {
+      "ids": [
+        567
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Cu mingea în joc, un apărător mușcă un atacant în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și CR pentru comportament violent al apărătorului.",
+      "sourceQuestion": "A defending player (Team A) bites an attacking player (Team B) inside the penalty area when the ball is in play. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        568
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "După înscrierea unui gol, un adversar reține mingea și întârzie excesiv lovitura de începere. Care este decizia arbitrului?",
+      "correctText": "CG pentru întârziere și reluare cu lovitură de începere.",
+      "sourceQuestion": "A goal has been scored by Team A and a player from Team B holds the ball to delay the restart of play (the kick-off). What is the correct decision?"
+    },
+    {
+      "ids": [
+        569
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător trage de tricoul unui atacant și oprește un atac promițător în afara suprafeței de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LLD pentru adversari și CG pentru comportament nesportiv.",
+      "sourceQuestion": "A defender (Team A) pulls an opposing attacker’s shirt (Team B) and stops a promising attack 30 metres from the goal, close to the touchline. The referee stops play. What is the correct decision?"
+    },
+    {
+      "ids": [
+        573,
+        650
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant șutează mingea aflată între mâna portarului și sol, în suprafața de poartă. Care este decizia arbitrului?",
+      "correctText": "LLD pentru apărători; sancțiune disciplinară după intensitate.",
+      "sourceQuestion": "An attacker (Team A) kicks the ball when it is between Team B goalkeeper’s hand and the ground (inside Team B’s goal area). What is the correct decision?"
+    },
+    {
+      "ids": [
+        575
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător începe să țină un atacant în propria suprafață de pedeapsă și continuă în afara acesteia, unde atacantul cade. Care este decizia arbitrului?",
+      "correctText": "LP pentru atacanți și fără sancțiune disciplinară obligatorie.",
+      "sourceQuestion": "A defender (Team A) starts holding an attacker (Team B) inside the penalty area and continues holding when the attacker tries to get free and leaves the penalty area. The attacker falls to the ground outside the penalty area. What is the correct decision?"
+    },
+    {
+      "ids": [
+        576
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un apărător comite simultan DOGSO și joc brutal în afara suprafeței de pedeapsă, dar avantajul produce un gol. Care este decizia arbitrului?",
+      "correctText": "Gol acordat și CR apărătorului pentru joc brutal.",
+      "sourceQuestion": "A defender (Team A) denies an obvious goal-scoring opportunity (DOGSO) by a challenge that endangers the safety of an opponent (Team B) outside the penalty area. The referee allows play to continue as the ball goes to another Team B player who gains the possession, takes a shot and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        577
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Cu mingea în joc, un jucător aflat în afara terenului după îngrijiri lovește antrenorul advers. Arbitrul oprește jocul. Care este decizia arbitrului?",
+      "correctText": "CR pentru jucător și LLD de pe linia de margine cea mai apropiată.",
+      "sourceQuestion": "When the ball is in play, a player (Team A) who is already off the field of play (having been treated for an injury) strikes the opposing coach (Team B). The referee stops play. What is the sanction? How is play restarted?"
+    },
+    {
+      "ids": [
+        582
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Portarul prinde mingea, o lasă pe sol și o prinde din nou înainte ca alt jucător să o atingă. Care este decizia arbitrului?",
+      "correctText": "LLI pentru adversari și fără sancțiune disciplinară.",
+      "sourceQuestion": "An attacker (Team A) takes a shot on goal. A goalkeeper (Team B) catches the ball and then places it on the ground. After that, the attacker runs towards the ball and the goalkeeper picks it up. What is the correct decision?"
+    },
+    {
+      "ids": [
+        584
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător comite a doua abatere sancționabilă cu CG; arbitrul aplică avantajul, dar jucătorul se implică în joc și interferează cu un adversar. Care este decizia arbitrului?",
+      "correctText": "Al doilea CG și CR, apoi LLI de la locul interferenței.",
+      "sourceQuestion": "A player (Team A) commits a second cautionable (yellow card) offence in the same match which is a reckless challenge. The referee applies advantage because Team B has a clear opportunity to score a goal, however, the offending player (Team A) becomes involved in play and interferes with an opponent from Team B. What is the correct decision?"
+    },
+    {
+      "ids": [
+        586
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Cu mingea în joc, un jucător lovește violent un înlocuitor advers aflat în afara terenului, lângă propria suprafață de pedeapsă. Cel mai apropiat punct al liniei de delimitare se află în suprafața de pedeapsă a jucătorului vinovat. Care este decizia arbitrului?",
+      "correctText": "Eliminare (CR) pentru comportament violent; LP pentru echipa adversă.",
+      "sourceQuestion": "When the ball is in play, a player (Team A) strikes an opposing substitute (Team B) outside the field of play. The referee stops play and sends off the player for violent conduct. How will play be restarted?"
+    },
+    {
+      "ids": [
+        588
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După un fault sancționat fără cartonaș, antrenorul secund advers gesticulează excesiv cerând acordarea unui cartonaș. Ce sancțiune primește?",
+      "correctText": "CG pentru solicitarea excesivă și publică a unui cartonaș.",
+      "sourceQuestion": "The referee awards a free kick for a foul challenge but does not decide to caution (yellow card, YC) or send off (red card, RC) the offending player. An assistant coach of the opposing team excessively gestures for a card. What disciplinary action should the referee take?"
+    },
+    {
+      "ids": [
+        620
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant împiedică portarul advers să elibereze mingea din mâini, fără contact imprudent și fără a opri un atac promițător. Care este decizia arbitrului?",
+      "correctText": "LLI pentru portar și nu se aplică sancțiune disciplinară.",
+      "sourceQuestion": "An attacking player (Team A) attempts to block the goalkeeper (Team B) when he/she is kicking the ball from his/her hands. What is the referee’s decision? What is the sanction?"
+    },
+    {
+      "ids": [
+        625
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un jucător comite a doua abatere sancționabilă cu CG. În ce condiții poate arbitrul să permită adversarilor executarea rapidă a loviturii libere și când aplică sancțiunea disciplinară?",
+      "correctText": "Executare rapidă înaintea procedurii, pentru o ocazie foarte bună de gol; CG și CR la următoarea oprire. Dacă intervine: LLI și eliminare imediată. Pentru SPA, avantajul înlătură acel CG.",
+      "sourceQuestion": "A player (Team A) has committed a second cautionable (yellow card, YC) offence in the same match. May the referee allow a quick free kick to be taken by Team B? When should the referee caution (YC) and send off (red card, RC) the offender?"
+    },
+    {
+      "ids": [
+        632
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Doi apărători formează un zid, iar un al treilea stă culcat imediat în spatele lor. Cum este considerată gruparea?",
+      "correctText": "Zid din trei apărători, jucătorul culcat fiind inclus.",
+      "sourceQuestion": "According to Law 13 – Free Kicks, where three or more defending team players form a ‘wall’, all attacking team players must remain at least 1 m (1 yd) from the ‘wall’ until the ball is in play. Is this distance also required if two defenders stand next to each other in the ‘wall’, with another defender on the ground behind?"
+    },
+    {
+      "ids": [
+        647
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un atacant intră la mai puțin de 1 m de zidul cu patru apărători numai după ce mingea este în joc, iar echipa sa înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol acordat și reluare cu lovitură de începere.",
+      "sourceQuestion": "After a direct free kick is taken and the ball is already in play, one of the attacking players (Team A) encroaches within 1 m from a ‘wall’ formed by four defending players (Team B). A goal is scored by Team A directly from the free kick. What is the correct decision?"
+    },
+    {
+      "ids": [
+        655
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "La executarea unei lovituri libere, un jucător lovește deliberat mingea într-un adversar aflat prea aproape, pentru a o putea juca din nou. Acțiunea nu este neglijentă sau imprudentă și nu folosește forță excesivă. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă dacă lovirea nu constituie un fault.",
+      "sourceQuestion": "While a free kick is taken by Team A, an opponent (Team B) is closer to the ball than the required distance. A player (Team A) deliberately kicks the ball at an opponent to play the ball again. What is the correct decision?"
+    },
+    {
+      "ids": [
+        660
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "La executarea unei LLD, un atacant se află la sub 1 m de zidul cu patru apărători, iar mingea intră direct în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și LLI pentru echipa în apărare de la atacant.",
+      "sourceQuestion": "When a direct free kick is taken, one of the attacking players (Team A) is less than 1 m from a ‘wall’ formed by four defending players (Team B). A goal is scored by Team A directly from the free kick. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        676
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un coechipier al executantului pătrunde înaintea LP, primește mingea respinsă de portar și pasează unui coechipier, creând o ocazie de gol. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare de la pătrundere și fără sancțiune.",
+      "sourceQuestion": "At a penalty kick, a team-mate of the kicker (attacking team player) enters the penalty area before the ball is in play. After that, the goalkeeper saves the kick and the ball rebounds into the field to the attacking team player who encroached. The player passes the ball towards a team-mate and thus creates a goal-scoring opportunity. What is the correct decision?"
+    },
+    {
+      "ids": [
+        677
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Executantul simulează ilegal după încheierea elanului, iar un apărător pătrunde înaintea LP și apoi împiedică înscrierea din mingea respinsă. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare și CG executantului pentru simulare.",
+      "sourceQuestion": "At the taking of a penalty kick, the kicker completes their run-up and then deliberately stops and feints to kick the ball. At the same time, a team-mate of the goalkeeper enters the penalty area before the ball is in play. The ball rebounds from the goalkeeper and the defending team player who encroached prevents another attacking team player from scoring a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        678
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Câte un jucător din fiecare echipă pătrunde înaintea executării LP, iar după respingerea portarului ambii dispută mingea. Care este decizia arbitrului?",
+      "correctText": "Repetarea loviturii de pedeapsă fără sancțiuni.",
+      "sourceQuestion": "At a penalty kick, a defending player and an attacking player enter the penalty area before the ball is in play. After that, the goalkeeper saves the kick, the ball rebounds into the field and both encroaching players challenge for the ball. What is the correct decision?"
+    },
+    {
+      "ids": [
+        679
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un coechipier al executantului pătrunde înaintea LP, joacă mingea revenită din bară și trimite peste poartă. Care este decizia arbitrului?",
+      "correctText": "LLI pentru echipa în apărare de la pătrundere și fără sancțiune.",
+      "sourceQuestion": "At a penalty kick, a team-mate of the kicker (attacking team player) enters the penalty area before the ball is in play. After that, the ball rebounds off the goalpost and goes to the encroaching player who plays the ball and attempts to score but the shot goes over the crossbar. What is the correct decision?"
+    },
+    {
+      "ids": [
+        680
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un coechipier al executantului pătrunde înaintea LP fără să influențeze portarul, care respinge mingea peste bara transversală. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț și fără sancțiune disciplinară pentru pătrundere.",
+      "sourceQuestion": "At a penalty kick, a team-mate of the kicker (attacking team player) enters the penalty area before the ball is in play. After that, the goalkeeper saves the shot, the ball goes over the crossbar and leaves the field of play for a corner kick. What is the correct decision if the attacking player who encroached did not impact on the goalkeeper?"
+    },
+    {
+      "ids": [
+        681
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un coechipier al executantului pătrunde înaintea LP, joacă mingea respinsă de portar și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat, LLI de la pătrundere și fără sancțiune.",
+      "sourceQuestion": "At a penalty kick, a team-mate of the kicker (attacking team player) enters the penalty area before the ball is in play. The goalkeeper saves the kick and the ball rebounds into the field to the attacking team player who encroached who then plays the ball and scores. What is the correct decision?"
+    },
+    {
+      "ids": [
+        682
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "Executantul simulează ilegal după încheierea elanului, un apărător pătrunde fără impact, iar mingea intră în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat, LLI pentru echipa în apărare și CG pentru executant.",
+      "sourceQuestion": "A penalty kick has been awarded to Team A. The identified kicker has completed their run-up, deliberately stops at the end and feints to kick the ball. At the same time, a team-mate of the goalkeeper (Team B) enters the penalty area before the ball is in play. The kicker scores a goal directly from a penalty kick. What is the correct decision?"
+    },
+    {
+      "ids": [
+        703
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Portarul apără o lovitură de pedeapsă, iar arbitrul dispune repetarea pentru abaterea portarului. Poate echipa atacantă schimba executantul la repetare?",
+      "correctText": "Da, dacă noul executant este identificat clar.",
+      "sourceQuestion": "The goalkeeper saves a penalty kick near the end of the second half but the referee orders a retake because of an offence by the goalkeeper. As the first attempt to score a goal was unsuccessful, the attacking team wants to change the player who will take the retaken kick. Is it allowed?"
+    },
+    {
+      "ids": [
+        711
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După executarea unei LP, mingea revine din bara porții. Un apărător încearcă să o joace, fără să o atingă, iar executantul o joacă din nou și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI pentru apărare de la a doua atingere.",
+      "sourceQuestion": "After a penalty kick has been taken, the ball is not reached by the goalkeeper and rebounds into the field of play from the goalpost. A defender tries to kick the ball away but fails to touch it. After that, the attacker (who took the penalty) kicks the ball and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        726
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "Un executant deja avertizat simulează lovirea mingii după încheierea elanului și înscrie din LP. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; LLI pentru apărare; al doilea CG și CR executantului.",
+      "sourceQuestion": "The referee signals for the penalty kick to be taken. A player takes a few steps and walks slowly towards the ball. After completing the ‘run-up’, the player deliberately stops to gain an advantage over a goalkeeper and then kicks the ball into the goal. The player has already been cautioned for another offence during a match. What is the correct decision?"
+    },
+    {
+      "ids": [
+        747
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "După executarea unei aruncări lungi, mingea atinge solul în afara terenului și apoi intră în teren. Care este decizia corectă?",
+      "correctText": "Se repetă aruncarea de către aceeași echipă.",
+      "sourceQuestion": "A player takes a long throw-in to a team-mate who is standing near the touchline, in the opponents’ half, far away from the thrower. After the ball is thrown, it bounces off the ground outside the field of play and then enters the field. What is the correct decision?"
+    },
+    {
+      "ids": [
+        763
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression",
+        "team-labels-omitted"
+      ],
+      "questionRo": "La o lovitură de poartă, portarul așază mingea, o ridică și o mută în cealaltă parte a suprafeței de poartă, întârziind reluarea. Ce măsură ia arbitrul?",
+      "correctText": "Fluieră și numără cinci secunde; la expirare, lovitură de colț, fără CG automat.",
+      "sourceQuestion": "A few minutes before the end of the second half, Team A, which is one goal behind, shoots but the ball goes out for a goal kick. While Team A players are quickly leaving the penalty area, the Team B goalkeeper puts the ball on the ground, then picks the ball up, moves a few metres, and places the ball on the other side of the goal area. What action does the referee take?"
+    },
+    {
+      "ids": [
+        768
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La executarea rapidă a unei lovituri de poartă, un atacant aflat încă în suprafața de pedeapsă nu avusese timp să iasă și se îndepărta. După reluare interceptează mingea și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol acordat fără sancțiune disciplinară.",
+      "sourceQuestion": "An attacker does not control a pass from a team-mate, accidentally falls to the ground and the ball goes out for a goal kick. While the goalkeeper prepares to take the goal kick, the attacker gets up and runs away as quickly as possible. The goalkeeper kicks the ball when the attacker is still inside the penalty area with their back to the opponents’ goal. After that, the attacker intercepts the ball and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        769
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "strong-compression"
+      ],
+      "questionRo": "La o lovitură de poartă, un atacant rămâne deliberat în suprafața de pedeapsă și încearcă să câștige mingea după ce aceasta este în joc. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă se repetă fără sancțiune la prima abatere.",
+      "sourceQuestion": "An attacker is inside the opponents’ penalty area when a goal kick is taken. The attacker does not make an effort to leave the penalty area and watches the goalkeeper and the ball. Once it is kicked, the attacker runs towards the ball to gain possession. What is the correct decision?"
+    },
+    {
+      "ids": [
+        773
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Portarul execută o lovitură de poartă spre un coechipier aflat în suprafața de pedeapsă. După ce mingea este în joc, un adversar intră, interceptează pasa și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol acordat fără sancțiune disciplinară.",
+      "sourceQuestion": "A goalkeeper (Team A) takes a goal kick and kicks the ball towards a defender (Team A) who is standing 10 metres away in their penalty area. After the ball is in play, an opposing player (Team B) enters the penalty area, intercepts the pass and scores a goal. What is the correct decision?"
+    },
+    {
+      "ids": [
+        774
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Înainte ca o lovitură de poartă să fie executată, un adversar intră în suprafața de pedeapsă și faultează un apărător. Care este decizia corectă?",
+      "correctText": "Se execută lovitura de poartă; CG/CR pentru atacant, după gravitate.",
+      "sourceQuestion": "A goal kick has been awarded to Team A. An opponent (Team B) enters the penalty area before the ball is kicked and fouls Team A player. What is the correct decision?"
+    },
+    {
+      "ids": [
+        775
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Un adversar rămâne deliberat în suprafața de pedeapsă la executarea rapidă a unei lovituri de poartă și încearcă să intercepteze mingea după ce aceasta intră în joc. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă se repetă fără sancțiune disciplinară automată.",
+      "sourceQuestion": "A goal kick is taken quickly by a player of defending Team A. An opponent (Team B) who deliberately remained in the penalty area tries to intercept the ball once it is in play. What is the referee’s decision?"
+    },
+    {
+      "ids": [
+        779
+      ],
+      "status": "not-manually-certified",
+      "flags": [
+        "team-labels-omitted"
+      ],
+      "questionRo": "Echipa apărătoare execută rapid o lovitură de poartă, iar un adversar nu avusese în mod real timp să părăsească suprafața de pedeapsă. Poate acesta intercepta mingea după intrarea ei în joc?",
+      "correctText": "Da, jocul continuă fără sancțiune disciplinară.",
+      "sourceQuestion": "A goal kick is taken quickly by a player of defending Team A. An opponent (Team B) genuinely did not have time to leave the penalty area. May the opponent intercept the ball once it is in play?"
+    }
+  ]
+}

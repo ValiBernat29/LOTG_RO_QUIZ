@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "ro-2026-27-book-photo-p110",
+      "kind": "official-ro-photo",
+      "edition": "2026/27",
+      "language": "ro",
+      "translation": "official",
+      "title": "Legile Jocului 2026/27 · fotografie din carte furnizată de utilizator",
+      "transcription": "manual-visual",
+      "providedAt": "2026-10-16",
+      "law": 10,
+      "article": "10.3",
+      "printedPage": 110,
+      "attachmentDescription": "Fotografia 1 din mesajul utilizatorului: pagina tipărită 110, modificări subliniate cu galben. Fișierul imaginii nu este arhivat în proiect."
+    },
+    {
+      "id": "ro-2026-27-book-photo-p142",
+      "kind": "official-ro-photo",
+      "edition": "2026/27",
+      "language": "ro",
+      "translation": "official",
+      "title": "Legile Jocului 2026/27 · fotografie din carte furnizată de utilizator",
+      "transcription": "manual-visual",
+      "providedAt": "2026-10-16",
+      "law": 14,
+      "article": "14.2",
+      "printedPage": 142,
+      "attachmentDescription": "Fotografia 2 din mesajul utilizatorului: pagina tipărită 142, modificări subliniate cu galben. Fișierul imaginii nu este arhivat în proiect."
+    }
+  ],
+  "excerpts": [
+    {
+      "id": "shootout-accidental-double-touch-photo-2627",
+      "law": 10,
+      "article": "10.3",
+      "title": "Dubla atingere accidentală la loviturile de departajare",
+      "page": 110,
+      "text": "• dacă executantul lovește accidental mingea cu ambele picioare simultan sau mingea atinge piciorul ori piciorul de sprijin imediat după lovitură: • dacă mingea intră în poartă în urma loviturii, lovitura se repetă. • dacă mingea nu intră în poartă în urma loviturii, lovitura este înregistrată ca ratată.",
+      "source": {
+        "id": "ro-2026-27-book-photo-p110",
+        "kind": "official-ro-photo",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "title": "Legile Jocului 2026/27 · fotografie din carte furnizată de utilizator",
+        "transcription": "manual-visual",
+        "providedAt": "2026-10-16",
+        "law": 10,
+        "article": "10.3",
+        "printedPage": 110,
+        "attachmentDescription": "Fotografia 1 din mesajul utilizatorului: pagina tipărită 110, modificări subliniate cu galben. Fișierul imaginii nu este arhivat în proiect."
+      }
+    },
+    {
+      "id": "penalty-accidental-double-touch-photo-2627",
+      "law": 14,
+      "article": "14.2",
+      "title": "Dubla atingere accidentală la lovitura de pedeapsă",
+      "page": 142,
+      "text": "• executantul lovește accidental mingea cu ambele picioare simultan sau mingea atinge piciorul ori piciorul de sprijin imediat după lovitură: • dacă mingea intră în poartă în urma loviturii, lovitura se repetă. • dacă mingea nu intră în poartă în urma loviturii, se acordă o lovitură liberă indirectă.",
+      "source": {
+        "id": "ro-2026-27-book-photo-p142",
+        "kind": "official-ro-photo",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "title": "Legile Jocului 2026/27 · fotografie din carte furnizată de utilizator",
+        "transcription": "manual-visual",
+        "providedAt": "2026-10-16",
+        "law": 14,
+        "article": "14.2",
+        "printedPage": 142,
+        "attachmentDescription": "Fotografia 2 din mesajul utilizatorului: pagina tipărită 142, modificări subliniate cu galben. Fișierul imaginii nu este arhivat în proiect."
+      }
+    }
+  ]
+}

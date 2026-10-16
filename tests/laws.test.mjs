@@ -21,26 +21,31 @@ test('The pilot includes every reviewed scenario once and every shuffled answer 
   assert.deepEqual(preparePilotQuestions(library,[]),[]);
   assert.deepEqual(preparePilotQuestions({...library,references:[]},bank),[]);
 });
-test('The current-edition test contains precisely the five newly verified scenarios without duplicates',()=>{
+test('The current-edition test contains all 541 reviewed scenarios without duplicates',()=>{
   const questions=preparePilotQuestions(library,bank,()=>.2,'2026/27');
-  assert.equal(questions.length,5);
-  for(const id of [3,12,13,60,61])assert.ok(questions.some(item=>item.questionRo===q(id).questionRo));
+  assert.equal(questions.length,541);
+  for(const id of [3,12,13,60,61,83,90,143,332,333,334,763])assert.ok(questions.some(item=>item.questionRo===q(id).questionRo));
   for(const item of questions)assert.ok(findLawReference(library,item).every(p=>p.reviewedEdition==='2026/27'));
 });
-test('Own translations and official PDF text retain distinct editions and provenance in the modal',()=>{
-  for(const id of [3,12,13,60,61]) {
-    const html=renderLawExplanation(library,q(id));
-    assert.ok(html.includes('2026/27'));assert.ok(html.includes('traducere proprie din engleză, nu traducere oficială'));
-    assert.ok(!html.includes('Pagina undefined'));assert.ok(!html.includes('Pagina null'));
-    assert.ok(!html.includes('Compatibilitatea acestei asocieri'));
-    assert.ok(html.includes('https://www.theifab.com/'));
+test('Every explanation shows its reviewed edition once and hides technical provenance without deleting it',()=>{
+  const before=JSON.stringify(library);
+  for(const reference of library.references) {
+    const html=renderLawExplanation(library,q(reference.seedId));
+    assert.ok(html.includes(`Ediția de referință: ${reference.reviewedEdition}`));
+    assert.equal((html.match(/Ediția de referință:/gu)??[]).length,1);
+    assert.equal((html.match(/202[56]\/2[67]/gu)??[]).length,1);
+    assert.ok(!/Pagina|Scanare:|PDF românesc|transcriere|fotografie|traducere proprie|Sursa IFAB|Verificare IFAB|law-provenance|href=/u.test(html));
+    assert.ok(!html.includes(library.revisionLabel));
+    assert.ok(html.includes('Legea '));assert.ok(html.includes('<mark>'));
   }
-  const legacy=renderLawExplanation(library,q(221));
-  assert.ok(legacy.includes('PDF românesc 2025/26 · text oficial'));
-  assert.ok(legacy.includes('Compatibilitatea acestei asocieri cu ediția 2026/27 nu a fost încă reverificată'));
+  assert.equal(JSON.stringify(library),before);
+  assert.ok(renderLawExplanation(library,q(12)).includes('Legea 3 · Protocol</div>'));
+  const legacy=renderLawExplanation(library,q(45));
+  assert.ok(legacy.includes('Ediția de referință: 2025/26'));
+  assert.ok(!legacy.includes('2026/27'));
   const report=auditLawCoverage(bank,library,definitions).summary;
-  assert.equal(report.verifiedScenarios,5);assert.equal(report.legacyScenarios,72);
-  assert.equal(report.needsReviewScenarios,0);assert.equal(report.associatedScenarios,77);
+  assert.equal(report.verifiedScenarios,541);assert.equal(report.legacyScenarios,2);
+  assert.equal(report.needsReviewScenarios,0);assert.equal(report.associatedScenarios,543);
 });
 test('Coverage accounts for every record and distinct scenario without treating pending cases as verified',()=>{
   const {summary,queue}=auditLawCoverage(bank,library,definitions);
@@ -52,7 +57,7 @@ test('Coverage accounts for every record and distinct scenario without treating 
     assert.ok(findLawReference(library,q(id)).every(p=>p.reviewedEdition==='2026/27'));
     assert.ok(!queue.some(group=>group.ids.includes(id)));
   }
-  assert.ok(queue.some(group=>group.ids.includes(221)&&group.status==='edition-review'));
+  assert.ok(queue.some(group=>group.ids.includes(45)&&group.status==='edition-review'));
   const changed=structuredClone(definitions);changed.reviewIssues=[{...definitions.resolvedIssues[0],correctText:'Changed decision'}];
   assert.throws(()=>auditLawCoverage(bank,library,changed));
 });
@@ -112,7 +117,7 @@ test('The possession decision highlights the complete outside-penalty-area point
   assert.ok(quote.includes('care a intrat sau ar fi intrat în posesie'));
   assert.ok(quote.includes('în caz contrar'));
   assert.ok(quote.endsWith('la oprirea jocului.'));
-  assert.ok(renderLawExplanation(library,q(213)).includes(library.revisionLabel));
+  assert.ok(!renderLawExplanation(library,q(213)).includes(library.revisionLabel));
 });
 test('Literal highlights stay tied to the correct decision after option shuffling', () => {
   const question=q(221), shuffled=prepareQuestions([question],1,()=>.3)[0];
@@ -151,10 +156,10 @@ test('Unreviewed questions show an explicit notice instead of an invented passag
   assert.ok(html.includes('Pasaj încă neasociat'));
   assert.ok(!html.includes('<blockquote>'));assert.ok(!html.includes('href='));
 });
-test('Excerpts are safely escaped and cite the real source article and page', () => {
+test('Excerpts are safely escaped and display the law and article without page numbers', () => {
   const html=renderLawExplanation(library,q(146));
-  assert.ok(html.includes('Art. 12.4 · Pagina 124'));
-  assert.ok(html.includes('Pagina 125'));assert.ok(html.includes('<mark>'));
+  assert.ok(html.includes('Legea 12 · Art. 12.4</div>'));
+  assert.ok(!html.includes('Pagina'));assert.ok(html.includes('<mark>'));
   const changed=structuredClone(library), item=changed.excerpts.find(item=>item.id==='unknown-official');
   item.text='<script>alert(1)</script> '+item.text;
   const escaped=renderLawExplanation(changed,q(146));
@@ -188,4 +193,240 @@ test('The buildless deploy contains no dependency on an absolute local PDF path'
   assert.ok(!JSON.stringify(library).includes('C:/Users/'));
   const app=await readFile(new URL('../dist/app.js',import.meta.url),'utf8');
   assert.ok(app.includes('data-explanation='));assert.ok(!app.includes('safeSource('));
+});
+test('Sixteen legacy associations now have an explicit current-edition check without relabelling the Romanian source',()=>{
+  const ids=[9,10,96,146,201,272,221,223,224,225,1,2,5,6,7,23];
+  const reviewed=library.references.filter(r=>r.editionCheckId==='legacy-compatibility-2026-27-review');
+  assert.equal(reviewed.length,17);
+  for(const id of ids){
+    const passages=findLawReference(library,q(id));
+    assert.ok(passages.every(p=>p.reviewedEdition==='2026/27'&&p.source.edition==='2025/26'&&p.source.translation==='official'&&p.editionCheck));
+    assert.deepEqual(findLawReference(library,prepareQuestions([q(id)],1,()=>.61)[0]),passages);
+    assert.ok(renderLawExplanation(library,q(id)).includes('Ediția de referință: 2026/27'));
+  }
+  assert.equal(findLawReference(library,q(45))[0].reviewedEdition,'2025/26');
+  assert.equal(findLawReference(library,q(631)),null);
+});
+
+test('A reckless push after the ball leaves the goal line keeps the goal kick and separately justifies the caution',()=>{
+  const passages=findLawReference(library,q(766));
+  for(const id of ['restart-unchanged','goal-kick-restart','reckless-caution'])assert.ok(passages.some(p=>p.id===id));
+  assert.ok(!passages.some(p=>p.id==='penalty-award'||p.id==='dropped-ball'));
+  assert.equal(q(298).correctOption,'A');
+});
+
+test('Removing the explanation training section preserves answer explanations',async()=>{
+  const app=await readFile(new URL('../dist/app.js',import.meta.url),'utf8');
+  assert.ok(!app.includes('pilot-current'));
+  assert.ok(!app.includes('Testează noutățile'));
+  assert.ok(!app.includes('data-action="pilot"'));
+  assert.ok(app.includes('data-explanation='));
+  assert.ok(!app.includes('startPilot'));
+  assert.ok(app.includes('loadLawLibrary()'));
+});
+test('The 26 rev15 checks preserve their pre-review passages, correct decisions and original Romanian provenance',async()=>{
+  const snapshot=JSON.parse(await readFile(new URL('../laws/rechecks-rev15.json',import.meta.url),'utf8'));
+  assert.equal(snapshot.rows.length,26);
+  assert.equal(library.references.filter(r=>r.editionCheckId==='dropped-equipment-discipline-2026-27-review').length,26);
+  for(const old of snapshot.rows){
+    const r=library.references.find(r=>r.seedId===old.id);
+    assert.equal(r.reviewedEdition,'2026/27');
+    assert.equal(r.questionRo,old.questionRo);assert.equal(r.correctText,old.correctText);
+    assert.deepEqual(r.passages,old.passages);
+    assert.ok(findLawReference(library,q(old.id)).every(p=>p.source.edition==='2025/26'&&p.source.translation==='official'));
+    assert.deepEqual(findLawReference(library,prepareQuestions([q(old.id)],1,()=>.34)[0]),findLawReference(library,q(old.id)));
+  }
+});
+
+test('Dropped-ball recipient, position and goal cancellation keep scenario-specific highlights after reverification',()=>{
+  const get=id=>findLawReference(library,q(id));
+  assert.ok(get(210).some(p=>p.highlights.some(h=>h.includes('se schimbă echipa'))));
+  assert.ok(get(213).some(p=>p.highlights.some(h=>h.includes('care a intrat sau ar fi intrat în posesie'))));
+  assert.ok(get(214).some(p=>p.highlights.includes('Mingea de arbitru se execută în locul în care se afla la oprirea jocului.')));
+  assert.ok(get(227).some(p=>p.highlights.some(h=>h.includes('portarului echipei în apărare'))));
+  assert.ok(get(227).some(p=>p.highlights.some(h=>h.includes('mingea intră direct în poartă'))));
+});
+
+test('Equipment and disciplinary checks do not conflate interference, permission or a second caution',()=>{
+  const get=id=>findLawReference(library,q(id));
+  assert.ok(get(63).some(p=>p.id==='equipment-correction'&&p.highlights.some(h=>h.includes('intervine în joc'))));
+  assert.ok(get(70).some(p=>p.highlights.some(h=>h.includes('lovitură liberă indirectă'))));
+  for(const id of [68,69,71])assert.ok(get(id).some(p=>p.id==='lost-shoe'));
+  assert.ok(get(66).some(p=>p.id==='shin-guards'));
+  assert.ok(get(65).some(p=>p.id==='optional-gloves'));
+  for(const id of [35,36,41])assert.ok(get(id).some(p=>p.id==='second-caution-red'));
+});
+
+test('Rechecks do not automatically certify unresolved legacy associations or FAQ interpretations',()=>{
+  for(const id of [45,50])assert.equal(findLawReference(library,q(id))[0].reviewedEdition,'2025/26');
+  assert.equal(findLawReference(library,q(631)),null);
+  assert.equal(q(298).correctOption,'A');
+});
+
+test('Rev16 reverifies six player and goalkeeper scenarios without changing the reviewed decision or highlights',async()=>{
+  const snapshot=JSON.parse(await readFile(new URL('../laws/rechecks-rev16.json',import.meta.url),'utf8'));
+  assert.deepEqual(snapshot.rows.map(r=>r.id),[16,51,52,53,56,57]);
+  const refs=library.references.filter(r=>r.editionCheckId==='players-goalkeepers-2026-27-review');
+  assert.equal(refs.length,6);
+  for(const old of snapshot.rows){
+    const ref=refs.find(r=>r.seedId===old.id);
+    assert.equal(ref.reviewedEdition,'2026/27');
+    assert.equal(ref.questionRo,old.questionRo);assert.equal(ref.correctText,old.correctText);
+    assert.deepEqual(ref.passages,old.passages);
+    const passages=findLawReference(library,q(old.id));
+    assert.ok(passages.every(p=>p.source.edition==='2025/26'&&p.source.translation==='official'));
+    assert.deepEqual(findLawReference(library,prepareQuestions([q(old.id)],1,()=>.4)[0]),passages);
+  }
+});
+
+test('Rev16 keeps goalkeeper changes distinct from substitute entry and deliberate departure distinct from temporary absence',()=>{
+  const get=id=>findLawReference(library,q(id));
+  assert.ok(get(16).some(p=>p.id==='shirt-colors'));
+  assert.ok(get(57).some(p=>p.id==='swap-goalkeeper'));
+  assert.ok(!get(57).some(p=>p.id==='substitute-entry'));
+  assert.ok(get(52).some(p=>p.highlights.some(h=>h.includes('în mod deliberat'))));
+  assert.ok(get(53).some(p=>p.id==='refuse-substitution'));
+  assert.ok(get(51).some(p=>p.id==='unnotified-starter'));
+  assert.ok(get(56).some(p=>p.id==='return-substitutes'));
+});
+
+test('The explanation training card and its styles are removed without deleting the reviewed library',async()=>{
+  const app=await readFile(new URL('../dist/app.js',import.meta.url),'utf8');
+  const css=await readFile(new URL('../dist/styles.css',import.meta.url),'utf8');
+  assert.ok(!/pilot-card|pilot-title|pilotLoading|Toate explicațiile disponibile|Exersează cu explicații|preparePilotQuestions/u.test(app));
+  assert.ok(!/pilot-card|pilot-actions/u.test(css));
+  assert.ok(app.includes('Vezi explicația din Legile Jocului'));
+  assert.equal(preparePilotQuestions(library,bank,()=>.5).length,543);
+  assert.ok(preparePilotQuestions(library,bank,()=>.5).some(r=>r.questionRo===q(217).questionRo));
+});
+
+test('Rev17 reverifies eight associations without changing scenarios, decisions or Romanian source texts',async()=>{
+  const snapshot=JSON.parse(await readFile(new URL('../laws/rechecks-rev17.json',import.meta.url),'utf8'));
+  assert.deepEqual(snapshot.rows.map(r=>r.id),[14,19,27,29,30,31,38,48]);
+  const refs=library.references.filter(r=>r.editionCheckId==='reentry-interference-dogso-2026-27-review');
+  assert.equal(refs.length,8);
+  for(const old of snapshot.rows){
+    const ref=refs.find(r=>r.seedId===old.id);
+    assert.equal(ref.questionRo,old.questionRo);assert.equal(ref.correctText,old.correctText);
+    assert.equal(ref.reviewedEdition,'2026/27');
+    assert.deepEqual(ref.passages.map(p=>p.id),old.passages.map(p=>p.id));
+    const passages=findLawReference(library,q(old.id));
+    assert.ok(passages.every(p=>p.source.edition==='2025/26'&&p.source.translation==='official'));
+    for(const passage of passages){
+      const before=old.passages.find(p=>p.id===passage.id);
+      for(const highlight of passage.highlights){
+        assert.ok(passage.text.includes(highlight));
+        assert.ok(before.highlights.some(h=>h.includes(highlight)));
+      }
+    }
+    assert.deepEqual(findLawReference(library,prepareQuestions([q(old.id)],1,()=>.42)[0]),passages);
+  }
+});
+
+test('Re-entry highlights distinguish no interference, SPA, direct DOGSO dismissal and conditional restart',()=>{
+  const get=(id,passage)=>findLawReference(library,q(id)).find(p=>p.id===passage);
+  assert.deepEqual(get(31,'return-restart').highlights,['• să avertizeze jucătorul pentru intrarea pe teren fără permisiune.']);
+  for(const id of [30,38]){
+    const highlights=get(id,'return-restart').highlights.join(' ');
+    assert.ok(highlights.includes('lovitură liberă directă'));
+    assert.ok(!highlights.includes('lovitură liberă indirectă'));
+  }
+  assert.ok(get(30,'unauthorized-dogso').highlights.some(h=>h.includes('eliminare')));
+  assert.ok(get(30,'penalty-award'));
+  for(const id of [19,38]){
+    assert.ok(get(id,'two-cautions'));
+    assert.ok(get(id,'second-caution-red'));
+  }
+  assert.ok(get(48,'return-restart').highlights.some(h=>h.includes('lovitură liberă indirectă')));
+  assert.equal(q(298).correctOption,'A');
+});
+
+test('Goal cancellation highlights the interfering attacking team rather than the outside-agent exception',()=>{
+  const passages=findLawReference(library,q(27));
+  const highlights=passages.find(p=>p.id==='extra-person-goal').highlights.join(' ');
+  assert.ok(highlights.includes('echipei care a marcat golul'));
+  assert.ok(highlights.includes('lovitură liberă directă'));
+  assert.ok(!highlights.includes('minge de arbitru'));
+  assert.ok(!highlights.includes('persoană străină/factor extern'));
+  assert.ok(passages.some(p=>p.id==='substitute-cautions'));
+  assert.ok(findLawReference(library,q(14)).some(p=>p.id==='drop-other-stoppages'));
+  assert.ok(findLawReference(library,q(29)).some(p=>p.id==='red-dogso-free-kick'));
+  for(const id of [45,50])assert.equal(findLawReference(library,q(id))[0].reviewedEdition,'2025/26');
+});
+
+test('Rev18 reverifies seven associations without changing questions, answers or the source edition',async()=>{
+  const snapshot=JSON.parse(await readFile(new URL('../laws/rechecks-rev18.json',import.meta.url),'utf8'));
+  assert.deepEqual(snapshot.rows.map(r=>r.id),[11,42,43,47,55,58,59]);
+  const refs=library.references.filter(r=>r.editionCheckId==='outside-agents-intervals-authority-2026-27-review');
+  assert.equal(refs.length,7);
+  for(const old of snapshot.rows){
+    const ref=refs.find(r=>r.seedId===old.id);
+    assert.equal(ref.questionRo,old.questionRo);assert.equal(ref.correctText,old.correctText);
+    assert.equal(ref.reviewedEdition,'2026/27');
+    if(old.id!==58)assert.deepEqual(ref.passages,old.passages);
+    const passages=findLawReference(library,q(old.id));
+    assert.ok(passages.every(p=>p.source.edition==='2025/26'&&p.source.translation==='official'));
+    assert.deepEqual(findLawReference(library,prepareQuestions([q(old.id)],1,()=>.29)[0]),passages);
+  }
+});
+
+test('Outside agents retain scenario-specific possession, goalkeeper and goal conditions',()=>{
+  const get=(id,passage)=>findLawReference(library,q(id)).find(p=>p.id===passage);
+  assert.ok(get(11,'extra-persons').highlights.some(h=>h.includes('minge de arbitru')));
+  assert.ok(get(11,'dropped-ball').highlights.some(h=>h.includes('ar fi intrat în posesie')));
+  assert.ok(get(59,'dropped-ball').highlights.some(h=>h.includes('portarului echipei în apărare')));
+  assert.ok(get(47,'extra-persons').highlights.some(h=>h.includes('dacă mingea intră în poartă')));
+  for(const id of [43,55])assert.ok(get(id,'unnotified-break').highlights.some(h=>h.includes('autorităţilor competente')));
+  assert.ok(get(42,'sent-off-before-list'));
+  assert.ok(get(42,'authority-before-match'));
+});
+
+test('A coach interference is justified by team-official provisions rather than a player-only penalty provision',()=>{
+  const passages=findLawReference(library,q(58));
+  assert.deepEqual(passages.map(p=>p.id),['official-interference-red','extra-persons']);
+  assert.ok(passages.find(p=>p.id==='extra-persons').highlights.some(h=>h.includes('un oficial al echipei')));
+  const highlight=passages.find(p=>p.id==='official-interference-red').highlights.join(' ');
+  assert.ok(highlight.includes('a interveni în joc'));
+  assert.ok(!highlight.includes('a înfrunta un oficial'));
+  assert.ok(!passages.some(p=>p.id==='penalty-award'));
+  assert.equal(q(298).correctOption,'A');
+});
+
+test('Rev19 reverifies four substitution scenarios with unchanged decisions and Romanian provenance',async()=>{
+  const snapshot=JSON.parse(await readFile(new URL('../laws/rechecks-rev19.json',import.meta.url),'utf8'));
+  assert.deepEqual(snapshot.rows.map(r=>r.id),[17,18,22,24]);
+  const refs=library.references.filter(r=>r.editionCheckId==='substitution-before-penalty-2026-27-review');
+  assert.equal(refs.length,4);
+  for(const old of snapshot.rows){
+    const ref=refs.find(r=>r.seedId===old.id);
+    assert.equal(ref.questionRo,old.questionRo);assert.equal(ref.correctText,old.correctText);
+    assert.equal(ref.reviewedEdition,'2026/27');
+    assert.deepEqual(ref.passages.map(p=>p.id),old.passages.map(p=>p.id));
+    const passages=findLawReference(library,q(old.id));
+    assert.ok(passages.every(p=>p.source.edition==='2025/26'&&p.source.translation==='official'));
+    for(const passage of passages)for(const h of passage.highlights){
+      assert.ok(passage.text.includes(h));
+      assert.ok(old.passages.find(p=>p.id===passage.id).highlights.some(before=>before.includes(h)));
+    }
+    assert.deepEqual(findLawReference(library,prepareQuestions([q(old.id)],1,()=>.67)[0]),passages);
+  }
+});
+
+test('Substitution highlights distinguish entry conditions from eligibility to take the penalty',()=>{
+  const highlights=id=>findLawReference(library,q(id)).find(p=>p.id==='substitute-entry').highlights.join(' ');
+  for(const id of [18,22]){
+    assert.ok(highlights(id).includes('după primirea semnalului de la arbitru'));
+    assert.ok(!highlights(id).includes('poate repune mingea'));
+  }
+  for(const id of [17,24])assert.ok(highlights(id).includes('Procedura de înlocuire se încheie'));
+});
+
+test('The substitution check records the ten-second exception without certifying all legacy scenarios',()=>{
+  const check=library.editionChecks.find(c=>c.id==='substitution-before-penalty-2026-27-review');
+  assert.ok(check.additionalUrls.includes('https://www.theifab.com/laws/latest/time-limited-substitution-protocol/'));
+  assert.ok(check.note.includes('interzice anularea/schimbarea'));
+  const protocol=library.excerpts.find(p=>p.id==='sub-one-minute-2627');
+  assert.ok(protocol.text.includes('înlocuirea nu poate fi anulată și nici jucătorul de rezervă schimbat'));
+  assert.deepEqual(library.references.filter(r=>r.reviewedEdition==='2025/26').map(r=>r.seedId).sort((a,b)=>a-b),[45,50]);
+  assert.equal(q(298).correctOption,'A');
 });

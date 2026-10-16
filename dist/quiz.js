@@ -1,3 +1,6 @@
+import { OPTION_REVISIONS } from './option-revisions.js';
+import { QUESTION_REVISIONS } from './question-revisions.js';
+import { RULE_CORRECTIONS } from './rule-corrections.js';
 export const LETTERS = ['A', 'B', 'C', 'D'];
 export function examDurationMs(questionCount) {
   if (!Number.isInteger(questionCount) || questionCount < 1) throw new RangeError('Număr invalid de întrebări.');
@@ -70,9 +73,41 @@ export function cleanRomanianText(text) {
 }
 export function repairSavedSession(value) {
   if (!validSession(value)) return value;
-  return { ...value, questions: value.questions.map(q => ({ ...q,
+  return { ...value, questions: value.questions.map(q => repairRuleDecision(repairQuestionContext(repairAnswerOptions({ ...q,
     questionRo: cleanRomanianText(q.questionRo),
     options: Object.fromEntries(LETTERS.map(letter => [letter, cleanRomanianText(q.options[letter])])),
     ...(typeof q.correctText === 'string' ? {correctText: cleanRomanianText(q.correctText)} : {})
-  })) };
+  })))) };
+}
+
+function repairRuleDecision(q) {
+  const revision = RULE_CORRECTIONS.find(r => r.id === q.id && r.questionRo === q.questionRo &&
+    cleanRomanianText(r.before.options[r.before.correctOption]) === q.options[q.correctOption]);
+  if (!revision) return q;
+  const mapping = new Map(LETTERS.map(k => [cleanRomanianText(revision.before.options[k]), revision.after.options[k]]));
+  if (!LETTERS.every(k => mapping.has(q.options[k]))) return q;
+  const correctOption = LETTERS.find(k => q.options[k] === cleanRomanianText(revision.before.options[revision.after.correctOption]));
+  if (!correctOption) return q;
+  const options = Object.fromEntries(LETTERS.map(k => [k, mapping.get(q.options[k])]));
+  return {...q, options, correctOption, correctText:options[correctOption],
+    ruleCorrection:{revisionId:revision.revisionId,edition:'2026/27',reason:revision.reason}};
+}
+
+function repairQuestionContext(q) {
+  const revision = QUESTION_REVISIONS.find(r => r.id === q.id &&
+    cleanRomanianText(r.beforeQuestionRo) === q.questionRo &&
+    cleanRomanianText(r.correctText) === q.options[q.correctOption]);
+  return revision ? {...q, questionRo: revision.afterQuestionRo} : q;
+}
+
+function repairAnswerOptions(q) {
+  const revision = OPTION_REVISIONS.find(r => r.id === q.id &&
+    [r.questionRo, r.currentQuestionRo].includes(q.questionRo) &&
+    cleanRomanianText(r.before[r.correctOption]) === q.options[q.correctOption]);
+  if (!revision) return q;
+  const mapping = new Map(LETTERS.map(k => [cleanRomanianText(revision.before[k]), revision.after[k]]));
+  // Saved sessions shuffle the letters: replace by text, never by source letter.
+  if (!LETTERS.every(k => mapping.has(q.options[k]))) return q;
+  const options = Object.fromEntries(LETTERS.map(k => [k, mapping.get(q.options[k])]));
+  return { ...q, options, ...(typeof q.correctText === 'string' ? {correctText: options[q.correctOption]} : {}) };
 }
