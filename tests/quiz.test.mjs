@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { prepareQuestions, score, safeSource, validSession, uniqueQuestions, examDurationMs, repairSavedSession, cleanRomanianText } from '../dist/quiz.js';
-import { showConfirmation } from '../dist/modal.js';
+import { showConfirmation, showInformation } from '../dist/modal.js';
 const bank=JSON.parse(await readFile(new URL('../dist/questions.json',import.meta.url),'utf8'));
 test('Every shuffled answer key still identifies the original correct decision',()=>{
   const prepared=prepareQuestions(bank,bank.length,()=>.13);
@@ -65,10 +65,37 @@ test('Saved wording is repaired independently of shuffled letters, including the
   assert.equal(repaired.questions[0].correctOption,'D');assert.equal(repaired.startedAt,123);
   assert.deepEqual(repairSavedSession(repaired),repaired);
 });
+test('Intervention wording is natural in the bank and saved sessions without changing official quotations',()=>{
+  for(const q of bank)assert.equal(/fără intenția (?:unei intervenții neloiale|de a interveni neloial)/u.test(q.questionRo),false);
+  const old='Mingea este oprită fără intenția unei intervenții neloiale.';
+  const expected='Mingea este oprită fără a intenționa să intervină în joc.';
+  assert.equal(cleanRomanianText(old),expected);
+  assert.equal(cleanRomanianText('Fază fără intenția de a interveni neloial.'),'Fază fără a intenționa să intervină în joc.');
+  const quote='Dacă, fără intenția de a interveni în mod incorect în joc, un oficial al echipei';
+  assert.equal(cleanRomanianText(quote),quote);
+  const q={...bank[0],questionRo:old};
+  const saved={mode:'practice',questions:[q],answers:{[q.id]:'B'},flags:[q.id],index:0,startedAt:123};
+  const repaired=repairSavedSession(saved);
+  assert.equal(repaired.questions[0].questionRo,expected);
+  assert.deepEqual(repaired.questions[0].options,q.options);
+  assert.deepEqual(repaired.answers,saved.answers);assert.deepEqual(repaired.flags,saved.flags);
+});
+test('Referee decisions use the active voice in the bank and in saved shuffled sessions',()=>{
+  for(const q of bank)for(const text of Object.values(q.options))assert.equal(/^Joc oprit\b/u.test(text),false);
+  assert.equal(cleanRomanianText('Joc oprit; minge de arbitru pentru B.'),'Oprește jocul; minge de arbitru pentru B.');
+  assert.equal(cleanRomanianText('Joc oprit imediat, apoi CG.'),'Oprește jocul imediat, apoi CG.');
+  assert.equal(cleanRomanianText('Dacă jocul este oprit, se menține decizia.'),'Dacă jocul este oprit, se menține decizia.');
+  const question={...bank[0],options:{A:'Joc oprit; minge de arbitru pentru B.',B:'Joc oprit; minge de arbitru pentru A.',C:'LLI.',D:'Jocul continuă.'},correctOption:'A',correctText:'Joc oprit; minge de arbitru pentru B.'};
+  const saved={mode:'practice',questions:[question],answers:{[question.id]:'B'},index:0,startedAt:123};
+  const repaired=repairSavedSession(saved);
+  assert.equal(repaired.questions[0].options.A,'Oprește jocul; minge de arbitru pentru B.');
+  assert.equal(repaired.questions[0].correctText,repaired.questions[0].options.A);
+  assert.deepEqual(repaired.answers,saved.answers);assert.equal(repaired.questions[0].correctOption,'A');
+});
 
 // A small dialog host tests our event wiring; native focus/inert/layout behavior
 // still requires browser QA and is not simulated here.
-function modalHost() {
+function modalHost(information=false) {
   const elements=new Map(), handlers=new Map();
   const before={isConnected:true,focus(){this.focused=true;}};
   const dialog={
@@ -83,7 +110,8 @@ function modalHost() {
   };
   const doc={activeElement:before,createElement(){return dialog;},body:{append(){}}};
   let confirmed=0,closed=0;
-  showConfirmation({title:'Sesiune nouă?',text:'Se înlocuiește sesiunea.',confirmLabel:'Începe',onConfirm(){confirmed++;},onClose(){closed++;}},doc);
+  if(information)showInformation({title:'Explicația din Legile Jocului',html:'<p>Pasaj în română.</p>',onClose(){closed++;}},doc);
+  else showConfirmation({title:'Sesiune nouă?',text:'Se înlocuiește sesiunea.',confirmLabel:'Începe',onConfirm(){confirmed++;},onClose(){closed++;}},doc);
   return {dialog,before,handlers,counts:()=>({confirmed,closed})};
 }
 test('Dialog cancellation via button, close icon and Escape never confirms replacement',()=>{
@@ -108,4 +136,12 @@ test('Only an outside gesture dismisses the dialog; confirmation fires once',()=
 });
 test('Programmatic dismissal does not replace the running session',()=>{
   const host=modalHost();host.dialog.close();assert.deepEqual(host.counts(),{confirmed:0,closed:1});
+});
+test('The information modal reuses dismissal and focus restoration without a confirmation action',()=>{
+  const host=modalHost(true);
+  assert.equal(host.dialog.className,'modal law-modal');
+  assert.equal(host.dialog.querySelector('#modal-title').textContent,'Explicația din Legile Jocului');
+  assert.equal(host.dialog.querySelector('.modal-body').innerHTML,'<p>Pasaj în română.</p>');
+  host.dialog.querySelector('.modal-close').onclick();
+  assert.deepEqual(host.counts(),{confirmed:0,closed:1});assert.equal(host.before.focused,true);
 });

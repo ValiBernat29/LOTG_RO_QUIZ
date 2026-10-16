@@ -1,0 +1,106 @@
+{
+  "edition": "2026/27",
+  "note": "Cazuri rămase din lotul Legii 13; neasocierea nu înseamnă că răspunsul este greșit.",
+  "cases": [
+    {
+      "id": 626,
+      "questionRo": "Un jucător execută o lovitură liberă cu mingea în mișcare, pasează slab, iar adversarii interceptează și obțin posesia. Care este decizia arbitrului?",
+      "correctText": "Se poate aplica avantajul dacă este mai favorabil adversarilor.",
+      "reason": "Răspuns confirmat în FAQ 2026/27; lipsește textul oficial românesc complet al regulii 5.3 despre avantaj la o reluare executată incorect. Nu se substituie automat formula generică 2025/26."
+    },
+    {
+      "id": 627,
+      "questionRo": "La mijlocul terenului, arbitrul acordă echipei A o lovitură liberă pentru ținerea unui jucător. Nu este necesară o sancțiune disciplinară și nici acordarea de îngrijiri medicale. Imediat după oprire, un jucător A execută rapid lovitura, deși mingea este încă în mișcare. Care este decizia arbitrului?",
+      "correctText": "Repetare pentru A sau avantaj dacă B beneficiază.",
+      "reason": "Răspuns confirmat în FAQ 2026/27; lipsește textul oficial românesc complet al regulii 5.3 despre avantaj la o reluare executată incorect. Nu se substituie automat formula generică 2025/26."
+    },
+    {
+      "id": 631,
+      "questionRo": "Arbitrul nu semnalizează că o lovitură liberă este indirectă. Executantul șutează, iar portarul atinge mingea înainte ca aceasta să intre în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și repetarea LLI de către aceeași echipă.",
+      "reason": "Răspuns confirmat în FAQ; este necesară o justificare românească suficientă pentru interpretarea specifică, nu doar citatul general din Legea 13."
+    },
+    {
+      "id": 632,
+      "questionRo": "Doi apărători formează un zid, iar un al treilea stă culcat imediat în spatele lor. Cum este considerată gruparea?",
+      "correctText": "Zid din trei apărători, jucătorul culcat fiind inclus.",
+      "reason": "Răspuns confirmat în FAQ; este necesară o justificare românească suficientă pentru interpretarea specifică, nu doar citatul general din Legea 13."
+    },
+    {
+      "id": 640,
+      "questionRo": "Echipa A primește o LLD în apropierea suprafeței de pedeapsă adverse. Arbitrul le cere clar atacanților să aștepte fluierul și se apropie de jucătorii echipei B pentru a asigura respectarea distanței regulamentare. În acel moment, un jucător al echipei A execută lovitura înaintea semnalului. Care este decizia arbitrului?",
+      "correctText": "Repetarea loviturii și CG executantului pentru comportament nesportiv.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată."
+    },
+    {
+      "id": 649,
+      "questionRo": "La o lovitură liberă, un apărător stă culcat sau în genunchi în spatele zidului propriei echipe. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică nicio sancțiune.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată."
+    },
+    {
+      "id": 654,
+      "questionRo": "Un adversar rămâne deliberat în suprafața de pedeapsă, interceptează o lovitură liberă rapidă a apărării și înscrie. Care este decizia arbitrului?",
+      "correctText": "Gol anulat și repetarea loviturii libere pentru apărare.",
+      "reason": "Răspuns confirmat în FAQ; este necesară o justificare românească suficientă pentru interpretarea specifică, nu doar citatul general din Legea 13."
+    }
+  ],
+  "resolvedCases": [
+    {
+      "id": 637,
+      "questionRo": "După acordarea unei LLD pentru echipa B, executantul mută mingea mai aproape de poarta adversă, iar un adversar o șutează. Care este decizia arbitrului?",
+      "correctText": "LLD pentru B din locul corect și CG jucătorului echipei A.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată.",
+      "resolvedIn": "rev12",
+      "status": "associated-official-ro-pdf"
+    },
+    {
+      "id": 638,
+      "questionRo": "Un apărător îl faultează pe un atacant și îi împiedică o ocazie clară de gol. Piciorul apărătorului intră în contact cu corpul atacantului în afara suprafeței de pedeapsă, deși un picior al atacantului se află deja în interiorul acesteia. Care este decizia arbitrului?",
+      "correctText": "LLD din punctul contactului și CR apărătorului pentru DOGSO.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată.",
+      "resolvedIn": "rev12",
+      "status": "associated-official-ro-pdf"
+    },
+    {
+      "id": 641,
+      "questionRo": "O pasă deliberată spre portar ar intra în poartă, iar portarul o oprește cu mâna în propria suprafață de poartă. Care este decizia arbitrului?",
+      "correctText": "LLI acordată de pe linia suprafeței de poartă, fără sancțiune.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată.",
+      "resolvedIn": "rev12",
+      "status": "associated-official-ro-pdf"
+    },
+    {
+      "id": 645,
+      "questionRo": "Cu mingea în joc, un jucător părăsește terenul fără permisiune și încearcă să lovească antrenorul advers. Arbitrul oprește jocul. Care este decizia arbitrului?",
+      "correctText": "CR și LLD de pe linia de margine cea mai apropiată.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată.",
+      "resolvedIn": "rev12",
+      "status": "associated-official-ro-pdf"
+    },
+    {
+      "id": 650,
+      "questionRo": "Un atacant șutează mingea aflată între mâna portarului și sol, în suprafața de poartă. Care este decizia arbitrului?",
+      "correctText": "LLD pentru apărători; sancțiune disciplinară după intensitate.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată.",
+      "resolvedIn": "rev12",
+      "status": "associated-official-ro-pdf"
+    },
+    {
+      "id": 652,
+      "questionRo": "Un jucător primește CG pentru o intrare imprudentă, apoi protestează înainte de reluarea jocului. Care este decizia arbitrului?",
+      "correctText": "Al doilea CG și CR, apoi LLD de la locul intrării imprudente.",
+      "reason": "De asociat separat după verificarea tuturor componentelor răspunsului, fără potrivire automată.",
+      "resolvedIn": "rev12",
+      "status": "associated-official-ro-pdf"
+    },
+    {
+      "id": 635,
+      "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+      "correctText": "Avantaj și posibil CG ori atenționare verbală la oprirea jocului.",
+      "reason": "Rev22: distinguem atenționarea verbală de CG; Legea 13.3 permite expres avantajul, iar sancțiunea se justifică separat prin distanță și aplicarea la oprire.",
+      "resolvedIn": "rev22",
+      "status": "associated-official-ro-pdf"
+    }
+  ]
+}

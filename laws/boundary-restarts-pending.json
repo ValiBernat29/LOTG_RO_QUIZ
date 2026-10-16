@@ -1,0 +1,137 @@
+{
+  "edition": "2026/27",
+  "revision": "rev13",
+  "note": "Cazuri încă fără explicație din Legile de colectare 15–17. Lista nu declară răspunsurile greșite și nu schimbă cheile.",
+  "cases": [
+    {
+      "id": 735,
+      "law": 15,
+      "questionRo": "La o aruncare de la margine, jucătorul ține mingea deasupra capului, apoi o lasă să cadă în teren fără să o arunce. Care este decizia arbitrului?",
+      "correctText": "Aruncare pentru adversari sau avantaj.",
+      "reason": "Avantaj la aruncare executată incorect: răspuns confirmat în FAQ; asocierea completă așteaptă textul oficial românesc al noii reguli 5.3."
+    },
+    {
+      "id": 736,
+      "law": 15,
+      "questionRo": "Un jucător ridică un picior de la sol în timp ce execută aruncarea de la margine, iar mingea intră în teren. Care este decizia arbitrului?",
+      "correctText": "Aruncare pentru adversari sau avantaj.",
+      "reason": "Avantaj la aruncare executată incorect: răspuns confirmat în FAQ; asocierea completă așteaptă textul oficial românesc al noii reguli 5.3."
+    },
+    {
+      "id": 737,
+      "law": 15,
+      "questionRo": "Care este decizia când o aruncare de la margine este executată incorect, iar mingea intră în teren?",
+      "correctText": "Aruncare pentru adversari sau avantaj.",
+      "reason": "Avantaj la aruncare executată incorect: răspuns confirmat în FAQ; asocierea completă așteaptă textul oficial românesc al noii reguli 5.3."
+    },
+    {
+      "id": 740,
+      "law": 15,
+      "questionRo": "O aruncare de la margine este executată din locul greșit, dar mingea intră în teren și ajunge la adversari. Care este decizia avantajoasă pentru aceștia?",
+      "correctText": "Aplică avantajul, dacă e mai favorabil decât aruncarea.",
+      "reason": "Avantaj la aruncare executată incorect: răspuns confirmat în FAQ; asocierea completă așteaptă textul oficial românesc al noii reguli 5.3."
+    },
+    {
+      "id": 741,
+      "law": 15,
+      "questionRo": "La aruncarea de la margine, un picior este complet în teren fără să atingă linia, iar adversarul interceptează mingea. Care este decizia arbitrului?",
+      "correctText": "Aplică avantajul, dacă e mai favorabil decât aruncarea.",
+      "reason": "Avantaj la aruncare executată incorect: răspuns confirmat în FAQ; asocierea completă așteaptă textul oficial românesc al noii reguli 5.3."
+    },
+    {
+      "id": 745,
+      "law": 15,
+      "questionRo": "AA indică aruncare de la margine pentru echipa A, dar un jucător B execută rapid înainte ca arbitrul să intervină. Care este decizia arbitrului?",
+      "correctText": "Aruncare pentru A, din același loc, fără sancțiune.",
+      "reason": "Aruncare executată de echipa fără drept: reluarea și lipsa sancțiunii trebuie justificate distinct, nu prin articolul generic despre execuția tehnică."
+    },
+    {
+      "id": 748,
+      "law": 15,
+      "questionRo": "La executarea unei aruncări de la margine, un adversar aflat la mai puțin de 2 m împiedică executantul. Acesta aruncă deliberat mingea în adversar. Cum procedează arbitrul, în funcție de intensitatea aruncării?",
+      "correctText": "CG adversarului; CG/CR executantului, după intensitate; LLI pentru echipa executantului.",
+      "reason": "Sunt necesare justificări separate pentru prima abatere, CG adversarului, sancțiunea executantului și locul LLI."
+    },
+    {
+      "id": 755,
+      "law": 15,
+      "questionRo": "Mingea se îndreaptă direct spre poartă dintr-o aruncare de la margine. Un apărător, altul decât portarul, o oprește deliberat cu mâna în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "LP și CG acordat pentru comportament nesportiv.",
+      "reason": "Verificare separată a LP, CG pentru comportament nesportiv și motivului pentru care nu este DOGSO la un gol direct imposibil din aruncare."
+    },
+    {
+      "id": 767,
+      "law": 16,
+      "questionRo": "Un apărător atacă neglijent un adversar în afara suprafeței de pedeapsă și oprește un atac promițător (SPA). Arbitrul aplică avantajul. Un alt atacant pătrunde în suprafața de pedeapsă și șutează peste bara transversală, fără ca mingea să fie atinsă de alt jucător. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă, fără CG apărătorului.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată."
+    },
+    {
+      "id": 769,
+      "law": 16,
+      "questionRo": "La o lovitură de poartă, un atacant rămâne deliberat în suprafața de pedeapsă și încearcă să câștige mingea după ce aceasta este în joc. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă se repetă fără sancțiune la prima abatere.",
+      "reason": "Rămânere deliberată urmată de intervenție după intrarea mingii în joc: nu se folosește excepția pentru adversarul care nu a avut timp să iasă; este necesară justificarea românească specifică interpretării FAQ."
+    },
+    {
+      "id": 775,
+      "law": 16,
+      "questionRo": "Un adversar rămâne deliberat în suprafața de pedeapsă la executarea rapidă a unei lovituri de poartă și încearcă să intercepteze mingea după ce aceasta intră în joc. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă se repetă fără sancțiune disciplinară automată.",
+      "reason": "Rămânere deliberată urmată de intervenție după intrarea mingii în joc: nu se folosește excepția pentru adversarul care nu a avut timp să iasă; este necesară justificarea românească specifică interpretării FAQ."
+    },
+    {
+      "id": 780,
+      "law": 17,
+      "questionRo": "După executarea unei lovituri de poartă, un adversar intră în suprafața de pedeapsă numai după ce mingea este în joc. Un apărător îl faultează neglijent în încercarea de a juca mingea. Care este decizia arbitrului?",
+      "correctText": "LP și CG pentru apărător numai dacă faultul constituie DOGSO.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată."
+    },
+    {
+      "id": 781,
+      "law": 17,
+      "questionRo": "Un apărător încearcă să blocheze un șut și își retrage brațul spre corp. Mingea atinge brațul lipit de piept, apoi iese peste linia porții, în afara cadrului, fără să fie atinsă de alt jucător. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț, fără sancțiune disciplinară.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată."
+    },
+    {
+      "id": 784,
+      "law": 17,
+      "questionRo": "Înaintea executării unei lovituri de colț, arbitrul asistent observă că o parte a mingii se află deasupra arcului de cerc, fără să atingă linia sau solul din interiorul suprafeței de colț. Este poziția mingii regulamentară?",
+      "correctText": "Da; este suficient ca o parte a mingii să se afle deasupra arcului de cerc.",
+      "reason": "Necesită justificarea poziției unei părți a mingii deasupra arcului; nu este suficient citatul generic «mingea în suprafața de colț»."
+    },
+    {
+      "id": 785,
+      "law": 17,
+      "questionRo": "Un șut atinge brațul unui apărător în propria suprafață de pedeapsă, apoi mingea iese peste linia porții, în afara cadrului porții. Arbitrul acordă LP, dar după analiza la marginea terenului constată că brațul era aproape de corp și nu îl mărea în mod nenatural. Anulează LP. Cum se reia jocul?",
+      "correctText": "Minge de arbitru pentru portar dacă fluierul a precedat ieșirea mingii; lovitură de colț dacă mingea ieșise deja.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată."
+    },
+    {
+      "id": 786,
+      "law": 17,
+      "questionRo": "Înaintea executării unei lovituri de colț, un atacant își dispută poziția cu un apărător. Apărătorul îl împinge înainte ca mingea să fie lovită. Care este decizia arbitrului?",
+      "correctText": "Lovitură de colț; atenționare, CG sau CR, după gravitate.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată."
+    },
+    {
+      "id": 787,
+      "law": 17,
+      "questionRo": "La executarea unei lovituri de colț, un apărător se află la mai puțin de 9,15 m de arcul de cerc și împiedică executantul. Cum procedează arbitrul?",
+      "correctText": "CG apărătorului; repetă lovitura de colț sau aplică avantajul.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată."
+    }
+  ],
+  "resolvedCases": [
+    {
+      "id": 766,
+      "law": 16,
+      "questionRo": "După ce mingea a depășit complet linia porții, un apărător împinge imprudent un atacant în propria suprafață de pedeapsă. Mingea fusese atinsă ultima dată de atacanți. Care este decizia arbitrului?",
+      "correctText": "Lovitură de poartă pentru apărători și CG acordat apărătorului.",
+      "reason": "De asociat într-un lot următor după verificarea fiecărei componente a deciziei; nu este o eroare confirmată.",
+      "resolvedIn": "rev14",
+      "status": "associated-official-ro-pdf"
+    }
+  ]
+}

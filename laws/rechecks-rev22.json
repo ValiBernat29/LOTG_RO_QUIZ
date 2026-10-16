@@ -1,0 +1,415 @@
+{
+  "revision": "rev22",
+  "newSourceIds": [
+    "temporary-dismissal-shootout",
+    "dogso-nondeliberate-outside",
+    "unsporting-disrespect",
+    "penalty-defender-offence-restart",
+    "holding-before-restart-guidance"
+  ],
+  "wordingChanges": [
+    {
+      "id": 411,
+      "before": {
+        "id": 411,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+        "options": {
+          "A": "Repetarea loviturii și CR pentru adversarul apropiat.",
+          "B": "LLI pentru echipa B și CG pentru executantul loviturii.",
+          "C": "Avantaj și posibil CG ori avertisment la oprirea jocului.",
+          "D": "Minge de arbitru și atenționare verbală pentru adversar."
+        },
+        "correctOption": "C",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      "after": {
+        "id": 411,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+        "options": {
+          "A": "Repetarea loviturii și CR pentru adversarul apropiat.",
+          "B": "LLI pentru echipa B și CG pentru executantul loviturii.",
+          "C": "Avantaj și posibil CG ori atenționare verbală la oprirea jocului.",
+          "D": "Minge de arbitru și atenționare verbală pentru adversar."
+        },
+        "correctOption": "C",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      }
+    },
+    {
+      "id": 585,
+      "before": {
+        "id": 585,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "Înaintea unei lovituri de la colț, un apărător ține un adversar în propria suprafață de pedeapsă și îi împiedică deplasarea. Care este decizia arbitrului?",
+        "options": {
+          "A": "Avertisment; CG la continuarea ținerii; aceeași lovitură de colț.",
+          "B": "CG imediat pentru ținere și reluare cu LP pentru echipa atacantă.",
+          "C": "Avertisment; CR la continuarea ținerii; aceeași lovitură de colț.",
+          "D": "Atenționare verbală; CG dacă ținerea continuă; LLI pentru atacanți."
+        },
+        "correctOption": "A",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      "after": {
+        "id": 585,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "Înaintea unei lovituri de la colț, un apărător ține un adversar în propria suprafață de pedeapsă și îi împiedică deplasarea. Care este decizia arbitrului?",
+        "options": {
+          "A": "Atenționare verbală; CG la continuarea ținerii; aceeași lovitură de colț.",
+          "B": "CG imediat pentru ținere și reluare cu LP pentru echipa atacantă.",
+          "C": "Atenționare verbală; CR la continuarea ținerii; aceeași lovitură de colț.",
+          "D": "Atenționare verbală; CG dacă ținerea continuă; LLI pentru atacanți."
+        },
+        "correctOption": "A",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      }
+    },
+    {
+      "id": 635,
+      "before": {
+        "id": 635,
+        "lawNumber": 13,
+        "lawTitleRo": "Loviturile libere",
+        "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+        "options": {
+          "A": "Repetarea loviturii și CR pentru adversarul apropiat.",
+          "B": "LLI pentru echipa B și CG pentru executantul loviturii.",
+          "C": "Avantaj și posibil CG ori avertisment la oprirea jocului.",
+          "D": "Minge de arbitru și atenționare verbală pentru adversar."
+        },
+        "correctOption": "C",
+        "sourceUrl": "https://www.theifab.com/laws/latest/free-kicks/"
+      },
+      "after": {
+        "id": 635,
+        "lawNumber": 13,
+        "lawTitleRo": "Loviturile libere",
+        "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+        "options": {
+          "A": "Repetarea loviturii și CR pentru adversarul apropiat.",
+          "B": "LLI pentru echipa B și CG pentru executantul loviturii.",
+          "C": "Avantaj și posibil CG ori atenționare verbală la oprirea jocului.",
+          "D": "Minge de arbitru și atenționare verbală pentru adversar."
+        },
+        "correctOption": "C",
+        "sourceUrl": "https://www.theifab.com/laws/latest/free-kicks/"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": 107,
+      "passages": [
+        {
+          "id": "temporary-dismissal-shootout",
+          "justifies": "Poate participa la departajare chiar dacă perioada eliminării temporare nu s-a încheiat",
+          "highlights": [
+            "• un jucător care încă execută o eliminare temporară la sfârșitul meciului îi este permis să participe la penalty-uri de departajare, atat timp cat eliminarea temporară nu este folosită în timpul penalty-urilor de departajare."
+          ]
+        }
+      ],
+      "note": "Regula specifică eliminărilor temporare, verificată în îndrumările actuale; nu este o eliminare definitivă.",
+      "questionRo": "La finalul reprizei a doua, un jucător se află încă în perioada unei eliminări temporare. Meciul este urmat de lovituri de departajare. Poate jucătorul să participe la acestea?",
+      "correctText": "Da, poate participa chiar dacă perioada nu s-a împlinit integral."
+    },
+    {
+      "id": 202,
+      "passages": [
+        {
+          "id": "violent-red",
+          "justifies": "CR pentru comportamentul violent al înlocuitorului",
+          "highlights": [
+            "• are un comportament violent."
+          ]
+        },
+        {
+          "id": "drop-other-stoppages",
+          "justifies": "Minge de arbitru: incidentul dintre înlocuitorii propriei echipe, în afara terenului, nu are o reluare cu lovitură liberă",
+          "highlights": [
+            "Mingea de arbitru se utilizează pentru reluarea jocului atunci când arbitrul oprește jocul, iar Legile jocului nu prevăd reluarea acestuia în unul din modurile enumerate mai sus."
+          ]
+        }
+      ],
+      "note": "Legea 8 completează procedura: actorul este înlocuitor, nu jucător care comite o abatere împotriva unui coechipier. Confirmat distinct de FAQ; se propagă și la 599.",
+      "questionRo": "Cu mingea în joc, un înlocuitor lovește violent un alt înlocuitor al propriei echipe în afara terenului. Arbitrul oprește jocul. Care este decizia arbitrului?",
+      "correctText": "CR pentru agresor și reluare cu minge de arbitru."
+    },
+    {
+      "id": 337,
+      "passages": [
+        {
+          "id": "handball-spa",
+          "justifies": "CG pentru henț SPA, cu excepția hențului nedeliberat sancționat cu LP",
+          "highlights": [
+            "• joacă mingea cu mâna cu scopul de a interveni într-un atac promițător sau de a-l opri, cu excepția situației când arbitrul acordă o lovitură de pedeapsă prin comiterea unei abateri prin jucarea mingii cu mâna în mod involuntar."
+          ]
+        },
+        {
+          "id": "dogso-handball",
+          "justifies": "DOGSO: CR pentru henț deliberat; CG pentru henț nedeliberat sancționat cu LP",
+          "highlights": [
+            "Atunci când un jucător împiedică echipa adversă să înscrie un gol sau împiedică o ocazie clară de înscriere a unui gol a echipei adverse prin comiterea unei abateri prin jucarea mingii cu mâna în mod intenționat, jucătorul respectiv este eliminat indiferent de locul unde are loc abaterea (cu excepția portarului aflat în propria suprafață de pedeapsă). Atunci când un jucător împiedică echipa adversă să înscrie un gol sau împiedică o ocazie clară de înscriere a unui gol prin comiterea unei abateri prin jucarea mingii cu mâna în mod involuntar și arbitrul acordă o lovitură de pedeapsă, jucătorul vinovat este avertizat (cartonaș galben)."
+          ]
+        },
+        {
+          "id": "dogso-nondeliberate-outside",
+          "justifies": "DOGSO: CR pentru henț nedeliberat în afara suprafeței proprii",
+          "highlights": [
+            "• împiedică echipa adversă să înscrie un gol sau împiedică o ocazie clară de înscriere a unui gol de către adversar prin comiterea unei abateri prin jucarea mingii cu mana în mod involuntar în afara propriei suprafețe de pedeapsă."
+          ]
+        }
+      ],
+      "note": "Sunt evidențiate separat toate ramurile răspunsului; nu se confundă sancțiunea hențului deliberat cu reducerea pentru henț nedeliberat la LP.",
+      "questionRo": "Ce sancțiuni disciplinare se aplică pentru abaterile prin jucarea mingii cu mâna care opresc un atac promițător (SPA) sau împiedică un gol ori o ocazie clară de gol (DOGSO)?",
+      "correctText": "CG pentru SPA, exceptând jucarea nedeliberată a mingii cu mâna sancționată cu LP; pentru DOGSO, CG la jucarea nedeliberată sancționată cu LP și CR în celelalte cazuri."
+    },
+    {
+      "id": 394,
+      "passages": [
+        {
+          "id": "penalty-defender-offence-restart",
+          "justifies": "LP se repetă când coechipierul portarului comite o abatere și mingea nu intră în poartă",
+          "highlights": [
+            "• un coechipier al portarului comite o abatere:",
+            "• dacă mingea nu intră în poartă, se repetă lovitura."
+          ]
+        },
+        {
+          "id": "verbal-distraction",
+          "justifies": "CG pentru distragerea verbală a executantului la reluare",
+          "highlights": [
+            "• distrage verbal atenția adversarului în timpul jocului sau la reluarea acestuia."
+          ]
+        }
+      ],
+      "note": "Un singur fragment reunește regula care continuă de la pagina 137 la 138, fără a folosi instrucțiunea generală despre LLI la abateri verbale.",
+      "questionRo": "La executarea unei lovituri de pedeapsă, un apărător strigă puternic exact când executantul urmează să lovească mingea. Executantul este distras și ratează. Care este decizia corectă?",
+      "correctText": "Repetarea LP și CG pentru apărătorul care a strigat."
+    },
+    {
+      "id": 531,
+      "passages": [
+        {
+          "id": "abusive-red",
+          "justifies": "CR pentru gestul ofensator, nu pentru o violență presupusă",
+          "highlights": [
+            "• folosește un limbaj și/sau gesturi agresive, ofensatoare sau ireverențioase."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Mingea nu este în joc: se păstrează lovitura liberă acordată anterior",
+          "highlights": [
+            "5. Reluarea jocului după faulturi şi comportament nesportiv Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        }
+      ],
+      "note": "FAQ actual confirmă explicit acțiunea ofensatoare; nu este necesară inventarea forței excesive pentru a justifica CR.",
+      "questionRo": "Înainte de executarea unei lovituri libere, un jucător atinge un adversar într-un mod ofensator, când mingea nu este în joc. Care este decizia arbitrului?",
+      "correctText": "CR și reluare conform deciziei luate anterior."
+    },
+    {
+      "id": 535,
+      "passages": [
+        {
+          "id": "handball-definition",
+          "justifies": "Contactul accidental descris nu constituie henț: se evaluează caracterul deliberat și justificarea poziției brațului",
+          "highlights": [
+            "Nu orice atingere a mingii cu mâna/ brațul jucătorului reprezintă o abatere. Reprezintă o abatere dacă un jucător: • atinge în mod deliberat mingea cu mâna/brațul, inclusiv prin mișcarea mâinii/ brațului spre minge. • atinge mingea cu mâna/ brațul atunci când astfel își mărește în mod nenatural suprafața corpului. Se consideră că un jucător își mărește în mod nenatural suprafața corpului când poziția mâinii / brațului lui nu este o consecință sau justificabilă pentru mișcarea corpului jucătorului pentru acea situație specifică. Având mâna / brațul într-o astfel de poziție, jucătorul își asumă riscul ca mâna / brațul să fie lovit de minge și să fie sancționat."
+          ]
+        }
+      ],
+      "note": "FAQ actual: ricoșeul în propriul braț după șutul apărătorului este consecința jucării mingii cu altă parte a corpului, nu o abatere automată. Citatul păstrează evaluarea mișcării naturale.",
+      "questionRo": "Un apărător șutează mingea, care îi atinge apoi accidental brațul în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică sancțiune disciplinară."
+    },
+    {
+      "id": 551,
+      "passages": [
+        {
+          "id": "handball-definition",
+          "justifies": "Contactul accidental descris nu constituie henț: se evaluează caracterul deliberat și justificarea poziției brațului",
+          "highlights": [
+            "Nu orice atingere a mingii cu mâna/ brațul jucătorului reprezintă o abatere. Reprezintă o abatere dacă un jucător: • atinge în mod deliberat mingea cu mâna/brațul, inclusiv prin mișcarea mâinii/ brațului spre minge. • atinge mingea cu mâna/ brațul atunci când astfel își mărește în mod nenatural suprafața corpului. Se consideră că un jucător își mărește în mod nenatural suprafața corpului când poziția mâinii / brațului lui nu este o consecință sau justificabilă pentru mișcarea corpului jucătorului pentru acea situație specifică. Având mâna / brațul într-o astfel de poziție, jucătorul își asumă riscul ca mâna / brațul să fie lovit de minge și să fie sancționat."
+          ]
+        }
+      ],
+      "note": "FAQ actual confirmă cazul mingii șutate de coechipierul apropiat: apărătorul nu este considerat că mărește nenatural corpul. Nu se generalizează la orice contact accidental sau neașteptat.",
+      "questionRo": "Mingea șutată de un apărător lovește neașteptat brațul unui coechipier apropiat, aflat în propria suprafață de pedeapsă. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă și nu se aplică sancțiune disciplinară."
+    },
+    {
+      "id": 547,
+      "passages": [
+        {
+          "id": "handball-definition",
+          "justifies": "Atingerea deliberată a mingii cu mâna este abatere",
+          "highlights": [
+            "• atinge în mod deliberat mingea cu mâna/brațul, inclusiv prin mișcarea mâinii/ brațului spre minge."
+          ]
+        },
+        {
+          "id": "dfk-other-offences",
+          "justifies": "LLD pentru hențul atacantului",
+          "highlights": [
+            "Se acordă o lovitură liberă directă dacă un jucător comite una din următoarele abateri: • comite o abatere prin jucarea mingii cu mâna (cu excepția portarului în suprafața proprie de pedeapsă)."
+          ]
+        },
+        {
+          "id": "unsporting-disrespect",
+          "justifies": "Eventualul CG este pentru comportament nesportiv apreciat de arbitru, nu automat pentru continuarea propriului atac",
+          "highlights": [
+            "• manifestă lipsă de respect pentru joc."
+          ]
+        }
+      ],
+      "note": "FAQ confirmă CG posibil, nu obligatoriu; nu se invocă regula opririi SPA advers pentru atacantul care își continuă propriul atac.",
+      "questionRo": "Un atacant joacă deliberat mingea cu mâna pentru a păstra posesia și a continua un atac promițător. Care este decizia arbitrului?",
+      "correctText": "LLD și CG posibil pentru comportament nesportiv."
+    },
+    {
+      "id": 563,
+      "passages": [
+        {
+          "id": "direct-free-kick",
+          "justifies": "Lovirea adversarului constituie abatere sancționabilă cu LLD",
+          "highlights": [
+            "• lovește sau încearcă să lovească adversarul (inclusiv cu capul)."
+          ]
+        },
+        {
+          "id": "penalty-award",
+          "justifies": "LP deoarece lovirea se produce în propria suprafață de pedeapsă",
+          "highlights": [
+            "Lovitura de pedeapsă (penalty) se acordă dacă un jucător comite o abatere sancționabilă cu lovitură liberă directă în propria suprafață de pedeapsă sau în afara terenului de joc, în cadrul jocului, conform prevederilor Legilor 12 și 13."
+          ]
+        },
+        {
+          "id": "reckless-caution",
+          "justifies": "CG dacă lovirea este imprudentă",
+          "highlights": [
+            "• comite cu imprudență o abatere sancționabilă cu lovitură liberă directă."
+          ]
+        },
+        {
+          "id": "violent-description",
+          "justifies": "Încadrarea ca violență depinde de natura și intensitatea lovirii",
+          "highlights": [
+            "Comportament violent Comportamentul violent se referă la situațiile în care un jucător utilizează sau încearcă să utilizeze forță excesivă sau brutalitate împotriva unui adversar fără a disputa mingea sau împotriva unui coechipier, oficial al echipei, oficial de meci, spectator sau orice altă persoană, indiferent dacă a avut loc sau nu un contact fizic. De asemenea, un jucător care nu participă la disputarea mingii și lovește în mod deliberat un adversar sau orice altă persoană în cap sau în față cu mâna sau cu brațul se face vinovat de comportament violent, în afară de cazul în care forța loviturii este neglijabilă."
+          ]
+        },
+        {
+          "id": "violent-red",
+          "justifies": "CR dacă este comportament violent",
+          "highlights": [
+            "• are un comportament violent."
+          ]
+        }
+      ],
+      "note": "FAQ actual confirmă exact lovirea cu cotul la protejarea mingii și evaluarea CG versus CR după gravitate; nu orice contact la față este declarat automat violent.",
+      "questionRo": "Un atacant al echipei A pătrunde cu mingea în suprafața de pedeapsă a echipei B. Un apărător al echipei B îl deposedează fără abatere. Apoi, în timp ce protejează mingea aflată la distanță de joc, își întinde brațele și îl lovește cu cotul în față pe atacant. Care este decizia arbitrului?",
+      "correctText": "LP pentru atacanți; CG dacă este imprudent sau CR dacă este violent."
+    },
+    {
+      "id": 585,
+      "passages": [
+        {
+          "id": "holding-before-restart-guidance",
+          "justifies": "Atenționare înainte de reluare; CG dacă ținerea continuă",
+          "highlights": [
+            "• să atenționeze orice jucător care ține un adversar înainte ca mingea să fie în joc. • să avertizeze jucătorul dacă acesta continuă să țină adversarul înainte ca mingea să fie în joc."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se execută aceeași lovitură de colț: mingea nu era în joc",
+          "highlights": [
+            "5. Reluarea jocului după faulturi şi comportament nesportiv Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        }
+      ],
+      "note": "Corectat «Avertisment» în «Atenționare verbală» la prima măsură. Evidențiate cele două etape anterioare reluării, nu paragraful despre LP după intrarea mingii în joc.",
+      "questionRo": "Înaintea unei lovituri de la colț, un apărător ține un adversar în propria suprafață de pedeapsă și îi împiedică deplasarea. Care este decizia arbitrului?",
+      "correctText": "Atenționare verbală; CG la continuarea ținerii; aceeași lovitură de colț."
+    },
+    {
+      "id": 459,
+      "passages": [
+        {
+          "id": "player-dissent",
+          "justifies": "CG pentru gestul de solicitare a unui cartonaș, încadrat la protest",
+          "highlights": [
+            "• protestează verbal sau prin gesturi."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Gestul ulterior nu schimbă LLD acordată inițial",
+          "highlights": [
+            "5. Reluarea jocului după faulturi şi comportament nesportiv Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        }
+      ],
+      "note": "FAQ actual leagă gestul de protest. Nu se folosește clauza referitoare exclusiv la oficialii echipelor.",
+      "questionRo": "După un fault neglijent al echipei A, un jucător al echipei B face gestul de acordare a unui cartonaș. Cum procedează arbitrul?",
+      "correctText": "CG jucătorului B și LLD pentru B din locul faultului comis."
+    },
+    {
+      "id": 445,
+      "passages": [
+        {
+          "id": "unknown-official",
+          "justifies": "Regula sancționării antrenorului privește autorul neidentificat din suprafața tehnică, nu jucătorul de pe teren",
+          "highlights": [
+            "Oficialii echipelor În cazul în care se comite o abatere de către cineva din zona tehnică (înlocuitor, jucător înlocuit, jucător eliminat sau oficial al echipei), iar persoana vinovată de abatere nu poate fi identificată, va primi sancţiunea antrenorul principal prezent în suprafaţa tehnică."
+          ]
+        },
+        {
+          "id": "match-report",
+          "justifies": "Incidentul cu autor neidentificat este consemnat în raport",
+          "highlights": [
+            "• cronometrează meciul, consemnează evenimentele care au loc în timpul meciului și înaintează autorităților competente un raport de meci care conține informații cu privire la sancțiunile disciplinare și orice alte incidente care au survenit înainte, în timpul sau după meci."
+          ]
+        }
+      ],
+      "note": "Delimitată sfera regulii privind antrenorul principal; nu i se atribuie automat abaterea unui jucător de pe teren.",
+      "questionRo": "Într-o confruntare colectivă, un jucător lovește un adversar, dar autorul nu poate fi identificat. Poate fi sancționat antrenorul principal?",
+      "correctText": "Nu; incidentul jucătorului neidentificat se raportează autorităților."
+    },
+    {
+      "id": 411,
+      "passages": [
+        {
+          "id": "free-distance-infringement",
+          "justifies": "Se poate aplica avantajul la nerespectarea distanței",
+          "highlights": [
+            "Dacă, la executarea unei lovituri libere, un adversar este la o distanță mai mică de minge decât distanța regulamentară, lovitura este repetată, în afară de cazul în care poate fi aplicată regula avantajului"
+          ]
+        },
+        {
+          "id": "distance-caution",
+          "justifies": "Temeiul eventualului CG este nerespectarea distanței",
+          "highlights": [
+            "• nu respectă distanța regulamentară la reluarea jocului printr-o minge de arbitru, lovitură de colț, lovitură liberă sau aruncare de la margine."
+          ]
+        },
+        {
+          "id": "advantage-discipline",
+          "justifies": "Sancțiunea disciplinară amânată se aplică la următoarea ieșire a mingii",
+          "highlights": [
+            "Dacă arbitrul acordă avantaj în cazul comiterii unei abateri care ar fi sancționată cu avertisment/eliminare, dacă jocul ar fi fost oprit, avertismentul/eliminarea respectiv(ă) trebuie acordat(ă) la următoarea ieșire a mingii din joc."
+          ]
+        }
+      ],
+      "note": "«Avertisment» în alternativa verbală a fost înlocuit cu «atenționare verbală», inclusiv la duplicatul 635. Este folosit avantajul prevăzut expres de Legea 13.3, nu avantajul nou la o reluare executată incorect.",
+      "questionRo": "La executarea unei lovituri libere de către echipa A, un adversar se apropie la mai puțin de 9,15 m. Mingea ajunge neinterceptată la alt jucător al echipei A, care o controlează fără presiune. Care este decizia arbitrului?",
+      "correctText": "Avantaj și posibil CG ori atenționare verbală la oprirea jocului."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "revision": "rev21",
+  "rows": [
+    {
+      "id": 241,
+      "passages": [
+        {
+          "id": "shootout-injured-goalkeeper",
+          "justifies": "Portarul care nu poate continua poate fi înlocuit cu un înlocuitor disponibil",
+          "highlights": [
+            "• un portar care nu mai poate continua jocul înainte sau în timpul executării loviturilor de departajare poate fi înlocuit de un jucător exclus în vederea egalizării numărului de jucători sau, în cazul în care echipa nu a epuizat numărul maxim de înlocuiri permise, de un jucător înlocuitor înscris pe foaia de joc, în acest caz portarul nu mai poate participa și nu va executa lovituri de la 11 m."
+          ]
+        },
+        {
+          "id": "shootout-cautions-reset",
+          "justifies": "Departajarea se desfășoară după încheierea meciului; oportunitățile de înlocuire din timpul meciului nu se transferă",
+          "highlights": [
+            "Penalty-urile de departajare se execută după ce meciul s-a încheiat, fiind aplicabile dispozițiile Legilor jocului, în afară de cazul în care există alte prevederi."
+          ]
+        }
+      ],
+      "note": "Corectate acordul răspunsului A și varianta B incompletă. Înlocuirile disponibile se disting de oportunitățile folosite în timpul meciului; confirmare FAQ actual.",
+      "before": {
+        "id": 241,
+        "lawNumber": 10,
+        "lawTitleRo": "Stabilirea rezultatului meciului",
+        "questionRo": "La loviturile de departajare, portarul se accidentează și nu mai poate continua. Echipa mai are înlocuiri disponibile, dar și-a epuizat oportunitățile de înlocuire din timpul meciului. Poate portarul să fie înlocuit cu un înlocuitor înscris în foaia de joc?",
+        "options": {
+          "A": "Da, portarul poate fi înlocuit cu înlocuitorul nefolosit disponibilă.",
+          "B": "Nu, oportunitățile de înlocuire epuizate se aplică și.",
+          "C": "Da, dar numai cu un jucător eligibil aflat deja pe terenul de joc.",
+          "D": "Nu, portarul accidentat trebuie să rămână singurul eligibil."
+        },
+        "correctOption": "A",
+        "sourceUrl": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/"
+      },
+      "after": {
+        "id": 241,
+        "lawNumber": 10,
+        "lawTitleRo": "Stabilirea rezultatului meciului",
+        "questionRo": "La loviturile de departajare, portarul se accidentează și nu mai poate continua. Echipa mai are înlocuiri disponibile, dar și-a epuizat oportunitățile de înlocuire din timpul meciului. Poate portarul să fie înlocuit cu un înlocuitor înscris în foaia de joc?",
+        "options": {
+          "A": "Da, cu un înlocuitor nefolosit înscris în foaia de joc.",
+          "B": "Nu, oportunitățile de înlocuire epuizate se aplică și la departajare.",
+          "C": "Da, dar numai cu un jucător eligibil aflat deja pe terenul de joc.",
+          "D": "Nu, portarul accidentat trebuie să rămână singurul eligibil."
+        },
+        "correctOption": "A",
+        "sourceUrl": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/"
+      }
+    },
+    {
+      "id": 463,
+      "passages": [
+        {
+          "id": "handball-definition",
+          "justifies": "Brațul care mărește nenatural corpul produce abatere",
+          "highlights": [
+            "• atinge mingea cu mâna/ brațul atunci când astfel își mărește în mod nenatural suprafața corpului. Se consideră că un jucător își mărește în mod nenatural suprafața corpului când poziția mâinii / brațului lui nu este o consecință sau justificabilă pentru mișcarea corpului jucătorului pentru acea situație specifică. Având mâna / brațul într-o astfel de poziție, jucătorul își asumă riscul ca mâna / brațul să fie lovit de minge și să fie sancționat."
+          ]
+        },
+        {
+          "id": "dfk-other-offences",
+          "justifies": "LLD pentru abaterea atacantului prin jucarea mingii cu mâna",
+          "highlights": [
+            "Se acordă o lovitură liberă directă dacă un jucător comite una din următoarele abateri: • comite o abatere prin jucarea mingii cu mâna (cu excepția portarului în suprafața proprie de pedeapsă)."
+          ]
+        },
+        {
+          "id": "goal-scored",
+          "justifies": "Golul este anulat deoarece echipa marcatoare a comis o abatere",
+          "highlights": [
+            "Se consideră că s-a înscris un gol în momentul în care mingea depășește în întregime linia de poartă, între stâlpii porții și sub bara transversală, cu condiția ca echipa care marchează golul să nu fi comis o abatere."
+          ]
+        },
+        {
+          "id": "free-kick-position",
+          "justifies": "LLD se execută din locul abaterii",
+          "highlights": [
+            "2. Procedura Toate loviturile libere sunt executate din locul unde s-a produs abaterea, cu următoarele excepții:"
+          ]
+        }
+      ],
+      "note": "Reparate formulările corupte din B și C. Golul coechipierului este anulat pentru hențul anterior, nu pentru că autorul golului ar fi înscris imediat după atingerea propriului braț.",
+      "before": {
+        "id": 463,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "Mingea lovește brațul depărtat al unui atacant, care își mărește în mod nenatural suprafața corpului, apoi un coechipier înscrie. Care este decizia arbitrului?",
+        "options": {
+          "A": "Gol acordat și reluare cu lovitură de începere pentru apărare.",
+          "B": "Gol anulat și LLI pentru echipa în apărare din locul abaterea prin jucarea mingii cu mânaui atacantului.",
+          "C": "Gol anulat și LLD pentru echipa în apărare din locul abaterea prin jucarea mingii cu mânaui atacantului.",
+          "D": "Gol anulat și minge de arbitru pentru portarul echipei în apărare."
+        },
+        "correctOption": "C",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      "after": {
+        "id": 463,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "Mingea lovește brațul depărtat al unui atacant, care își mărește în mod nenatural suprafața corpului, apoi un coechipier înscrie. Care este decizia arbitrului?",
+        "options": {
+          "A": "Gol acordat și reluare cu lovitură de începere pentru apărare.",
+          "B": "Gol anulat și LLI pentru echipa în apărare din locul unde atacantul a comis hențul.",
+          "C": "Gol anulat și LLD pentru echipa în apărare din locul unde atacantul a comis hențul.",
+          "D": "Gol anulat și minge de arbitru pentru portarul echipei în apărare."
+        },
+        "correctOption": "C",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      }
+    },
+    {
+      "id": 592,
+      "passages": [
+        {
+          "id": "official-yellow",
+          "justifies": "CG pentru nerespectarea clară și repetată a limitelor suprafeței tehnice",
+          "highlights": [
+            "• nerespectarea clară/constantă a limitelor suprafeței tehnice a propriei echipe."
+          ]
+        }
+      ],
+      "note": "«Suprafață de pedeapsă tehnică» înlocuit cu «suprafață tehnică». Sunt precizate absența intrării pe teren/în suprafața adversă și caracterul clar, repetat al abaterii.",
+      "before": {
+        "id": 592,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "Cu mingea în joc, un antrenor părăsește clar și în mod repetat limitele propriei suprafețe de pedeapsă tehnice, fără altă abatere. Ce sancțiune primește?",
+        "options": {
+          "A": "Atenționare verbală pentru părăsirea repetată a suprafeței tehnice.",
+          "B": "CR pentru părăsirea repetată a propriei suprafețe de pedeapsă tehnice.",
+          "C": "Nicio sancțiune pentru părăsirea propriei suprafețe de pedeapsă tehnice.",
+          "D": "CG pentru nerespectarea repetată a propriei suprafețe de pedeapsă tehnice."
+        },
+        "correctOption": "D",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      },
+      "after": {
+        "id": 592,
+        "lawNumber": 12,
+        "lawTitleRo": "Faulturi și comportament nesportiv",
+        "questionRo": "Cu mingea în joc, un antrenor părăsește în mod repetat limitele propriei suprafețe tehnice, fără să intre pe teren sau în suprafața tehnică adversă și fără altă abatere. Ce sancțiune primește pentru nerespectarea clară și repetată a acestor limite?",
+        "options": {
+          "A": "Atenționare verbală pentru părăsirea repetată a suprafeței tehnice.",
+          "B": "CR pentru părăsirea repetată a propriei suprafețe tehnice.",
+          "C": "Nicio sancțiune pentru părăsirea propriei suprafețe tehnice.",
+          "D": "CG pentru nerespectarea repetată a propriei suprafețe tehnice."
+        },
+        "correctOption": "D",
+        "sourceUrl": "https://www.theifab.com/laws/latest/fouls-and-misconduct/"
+      }
+    }
+  ]
+}

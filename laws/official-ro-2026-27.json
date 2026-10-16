@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "source": {
+    "kind": "official-ro-scan",
+    "edition": "2026/27",
+    "language": "ro",
+    "translation": "official",
+    "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+    "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+    "title": "Legile Jocului 2026/27 · Modificările Legilor",
+    "transcription": "manual-visual",
+    "checkedAt": "2026-10-16"
+  },
+  "notes": [
+    "Transcriere verificată vizual; sunt reunite numai rândurile și marcatorii de listă.",
+    "Paginile 26 și 178 au text tăiat la margine; fragmentele incomplete nu sunt transcrise.",
+    "Rezumatul de la pagina 177 are un titlu inconsecvent pentru Legea 15; referințele la aruncarea de la margine folosesc protocolul de la paginile 28–29.",
+    "Numerele page sunt cele tipărite; scanPages sunt pozițiile 1-based din PDF."
+  ],
+  "excerpts": [
+    {
+      "id": "sub-ten-seconds-2627",
+      "law": 3,
+      "article": "Protocol",
+      "title": "Protocolul de înlocuire limitată în timp · procedură",
+      "page": 24,
+      "text": "• Odată ce tabela de înlocuiri a fost arătată sau, acolo unde nu există o tabelă de înlocuiri, arbitrul semnalizează efectuarea unei înlocuiri,* jucătorul care este înlocuit trebuie să părăsească terenul de joc: • în termen de zece secunde • pe la cel mai apropiat punct de pe linia de delimitare, cu excepția cazului în care arbitrul indică altfel *Dacă arbitrul inspectează echipamentul jucătorului de rezervă la linia mediană, cele zece secunde încep atunci când inspecția este finalizată și arbitrul semnalizează ca înlocuirea să fie efectuată.",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          1
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "sub-one-minute-2627",
+      "law": 3,
+      "article": "Protocol",
+      "title": "Protocolul de înlocuire limitată în timp · depășirea limitei",
+      "page": 24,
+      "text": "• Dacă jucătorul care este înlocuit nu a părăsit terenul de joc în cele zece secunde: • acesta trebuie totuși să părăsească terenul de joc cât mai repede posibil • jucătorului de rezervă nu îi este permis să intre pe terenul de joc • jocul se reia • înlocuirea nu poate fi anulată și nici jucătorul de rezervă schimbat • jucătorul de rezervă poate intra pe terenul de joc doar la prima întrerupere după scurgerea unui minut de la reluarea jocului și după primirea unui semnal de la arbitru",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          1
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "sub-time-conditions-2627",
+      "law": 3,
+      "article": "Protocol",
+      "title": "Protocolul de înlocuire limitată în timp · cronometrare, avertisment și excepții",
+      "page": 25,
+      "text": "• Acel un minut este cronometrat fără oprirea cronometrului și este stabilit de arbitru, care poate fi asistat de ceilalți oficiali de meci. • Dacă se efectuează mai mult de o înlocuire în timpul unei întreruperi, toți jucătorii care sunt înlocuiți trebuie să părăsească terenul de joc în termen de zece secunde de la afișarea tabelei de înlocuiri / acordarea semnalului pentru ultima înlocuire; tabela / semnalul nu trebuie să întârzie între înlocuirile care se efectuează în timpul aceleiași întreruperi. • În cazul în care cele zece secunde sunt depășite, iar jucătorul de rezervă este împiedicat să intre pe terenul de joc, jucătorul care este înlocuit este doar avertizat (cartonaș galben) dacă întârzierea este excesivă. • Arbitrul poate decide să nu aplice limita de timp de zece secunde, inclusiv atunci când: • accidentarea unui jucător îl împiedică în mod clar să părăsească terenul în acel timp • un jucător nu poate părăsi terenul pe la cel mai apropiat punct de pe linia de delimitare din motive de siguranță/securitate",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          2
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "accessories-2627",
+      "law": 4,
+      "article": "Rezumat",
+      "title": "Rezumatul modificărilor · accesoriile",
+      "page": 175,
+      "text": "• accesoriile sunt permise dacă nu sunt periculoase și sunt acoperite în mod sigur și securizat.",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          7
+        ],
+        "section": "summary"
+      }
+    },
+    {
+      "id": "countdown-start-2627",
+      "law": 16,
+      "article": "Protocol",
+      "title": "Numărătoarea inversă · semnalul și cele cinci secunde",
+      "page": 28,
+      "text": "Când arbitrul stabilește că o aruncare de la margine/lovitură de la poartă este întârziată deliberat de echipa care execută reluarea jocului: • Arbitrul poate folosi fluierul și/sau vocea sa pentru a indica faptul că jucătorul ar trebui să se grăbească/să nu întârzie reluarea jocului. • Pentru a începe numărătoarea inversă de cinci secunde (care poate începe fără semnalul de mai sus), arbitrul: • va folosi fluierul • va semnaliza clar cu mâna/brațul pentru executarea reluării jocului • va număra invers de la cinci secunde vizual, cu o mână ridicată; această numărătoare inversă vizuală poate fi însoțită de o numărătoare inversă verbală, acolo unde este cazul",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          5
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "countdown-goal-2627",
+      "law": 16,
+      "article": "Protocol",
+      "title": "Numărătoarea inversă · lovitură de colț pentru adversari",
+      "page": 29,
+      "text": "Dacă mingea nu este în joc la sfârșitul numărătorii inverse de cinci secunde, arbitrul: • va acorda o lovitură de la colț echipei adverse, pe partea terenului cea mai apropiată de locul de unde trebuia executată lovitura de la poartă",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          6
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "countdown-throw-2627",
+      "law": 15,
+      "article": "Protocol",
+      "title": "Numărătoarea inversă · aruncare pentru adversari",
+      "page": 29,
+      "text": "Dacă mingea nu este în joc la sfârșitul numărătorii inverse de cinci secunde, arbitrul: • va acorda aruncarea de la margine echipei adverse, pentru a fi executată din aceeași poziție ca aruncarea de la margine inițială",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          6
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "countdown-caution-15-2627",
+      "law": 15,
+      "article": "Protocol",
+      "title": "Numărătoarea inversă · condiția avertismentului",
+      "page": 29,
+      "text": "• Acolo unde reluarea jocului este acordată echipei adverse, un avertisment (cartonaș galben) se aplică doar dacă jucătorul sau un coechipier întârzie apoi excesiv reluarea jocului de către echipa adversă.",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          6
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "countdown-caution-16-2627",
+      "law": 16,
+      "article": "Protocol",
+      "title": "Numărătoarea inversă · condiția avertismentului",
+      "page": 29,
+      "text": "• Acolo unde reluarea jocului este acordată echipei adverse, un avertisment (cartonaș galben) se aplică doar dacă jucătorul sau un coechipier întârzie apoi excesiv reluarea jocului de către echipa adversă.",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          6
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "countdown-delay-2627",
+      "law": 16,
+      "article": "Protocol",
+      "title": "Numărătoarea inversă · întârziere înainte de posesia mingii",
+      "page": 29,
+      "text": "Arbitrul nu trebuie să aștepte ca un jucător să fie în posesia mingii pentru a începe numărătoarea inversă de cinci secunde. Numărătoarea inversă poate fi, de asemenea, începută dacă jucătorul provoacă în mod deliberat o întârziere prin: • recuperarea lentă a mingii • adoptarea unei poziții incorecte la o aruncare de la margine • așezarea mingii într-o poziție incorectă la o lovitură de la poartă",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          6
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "treatment-return-2627",
+      "law": 5,
+      "article": "Protocol",
+      "title": "Evaluare și tratament în afara terenului · revenirea",
+      "page": 27,
+      "text": "Perioada de un minut în afara terenului de joc • Perioada de un minut în afara terenului de joc începe la reluarea jocului. • Acel un minut este cronometrat fără oprirea cronometrului și este stabilit de arbitru, care poate fi asistat de ceilalți oficiali de meci. • Jucătorul poate reveni doar cu permisiunea arbitrului; acesta trebuie să reintre pe la linia de margine dacă mingea este în joc, dar poate reintra pe la orice linie de delimitare dacă mingea nu este în joc. • Dacă jucătorul accidentat este înlocuit, înlocuirea nu este întârziată.",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          4
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "treatment-exceptions-2627",
+      "law": 5,
+      "article": "Protocol",
+      "title": "Evaluare și tratament în afara terenului · excepții",
+      "page": 27,
+      "text": "Un jucător nu este obligat să părăsească terenul de joc pentru un minut atunci când: • jucătorul: • indică faptul că nu are nevoie de asistență medicală, cu excepția cazului în care jocul a fost oprit pentru accidentarea respectivă; sau • părăsește voluntar terenul în timpul jocului sau al unei întreruperi, cu condiția ca acest lucru să nu întârzie reluarea jocului • există o accidentare pentru care Legea 5 permite ca un jucător să fie tratat pe terenul de joc: • un portar este accidentat • un portar și un jucător de câmp s-au ciocnit și au nevoie de îngrijiri • jucători din aceeași echipă s-au ciocnit și au nevoie de îngrijiri • a avut loc o accidentare gravă, în special o accidentare la cap (de ex. comoție), o problemă cardiacă sau un eveniment care pune viața în pericol (de ex. convulsii, sufocare etc.) • un jucător este accidentat ca urmare a unei abateri fizice pentru care adversarul este avertizat sau eliminat (de ex. un atac imprudent sau un fault grosolan) • a fost acordată o lovitură de pedeapsă, iar jucătorul accidentat va fi executantul",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          4
+        ],
+        "section": "protocol"
+      }
+    },
+    {
+      "id": "dogso-advantage-goal-summary-2627",
+      "law": 12,
+      "article": "Rezumat",
+      "title": "Rezumatul modificărilor · DOGSO, avantaj și gol",
+      "page": 177,
+      "text": "• nu se acordă avertisment (cartonaș galben) pentru o abatere DOGSO dacă se aplică avantajul și se înscrie un gol.",
+      "source": {
+        "kind": "official-ro-scan",
+        "edition": "2026/27",
+        "language": "ro",
+        "translation": "official",
+        "sha256": "661c83943ad4e57445696c0e73cf46c3a27ec067b1c806695ceffa29baa3cd3a",
+        "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+        "title": "Legile Jocului 2026/27 · Modificările Legilor",
+        "transcription": "manual-visual",
+        "checkedAt": "2026-10-16",
+        "scanPages": [
+          9
+        ],
+        "section": "summary"
+      }
+    }
+  ]
+}

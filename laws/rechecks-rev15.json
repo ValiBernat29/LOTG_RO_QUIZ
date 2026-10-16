@@ -1,0 +1,491 @@
+{
+  "revision": "rev15",
+  "checkedAt": "2026-10-16",
+  "beforeEdition": "2025/26",
+  "afterEdition": "2026/27",
+  "note": "Citatele, evidențierile, enunțurile și deciziile sunt păstrate; numai compatibilitatea ediției este reverificată.",
+  "rows": [
+    {
+      "id": 210,
+      "questionRo": "Mingea atinge un oficial de meci în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa aflată în posesie se schimbă. Care este decizia arbitrului?",
+      "correctText": "Oprește jocul; minge de arbitru la contact, pentru echipa care ar fi avut posesia; dacă nu se poate stabili, pentru echipa ultimei atingeri.",
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• se schimbă echipa aflată în posesia mingii.",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară, alternativa ultimei atingeri și locul reluării",
+          "highlights": [
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "questionRo": "Un jucător al echipei A joacă mingea, care atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa A începe astfel un atac promițător (SPA). Care este decizia arbitrului?",
+      "correctText": "Minge de arbitru la contact, pentru echipa care ar fi avut posesia fără atingerea arbitrului.",
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară și locul reluării",
+          "highlights": [
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "questionRo": "O pasă a echipei A spre un adversar ricoșează din arbitru la alt jucător al echipei A, care inițiază imediat un atac promițător. Arbitrul apreciază că echipa B ar fi câștigat posesia. Care este decizia arbitrului?",
+      "correctText": "Oprește jocul; minge de arbitru pentru un jucător din B.",
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru B, echipa care ar fi intrat în posesie",
+          "highlights": [
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "questionRo": "După o lovitură de poartă a echipei A, mingea atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa B câștigă posesia. Unde se execută mingea de arbitru?",
+      "correctText": "Exact în locul unde mingea l-a atins pe arbitru.",
+      "passages": [
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru din locul unde mingea a atins arbitrul",
+          "highlights": [
+            "Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "questionRo": "Mingea jucată de echipa A atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren și îi oferă echipei A un atac promițător (SPA). Cum se reia jocul?",
+      "correctText": "Minge de arbitru la contact, pentru echipa care ar fi avut posesia fără atingerea arbitrului.",
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Echipa beneficiară și locul reluării",
+          "highlights": [
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "questionRo": "O pasă a echipei A atinge arbitrul asistent aflat pe linia de margine. Fără acest contact, mingea ar fi ieșit pentru o aruncare de la margine în favoarea echipei B. Mingea rămâne pe teren și ajunge la un alt jucător al echipei A, care începe un atac promițător. Care este decizia arbitrului?",
+      "correctText": "Minge de arbitru pentru B, din locul contactului cu arbitrul asistent.",
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• o echipă lansează un atac promițător sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru B, din locul contactului",
+          "highlights": [
+            "• dacă mingea era în afara suprafaței de pedeapsă, arbitrul acorda mingea de arbitru pentru un jucător al echipei care a intrat sau ar fi intrat în posesie, dacă acest lucru poate fi stabilit de arbitru; în caz contrar, mingea de arbitru se acordă pentru un jucător al echipei care a atins-o ultima dată. Mingea de arbitru se execută în locul în care se afla la oprirea jocului."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "questionRo": "În suprafața de pedeapsă, mingea atinge arbitrul, rămâne pe teren și intră direct în poartă. Care este decizia arbitrului?",
+      "correctText": "Gol anulat; minge de arbitru pentru portarul echipei în apărare.",
+      "passages": [
+        {
+          "id": "ball-out",
+          "justifies": "De ce se oprește jocul pentru minge de arbitru",
+          "highlights": [
+            "• mingea intră direct în poartă sau",
+            "În toate aceste situaţii, jocul este reluat cu o minge de arbitru."
+          ]
+        },
+        {
+          "id": "dropped-ball",
+          "justifies": "Minge de arbitru pentru portarul echipei în apărare",
+          "highlights": [
+            "mingea se afla în suprafața de pedeapsă, arbitrul acorda mingea de arbitru portarului echipei în apărare în suprafața sa de pedeapsă."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "questionRo": "Un înlocuitor intră în camera de operare video în timpul meciului. Arbitrul este informat la următoarea oprire a jocului. Care este decizia arbitrului?",
+      "correctText": "Eliminare (CR); înlocuitorul părăsește terenul și împrejurimile, nu poate fi înlocuit, iar numărul de înlocuiri permis echipei nu se reduce.",
+      "passages": [
+        {
+          "id": "vor-red",
+          "justifies": "CR pentru intrarea în studioul de analiză video",
+          "highlights": [
+            "Un jucător, jucător înlocuitor, jucător înlocuit sau oficial al unei echipe care intră în studioul de analiză video va fi sancționat cu eliminare."
+          ]
+        },
+        {
+          "id": "sent-off-replacement",
+          "justifies": "Un înlocuitor eliminat nu poate fi înlocuit",
+          "highlights": [
+            "Un jucător desemnat ca înlocuitor, eliminat înainte sau după lovitura de începere a partidei, nu poate fi înlocuit."
+          ]
+        },
+        {
+          "id": "red-leave",
+          "justifies": "Înlocuitorul eliminat părăsește zona terenului",
+          "highlights": [
+            "Un jucător, jucător înlocuitor sau jucător înlocuit care a fost eliminat trebuie să părăsească zona din proximitatea terenului de joc, precum și suprafața tehnică."
+          ]
+        },
+        {
+          "id": "substitute-entry",
+          "justifies": "Înlocuirea este finalizată la intrarea înlocuitorului",
+          "highlights": [
+            "Procedura de înlocuire se încheie în momentul în care jucătorul înlocuitor intră pe teren; din acel moment, jucătorul care a fost schimbat devine jucător înlocuit, iar jucătorul înlocuitor devine jucător și poate repune mingea în joc în orice mod."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "questionRo": "Un înlocuitor solicită insistent intervenția VAR, făcând semnalul ecranului TV, sau intră în zona de analiză video pentru arbitru. Ce sancțiune disciplinară poate primi?",
+      "correctText": "Da, înlocuitorul este avertizat disciplinar cu CG.",
+      "passages": [
+        {
+          "id": "substitute-cautions",
+          "justifies": "CG pentru solicitarea excesivă a VAR ori intrarea în zonă",
+          "highlights": [
+            "• intră în zona de analiză video pentru arbitru. • face uz excesiv de semnalul de solicitare a analizei video (ecran TV)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "questionRo": "Căpitanul transmite banderola unui coechipier în timp ce mingea este în joc, fără să informeze arbitrul. Este permis?",
+      "correctText": "Da, oricând, dacă noul căpitan poartă banderola distinctivă.",
+      "passages": [
+        {
+          "id": "captain-band",
+          "justifies": "Un căpitan cu banderolă trebuie să fie pe teren",
+          "highlights": [
+            "Fiecare echipă trebuie să aibă un căpitan pe terenul de joc care poartă o banderolă de identificare."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "questionRo": "Care este procedura atunci când căpitanul echipei este înlocuit?",
+      "correctText": "Alt jucător aflat în teren preia și poartă banderola.",
+      "passages": [
+        {
+          "id": "captain-band",
+          "justifies": "Un căpitan cu banderolă trebuie să fie pe teren",
+          "highlights": [
+            "Fiecare echipă trebuie să aibă un căpitan pe terenul de joc care poartă o banderolă de identificare."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "questionRo": "Echipa A solicită o înlocuire în timpul prelungirilor, dar jocul nu se mai oprește înainte de fluierul final. Poate efectua înlocuirea înaintea loviturilor de departajare, dacă nu este vorba despre un portar inapt să continue?",
+      "correctText": "Nu, întrucât înlocuirea nu s-a efectuat înainte de fluierul final.",
+      "passages": [
+        {
+          "id": "shootout-eligible",
+          "justifies": "Numai jucătorii eligibili la final pot participa, exceptând portarul inapt",
+          "highlights": [
+            "• cu excepția înlocuitorului portarului, în cazul în care acesta nu poate continua jocul, numai jucătorii aflați pe terenul de joc sau care se află temporar în afara acestuia (accidentări, corectarea echipamentului etc.) la sfârșitul meciului, pot executa loviturile de la 11 m."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "questionRo": "Un antrenor secund înscris ca oficial al echipei dorește la pauză să participe în repriza a doua ca înlocuitor. Este permis?",
+      "correctText": "Nu, dacă nu fusese nominalizat ca înlocuitor înaintea jocului.",
+      "passages": [
+        {
+          "id": "substitute-names",
+          "justifies": "Înlocuitorul trebuie nominalizat înaintea meciului",
+          "highlights": [
+            "Numele jucătorilor înlocuitori trebuie comunicate arbitrului înainte de începerea meciului. Un jucător înlocuitor al cărui nume nu a fost comunicat înainte de începerea jocului nu poate lua parte la meci."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "questionRo": "Un înlocuitor avertizat în prima repriză intră ulterior ca jucător și joacă deliberat mingea cu mâna pentru a opri un atac promițător (SPA). Care este sancțiunea disciplinară?",
+      "correctText": "Al doilea CG, apoi CR pentru două avertismente în același joc.",
+      "passages": [
+        {
+          "id": "handball-spa",
+          "justifies": "CG pentru hențul care oprește un atac promițător",
+          "highlights": [
+            "• joacă mingea cu mâna cu scopul de a interveni într-un atac promițător sau de a-l opri, cu excepția situației când arbitrul acordă o lovitură de pedeapsă prin comiterea unei abateri prin jucarea mingii cu mâna în mod involuntar."
+          ]
+        },
+        {
+          "id": "second-caution-red",
+          "justifies": "CR pentru două avertismente în același meci",
+          "highlights": [
+            "• primește un al doilea avertisment în același meci."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "questionRo": "Un jucător avertizat în prima repriză este înlocuit, apoi protestează la arbitrul asistent în calitate de jucător înlocuit. Care este sancțiunea?",
+      "correctText": "Al doilea CG, apoi CR pentru două avertismente în același joc.",
+      "passages": [
+        {
+          "id": "substitute-cautions",
+          "justifies": "CG pentru protestul jucătorului înlocuit",
+          "highlights": [
+            "• protestează verbal sau prin gesturi."
+          ]
+        },
+        {
+          "id": "second-caution-red",
+          "justifies": "CR pentru două avertismente în același meci",
+          "highlights": [
+            "• primește un al doilea avertisment în același meci."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "questionRo": "Înainte ca mingea să fie în joc la o lovitură de colț, un spectator intră și lovește mingea, apoi executantul îl lovește în față. Care este decizia arbitrului?",
+      "correctText": "Spectator îndepărtat, CR executantului, apoi lovitura de colț.",
+      "passages": [
+        {
+          "id": "extra-persons",
+          "justifies": "Îndepărtarea spectatorului",
+          "highlights": [
+            "• să dispună evacuarea persoanei respective la prima oprire a jocului."
+          ]
+        },
+        {
+          "id": "violent-description",
+          "justifies": "Lovirea deliberată în față fără disputarea mingii",
+          "highlights": [
+            "De asemenea, un jucător care nu participă la disputarea mingii și lovește în mod deliberat un adversar sau orice altă persoană în cap sau în față cu mâna sau cu brațul se face vinovat de comportament violent, în afară de cazul în care forța loviturii este neglijabilă."
+          ]
+        },
+        {
+          "id": "violent-red",
+          "justifies": "CR pentru comportament violent",
+          "highlights": [
+            "• are un comportament violent."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se păstrează reluarea stabilită înaintea abaterii",
+          "highlights": [
+            "5. Reluarea jocului după faulturi şi comportament nesportiv Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "questionRo": "Un jucător înlocuitor deja avertizat îndepărtează mingea după ce aceasta a ieșit, întârziind aruncarea de la margine adversă. Care este decizia arbitrului?",
+      "correctText": "Al doilea CG și CR; aruncare pentru adversari.",
+      "passages": [
+        {
+          "id": "substitute-cautions",
+          "justifies": "CG pentru întârzierea reluării",
+          "highlights": [
+            "• întârzie reluarea jocului."
+          ]
+        },
+        {
+          "id": "second-caution-red",
+          "justifies": "CR pentru două avertismente în același meci",
+          "highlights": [
+            "• primește un al doilea avertisment în același meci."
+          ]
+        },
+        {
+          "id": "restart-unchanged",
+          "justifies": "Se păstrează reluarea stabilită înaintea abaterii",
+          "highlights": [
+            "5. Reluarea jocului după faulturi şi comportament nesportiv Dacă mingea este afară din joc, jocul este reluat în conformitate cu decizia anterioară."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "questionRo": "Cu mingea în joc, un jucător schimbă locul și tricoul cu portarul fără permisiune, chiar înainte de finalul meciului. Care este decizia arbitrului?",
+      "correctText": "Jocul continuă; CG pentru ambii la oprire.",
+      "passages": [
+        {
+          "id": "unnotified-swap",
+          "justifies": "Jocul continuă și ambii jucători sunt avertizați",
+          "highlights": [
+            "În cazul în care un jucător înlocuieşte portarul fără permisiunea arbitrului, acesta: • lasă jocul să continue. • avertizează ambii jucători la următoarea ieșire a mingii din joc, dar nu și în cazul în care înlocuirea se produce în pauza dintre reprize (inclusiv în pauza din prelungiri) sau în intervalul cuprins între sfârșitul meciului și începerea prelungirilor și/sau penalty-urilor de departajare."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "questionRo": "În timpul meciului, arbitrul observă că un jucător folosește echipament neautorizat sau periculos. Care este procedura?",
+      "correctText": "Iese pentru remediere; revine cu permisiune, după verificarea echipamentului.",
+      "passages": [
+        {
+          "id": "equipment-correction",
+          "justifies": "Corectare, verificare și permisiunea revenirii",
+          "highlights": [
+            "6. Abateri şi sancţiuni În cazul abaterilor de la această Lege, nu este necesar ca jocul să fie oprit, jucătorul: • fiind informat de arbitru să părăsească terenul de joc pentru a-și corecta echipamentul. • părăsind terenul la oprirea jocului, în afară de cazul când și-a corectat deja echipamentul. În cazul în care un jucător părăseşte terenul de joc pentru a-şi corecta sau schimba echipamentul: • echipamentul acestuia trebuie verificat de un oficial de meci înainte de a i se permite reintrarea pe teren. • jucătorul poate reintra pe teren numai cu permisiunea arbitrului (aceasta putând fi acordată și în timpul desfășurării jocului)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "questionRo": "După schimbarea încălțămintei și verificarea ei de al patrulea oficial, un jucător reintră fără semnal și atinge mingea în jumătatea adversă. Care este decizia arbitrului?",
+      "correctText": "Oprire; LLD de la locul interferenței și CG.",
+      "passages": [
+        {
+          "id": "equipment-correction",
+          "justifies": "CG și LLD pentru revenire fără permisiune și intervenție",
+          "highlights": [
+            "Un jucător care intră pe teren fără permisiunea arbitrului trebuie avertizat și, în cazul în care jocul este oprit pentru arătarea cartonașului galben, acesta va fi reluat prin lovitură liberă indirectă din locul unde se afla mingea în momentul opririi jocului, în afară de cazul în care intervine în joc, situație în care jocul este reluat prin lovitură liberă directă (sau lovitură de pedeapsă) din locul unde s-a produs intervenția."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "questionRo": "În timpul meciului, arbitrul observă că portarul nu poartă mănuși. Ce trebuie să facă?",
+      "correctText": "Nu intervine; mănușile sunt echipament opțional.",
+      "passages": [
+        {
+          "id": "optional-gloves",
+          "justifies": "Mănușile sunt echipament suplimentar permis",
+          "highlights": [
+            "4. Alte articole de echipament Este permisă purtarea de articole de protecție care nu prezintă pericol, de exemplu mănuși, căști, măști de protecție, genunchiere și cotiere confecționate din materiale moi, ușoare și căptușite, precum și sepci pentru portari și ochelari pentru sportivi. Portarii pot purta pantaloni de trening."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "questionRo": "Un oficial de meci verifică echipamentul înlocuitorilor înainte ca aceștia să intre pe teren. Este responsabil de verificarea dimensiunii și materialului apărătorilor pentru tibie?",
+      "correctText": "Verifică purtarea și acoperirea cu jambiere; mărimea și materialul sunt responsabilitatea jucătorului.",
+      "passages": [
+        {
+          "id": "shin-guards",
+          "justifies": "Cerințele apărătorilor și responsabilitatea jucătorului",
+          "highlights": [
+            "• apărători pentru tibie - trebuie să fie confecționate dintr-un material corespunzător și să aibă dimensiunea adecvată pentru a oferi un grad de protecție corespunzător și să fie acoperite de jambiere. Jucătorii sunt responsabili de mărimea și gradul de protecție a apărătoriilor pentru tibie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "questionRo": "Un jucător își pierde accidental gheata în suprafața de pedeapsă adversă și înscrie cu piciorul fără gheată înainte ca mingea să iasă. Care este decizia arbitrului?",
+      "correctText": "Gol acordat; gheata se înlocuiește repede.",
+      "passages": [
+        {
+          "id": "lost-shoe",
+          "justifies": "Golul rămâne valabil; echipamentul se remediază cât mai repede",
+          "highlights": [
+            "Dacă un jucător își pierde accidental o gheată sau o apărătoare de tibie, trebuie să o înlocuiască cât mai curând posibil, cel târziu la următoarea ieșire a mingii din joc; dacă jucătorul respectiv joacă mingea și/sau marchează un gol înainte de înlocuirea ghetei sau apărătorii lipsă, golul este considerat valabil."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "questionRo": "Un jucător care și-a pierdut accidental gheata pasează unui coechipier, iar acesta înscrie înainte ca mingea să iasă din joc. Care este decizia arbitrului?",
+      "correctText": "Gol acordat; gheata se înlocuiește repede.",
+      "passages": [
+        {
+          "id": "lost-shoe",
+          "justifies": "Golul rămâne valabil; echipamentul se remediază cât mai repede",
+          "highlights": [
+            "Dacă un jucător își pierde accidental o gheată sau o apărătoare de tibie, trebuie să o înlocuiască cât mai curând posibil, cel târziu la următoarea ieșire a mingii din joc; dacă jucătorul respectiv joacă mingea și/sau marchează un gol înainte de înlocuirea ghetei sau apărătorii lipsă, golul este considerat valabil."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "questionRo": "Un jucător își pierde accidental gheata și înscrie înainte ca mingea să iasă din joc. Se acordă golul?",
+      "correctText": "Da; echipamentul se remediază cât mai repede.",
+      "passages": [
+        {
+          "id": "lost-shoe",
+          "justifies": "Golul rămâne valabil; echipamentul se remediază cât mai repede",
+          "highlights": [
+            "Dacă un jucător își pierde accidental o gheată sau o apărătoare de tibie, trebuie să o înlocuiască cât mai curând posibil, cel târziu la următoarea ieșire a mingii din joc; dacă jucătorul respectiv joacă mingea și/sau marchează un gol înainte de înlocuirea ghetei sau apărătorii lipsă, golul este considerat valabil."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "questionRo": "Un jucător ieșit pentru corectarea echipamentului reintră în timpul jocului fără permisiunea arbitrului. Care sunt sancțiunea și reluarea?",
+      "correctText": "CG; dacă intervine: LLD din locul intervenției sau LP; altfel: LLI din locul mingii.",
+      "passages": [
+        {
+          "id": "equipment-correction",
+          "justifies": "CG și reluare după existența intervenției",
+          "highlights": [
+            "Un jucător care intră pe teren fără permisiunea arbitrului trebuie avertizat și, în cazul în care jocul este oprit pentru arătarea cartonașului galben, acesta va fi reluat prin lovitură liberă indirectă din locul unde se afla mingea în momentul opririi jocului, în afară de cazul în care intervine în joc, situație în care jocul este reluat prin lovitură liberă directă (sau lovitură de pedeapsă) din locul unde s-a produs intervenția."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,10 @@
   "scripts": {
     "build": "node build.mjs",
     "dev": "node server.mjs",
-    "test": "node --test tests/quiz.test.mjs"
+    "laws:audit": "node tools/audit-laws.mjs",
+    "answers:audit": "node tools/answer-balance.mjs",
+    "questions:audit": "node tools/question-context-audit.mjs",
+    "rules:audit": "node tools/rule-change-audit.mjs",
+    "test": "node --test tests/quiz.test.mjs tests/laws.test.mjs tests/answers.test.mjs tests/scan.test.mjs tests/question-context.test.mjs tests/offside.test.mjs tests/rule-corrections.test.mjs tests/penalty.test.mjs tests/free-kicks.test.mjs tests/compound-decisions.test.mjs tests/boundary-restarts.test.mjs tests/expansion.test.mjs tests/remaining-decisions.test.mjs"
   }
 }

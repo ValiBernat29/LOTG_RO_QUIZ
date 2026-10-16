@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "edition": "2026/27",
+  "rows": [
+    {
+      "revisionId": "dogso-advantage-goal-298",
+      "id": 298,
+      "questionRo": "După un șut, un apărător joacă deliberat mingea cu mâna pe linia porții, iar aceasta ajunge la un atacant aflat în poziție de ofsaid la șut, care înscrie. Care este decizia arbitrului?",
+      "before": {
+        "options": {
+          "A": "Gol valabil; fără sancțiune pentru apărător.",
+          "B": "Gol valabil; CG apărătorului pentru jucarea mingii cu mâna.",
+          "C": "Gol anulat; LP și CG pentru apărător.",
+          "D": "Gol anulat; LLI și CR pentru apărător."
+        },
+        "correctOption": "B"
+      },
+      "after": {
+        "options": {
+          "A": "Gol valabil; fără sancțiune disciplinară pentru apărător.",
+          "B": "Gol valabil; CG apărătorului pentru jucarea mingii cu mâna.",
+          "C": "Gol anulat; LP și CG pentru apărător.",
+          "D": "Gol anulat; LLI și CR pentru apărător."
+        },
+        "correctOption": "A"
+      },
+      "reason": "Gol înscris de echipa nevinovată în urma avantajului pentru DOGSO: nu se mai acordă CG pentru această abatere.",
+      "sources": [
+        {
+          "url": "https://www.theifab.com/laws/latest/offside/",
+          "checkedAt": "2026-10-16"
+        },
+        {
+          "url": "https://www.theifab.com/laws/latest/fouls-and-misconduct/",
+          "checkedAt": "2026-10-16"
+        },
+        {
+          "file": "CamScanner 16-10-2026 11.31 (1).pdf",
+          "page": 177
+        }
+      ]
+    }
+  ]
+}

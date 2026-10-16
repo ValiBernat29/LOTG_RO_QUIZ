@@ -1,0 +1,62 @@
+{
+  "revision": "rev19",
+  "checkedAt": "2026-10-16",
+  "rows": [
+    {
+      "id": 17,
+      "questionRo": "Antrenorul echipei A anunță un oficial că va introduce un atacant ca ultim înlocuitor disponibil. Acesta așteaptă la linia mediană și nu a intrat încă. Arbitrul oprește jocul după ce un apărător al echipei A este faultat și se accidentează grav. Poate echipa să își schimbe decizia și să folosească un alt înlocuitor?",
+      "correctText": "Da; înlocuirea nu este finalizată până când înlocuitorul intră pe teren.",
+      "passages": [
+        {
+          "id": "substitute-entry",
+          "justifies": "Înlocuirea este finalizată la intrarea înlocuitorului",
+          "highlights": [
+            "Procedura de înlocuire se încheie în momentul în care jucătorul înlocuitor intră pe teren; din acel moment, jucătorul care a fost schimbat devine jucător înlocuit, iar jucătorul înlocuitor devine jucător și poate repune mingea în joc în orice mod."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "questionRo": "După acordarea unei LP, echipa în apărare dorește să înlocuiască portarul cu un portar înlocuitor. Este permisă înlocuirea înaintea executării loviturii?",
+      "correctText": "Da, dacă mai are înlocuiri și îl informează pe arbitru.",
+      "passages": [
+        {
+          "id": "substitute-entry",
+          "justifies": "Înlocuire la oprire, cu semnalul arbitrului",
+          "highlights": [
+            "Jucătorul înlocuitor poate intra pe teren doar: • în timpul unei opriri a jocului. • pe la linia mediană. • după ce jucătorul înlocuit a părăsit terenul. • după primirea semnalului de la arbitru. Procedura de înlocuire se încheie în momentul în care jucătorul înlocuitor intră pe teren; din acel moment, jucătorul care a fost schimbat devine jucător înlocuit, iar jucătorul înlocuitor devine jucător și poate repune mingea în joc în orice mod."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "questionRo": "Un apărător care a comis un fault neglijent sancționat cu LP se accidentează și nu mai poate continua. Poate fi schimbat înainte de executare?",
+      "correctText": "Da; dacă mai are înlocuiri și oportunități disponibile.",
+      "passages": [
+        {
+          "id": "substitute-entry",
+          "justifies": "Înlocuire la oprire, cu semnalul arbitrului",
+          "highlights": [
+            "Jucătorul înlocuitor poate intra pe teren doar: • în timpul unei opriri a jocului. • pe la linia mediană. • după ce jucătorul înlocuit a părăsit terenul. • după primirea semnalului de la arbitru. Procedura de înlocuire se încheie în momentul în care jucătorul înlocuitor intră pe teren; din acel moment, jucătorul care a fost schimbat devine jucător înlocuit, iar jucătorul înlocuitor devine jucător și poate repune mingea în joc în orice mod."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "questionRo": "Atacantul faultat la faza unei LP este înlocuit din cauza accidentării. Poate înlocuitorul care intră să execute LP?",
+      "correctText": "Da, după intrare înlocuitorul devine jucător și poate executa LP.",
+      "passages": [
+        {
+          "id": "substitute-entry",
+          "justifies": "Înlocuirea este finalizată la intrarea înlocuitorului",
+          "highlights": [
+            "Procedura de înlocuire se încheie în momentul în care jucătorul înlocuitor intră pe teren; din acel moment, jucătorul care a fost schimbat devine jucător înlocuit, iar jucătorul înlocuitor devine jucător și poate repune mingea în joc în orice mod."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "edition": "2026/27",
+  "pdfEdition": "2025/26",
+  "revision": "rev22 · decizii compuse și instrucțiuni practice",
+  "totalRecords": 788,
+  "distinctScenarios": 595,
+  "verifiedRecords": 708,
+  "verifiedScenarios": 541,
+  "legacyRecords": 3,
+  "legacyScenarios": 2,
+  "associatedRecords": 711,
+  "associatedScenarios": 543,
+  "needsReviewRecords": 0,
+  "needsReviewScenarios": 0,
+  "unmappedScenarios": 52,
+  "complete": false,
+  "perLaw": [
+    {
+      "lawNumber": 1,
+      "title": "Terenul de joc",
+      "total": 8,
+      "verified": 8,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 0,
+      "complete": true
+    },
+    {
+      "lawNumber": 2,
+      "title": "Mingea",
+      "total": 2,
+      "verified": 2,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 0,
+      "complete": true
+    },
+    {
+      "lawNumber": 3,
+      "title": "Jucătorii",
+      "total": 49,
+      "verified": 40,
+      "legacy": 2,
+      "needsReview": 0,
+      "unmapped": 7,
+      "complete": false
+    },
+    {
+      "lawNumber": 4,
+      "title": "Echipamentul jucătorilor",
+      "total": 12,
+      "verified": 12,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 0,
+      "complete": true
+    },
+    {
+      "lawNumber": 5,
+      "title": "Arbitrul",
+      "total": 76,
+      "verified": 56,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 20,
+      "complete": false
+    },
+    {
+      "lawNumber": 6,
+      "title": "Alți oficiali de meci",
+      "total": 7,
+      "verified": 4,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 3,
+      "complete": false
+    },
+    {
+      "lawNumber": 7,
+      "title": "Durata meciului",
+      "total": 5,
+      "verified": 4,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 1,
+      "complete": false
+    },
+    {
+      "lawNumber": 8,
+      "title": "Începerea și reluarea jocului",
+      "total": 50,
+      "verified": 48,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 2,
+      "complete": false
+    },
+    {
+      "lawNumber": 9,
+      "title": "Mingea în joc și afară din joc",
+      "total": 19,
+      "verified": 18,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 1,
+      "complete": false
+    },
+    {
+      "lawNumber": 10,
+      "title": "Stabilirea rezultatului meciului",
+      "total": 28,
+      "verified": 28,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 0,
+      "complete": true
+    },
+    {
+      "lawNumber": 11,
+      "title": "Ofsaidul",
+      "total": 73,
+      "verified": 73,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 0,
+      "complete": true
+    },
+    {
+      "lawNumber": 12,
+      "title": "Faulturi și comportament nesportiv",
+      "total": 296,
+      "verified": 273,
+      "legacy": 1,
+      "needsReview": 0,
+      "unmapped": 22,
+      "complete": false
+    },
+    {
+      "lawNumber": 13,
+      "title": "Loviturile libere",
+      "total": 36,
+      "verified": 29,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 7,
+      "complete": false
+    },
+    {
+      "lawNumber": 14,
+      "title": "Lovitura de pedeapsă",
+      "total": 73,
+      "verified": 69,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 4,
+      "complete": false
+    },
+    {
+      "lawNumber": 15,
+      "title": "Aruncarea de la margine",
+      "total": 27,
+      "verified": 21,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 6,
+      "complete": false
+    },
+    {
+      "lawNumber": 16,
+      "title": "Lovitura de poartă",
+      "total": 18,
+      "verified": 16,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 2,
+      "complete": false
+    },
+    {
+      "lawNumber": 17,
+      "title": "Lovitura de colț",
+      "total": 9,
+      "verified": 7,
+      "legacy": 0,
+      "needsReview": 0,
+      "unmapped": 2,
+      "complete": false
+    }
+  ]
+}
