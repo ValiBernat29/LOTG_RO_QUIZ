@@ -28,6 +28,6 @@ for (const reference of library.references) {
   }
 }
 await writeFile(output, JSON.stringify(questions), 'utf8');
-await writeLawAudit(questions,library,JSON.parse(await readFile(new URL('laws/references.json',import.meta.url),'utf8')));
+const coverage=await writeLawAudit(questions,library,JSON.parse(await readFile(new URL('laws/references.json',import.meta.url),'utf8')));
 console.log(`Pregătite ${questions.length} întrebări pentru quiz.`);
-console.log(`Pasaje în română: ${questions.filter(q => findLawReference(library, q)).length}/${questions.length} întrebări cu asociere verificată.`);
+console.log(`Pasaje în română: ${coverage.summary.associatedRecords}/${questions.length} întrebări asociate; ${coverage.summary.verifiedRecords} verificate pentru ${library.targetEdition}, ${coverage.summary.legacyRecords} de reverificat din ${library.edition}.`);

@@ -1,77 +1,319 @@
 [
   {
-    "questionRo": "La inspecția terenului înaintea meciului, arbitrul constată că lipsește un steag de colț sau că stâlpii porții ori bara transversală sunt gri, nu albe. Cum procedează arbitrul?",
-    "correctText": "Permite jocul cu acordul echipelor și raportează situația.",
+    "questionRo": "În timpul elanului pentru executarea unei lovituri de pedeapsă, un coechipier al executantului atinge cu piciorul linia suprafeței de pedeapsă înainte ca mingea să fie lovită. Portarul respinge mingea, iar jucătorul care a pătruns prematur o joacă și înscrie. Care este decizia arbitrului?",
+    "correctText": "Nu validează golul; LLI pentru echipa în apărare din locul pătrunderii premature, fără sancțiune disciplinară.",
     "ids": [
-      3
+      1,
+      667
+    ],
+    "laws": [
+      1,
+      14
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un apărător atacă imprudent un adversar în disputa pentru minge. Contactul are loc pe linia propriei suprafețe de pedeapsă. Care este decizia arbitrului?",
+    "correctText": "LP și CG pentru apărătorul care a comis faultul.",
+    "ids": [
+      2,
+      467,
+      704
+    ],
+    "laws": [
+      1,
+      12,
+      14
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un înlocuitor intră în camera de operare video în timpul meciului. Arbitrul este informat la următoarea oprire a jocului. Care este decizia arbitrului?",
+    "correctText": "Eliminare (CR); înlocuitorul părăsește terenul și împrejurimile, nu poate fi înlocuit, iar numărul de înlocuiri permis echipei nu se reduce.",
+    "ids": [
+      4,
+      40,
+      500
+    ],
+    "laws": [
+      1,
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "În timpul unei analize la marginea terenului, un jucător intră în zona de analiză video pentru arbitru. Care este sancțiunea?",
+    "correctText": "CG pentru intrarea în zona de analiză video pentru arbitru.",
+    "ids": [
+      5
     ],
     "laws": [
       1
     ],
-    "status": "needs-review",
-    "issue": {
-      "id": 3,
-      "kind": "needs-interpretation",
-      "reason": "Răspunsul permite folosirea porților nealbe și lipsa unui steag cu acordul echipelor. Trebuie verificat temeiul excepției, nu justificat prin regula generală care cere culoare albă.",
-      "evidence": [
-        {
-          "page": 46,
-          "quote": "Stâlpii porții și bara transversală trebuie să fie de culoare albă"
-        }
-      ],
-      "questionRo": "La inspecția terenului înaintea meciului, arbitrul constată că lipsește un steag de colț sau că stâlpii porții ori bara transversală sunt gri, nu albe. Cum procedează arbitrul?",
-      "correctText": "Permite jocul cu acordul echipelor și raportează situația."
-    }
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
   },
   {
-    "questionRo": "Un jucător care urmează să fie înlocuit refuză să părăsească terenul pe la cel mai apropiat punct al liniei de delimitare. Care este procedura corectă?",
-    "correctText": "Trebuie să iasă în zece secunde de la afișarea panoului, prin punctul cel mai apropiat, dacă arbitrul nu îi indică alt loc.",
+    "questionRo": "În timpul unei analize la marginea terenului, un antrenor intră în zona de analiză video pentru arbitru. Care este sancțiunea?",
+    "correctText": "CG pentru oficialul echipei care a intrat în zonă.",
     "ids": [
+      6,
+      572
+    ],
+    "laws": [
+      1,
       12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Bara transversală se rupe în timpul jocului. Care este decizia arbitrului?",
+    "correctText": "Jocul se oprește; fără reparare sau înlocuire, se abandonează.",
+    "ids": [
+      7
+    ],
+    "laws": [
+      1
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un înlocuitor solicită insistent intervenția VAR, făcând semnalul ecranului TV, sau intră în zona de analiză video pentru arbitru. Ce sancțiune disciplinară poate primi?",
+    "correctText": "Da, înlocuitorul este avertizat disciplinar cu CG.",
+    "ids": [
+      8,
+      605
+    ],
+    "laws": [
+      1,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Mingea se sparge în teren în timp ce ajunge la coechipierul căruia îi fusese pasată. Care este decizia arbitrului?",
+    "correctText": "Oprește jocul și înlocuiește mingea; îl reia cu minge de arbitru pentru echipa care ar fi păstrat posesia, din locul unde mingea s-a deteriorat.",
+    "ids": [
+      9,
+      165
+    ],
+    "laws": [
+      2,
+      8
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un șut trece de portar, dar mingea se sparge în suprafața de poartă și rămâne în teren fără să intre în poartă. Care este decizia arbitrului?",
+    "correctText": "Mingea se schimbă; minge de arbitru pentru portar.",
+    "ids": [
+      10,
+      177
+    ],
+    "laws": [
+      2,
+      8
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După o pasă nereușită a echipei A, mingea se îndreaptă spre margine. Cât timp este încă pe teren, un copil de mingi o prinde pentru a grăbi reluarea. Care este decizia arbitrului?",
+    "correctText": "Minge de arbitru pentru echipa B, la locul contactului.",
+    "ids": [
+      11,
+      163
+    ],
+    "laws": [
+      3,
+      8
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător schimbă locul și tricoul cu portarul fără informarea arbitrului, iar arbitrul oprește jocul când observă schimbarea. Care este soluția?",
+    "correctText": "Oprire greșită, minge de arbitru și CG pentru ambii jucători.",
+    "ids": [
+      14
     ],
     "laws": [
       3
     ],
-    "status": "needs-review",
-    "issue": {
-      "id": 12,
-      "kind": "edition-mismatch",
-      "reason": "Răspunsul introduce o limită de zece secunde. Procedura din ediția 2025/26 indică ieșirea pe la punctul cel mai apropiat, fără această limită.",
-      "evidence": [
-        {
-          "page": 57,
-          "quote": "trebuie să părăsească terenul prin punctul cel mai apropiat"
-        }
-      ],
-      "questionRo": "Un jucător care urmează să fie înlocuit refuză să părăsească terenul pe la cel mai apropiat punct al liniei de delimitare. Care este procedura corectă?",
-      "correctText": "Trebuie să iasă în zece secunde de la afișarea panoului, prin punctul cel mai apropiat, dacă arbitrul nu îi indică alt loc."
-    }
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
   },
   {
-    "questionRo": "La afișarea panoului de înlocuire, jucătorul care urmează să fie înlocuit se află pe partea opusă a terenului, lângă linia de margine. După semnalul arbitrului, merge lent spre linia mediană și depășește limita de zece secunde pentru ieșire. Cum procedează arbitrul?",
-    "correctText": "Jucătorul iese cât mai repede; jocul se reia, iar înlocuitorul intră cu permisiune la prima oprire după un minut de joc. CG numai dacă întârzie excesiv reluarea.",
+    "questionRo": "Căpitanul transmite banderola unui coechipier în timp ce mingea este în joc, fără să informeze arbitrul. Este permis?",
+    "correctText": "Da, oricând, dacă noul căpitan poartă banderola distinctivă.",
     "ids": [
-      13,
-      350
+      15
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Portarul este grav accidentat și nu poate continua, iar echipa a epuizat înlocuirile sau oportunitățile de înlocuire. Care este procedura?",
+    "correctText": "Un jucător rămas devine portar cu tricou distinct.",
+    "ids": [
+      16,
+      64
+    ],
+    "laws": [
+      3,
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "O echipă solicită o înlocuire. Înainte ca înlocuitorul să intre pe teren, un alt jucător al aceleiași echipe se accidentează grav. Poate echipa să schimbe înlocuirea solicitată?",
+    "correctText": "Da; înlocuirea nu este finalizată până când înlocuitorul intră pe teren.",
+    "ids": [
+      17
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După acordarea unei LP, echipa în apărare dorește să înlocuiască portarul cu un portar înlocuitor. Este permisă înlocuirea înaintea executării loviturii?",
+    "correctText": "Da, dacă mai are înlocuiri și îl informează pe arbitru.",
+    "ids": [
+      18
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător înlocuit părăsește terenul pe la punctul cel mai apropiat. Văzând mingea urmărită de un adversar, reintră și o lovește pentru a opri un atac promițător. Care este decizia arbitrului?",
+    "correctText": "LLD și două CG urmate de CR pentru eliminare.",
+    "ids": [
+      19,
+      399
     ],
     "laws": [
       3,
       12
     ],
-    "status": "needs-review",
-    "issue": {
-      "id": 13,
-      "kind": "edition-mismatch",
-      "reason": "Răspunsul introduce limita de zece secunde și așteptarea unui minut de joc. Aceste condiții nu apar în procedura ediției române 2025/26.",
-      "evidence": [
-        {
-          "page": 57,
-          "quote": "Jucătorul înlocuitor poate intra pe teren doar:"
-        }
-      ],
-      "questionRo": "La afișarea panoului de înlocuire, jucătorul care urmează să fie înlocuit se află pe partea opusă a terenului, lângă linia de margine. După semnalul arbitrului, merge lent spre linia mediană și depășește limita de zece secunde pentru ieșire. Cum procedează arbitrul?",
-      "correctText": "Jucătorul iese cât mai repede; jocul se reia, iar înlocuitorul intră cu permisiune la prima oprire după un minut de joc. CG numai dacă întârzie excesiv reluarea."
-    }
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Care este procedura atunci când căpitanul echipei este înlocuit?",
+    "correctText": "Alt jucător aflat în teren preia și poartă banderola.",
+    "ids": [
+      20,
+      67
+    ],
+    "laws": [
+      3,
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Echipa A solicită o înlocuire în timpul prelungirilor, dar jocul nu se mai oprește înainte de fluierul final. Poate efectua înlocuirea înaintea loviturilor de departajare, dacă nu este vorba despre un portar inapt să continue?",
+    "correctText": "Nu, întrucât înlocuirea nu s-a efectuat înainte de fluierul final.",
+    "ids": [
+      21,
+      234
+    ],
+    "laws": [
+      3,
+      10
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un apărător care a comis un fault neglijent sancționat cu LP se accidentează și nu mai poate continua. Poate fi schimbat înainte de executare?",
+    "correctText": "Da, dacă echipa mai are atât înlocuiri, cât și oportunități de înlocuire disponibile.",
+    "ids": [
+      22
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Cu mingea în joc, un jucător schimbă locul și tricoul cu portarul fără să informeze arbitrul. Noul portar respinge apoi cu mâinile un șut peste bara transversală. Care este decizia arbitrului?",
+    "correctText": "Lovitură de colț și CG ambilor jucători înainte de executare.",
+    "ids": [
+      23,
+      782
+    ],
+    "laws": [
+      3,
+      17
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Atacantul faultat la faza unei LP este înlocuit din cauza accidentării. Poate înlocuitorul care intră să execute LP?",
+    "correctText": "Da, după intrare înlocuitorul devine jucător și poate executa LP.",
+    "ids": [
+      24
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un antrenor secund înscris ca oficial al echipei dorește la pauză să participe în repriza a doua ca înlocuitor. Este permis?",
+    "correctText": "Nu, dacă nu fusese nominalizat ca înlocuitor înaintea jocului.",
+    "ids": [
+      25
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
   },
   {
     "questionRo": "Înlocuitori ai ambelor echipe se află câțiva metri în teren la marcarea unui gol, fără să influențeze jocul. Care este decizia arbitrului?",
@@ -83,6 +325,20 @@
       3
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un înlocuitor al echipei A intră pe teren și distrage un apărător în timpul contraatacului din care echipa A înscrie. Care este decizia arbitrului?",
+    "correctText": "Gol anulat, CG pentru înlocuitor și LLD pentru adversari.",
+    "ids": [
+      27
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -95,6 +351,56 @@
       3
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Portarul iese din propria suprafață de pedeapsă și atacă imprudent un adversar aflat într-o situație unu la unu, împiedicând o ocazie clară de gol (DOGSO). Ceilalți apărători sunt prea departe pentru a interveni. Care este decizia arbitrului?",
+    "correctText": "LLD și CR portarului pentru DOGSO; echipa desemnează alt portar.",
+    "ids": [
+      29,
+      449
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un apărător accidentat, aflat în spatele liniei porții, reintră fără permisiune și degajează din propria suprafață de pedeapsă mingea care intra în poartă. Care este decizia arbitrului?",
+    "correctText": "LP și CR pentru reintrare neautorizată și intervenție.",
+    "ids": [
+      30,
+      453,
+      702
+    ],
+    "laws": [
+      3,
+      12,
+      14
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un apărător tratat în afara terenului reintră fără permisiune, în timp ce adversarii pornesc un atac promițător (SPA); acesta nu interferează cu jocul sau adversarii. Care este decizia arbitrului?",
+    "correctText": "Jocul continuă; la prima oprire, apărătorul primește CG.",
+    "ids": [
+      31,
+      110,
+      464
+    ],
+    "laws": [
+      3,
+      5,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -109,6 +415,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -125,6 +432,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -139,6 +447,67 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un înlocuitor avertizat în prima repriză intră ulterior ca jucător și joacă deliberat mingea cu mâna pentru a opri un atac promițător (SPA). Care este sancțiunea disciplinară?",
+    "correctText": "Al doilea CG, apoi CR pentru două avertismente în același joc.",
+    "ids": [
+      35,
+      496
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător avertizat în prima repriză este înlocuit, apoi protestează la arbitrul asistent în calitate de jucător înlocuit. Care este sancțiunea?",
+    "correctText": "Al doilea CG, apoi CR pentru două avertismente în același joc.",
+    "ids": [
+      36,
+      497
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Înainte ca mingea să fie în joc la o lovitură de colț, un spectator intră și lovește mingea, apoi executantul îl lovește în față. Care este decizia arbitrului?",
+    "correctText": "Spectator îndepărtat, CR executantului, apoi lovitura de colț.",
+    "ids": [
+      37,
+      498
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător reintră fără permisiune, lovește mingea și oprește un atac promițător, iar mingea iese peste linia de margine. Care este decizia arbitrului?",
+    "correctText": "LLD, două CG pentru reintrare și SPA, apoi CR pentru jucător.",
+    "ids": [
+      38,
+      499
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -151,6 +520,119 @@
       3
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător înlocuitor deja avertizat îndepărtează mingea după ce aceasta a ieșit, întârziind aruncarea de la margine adversă. Care este decizia arbitrului?",
+    "correctText": "Al doilea CG, apoi CR; aruncare de la margine pentru adversari.",
+    "ids": [
+      41,
+      501
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Înainte de înscrierea jucătorilor pe raport, un jucător scuipă un adversar la încălzirea dinaintea meciului, pe teren. Oficialii observă incidentul. Care este decizia arbitrului?",
+    "correctText": "Jucătorul nu poate fi înscris, efectivul nu se reduce și se raportează incidentul.",
+    "ids": [
+      42,
+      118,
+      502
+    ],
+    "laws": [
+      3,
+      5,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "O înlocuire are loc între finalul reprizei a doua și începutul prelungirilor, fără informarea arbitrului. Acesta observă după reluare. Care este procedura?",
+    "correctText": "Înlocuitorul continuă; cazul este raportat.",
+    "ids": [
+      43
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După începerea reprizei a doua, arbitrul constată că la pauză un jucător a schimbat locul și tricoul cu portarul fără permisiune. Care este decizia arbitrului?",
+    "correctText": "Permite continuarea jocului, fără CG; menționează incidentul în raport.",
+    "ids": [
+      44
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După depunerea listelor, un înlocuitor nominalizat face gesturi ofensatoare la încălzirea dinaintea loviturii de începere. Care este procedura?",
+    "correctText": "CR acordat, participare interzisă și fără înlocuire permisă pe lista echipei.",
+    "ids": [
+      45,
+      503
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Cu mingea în joc, un jucător schimbă locul și tricoul cu portarul fără permisiune, chiar înainte de finalul meciului. Care este decizia arbitrului?",
+    "correctText": "Jocul continuă; CG pentru ambii la oprire.",
+    "ids": [
+      46
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un spectator intră pe teren și atinge mingea care se îndreaptă spre poartă, încercând să împiedice înscrierea unui gol. Mingea intră totuși în poartă, fără ca intervenția să împiedice un apărător să o joace. Poate fi validat golul?",
+    "correctText": "Da; intervenția nu împiedică un apărător să joace mingea, iar mingea intră în poarta împotriva căreia era îndreptată.",
+    "ids": [
+      47
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Arbitrul oprește jocul și acordă CG unui jucător reintrat fără permisiune. Cum se reia jocul?",
+    "correctText": "CG; LLD din locul intervenției dacă jucătorul intervine în joc, iar în lipsa intervenției, LLI din locul mingii la oprire.",
+    "ids": [
+      48
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -163,6 +645,59 @@
       3
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "O persoană care nu este jucător al echipei în apărare atinge mingea care se îndreaptă spre poartă. Mingea intră totuși în poartă, iar intervenția nu împiedică un apărător să o joace. Care este decizia arbitrului?",
+    "correctText": "Validează golul, dacă intervenția nu împiedică un apărător să joace mingea și mingea intră în poarta împotriva căreia era îndreptată.",
+    "ids": [
+      50
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător înlocuitor înscris începe meciul în locul unui titular înscris, fără ca arbitrul să fie informat. Care este procedura?",
+    "correctText": "Înlocuitorul continuă; fără sancțiune disciplinară.",
+    "ids": [
+      51
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "O echipă are mai puțin de șapte jucători deoarece unul a părăsit deliberat terenul. Poate continua meciul?",
+    "correctText": "Poate aplica avantajul, dar nu poate relua jocul după o oprire dacă echipa are în continuare mai puțin de șapte jucători.",
+    "ids": [
+      52
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "La o oprire, antrenorul dorește să înlocuiască un jucător, dar acesta refuză să părăsească terenul. Care este decizia arbitrului?",
+    "correctText": "Jocul continuă fără efectuarea înlocuirii.",
+    "ids": [
+      53
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -175,55 +710,179 @@
       3
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
-    "questionRo": "În timpul meciului, arbitrul constată că un jucător poartă cercei mici. Cum procedează arbitrul?",
-    "correctText": "Jucătorul părăsește terenul pentru a scoate cerceii sau pentru a-i acoperi în mod sigur.",
+    "questionRo": "O înlocuire se efectuează la pauză fără informarea arbitrului, care constată situația după începerea reprizei a doua. Care este procedura?",
+    "correctText": "Înlocuitorul continuă; incidentul este raportat.",
     "ids": [
-      60
+      55
     ],
     "laws": [
-      4
+      3
     ],
-    "status": "needs-review",
-    "issue": {
-      "id": 60,
-      "kind": "answer-conflict",
-      "reason": "Răspunsul permite acoperirea cerceilor; textul românesc cere înlăturarea bijuteriilor și interzice acoperirea cu bandă adezivă.",
-      "evidence": [
-        {
-          "page": 63,
-          "quote": "Nu este permisă acoperirea bijuteriilor cu bandă adezivă."
-        }
-      ],
-      "questionRo": "În timpul meciului, arbitrul constată că un jucător poartă cercei mici. Cum procedează arbitrul?",
-      "correctText": "Jucătorul părăsește terenul pentru a scoate cerceii sau pentru a-i acoperi în mod sigur."
-    }
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
   },
   {
-    "questionRo": "La verificarea echipamentului înaintea meciului, arbitrul constată că un jucător poartă un colier. Cum procedează arbitrul?",
-    "correctText": "Dacă arbitrul îl consideră periculos, colierul trebuie scos; în caz contrar, poate fi purtat numai dacă este acoperit în mod sigur.",
+    "questionRo": "În ce categorii de competiții este permisă reintroducerea pe teren a unui jucător înlocuit, cu aprobarea forului competent?",
+    "correctText": "Fotbal de tineret, veterani, pentru persoane cu dizabilități și fotbal de bază.",
     "ids": [
-      61
+      56
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Poate un jucător schimba locul cu portarul după acordarea unei LP împotriva echipei sale?",
+    "correctText": "Da, cu informarea arbitrului înaintea executării.",
+    "ids": [
+      57
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Cu mingea în joc, un antrenor intră în propria suprafață de pedeapsă și interferează cu un adversar. Care este decizia arbitrului?",
+    "correctText": "CR antrenorului și LP acordată imediat echipei adverse.",
+    "ids": [
+      58,
+      504
+    ],
+    "laws": [
+      3,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un câine intră pe teren și oprește mingea pe linia porții, împiedicând un gol, fără a împiedica vreun apărător să joace mingea. Care este decizia arbitrului?",
+    "correctText": "Minge de arbitru pentru portarul echipei în apărare.",
+    "ids": [
+      59
+    ],
+    "laws": [
+      3
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "În timpul meciului, arbitrul observă că un jucător folosește echipament neautorizat sau periculos. Care este procedura?",
+    "correctText": "Jucătorul părăsește terenul și își corectează echipamentul; revine cu permisiunea arbitrului, după verificarea de către un oficial de meci.",
+    "ids": [
+      62
     ],
     "laws": [
       4
     ],
-    "status": "needs-review",
-    "issue": {
-      "id": 61,
-      "kind": "answer-conflict",
-      "reason": "Răspunsul permite păstrarea unui colier dacă nu este periculos sau este acoperit; textul românesc interzice toate tipurile de bijuterii.",
-      "evidence": [
-        {
-          "page": 63,
-          "quote": "Sunt interzise toate tipurile de bijuterii (coliere, inele, brățări, cercei, curele și benzi de piele sau de cauciuc), acestea trebuind înlăturate."
-        }
-      ],
-      "questionRo": "La verificarea echipamentului înaintea meciului, arbitrul constată că un jucător poartă un colier. Cum procedează arbitrul?",
-      "correctText": "Dacă arbitrul îl consideră periculos, colierul trebuie scos; în caz contrar, poate fi purtat numai dacă este acoperit în mod sigur."
-    }
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După schimbarea încălțămintei și verificarea ei de al patrulea oficial, un jucător reintră fără semnal și atinge mingea în jumătatea adversă. Care este decizia arbitrului?",
+    "correctText": "Oprire; LLD de la locul interferenței și CG.",
+    "ids": [
+      63
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "În timpul meciului, arbitrul observă că portarul nu poartă mănuși. Ce trebuie să facă?",
+    "correctText": "Nu intervine; mănușile sunt echipament opțional.",
+    "ids": [
+      65
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un oficial de meci verifică echipamentul înlocuitorilor înainte ca aceștia să intre pe teren. Este responsabil de verificarea dimensiunii și materialului apărătorilor pentru tibie?",
+    "correctText": "Verifică dacă apărătorile sunt purtate și acoperite de jambiere; jucătorul răspunde pentru dimensiunea, materialul și protecția oferită.",
+    "ids": [
+      66
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător își pierde accidental gheata în suprafața de pedeapsă adversă și înscrie cu piciorul fără gheată înainte ca mingea să iasă. Care este decizia arbitrului?",
+    "correctText": "Gol acordat; gheata se înlocuiește repede.",
+    "ids": [
+      68
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător care și-a pierdut accidental gheata pasează unui coechipier, iar acesta înscrie înainte ca mingea să iasă din joc. Care este decizia arbitrului?",
+    "correctText": "Gol acordat; gheata se înlocuiește repede.",
+    "ids": [
+      69
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător ieșit pentru corectarea echipamentului reintră în timpul jocului fără permisiunea arbitrului. Care sunt sancțiunea și reluarea?",
+    "correctText": "CG; LLD din locul intervenției sau LP, dacă intervine în joc; dacă jocul este oprit fără intervenție, LLI din locul mingii.",
+    "ids": [
+      70
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător își pierde accidental gheata și înscrie înainte ca mingea să iasă din joc. Se acordă golul?",
+    "correctText": "Da; echipamentul se remediază cât mai repede.",
+    "ids": [
+      71
+    ],
+    "laws": [
+      4
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
   },
   {
     "questionRo": "La o aruncare de la margine, jucătorul ține mingea deasupra capului, apoi o lasă să cadă în teren fără să o arunce. Care este decizia arbitrului?",
@@ -237,6 +896,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -251,6 +911,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -265,6 +926,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -281,6 +943,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -295,6 +958,7 @@
       6
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -309,6 +973,7 @@
       6
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -325,6 +990,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -341,6 +1007,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -355,6 +1022,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -369,6 +1037,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -383,6 +1052,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -395,6 +1065,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -407,6 +1078,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -421,6 +1093,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -435,6 +1108,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -449,6 +1123,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -461,6 +1136,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -473,6 +1149,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -485,6 +1162,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -499,6 +1177,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -513,6 +1192,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -527,6 +1207,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -541,6 +1222,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -555,6 +1237,22 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător este atacat neglijent la mijlocul terenului. Arbitrul așteaptă un posibil avantaj, dar echipa jucătorului faultat pierde imediat mingea, iar un adversar o trimite în afara terenului. Care este decizia arbitrului?",
+    "correctText": "LLD de la locul atacului; avantajul nu s-a mai concretizat.",
+    "ids": [
+      96,
+      380
+    ],
+    "laws": [
+      5,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -569,6 +1267,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -583,6 +1282,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -597,6 +1297,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -611,6 +1312,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -625,6 +1327,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -639,6 +1342,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -653,6 +1357,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -667,6 +1372,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -681,6 +1387,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -695,6 +1402,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -707,6 +1415,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -721,6 +1430,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -733,6 +1443,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -747,6 +1458,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -761,6 +1473,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -775,6 +1488,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -791,6 +1505,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -807,6 +1522,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -821,6 +1537,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -835,6 +1552,7 @@
       7
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -847,6 +1565,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -861,6 +1580,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -875,6 +1595,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -889,6 +1610,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -901,6 +1623,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -913,6 +1636,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -925,6 +1649,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -937,6 +1662,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -949,6 +1675,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -961,6 +1688,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -973,6 +1701,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -987,6 +1716,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1001,6 +1731,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1013,6 +1744,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1025,6 +1757,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1037,6 +1770,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1049,6 +1783,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1061,6 +1796,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1073,6 +1809,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1085,6 +1822,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1097,6 +1835,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1111,6 +1850,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1123,6 +1863,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1135,6 +1876,7 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1147,6 +1889,22 @@
       5
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un oficial al echipei aruncă deliberat o sticlă pe teren, dar autorul nu poate fi identificat. Care este decizia disciplinară?",
+    "correctText": "CR antrenorului principal prezent atunci în suprafața tehnică.",
+    "ids": [
+      146,
+      619
+    ],
+    "laws": [
+      5,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1161,6 +1919,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1175,6 +1934,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1187,6 +1947,7 @@
       6
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1201,6 +1962,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1213,6 +1975,7 @@
       6
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1227,6 +1990,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1239,6 +2003,7 @@
       7
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1251,6 +2016,7 @@
       7
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1265,6 +2031,22 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Mingea atinge un oficial de meci în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa aflată în posesie se schimbă. Care este decizia arbitrului?",
+    "correctText": "Oprește jocul; minge de arbitru din locul contactului, pentru echipa care ar fi păstrat sau câștigat posesia; dacă nu se poate stabili, pentru echipa ultimei atingeri.",
+    "ids": [
+      160,
+      210
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1279,6 +2061,82 @@
       9
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un jucător al echipei A joacă mingea, care atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa A începe astfel un atac promițător (SPA). Care este decizia arbitrului?",
+    "correctText": "Minge de arbitru din locul contactului, pentru echipa care ar fi păstrat sau câștigat posesia fără atingerea arbitrului.",
+    "ids": [
+      162,
+      212
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "O pasă a echipei A spre un adversar ricoșează din arbitru la alt jucător al echipei A, care inițiază imediat un atac promițător. Arbitrul apreciază că echipa B ar fi câștigat posesia. Care este decizia arbitrului?",
+    "correctText": "Oprește jocul; minge de arbitru pentru un jucător din B.",
+    "ids": [
+      164,
+      213
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După o lovitură de poartă a echipei A, mingea atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren, iar echipa B câștigă posesia. Unde se execută mingea de arbitru?",
+    "correctText": "Exact în locul unde mingea l-a atins pe arbitru.",
+    "ids": [
+      166,
+      214
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Mingea jucată de echipa A atinge arbitrul în afara suprafeței de pedeapsă, rămâne pe teren și îi oferă echipei A un atac promițător (SPA). Cum se reia jocul?",
+    "correctText": "Minge de arbitru din locul contactului, pentru echipa care ar fi păstrat sau câștigat posesia fără atingerea arbitrului.",
+    "ids": [
+      167,
+      215
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "O pasă a echipei A atinge arbitrul asistent aflat pe linia de margine. Fără acest contact, mingea ar fi ieșit pentru o aruncare de la margine în favoarea echipei B. Mingea rămâne pe teren și ajunge la un alt jucător al echipei A, care începe un atac promițător. Care este decizia arbitrului?",
+    "correctText": "Minge de arbitru pentru un jucător al echipei B, din locul unde mingea a atins arbitrul asistent.",
+    "ids": [
+      168,
+      216
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1291,6 +2149,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1307,6 +2166,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1319,6 +2179,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1333,6 +2194,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1345,6 +2207,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1357,6 +2220,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1369,6 +2233,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1385,6 +2250,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1397,6 +2263,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1409,6 +2276,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1423,6 +2291,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1435,6 +2304,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1447,6 +2317,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1461,6 +2332,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1475,6 +2347,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1487,6 +2360,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1501,6 +2375,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1515,6 +2390,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1527,6 +2403,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1539,6 +2416,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1551,6 +2429,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1563,6 +2442,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1575,6 +2455,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1587,6 +2468,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1601,6 +2483,22 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Arbitrul a oprit jocul, a acordat echipei A o lovitură liberă directă și l-a avertizat pe adversar. Un jucător al echipei A cere gestual eliminarea adversarului. Care este decizia arbitrului?",
+    "correctText": "Avertisment (CG) pentru protest; se execută LLD acordată inițial echipei A.",
+    "ids": [
+      201,
+      595
+    ],
+    "laws": [
+      8,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1615,6 +2513,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1627,6 +2526,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1639,6 +2539,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1651,6 +2552,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1663,6 +2565,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1675,6 +2578,7 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1687,6 +2591,48 @@
       8
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "În suprafața de pedeapsă, mingea atinge arbitrul, rămâne pe teren și intră direct în poartă. Care este decizia arbitrului?",
+    "correctText": "Gol anulat; minge de arbitru pentru portarul echipei în apărare.",
+    "ids": [
+      209,
+      227
+    ],
+    "laws": [
+      8,
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Mingea șutată de un atacant al echipei A iese clar spre lovitură de poartă. Înainte să iasă, un jucător înlocuitor al echipei B o oprește cu piciorul pe linia porții, fără a intenționa să intervină în joc. Care este decizia arbitrului?",
+    "correctText": "Lovitură liberă indirectă pentru A, fără sancțiune disciplinară.",
+    "ids": [
+      217
+    ],
+    "laws": [
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Mingea se îndreaptă clar spre o aruncare de la margine pentru echipa A. Înainte să iasă, un oficial al echipei A o oprește lângă linie pentru a grăbi reluarea, fără a intenționa să intervină în joc. Care este decizia, dacă nu a părăsit repetat suprafața tehnică?",
+    "correctText": "Lovitură liberă indirectă pentru B, fără sancțiune disciplinară.",
+    "ids": [
+      218
+    ],
+    "laws": [
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1701,6 +2647,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1717,6 +2664,24 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Un apărător trimite mingea în afara terenului pentru o lovitură de colț. Imediat după ieșirea mingii, un atacant îl atacă imprudent prin alunecare, lângă linia porții. Care este decizia arbitrului?",
+    "correctText": "Lovitură de colț și CG atacantului.",
+    "ids": [
+      221,
+      432,
+      783
+    ],
+    "laws": [
+      9,
+      12,
+      17
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1733,6 +2698,54 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "După ce mingea, atinsă ultima dată de un atacant, a depășit linia de margine, un apărător îl atacă imprudent. Care este decizia arbitrului?",
+    "correctText": "Aruncare de la margine pentru echipa în apărare; CG apărătorului pentru atacul imprudent.",
+    "ids": [
+      223,
+      510,
+      752
+    ],
+    "laws": [
+      9,
+      12,
+      15
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "După ce mingea depășește complet linia porții în afara cadrului, fără atingerea unui apărător, acesta atacă prin alunecare un adversar și îi pune în pericol integritatea fizică. Care este decizia arbitrului?",
+    "correctText": "Eliminare pentru apărător; reluare prin lovitură de poartă.",
+    "ids": [
+      224,
+      546,
+      772
+    ],
+    "laws": [
+      9,
+      12,
+      16
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
+    "issue": null
+  },
+  {
+    "questionRo": "Mingea atinge un arbitru asistent și rămâne pe teren. În ce situație poate arbitrul să permită continuarea jocului?",
+    "correctText": "Când contactul nu conduce direct la un gol, nu schimbă echipa aflată în posesie și nu inițiază un atac promițător.",
+    "ids": [
+      225
+    ],
+    "laws": [
+      9
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -1745,6 +2758,7 @@
       9
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1757,6 +2771,7 @@
       9
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1769,6 +2784,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1781,6 +2797,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1793,6 +2810,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1807,6 +2825,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1819,6 +2838,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1831,6 +2851,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1845,6 +2866,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1857,6 +2879,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1869,6 +2892,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1881,6 +2905,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1895,6 +2920,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1907,6 +2933,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1919,6 +2946,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1931,6 +2959,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1943,6 +2972,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1955,6 +2985,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1967,6 +2998,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1979,6 +3011,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -1991,6 +3024,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2003,6 +3037,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2015,6 +3050,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2027,6 +3063,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2039,6 +3076,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2051,6 +3089,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2063,6 +3102,7 @@
       10
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2077,6 +3117,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2089,6 +3130,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2105,6 +3147,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2117,6 +3160,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2131,6 +3175,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2143,6 +3188,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2155,6 +3201,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2167,6 +3214,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2179,6 +3227,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2191,6 +3240,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2203,6 +3253,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2215,6 +3266,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2227,6 +3279,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2239,6 +3292,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2251,6 +3305,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2263,6 +3318,22 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
+    "issue": null
+  },
+  {
+    "questionRo": "Portarul execută o lovitură de poartă spre un coechipier aflat în poziție de ofsaid. Acesta controlează mingea și este apoi faultat neglijent de un apărător în afara suprafeței de pedeapsă, fiind oprit un atac promițător (SPA). Care este decizia arbitrului?",
+    "correctText": "LLD pentru echipa în atac și CG apărătorului pentru oprirea unui atac promițător (SPA).",
+    "ids": [
+      272,
+      440
+    ],
+    "laws": [
+      11,
+      12
+    ],
+    "status": "edition-review",
+    "reviewedEdition": "2025/26",
     "issue": null
   },
   {
@@ -2275,6 +3346,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2287,6 +3359,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2299,6 +3372,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2311,6 +3385,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2323,6 +3398,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2335,6 +3411,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2347,6 +3424,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2363,6 +3441,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2375,6 +3454,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2387,6 +3467,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2403,6 +3484,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2415,6 +3497,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2429,6 +3512,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2441,6 +3525,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2455,6 +3540,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2469,6 +3555,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2481,6 +3568,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2493,6 +3581,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2505,6 +3594,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2517,6 +3607,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2529,6 +3620,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2543,6 +3635,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2555,6 +3648,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2567,6 +3661,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2579,6 +3674,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2591,6 +3687,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2603,6 +3700,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2615,6 +3713,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2627,6 +3726,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2639,6 +3739,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2651,6 +3752,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2663,6 +3765,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2675,6 +3778,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2687,6 +3791,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2699,6 +3804,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2711,6 +3817,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2723,6 +3830,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2735,6 +3843,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2747,6 +3856,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2759,6 +3869,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2771,6 +3882,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2783,6 +3895,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2795,6 +3908,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2807,6 +3921,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2819,6 +3934,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2833,6 +3949,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2845,6 +3962,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2857,6 +3975,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2869,6 +3988,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2881,6 +4001,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2893,6 +4014,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2905,6 +4027,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2917,6 +4040,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2929,6 +4053,7 @@
       11
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2941,6 +4066,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2955,6 +4081,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2969,6 +4096,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2983,6 +4111,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -2995,6 +4124,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3007,6 +4137,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3019,6 +4150,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3031,6 +4163,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3043,6 +4176,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3055,6 +4189,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3067,6 +4202,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3079,6 +4215,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3091,6 +4228,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3103,6 +4241,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3115,6 +4254,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3127,6 +4267,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3139,6 +4280,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3151,6 +4293,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3163,6 +4306,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3175,6 +4319,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3187,6 +4332,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3199,6 +4345,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3211,6 +4358,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3223,6 +4371,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3235,6 +4384,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3247,6 +4397,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3259,6 +4410,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3271,6 +4423,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3283,6 +4436,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3297,6 +4451,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3311,6 +4466,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3325,6 +4481,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3337,6 +4494,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3351,6 +4509,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3363,6 +4522,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3375,6 +4535,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3391,6 +4552,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3403,6 +4565,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3417,6 +4580,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3429,6 +4593,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3441,6 +4606,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3455,6 +4621,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3469,6 +4636,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3481,6 +4649,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3493,6 +4662,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3505,6 +4675,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3519,6 +4690,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3531,6 +4703,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3543,6 +4716,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3555,6 +4729,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3567,6 +4742,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3579,6 +4755,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3591,6 +4768,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3605,6 +4783,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3619,6 +4798,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3633,6 +4813,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3645,6 +4826,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3659,6 +4841,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3673,6 +4856,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3685,6 +4869,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3699,6 +4884,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3713,6 +4899,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3725,6 +4912,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3739,6 +4927,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3753,6 +4942,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3765,6 +4955,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3777,6 +4968,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3789,6 +4981,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3801,6 +4994,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3813,6 +5007,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3825,6 +5020,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3837,6 +5033,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3851,6 +5048,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3863,6 +5061,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3877,6 +5076,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3889,6 +5089,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3901,6 +5102,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3915,6 +5117,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3927,6 +5130,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3939,6 +5143,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3953,6 +5158,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3965,6 +5171,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3979,6 +5186,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -3993,6 +5201,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4007,6 +5216,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4021,6 +5231,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4033,6 +5244,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4047,6 +5259,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4061,6 +5274,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4073,6 +5287,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4087,6 +5302,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4099,6 +5315,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4111,6 +5328,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4123,6 +5341,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4135,6 +5354,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4147,6 +5367,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4159,6 +5380,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4171,6 +5393,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4183,6 +5406,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4195,6 +5419,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4207,6 +5432,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4219,6 +5445,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4233,6 +5460,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4247,6 +5475,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4261,6 +5490,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4275,6 +5505,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4287,6 +5518,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4301,6 +5533,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4313,6 +5546,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4325,6 +5559,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4337,6 +5572,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4349,6 +5585,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4361,6 +5598,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4373,6 +5611,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4385,6 +5624,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4397,6 +5637,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4411,6 +5652,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4423,6 +5665,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4435,6 +5678,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4447,6 +5691,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4461,6 +5706,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4473,6 +5719,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4487,6 +5734,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4499,6 +5747,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4511,6 +5760,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4523,6 +5773,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4535,6 +5786,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4547,6 +5799,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4561,6 +5814,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4573,6 +5827,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4587,6 +5842,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4601,6 +5857,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4613,6 +5870,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4627,6 +5885,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4639,6 +5898,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4651,6 +5911,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4663,6 +5924,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4677,6 +5939,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4691,6 +5954,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4705,6 +5969,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4717,6 +5982,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4729,6 +5995,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4741,6 +6008,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4755,6 +6023,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4767,6 +6036,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4779,6 +6049,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4791,6 +6062,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4803,6 +6075,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4815,6 +6088,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4829,6 +6103,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4841,6 +6116,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4853,6 +6129,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4865,6 +6142,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4877,6 +6155,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4889,6 +6168,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4901,6 +6181,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4913,6 +6194,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4925,6 +6207,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4937,6 +6220,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4949,6 +6233,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4961,6 +6246,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4975,6 +6261,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4987,6 +6274,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -4999,6 +6287,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5011,6 +6300,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5023,6 +6313,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5035,6 +6326,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5047,6 +6339,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5059,6 +6352,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5071,6 +6365,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5083,6 +6378,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5095,6 +6391,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5107,6 +6404,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5121,6 +6419,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5133,6 +6432,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5147,6 +6447,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5159,6 +6460,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5171,6 +6473,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5183,6 +6486,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5195,6 +6499,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5209,6 +6514,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5221,6 +6527,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5233,6 +6540,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5245,6 +6553,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5257,6 +6566,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5269,6 +6579,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5281,6 +6592,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5293,6 +6605,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5305,6 +6618,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5317,6 +6631,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5329,6 +6644,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5341,6 +6657,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5355,6 +6672,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5367,6 +6685,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5379,6 +6698,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5391,6 +6711,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5403,6 +6724,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5415,6 +6737,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5427,6 +6750,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5439,6 +6763,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5451,6 +6776,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5463,6 +6789,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5475,6 +6802,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5487,6 +6815,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5499,6 +6828,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5511,6 +6841,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5523,6 +6854,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5535,6 +6867,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5547,6 +6880,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5559,6 +6893,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5571,6 +6906,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5583,6 +6919,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5595,6 +6932,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5607,6 +6945,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5619,6 +6958,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5631,6 +6971,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5643,6 +6984,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5655,6 +6997,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5667,6 +7010,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5679,6 +7023,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5691,6 +7036,7 @@
       12
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5703,6 +7049,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5715,6 +7062,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5727,6 +7075,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5739,6 +7088,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5751,6 +7101,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5763,6 +7114,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5775,6 +7127,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5787,6 +7140,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5799,6 +7153,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5811,6 +7166,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5823,6 +7179,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5835,6 +7192,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5847,6 +7205,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5859,6 +7218,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5871,6 +7231,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5883,6 +7244,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5895,6 +7257,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5907,6 +7270,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5919,6 +7283,7 @@
       13
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5931,6 +7296,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5943,6 +7309,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5955,6 +7322,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5967,6 +7335,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5979,6 +7348,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -5991,6 +7361,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6003,6 +7374,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6015,6 +7387,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6027,6 +7400,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6039,6 +7413,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6051,6 +7426,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6063,6 +7439,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6075,6 +7452,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6087,6 +7465,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6099,6 +7478,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6111,6 +7491,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6123,6 +7504,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6135,6 +7517,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6147,6 +7530,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6159,6 +7543,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6171,6 +7556,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6183,6 +7569,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6195,6 +7582,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6207,6 +7595,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6219,6 +7608,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6231,6 +7621,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6243,6 +7634,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6255,6 +7647,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6267,6 +7660,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6279,6 +7673,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6291,6 +7686,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6303,6 +7699,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6315,6 +7712,7 @@
       14
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6327,6 +7725,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6339,6 +7738,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6351,6 +7751,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6363,6 +7764,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6375,6 +7777,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6387,6 +7790,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6399,6 +7803,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6411,6 +7816,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6423,6 +7829,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6435,6 +7842,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6447,6 +7855,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6459,6 +7868,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6471,6 +7881,7 @@
       15
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6483,6 +7894,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6495,6 +7907,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6507,6 +7920,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6519,6 +7933,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6531,6 +7946,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6543,6 +7959,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6555,6 +7972,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6567,6 +7985,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6579,6 +7998,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6591,6 +8011,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6603,6 +8024,7 @@
       16
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6615,6 +8037,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   },
   {
@@ -6627,6 +8050,7 @@
       17
     ],
     "status": "unmapped",
+    "reviewedEdition": null,
     "issue": null
   }
 ]

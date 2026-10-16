@@ -8,6 +8,8 @@ de verificarea vizuală și revizuirea asocierilor.
 - Înlocuiește linkurile IFAB din feedback și din revizuirea rezultatelor cu un modal.
 - Folosește text extras literal din PDF-ul românesc 2025/26, cu articol și pagina
   numerotată din document. Ruperile de rând sunt reunite pentru lizibilitate.
+- Pentru reguli modificate, folosește fragmente IFAB 2026/27 traduse de proiect,
+  etichetate explicit ca traduceri proprii, cu link către sursă și data verificării.
 - Include scenarii asociate manual cu pasaje din document; aceeași asociere se aplică
   automat duplicatelor cu aceeași întrebare și aceeași decizie corectă.
 - Nu folosește asemănarea cuvintelor-cheie ca dovadă. Pentru întrebări neacoperite,
@@ -15,8 +17,9 @@ de verificarea vizuală și revizuirea asocierilor.
 - În antrenament apare numai după verificare; în examen numai la rezultate.
 - Nu modifică banca de întrebări sau sesiunile salvate.
 
-Pentru probă: pe pagina principală apăsați „Testează întrebările pilot”. Pornește
-un antrenament cu toate situațiile distincte acoperite, indiferent de legile și numărul
+Pentru probă: „Testează noutățile 2026/27” include numai asocierile reverificate
+pentru ediția de referință. „Toate explicațiile disponibile” pornește
+un antrenament cu toate situațiile asociate, indiferent de legile și numărul
 de întrebări selectate în configurarea obișnuită. O sesiune existentă este
 înlocuită numai după confirmare. După fiecare răspuns verificat puteți deschide
 pasajul în română. Sunt incluse și cele trei situații raportate recent:
@@ -31,6 +34,7 @@ avantaj neconcretizat, protest gestual, oficial neidentificat.
    și citatele exacte de evidențiat pentru acea întrebare. Nu există evidențieri
    implicite comune tuturor utilizărilor aceluiași pasaj. Salvați și textul exact
    al întrebării și deciziei revizuite în `questionRo` și `correctText`.
+   `reviewedEdition` precizează ediția pentru care a fost verificată asocierea.
 3. Din directorul proiectului web, rulați local:
 
    ```text
@@ -56,7 +60,8 @@ schimbarea întrebării/deciziei oprește extragerea înainte de a genera o nou�
 - `COVERAGE.md`: progres pe fiecare lege și neconcordanțele identificate;
 - `coverage.json`: aceleași contoare în format structurat;
 - `review-queue.json`: toate situațiile distincte neacoperite, cu ID-urile
-  duplicatelor, legile de colectare și statutul `unmapped` sau `needs-review`.
+  duplicatelor, legile de colectare și statutul `unmapped`, `needs-review`
+  sau `edition-review` (asociere 2025/26 încă nereverificată pentru 2026/27).
 
 Valorile actuale sunt în raport, nu sunt fixate în interfață sau în documentație.
 O situație cu neconcordanță nu poate fi marcată simultan ca verificată.
@@ -74,7 +79,26 @@ LLD pentru contact nu justifică această decizie și nu se include.
 Contextul suplimentar apare numai dacă este necesar pentru a explica de ce
 decizia se aplică (de exemplu, lipsa ofsaidului după primirea directă dintr-o
 lovitură de poartă). Citatele sunt literale; etichetele „Justifică” sunt explicații
-editoriale distincte de textul oficial. Schema datelor este versiunea 2.
+editoriale distincte de textul oficial. Schema datelor este versiunea 3.
+
+## Politica edițiilor și a traducerilor
+
+Ediția de referință a proiectului (`targetEdition`) este 2026/27. Ediția sursei
+PDF (`edition`) rămâne 2025/26. Schimbarea ediției de referință nu rescrie
+proveniența pasajelor și nu certifică retroactiv asocierile existente.
+
+- `official-ro-pdf`: text oficial în română, pagină reală, ediție și amprentă PDF.
+- `ifab-web`: sursă IFAB în engleză, ediție 2026/27, dată de verificare și traducere
+  proprie (`translation: own-ro`). Acest text nu primește pagină fictivă din PDF.
+- Fiecare asociere are o ediție verificată explicit. Modalul avertizează când
+  asocierea afișată este încă la nivelul ediției 2025/26.
+- Raportul separă numărul total de explicații disponibile de numărul verificat
+  pentru 2026/27. `complete` poate deveni adevărat numai după verificarea tuturor
+  situațiilor pentru ediția de referință.
+
+Cele cinci cazuri inițial semnalate (ID 3, 12, 13, 60, 61, inclusiv duplicatele)
+au fost confirmate prin sursele actuale. Răspunsurile rămân neschimbate;
+istoricul clarificărilor este păstrat în `resolvedIssues`.
 
 În modal apare și eticheta revizuirii. Dacă vedeți încă paragrafele vechi, reîncărcați complet
 pagina (Ctrl+F5). Sesiunile salvate se păstrează, iar formularea „Joc oprit” este

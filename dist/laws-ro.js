@@ -1,4 +1,4 @@
-import { cleanRomanianText, prepareQuestions } from './quiz.js';
+import { cleanRomanianText, prepareQuestions, safeSource } from './quiz.js';
 
 const compact = text => cleanRomanianText(text).replace(/\s+/gu, ' ').trim();
 const key = (question, correct) => JSON.stringify([compact(question), compact(correct)]);
@@ -19,30 +19,42 @@ export function findLawReference(library, question) {
   if (!reference) return null;
   return reference.passages.map(passage => ({
     ...library.excerpts.find(item => item.id === passage.id),
-    highlights: passage.highlights, justifies: passage.justifies
+    highlights: passage.highlights, justifies: passage.justifies, reviewedEdition:reference.reviewedEdition
   }));
 }
 
-export function preparePilotQuestions(library, questions, random = Math.random) {
-  const reviewed = questions.filter(question => findLawReference(library, question));
+export function preparePilotQuestions(library, questions, random = Math.random, edition = null) {
+  const reviewed = questions.filter(question => {
+    const passages=findLawReference(library,question);
+    return passages && (!edition || passages[0].reviewedEdition===edition);
+  });
   return prepareQuestions(reviewed, reviewed.length, random);
 }
 
 export function validateLawLibrary(library) {
-  if (!library || library.schemaVersion !== 2 || library.edition !== '2025/26' ||
+  if (!library || library.schemaVersion !== 3 || library.edition !== '2025/26' || library.targetEdition !== '2026/27' ||
       typeof library.sourceTitle !== 'string' || typeof library.revisionLabel !== 'string' ||
       !library.revisionLabel.trim() || !/^[a-f0-9]{64}$/u.test(library.sourceSha256) ||
       !Array.isArray(library.excerpts) || !Array.isArray(library.references)) throw new Error('Invalid law library');
   const ids = new Set(), keys = new Set();
   for (const item of library.excerpts) {
     if (!item.id || ids.has(item.id) || !Number.isInteger(item.law) || item.law < 1 || item.law > 17 ||
-        !Number.isInteger(item.page) || item.page < 1 || typeof item.article !== 'string' ||
-        !(item.article === 'Introducere' || item.article.startsWith(item.law + '.')) || typeof item.title !== 'string' ||
+        typeof item.article !== 'string' ||
+        !(['Introducere','Instrucțiuni practice'].includes(item.article) || item.article.startsWith(item.law + '.')) || typeof item.title !== 'string' ||
         typeof item.text !== 'string' || !item.text.trim()) throw new Error('Invalid source excerpt');
+    const source=item.source;
+    if (!source || typeof source.title!=='string') throw new Error('Missing source provenance');
+    if (source.kind==='official-ro-pdf') {
+      if (!Number.isInteger(item.page) || item.page<1 || source.edition!=='2025/26' || source.language!=='ro' ||
+          source.translation!=='official' || source.sha256!==library.sourceSha256) throw new Error('Invalid PDF provenance');
+    } else if (source.kind==='ifab-web') {
+      if (item.page != null || source.edition!=='2026/27' || source.language!=='en' ||
+          source.translation!=='own-ro' || !safeSource(source.url) || !/^\d{4}-\d{2}-\d{2}$/u.test(source.checkedAt)) throw new Error('Invalid translated source provenance');
+    } else throw new Error('Unknown source kind');
     ids.add(item.id);
   }
   for (const reference of library.references) {
-    if (!Number.isInteger(reference.seedId) || typeof reference.questionRo !== 'string' ||
+    if (!Number.isInteger(reference.seedId) || !['2025/26','2026/27'].includes(reference.reviewedEdition) || typeof reference.questionRo !== 'string' ||
         typeof reference.correctText !== 'string' || !Array.isArray(reference.passages) ||
         !reference.passages.length) throw new Error('Invalid reference');
     for (const passage of reference.passages) {
@@ -96,12 +108,15 @@ function sourceText(item) {
 
 export function renderLawExplanation(library, question) {
   const excerpts = findLawReference(library, question);
-  const source = `<p class="law-source">${escape(library.sourceTitle)}<br>${escape(library.revisionLabel)}</p>`;
+  const source = `<p class="law-source">Ediția de referință: ${escape(library.targetEdition)}<br>${escape(library.revisionLabel)}</p>`;
   if (!excerpts) return `${source}
-    <div class="law-pending"><strong>Pasaj încă neasociat</strong><p>Pentru această întrebare nu există încă o asociere verificată cu un articol din ediția română. Nu afișăm un pasaj ales automat.</p></div>`;
+    <div class="law-pending"><strong>Pasaj încă neasociat</strong><p>Pentru această întrebare nu există încă o asociere verificată cu o sursă. Nu afișăm un pasaj ales automat.</p></div>`;
+  const legacy=excerpts[0].reviewedEdition!==library.targetEdition;
   return `${source}
     <div class="law-decision"><strong>Decizia justificată</strong><p>${escape(question.options[question.correctOption])}</p></div>
+    ${legacy?'<div class="law-pending"><strong>Asociere verificată pe ediția 2025/26</strong><p>Pasajele de mai jos provin din ediția română 2025/26. Compatibilitatea acestei asocieri cu ediția 2026/27 nu a fost încă reverificată.</p></div>':''}
     <p class="law-intro">Fiecare pasaj justifică o componentă a răspunsului corect. Evidențierile sunt alese pentru această situație.</p>
-    ${excerpts.map(item => `<section class="law-excerpt"><p class="law-justifies">Justifică: ${escape(item.justifies)}</p><div class="law-citation">Legea ${item.law} · ${item.article === 'Introducere' ? 'Prevederea introductivă' : 'Art. ' + escape(item.article)} · Pagina ${item.page}</div>
+    ${excerpts.map(item => `<section class="law-excerpt"><p class="law-justifies">Justifică: ${escape(item.justifies)}</p><div class="law-citation">Legea ${item.law} · ${item.article === 'Introducere' ? 'Prevederea introductivă' : item.article==='Instrucțiuni practice'?'Instrucțiuni practice':'Art. ' + escape(item.article)}${item.source.kind==='official-ro-pdf'?' · Pagina '+item.page:''}</div>
+      <p class="law-provenance">${item.source.kind==='official-ro-pdf'?`PDF românesc ${escape(item.source.edition)} · text oficial`:`IFAB ${escape(item.source.edition)} · traducere proprie din engleză, nu traducere oficială<br><a href="${escape(safeSource(item.source.url))}" target="_blank" rel="noopener noreferrer">Sursa IFAB</a> · verificată la ${escape(item.source.checkedAt)}`}</p>
       <h3>${escape(item.title)}</h3><blockquote>${sourceText(item)}</blockquote></section>`).join('')}`;
 }

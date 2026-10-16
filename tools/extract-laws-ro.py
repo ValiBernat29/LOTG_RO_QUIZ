@@ -28,6 +28,9 @@ def compact(text):
 
 excerpts = []
 for definition in definitions["excerpts"]:
+    if definition.get("source", {}).get("kind") == "ifab-web":
+        excerpts.append(definition.copy())
+        continue
     page = reader.pages[definition["page"] - 1]
     text = compact(page.extract_text())
     start = text.index(compact(definition["start"]))
@@ -36,7 +39,10 @@ for definition in definitions["excerpts"]:
     if not passage:
         raise ValueError(f"Empty source passage: {definition['id']}")
     excerpts.append({key: definition[key] for key in ("id", "law", "article", "title", "page")} |
-                    {"text": passage})
+                    {"text": passage, "source": {
+                        "kind": "official-ro-pdf", "edition": definitions["edition"],
+                        "language": "ro", "translation": "official", "sha256": source_hash,
+                        "title": definitions["sourceTitle"]}})
 
 by_id = {q["id"]: q for q in questions}
 references = []
@@ -54,10 +60,12 @@ for association in definitions["reviewedQuestions"]:
             raise ValueError(f"Invalid question-specific highlight: {q['id']}, {item['id']}")
         passages.append({"id": item["id"], "justifies": item["justifies"], "highlights": highlights})
     references.append({"seedId": q["id"], "questionRo": q["questionRo"],
+                       "reviewedEdition": association["reviewedEdition"],
                        "correctText": q["options"][q["correctOption"]],
                        "passages": passages})
 
-output = {"schemaVersion": 2, "edition": definitions["edition"],
+output = {"schemaVersion": 3, "edition": definitions["edition"],
+          "targetEdition": definitions["targetEdition"],
           "revisionLabel": definitions["revisionLabel"],
           "sourceTitle": definitions["sourceTitle"], "sourceFile": source.name,
           "sourceSha256": source_hash,

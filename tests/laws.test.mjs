@@ -21,17 +21,39 @@ test('The pilot includes every reviewed scenario once and every shuffled answer 
   assert.deepEqual(preparePilotQuestions(library,[]),[]);
   assert.deepEqual(preparePilotQuestions({...library,references:[]},bank),[]);
 });
+test('The current-edition test contains precisely the five newly verified scenarios without duplicates',()=>{
+  const questions=preparePilotQuestions(library,bank,()=>.2,'2026/27');
+  assert.equal(questions.length,5);
+  for(const id of [3,12,13,60,61])assert.ok(questions.some(item=>item.questionRo===q(id).questionRo));
+  for(const item of questions)assert.ok(findLawReference(library,item).every(p=>p.reviewedEdition==='2026/27'));
+});
+test('Own translations and official PDF text retain distinct editions and provenance in the modal',()=>{
+  for(const id of [3,12,13,60,61]) {
+    const html=renderLawExplanation(library,q(id));
+    assert.ok(html.includes('2026/27'));assert.ok(html.includes('traducere proprie din engleză, nu traducere oficială'));
+    assert.ok(!html.includes('Pagina undefined'));assert.ok(!html.includes('Pagina null'));
+    assert.ok(!html.includes('Compatibilitatea acestei asocieri'));
+    assert.ok(html.includes('https://www.theifab.com/'));
+  }
+  const legacy=renderLawExplanation(library,q(221));
+  assert.ok(legacy.includes('PDF românesc 2025/26 · text oficial'));
+  assert.ok(legacy.includes('Compatibilitatea acestei asocieri cu ediția 2026/27 nu a fost încă reverificată'));
+  const report=auditLawCoverage(bank,library,definitions).summary;
+  assert.equal(report.verifiedScenarios,5);assert.equal(report.legacyScenarios,72);
+  assert.equal(report.needsReviewScenarios,0);assert.equal(report.associatedScenarios,77);
+});
 test('Coverage accounts for every record and distinct scenario without treating pending cases as verified',()=>{
   const {summary,queue}=auditLawCoverage(bank,library,definitions);
   assert.equal(summary.totalRecords,788);assert.equal(summary.perLaw.length,17);
   assert.equal(summary.verifiedRecords+queue.reduce((n,group)=>n+group.ids.length,0),bank.length);
-  assert.equal(summary.verifiedScenarios+summary.needsReviewScenarios+summary.unmappedScenarios,summary.distinctScenarios);
+  assert.equal(summary.verifiedScenarios+summary.legacyScenarios+summary.needsReviewScenarios+summary.unmappedScenarios,summary.distinctScenarios);
   assert.equal(summary.complete,false);
   for(const id of [3,12,13,60,61]){
-    assert.equal(findLawReference(library,q(id)),null);
-    assert.ok(queue.some(group=>group.status==='needs-review'&&group.ids.includes(id)));
+    assert.ok(findLawReference(library,q(id)).every(p=>p.reviewedEdition==='2026/27'));
+    assert.ok(!queue.some(group=>group.ids.includes(id)));
   }
-  const changed=structuredClone(definitions);changed.reviewIssues[0].correctText='Changed decision';
+  assert.ok(queue.some(group=>group.ids.includes(221)&&group.status==='edition-review'));
+  const changed=structuredClone(definitions);changed.reviewIssues=[{...definitions.resolvedIssues[0],correctText:'Changed decision'}];
   assert.throws(()=>auditLawCoverage(bank,library,changed));
 });
 test('New references justify misconduct, goalkeeper swaps, lost footwear and re-entry with the corresponding source rule',()=>{
@@ -150,6 +172,10 @@ test('The source library is cached after success and can retry failed loads', as
 test('Broken article ids, highlights, editions and duplicate references fail validation', () => {
   for(const mutate of [
     value=>value.edition='2026/27',
+    value=>value.targetEdition='2027/28',
+    value=>value.excerpts[0].source.translation='own-ro',
+    value=>value.excerpts.find(e=>e.source.kind==='ifab-web').source.url='javascript:alert(1)',
+    value=>value.excerpts.find(e=>e.source.kind==='ifab-web').source.translation='official',
     value=>value.references[0].passages[0].id='missing',
     value=>value.references[0].passages[0].highlights=['not in the PDF'],
     value=>value.references[0].passages[0].highlights=[],
