@@ -1847,7 +1847,7 @@
       "ids": [
         152
       ],
-      "questionRo": "O intrare neregulamentară lângă linia de margine nu este văzută clar de arbitru. Poate arbitrul asistent de înlocuitor, mai bine plasat, să ofere informații?",
+      "questionRo": "O intrare neregulamentară a unui jucător asupra unui adversar, lângă linia de margine, nu este văzută de arbitru. Poate arbitrul asistent de rezervă, mai bine plasat, să ofere informații?",
       "correctText": "Da, poate ajuta arbitrul la fel ca ceilalți oficiali de pe teren.",
       "topics": [
         {
@@ -2854,7 +2854,7 @@
       "ids": [
         231
       ],
-      "questionRo": "La loviturile de departajare, executantul simulează ilegal șutul după terminarea elanului, iar portarul are ambele picioare în fața liniei porții. Care este decizia arbitrului?",
+      "questionRo": "La loviturile de departajare, executantul simulează neregulamentar șutul după terminarea elanului, iar portarul are ambele picioare în fața liniei porții. Care este decizia arbitrului?",
       "correctText": "Lovitura este ratată, iar executantul primește avertisment.",
       "topics": [
         {
@@ -3673,7 +3673,7 @@
       "ids": [
         358
       ],
-      "questionRo": "Portarul primește direct aruncarea de la margine a unui coechipier, controlează mingea cu piciorul în afara suprafeței de pedeapsă și apoi o prinde în interior. Care este decizia arbitrului?",
+      "questionRo": "Portarul primește mingea direct dintr-o aruncare de la margine a unui coechipier, o controlează cu piciorul în afara suprafeței de pedeapsă și apoi o prinde în interior. Care este decizia arbitrului?",
       "correctText": "LLI pentru adversari; fără sancțiune disciplinară pentru portar.",
       "topics": [
         {
@@ -4872,7 +4872,7 @@
       "ids": [
         462
       ],
-      "questionRo": "După înscriere, se constată ofsaid și un gest nepotrivit al marcatorului către suporterii adverși. Care este decizia arbitrului?",
+      "questionRo": "După înscriere, se constată ofsaid și un gest nesportiv al marcatorului către suporterii adverși. Care este decizia arbitrului?",
       "correctText": "Gol anulat, LLI din locul ofsaidului și CG sau CR marcatorului după natura gestului.",
       "topics": [
         {
