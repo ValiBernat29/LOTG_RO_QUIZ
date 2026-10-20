@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 15 290 115" role="img" aria-labelledby="title desc">
+  <title id="title">RefLab</title>
+  <desc id="desc">RefLab — Legile Jocului</desc>
+  <g transform="translate(8 14)">
+    <rect x="18" y="72" width="38" height="18" rx="4" fill="#f6f1e6"/>
+    <circle cx="60" cy="86" r="25" fill="#f6f1e6"/>
+    <circle cx="60" cy="86" r="8" fill="#e8b100"/>
+    <circle cx="78" cy="58" r="7" fill="none" stroke="#f6f1e6" stroke-width="4"/>
+    <circle cx="94" cy="40" r="5" fill="none" stroke="#f6f1e6" stroke-width="2.5"/>
+    <circle cx="106" cy="54" r="3.5" fill="#e8b100" stroke="#f6f1e6" stroke-width="1.5"/>
+    <circle cx="86" cy="26" r="3" fill="none" stroke="#f6f1e6" stroke-width="2"/>
+  </g>
+  <text x="136" y="96" fill="#f6f1e6" font-size="42" font-weight="700" font-family="'Barlow Condensed','Arial Narrow',Arial,sans-serif" letter-spacing="1">Ref<tspan fill="#e8b100">Lab</tspan></text>
+  <text x="137" y="118" fill="#f6f1e6" font-size="11" font-weight="500" font-family="Arial,sans-serif" letter-spacing="2" opacity=".8">LEGILE JOCULUI</text>
+</svg>

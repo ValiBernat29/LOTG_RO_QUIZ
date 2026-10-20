@@ -1,4 +1,4 @@
-# LOTG · Academia arbitrului
+# RefLab · Legile Jocului
 
 Interfață web în română, alimentată din `../lotg_ro_questions.json`.
 

@@ -507,7 +507,7 @@
       "flags": [
         "strong-compression"
       ],
-      "questionRo": "O intrare neregulamentară lângă linia de margine nu este văzută clar de arbitru. Poate arbitrul asistent de înlocuitor, mai bine plasat, să ofere informații?",
+      "questionRo": "O intrare neregulamentară a unui jucător asupra unui adversar, lângă linia de margine, nu este văzută de arbitru. Poate arbitrul asistent de rezervă, mai bine plasat, să ofere informații?",
       "correctText": "Da, poate ajuta arbitrul la fel ca ceilalți oficiali de pe teren.",
       "sourceQuestion": "A player illegally challenged an opponent close to the touchline and the reserve assistant referee’s position. The incident occurred out of the vision of the referee who is unsure if there was an offence. May the reserve assistant referee be asked for advice if they had a clearer view than the referee?"
     },
@@ -1080,7 +1080,7 @@
       "flags": [
         "strong-compression"
       ],
-      "questionRo": "Portarul primește direct aruncarea de la margine a unui coechipier, controlează mingea cu piciorul în afara suprafeței de pedeapsă și apoi o prinde în interior. Care este decizia arbitrului?",
+      "questionRo": "Portarul primește mingea direct dintr-o aruncare de la margine a unui coechipier, o controlează cu piciorul în afara suprafeței de pedeapsă și apoi o prinde în interior. Care este decizia arbitrului?",
       "correctText": "LLI pentru adversari; fără sancțiune disciplinară pentru portar.",
       "sourceQuestion": "A defender takes a throw-in and throws the ball to their goalkeeper (a team-mate). The goalkeeper controls the ball with their foot outside their penalty area and notices that an opposing attacker is running quickly towards the ball, so the goalkeeper dribbles into the penalty area and then picks the ball up with their hands. What is the correct decision?"
     },
@@ -1543,7 +1543,7 @@
       "flags": [
         "strong-compression"
       ],
-      "questionRo": "După înscriere, se constată ofsaid și un gest nepotrivit al marcatorului către suporterii adverși. Care este decizia arbitrului?",
+      "questionRo": "După înscriere, se constată ofsaid și un gest nesportiv al marcatorului către suporterii adverși. Care este decizia arbitrului?",
       "correctText": "Gol anulat, LLI din locul ofsaidului și CG sau CR marcatorului după natura gestului.",
       "sourceQuestion": "A player scores a goal at the end of the match and celebrates in front of fans of the opposing team without leaving the field of play. After that, the referee talks with other match officials who indicate an offside offence and inform the referee that the scorer made an inappropriate gesture towards the fans. What is the correct decision?"
     },
